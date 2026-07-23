@@ -37,9 +37,37 @@ export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  function handleSubmit(e: React.FormEvent) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setError(null);
+
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", "4946c454-1fd5-410a-b1db-1c4d2803e3bd");
+    formData.append("subject", `New message from ${form.name} on BitumenCalcPro`);
+    formData.append("reason", selected);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setSubmitted(true);
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        setError(data.message || "Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -142,6 +170,12 @@ export default function ContactForm() {
                 />
               </div>
 
+              {error && (
+                <div className="bg-red-50 text-red-600 text-sm font-medium p-3 rounded-xl border border-red-200">
+                  {error}
+                </div>
+              )}
+
               <p className="text-xs text-slate-400">
                 By submitting this form, you agree to our{" "}
                 <Link href="/privacy-policy" className="text-violet-500 hover:underline">Privacy Policy</Link>.
@@ -151,10 +185,20 @@ export default function ContactForm() {
               <button
                 id="contact-submit"
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 active:scale-[0.98] text-white py-3.5 rounded-xl font-bold text-sm transition-all shadow-md shadow-orange-200"
+                disabled={isSubmitting}
+                className="w-full flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 disabled:opacity-70 disabled:hover:bg-orange-500 active:scale-[0.98] text-white py-3.5 rounded-xl font-bold text-sm transition-all shadow-md shadow-orange-200"
               >
-                <Send size={16} />
-                Send Message
+                {isSubmitting ? (
+                  <>
+                    <span className="animate-spin w-4 h-4 border-2 border-white/20 border-t-white rounded-full"></span>
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send size={16} />
+                    Send Message
+                  </>
+                )}
               </button>
             </form>
           </>
