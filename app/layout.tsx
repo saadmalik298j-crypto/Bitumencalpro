@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: {
     default: "BitumenCalcPro — Free Bitumen & Asphalt Calculator",
-    template: "%s | BitumenCalcPro",
+    template: "%s",
   },
   description:
     "Free online bitumen and aggregate calculator for civil engineers and paving contractors. Fast, accurate estimates for Dense Graded HMA, SMA, OGFC, and Polymer Modified mixes.",

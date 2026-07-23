@@ -7,6 +7,9 @@ type Results = {
   volume: number;
   mixWeight: number;
   bitumenRequired: number;
+  aggregateRequired: number;
+  baseAggregateRequired: number | null;
+  baseWeightUnit: string | null;
   totalCost: number | null;
   volUnit: string;
   weightUnit: string;
@@ -137,13 +140,31 @@ export default function Calculator() {
     // 6. Bitumen required
     const bitumenRequired = outWeight * (b / 100);
 
-    // 7. Cost
+    // 7. Aggregate required
+    const aggregateRequired = outWeight - bitumenRequired;
+    
+    // Base unit for aggregates (tonnes -> kg, tons -> lbs)
+    let baseAggregateRequired = null;
+    let baseWeightUnit = null;
+    
+    if (outWeightUnit === "tonnes") {
+      baseAggregateRequired = aggregateRequired * 1000;
+      baseWeightUnit = "kg";
+    } else if (outWeightUnit === "tons") {
+      baseAggregateRequired = aggregateRequired * 2000;
+      baseWeightUnit = "lbs";
+    }
+
+    // 8. Cost
     const totalCost = !isNaN(p) && p > 0 ? bitumenRequired * p : null;
 
     setResults({
       volume: outVol,
       mixWeight: outWeight,
       bitumenRequired,
+      aggregateRequired,
+      baseAggregateRequired,
+      baseWeightUnit,
       totalCost,
       volUnit: outVolUnit,
       weightUnit: outWeightUnit,
@@ -394,8 +415,25 @@ export default function Calculator() {
                     {fmt(results.mixWeight)} <span className="text-base sm:text-lg font-bold text-slate-400 break-normal">{results.weightUnit}</span>
                   </div>
                 </div>
-                <div className="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-full flex items-center justify-center shrink-0">
                   <Weight size={24} strokeWidth={2} />
+                </div>
+              </div>
+
+              <div className="bg-orange-50/70 border border-orange-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:bg-orange-50 transition-all flex items-center justify-between">
+                <div>
+                  <div className="text-xs font-bold text-orange-600 uppercase tracking-wider mb-2">Weight of Aggregates</div>
+                  <div className="text-2xl sm:text-3xl font-black text-slate-800 flex flex-wrap items-baseline gap-x-2 break-all">
+                    {fmt(results.aggregateRequired)} <span className="text-base sm:text-lg font-bold text-slate-400 break-normal">{results.weightUnit}</span>
+                  </div>
+                  {results.baseAggregateRequired !== null && (
+                    <div className="text-sm font-semibold text-slate-500 mt-1">
+                      ({fmt(results.baseAggregateRequired)} {results.baseWeightUnit})
+                    </div>
+                  )}
+                </div>
+                <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center shrink-0">
+                  <Database size={24} strokeWidth={2} />
                 </div>
               </div>
 
