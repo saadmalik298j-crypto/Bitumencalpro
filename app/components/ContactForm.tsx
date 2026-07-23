@@ -131,6 +131,7 @@ export default function ContactForm() {
                   </label>
                   <input
                     id="contact-name"
+                    name="name"
                     type="text"
                     required
                     value={form.name}
@@ -145,6 +146,7 @@ export default function ContactForm() {
                   </label>
                   <input
                     id="contact-email"
+                    name="email"
                     type="email"
                     required
                     value={form.email}
@@ -161,6 +163,7 @@ export default function ContactForm() {
                 </label>
                 <textarea
                   id="contact-message"
+                  name="message"
                   required
                   rows={6}
                   value={form.message}
