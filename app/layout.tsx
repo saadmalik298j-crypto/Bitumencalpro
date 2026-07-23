@@ -62,7 +62,7 @@ export default function RootLayout({
         <Navbar/>
       <main className="flex-grow">
           {children}
-        </main>
+      </main>
       <Footer />
       </body>
     </html>
