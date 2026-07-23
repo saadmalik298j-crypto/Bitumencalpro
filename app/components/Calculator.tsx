@@ -378,8 +378,8 @@ export default function Calculator() {
               <div className="bg-blue-50/70 border border-blue-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:bg-blue-50 transition-all flex items-center justify-between">
                 <div>
                   <div className="text-xs font-bold text-blue-500 uppercase tracking-wider mb-2">Total Volume</div>
-                  <div className="text-3xl font-black text-slate-800 flex items-baseline gap-2">
-                    {fmt(results.volume)} <span className="text-lg font-bold text-slate-400">{results.volUnit}</span>
+                  <div className="text-2xl sm:text-3xl font-black text-slate-800 flex flex-wrap items-baseline gap-x-2 break-all">
+                    {fmt(results.volume)} <span className="text-base sm:text-lg font-bold text-slate-400 break-normal">{results.volUnit}</span>
                   </div>
                 </div>
                 <div className="w-12 h-12 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center">
@@ -390,8 +390,8 @@ export default function Calculator() {
               <div className="bg-cyan-50/70 border border-cyan-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:bg-cyan-50 transition-all flex items-center justify-between">
                 <div>
                   <div className="text-xs font-bold text-cyan-600 uppercase tracking-wider mb-2">Total Mix Weight</div>
-                  <div className="text-3xl font-black text-slate-800 flex items-baseline gap-2">
-                    {fmt(results.mixWeight)} <span className="text-lg font-bold text-slate-400">{results.weightUnit}</span>
+                  <div className="text-2xl sm:text-3xl font-black text-slate-800 flex flex-wrap items-baseline gap-x-2 break-all">
+                    {fmt(results.mixWeight)} <span className="text-base sm:text-lg font-bold text-slate-400 break-normal">{results.weightUnit}</span>
                   </div>
                 </div>
                 <div className="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-full flex items-center justify-center">
@@ -402,15 +402,15 @@ export default function Calculator() {
               <div className="bg-gradient-to-br from-violet-600 to-indigo-600 border border-violet-500 rounded-3xl p-8 shadow-xl shadow-violet-200 flex-1 flex flex-col justify-center text-white relative overflow-hidden group">
                 <div className="absolute -right-8 -top-8 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
                 <div className="text-sm font-bold text-violet-200 uppercase tracking-wider mb-3 relative z-10">Bitumen Required</div>
-                <div className="text-5xl md:text-6xl font-black flex items-baseline gap-3 relative z-10">
-                  {fmt(results.bitumenRequired, 3)} <span className="text-2xl font-bold text-violet-300">{results.weightUnit}</span>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-black flex flex-wrap items-baseline gap-x-3 relative z-10 break-all">
+                  {fmt(results.bitumenRequired, 3)} <span className="text-xl sm:text-2xl font-bold text-violet-300 break-normal">{results.weightUnit}</span>
                 </div>
               </div>
 
               {results.totalCost !== null && (
-                <div className="bg-green-50 border border-green-200 rounded-2xl p-6 shadow-sm flex justify-between items-center mt-4">
-                  <div className="text-sm font-bold text-green-700 uppercase tracking-wider">Estimated Cost</div>
-                  <div className="text-3xl font-black text-green-700">
+                <div className="bg-green-50 border border-green-200 rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mt-4">
+                  <div className="text-sm font-bold text-green-700 uppercase tracking-wider shrink-0">Estimated Cost</div>
+                  <div className="text-2xl sm:text-3xl font-black text-green-700 break-all sm:text-right">
                     {results.currency}{fmt(results.totalCost)}
                   </div>
                 </div>
