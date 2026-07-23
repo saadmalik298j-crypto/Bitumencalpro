@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Calculator as CalcIcon, Database, Settings2, Box, Weight } from "lucide-react";
+import { Calculator as CalcIcon, Database, Settings2, Box, Weight, ChevronDown } from "lucide-react";
 
 type Results = {
   volume: number;
@@ -167,7 +167,7 @@ export default function Calculator() {
   return (
     <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
       {/* ── Left Panel: Inputs ── */}
-      <div className="bg-white/95 backdrop-blur-xl border border-white/20 rounded-3xl p-6 sm:p-8 flex flex-col shadow-[0_25px_50px_-12px_rgba(0,0,0,0.35)] relative overflow-hidden z-10">
+      <div className="bg-white/95 backdrop-blur-xl border border-white/20 rounded-3xl p-5 sm:p-8 flex flex-col shadow-[0_25px_50px_-12px_rgba(0,0,0,0.35)] relative overflow-hidden z-10">
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center gap-3">
             <div className="bg-orange-500 text-white p-2.5 rounded-xl shadow-md shadow-orange-500/20">
@@ -232,14 +232,15 @@ export default function Calculator() {
                     className="flex-1 bg-transparent text-slate-900 px-4 py-3 outline-none w-full font-medium"
                     placeholder="0"
                   />
-                  <div className="bg-slate-50 border-l border-slate-200 flex items-center">
+                  <div className="bg-slate-50 border-l border-slate-200 flex items-center relative">
                     <select
                       value={field.unit}
                       onChange={(e) => field.setUnit(e.target.value)}
-                      className="bg-transparent text-slate-600 font-bold px-3 py-3 outline-none cursor-pointer appearance-none text-sm text-center min-w-[60px]"
+                      className="bg-transparent text-slate-600 font-bold pl-3 pr-8 py-3 outline-none cursor-pointer appearance-none text-sm text-center min-w-[60px]"
                     >
                       {LENGTH_UNITS.map(u => <option key={u.value} value={u.value}>{u.label}</option>)}
                     </select>
+                    <ChevronDown size={14} className="absolute right-2.5 text-slate-400 pointer-events-none" />
                   </div>
                 </div>
               </div>
@@ -285,14 +286,15 @@ export default function Calculator() {
                   className="flex-1 bg-transparent text-slate-900 px-4 py-3 outline-none w-full font-medium"
                   placeholder="0"
                 />
-                <div className="bg-slate-50 border-l border-slate-200 flex items-center">
+                <div className="bg-slate-50 border-l border-slate-200 flex items-center relative">
                   <select
                     value={densityUnit}
                     onChange={(e) => setDensityUnit(e.target.value)}
-                    className="bg-transparent text-slate-600 font-bold px-3 py-3 outline-none cursor-pointer appearance-none text-sm text-center min-w-[80px]"
+                    className="bg-transparent text-slate-600 font-bold pl-3 pr-8 py-3 outline-none cursor-pointer appearance-none text-sm text-center min-w-[80px]"
                   >
                     {DENSITY_UNITS.map(u => <option key={u.value} value={u.value}>{u.label}</option>)}
                   </select>
+                  <ChevronDown size={14} className="absolute right-2.5 text-slate-400 pointer-events-none" />
                 </div>
               </div>
             </div>
@@ -305,17 +307,18 @@ export default function Calculator() {
           <div className="flex flex-col gap-1.5">
             <label htmlFor="price" className="text-sm font-semibold text-slate-700">Price per unit of bitumen</label>
             <div className="flex rounded-xl overflow-hidden border border-slate-200 focus-within:border-green-400 focus-within:ring-4 focus-within:ring-green-100 transition-all bg-white shadow-sm">
-              <div className="bg-slate-50 border-r border-slate-200 flex items-center">
+              <div className="bg-slate-50 border-r border-slate-200 flex items-center relative">
                 <select
                   value={currency}
                   onChange={(e) => setCurrency(e.target.value)}
-                  className="bg-transparent text-slate-600 font-bold px-3 py-3 outline-none cursor-pointer appearance-none text-sm text-center min-w-[40px]"
+                  className="bg-transparent text-slate-600 font-bold pl-3 pr-7 py-3 outline-none cursor-pointer appearance-none text-sm text-center min-w-[50px]"
                 >
                   <option value="$">$</option>
                   <option value="€">€</option>
                   <option value="£">£</option>
                   <option value="₹">₹</option>
                 </select>
+                <ChevronDown size={14} className="absolute right-2 text-slate-400 pointer-events-none" />
               </div>
               <input
                 id="price"
@@ -351,7 +354,7 @@ export default function Calculator() {
       </div>
 
       {/* ── Right Panel: Results ── */}
-      <div className="bg-white/95 backdrop-blur-xl border border-white/20 rounded-3xl p-6 sm:p-8 flex flex-col shadow-[0_25px_50px_-12px_rgba(0,0,0,0.35)] min-h-[580px] relative overflow-hidden z-10">
+      <div className="bg-white/95 backdrop-blur-xl border border-white/20 rounded-3xl p-5 sm:p-8 flex flex-col shadow-[0_25px_50px_-12px_rgba(0,0,0,0.35)] min-h-[580px] relative overflow-hidden z-10">
         {!results ? (
           <div className="flex-1 flex flex-col items-center justify-center text-center px-4">
             <div className="w-20 h-20 bg-slate-50 border border-slate-100 rounded-3xl flex items-center justify-center mb-6 text-slate-300 shadow-inner">

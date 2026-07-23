@@ -164,7 +164,7 @@ export default function Home() {
         <div className="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-orange-500/5 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-32 -right-32 w-[480px] h-[480px] rounded-full bg-violet-600/10 blur-3xl pointer-events-none" />
 
-        <div id="calculator" className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <div id="calculator" className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Tag line */}
           <div className="flex justify-center mb-6">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/20 border border-orange-400/30 text-orange-200 text-sm font-semibold backdrop-blur-sm">
@@ -189,14 +189,14 @@ export default function Home() {
           </p>
 
           {/* Trust badges */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-2 sm:gap-3 mb-10 sm:mb-12">
             {TRUST_BADGES.map(({ icon: Icon, label }) => (
               <div
                 key={label}
-                className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-white text-xs font-medium"
+                className="flex items-center gap-1.5 sm:gap-2 bg-white/5 border border-white/10 rounded-full px-3 sm:px-4 py-1.5 text-white text-[11px] sm:text-xs font-medium justify-center"
               >
-                <Icon size={13} className="text-orange-400" />
-                {label}
+                <Icon size={13} className="text-orange-400 shrink-0" />
+                <span className="truncate">{label}</span>
               </div>
             ))}
           </div>
