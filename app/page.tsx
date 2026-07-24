@@ -18,9 +18,8 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BitumenCalcPro — Free Bitumen & Asphalt Calculator",
-  description:
-    "Calculate the required quantities of bitumen and aggregates for your pavement construction project. Free, fast, and accurate estimates for civil engineers and paving contractors.",
+  title: "Free Bitumen Calculator | Estimate Bitumen & Asphalt Mix",
+  description:'Estimate bitumen quantity, asphalt mix weight, aggregate weight, and project cost in seconds. Fast, accurate, and free for engineers and contractors.',
   keywords: [
     "bitumen calculator",
     "asphalt quantity calculator",
@@ -31,17 +30,17 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://bitumencalcpro.com" },
   openGraph: {
-    title: "BitumenCalcPro — Free Bitumen & Asphalt Calculator",
+    title: "Free Bitumen Calculator | Estimate Bitumen & Asphalt Mix",
     description:
-      "Calculate bitumen and aggregate quantities instantly. Built for civil engineers and paving contractors.",
+      "Estimate bitumen quantity, asphalt mix weight, aggregate weight, and project cost in seconds. Fast, accurate, and free for engineers and contractors.",
     url: "https://bitumencalcpro.com",
     siteName: "BitumenCalcPro",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BitumenCalcPro — Free Bitumen & Asphalt Calculator",
-    description: "Calculate bitumen and aggregate quantities instantly. Built for civil engineers and paving contractors.",
+    title: "Free Bitumen Calculator | Estimate Bitumen & Asphalt Mix",
+    description: "Estimate bitumen quantity, asphalt mix weight, aggregate weight, and project cost in seconds. Fast, accurate, and free for engineers and contractors.",
   },
 };
 
