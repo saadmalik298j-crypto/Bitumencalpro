@@ -4,10 +4,8 @@ import LegalLayout from "../components/LegalLayout";
 import {
   Droplets,
   Target,
-  Users,
   Zap,
   HeartHandshake,
-  BarChart2,
   Calculator,
   Globe,
 } from "lucide-react";
@@ -59,13 +57,6 @@ const values = [
   },
 ];
 
-const stats = [
-  { icon: Users, value: "10,000+", label: "Engineers & Contractors" },
-  { icon: Calculator, value: "500,000+", label: "Calculations Run" },
-  { icon: Globe, value: "80+", label: "Countries Reached" },
-  { icon: BarChart2, value: "99.9%", label: "Uptime" },
-];
-
 const colorClasses: Record<string, { icon: string; bg: string; border: string }> = {
   violet: { icon: "text-violet-600", bg: "bg-violet-50", border: "border-violet-100" },
   orange: { icon: "text-orange-500", bg: "bg-orange-50", border: "border-orange-100" },
@@ -73,12 +64,7 @@ const colorClasses: Record<string, { icon: string; bg: string; border: string }>
   cyan: { icon: "text-cyan-600", bg: "bg-cyan-50", border: "border-cyan-100" },
 };
 
-const statColorClasses = [
-  "from-violet-600 to-blue-500",
-  "from-orange-500 to-amber-400",
-  "from-cyan-600 to-teal-500",
-  "from-blue-600 to-indigo-500",
-];
+
 
 export default function AboutUsPage() {
   return (
@@ -115,33 +101,14 @@ export default function AboutUsPage() {
           </p>
           <p>
             What started as an internal tool quickly became something we wanted
-            to share with the wider engineering community. Today, BitumenCalcPro
-            is used by engineers, contractors, students, and project managers
-            across more than 80 countries.
+            to share with the wider engineering community. BitumenCalcPro is
+            freely available to engineers, contractors, students, and project
+            managers — wherever they are in the world.
           </p>
         </div>
       </div>
 
-      {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        {stats.map((stat, idx) => {
-          const Icon = stat.icon;
-          return (
-            <div
-              key={idx}
-              className="bg-slate-50 border border-slate-100 rounded-2xl p-5 text-center hover:shadow-md transition-shadow"
-            >
-              <div
-                className={`w-10 h-10 rounded-xl bg-gradient-to-br ${statColorClasses[idx]} flex items-center justify-center text-white mx-auto mb-3`}
-              >
-                <Icon size={18} />
-              </div>
-              <p className="text-2xl font-black text-slate-900 mb-0.5">{stat.value}</p>
-              <p className="text-slate-500 text-xs m-0">{stat.label}</p>
-            </div>
-          );
-        })}
-      </div>
+
 
       {/* Mission */}
       <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-violet-950 rounded-2xl p-8 mb-12">
@@ -216,7 +183,7 @@ export default function AboutUsPage() {
         </p>
         <a
           href="/contact-us"
-          className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 active:scale-95 text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-md shadow-orange-200"
+          className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-500 active:scale-95 text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-md shadow-orange-200"
         >
           Share Your Feedback
         </a>
@@ -230,7 +197,7 @@ export default function AboutUsPage() {
         </p>
         <a
           href="/"
-          className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 active:scale-95 text-white px-6 py-3 rounded-full font-semibold text-sm transition-all shadow-md shadow-orange-200"
+          className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-500 active:scale-95 text-white px-6 py-3 rounded-full font-semibold text-sm transition-all shadow-md shadow-orange-200"
         >
           <Calculator size={16} />
           Open Calculator
