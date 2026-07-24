@@ -392,9 +392,9 @@ export default function Home() {
                       className={`w-2.5 h-2.5 rounded-full shrink-0 shadow-[0_0_8px_rgba(255,255,255,0.5)] bg-white`}
                     />
                     <div>
-                      <h4 className="font-bold text-white text-sm">
+                      <h3 className="font-bold text-white text-sm">
                         {item.name}
-                      </h4>
+                      </h3>
                       <p className="text-xs text-white/70 mt-0.5">
                         {item.desc}
                       </p>
@@ -435,7 +435,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact-us"
-              className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 active:scale-95 text-white px-7 py-3.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-orange-900/40"
+              className="inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-500 active:scale-95 text-white px-7 py-3.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-orange-900/40"
             >
               Get in Touch
               <ChevronRight size={16} />

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 border-t border-white/10 py-16 text-slate-400">
+    <footer className="bg-slate-900 border-t border-white/10 py-16 text-slate-300">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           {/* Logo & Tagline */}
@@ -13,7 +13,7 @@ export default function Footer() {
               </span>
               BitumenCalcPro
             </div>
-            <p className="text-slate-400 text-sm max-w-sm">
+            <p className="text-slate-300 text-sm max-w-sm">
               Engineered with precision for civil engineers, paving contractors, and construction professionals worldwide.
             </p>
           </div>
@@ -34,10 +34,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <div className="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
           <p>© {new Date().getFullYear()} BitumenCalcPro. All rights reserved.</p>
           <div className="flex gap-4">
-            <Link href="/dmca" className="hover:text-slate-300 transition-colors">DMCA</Link>
+            <Link href="/dmca" className="hover:text-white transition-colors">DMCA</Link>
             <span>v1.0.0</span>
           </div>
         </div>
