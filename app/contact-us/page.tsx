@@ -60,8 +60,8 @@ export default function ContactUsPage() {
               </div>
               <h3 className="font-bold text-slate-900 mb-1">Email Us</h3>
               <p className="text-slate-500 text-sm mb-2">For all general inquiries:</p>
-              <a href="mailto:hello@bitumencalcpro.com" className="text-violet-600 font-semibold text-sm hover:underline">
-                hello@bitumencalcpro.com
+              <a href="mailto:saadmalik298j@gmail.com" className="text-violet-600 font-semibold text-sm hover:underline">
+                saadmalik298j@gmail.com
               </a>
             </div>
 

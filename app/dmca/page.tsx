@@ -159,7 +159,7 @@ export default function DmcaPage() {
         </p>
         <div className="bg-white/10 border border-white/20 rounded-xl p-4">
           <p className="text-white font-mono text-sm m-0">
-            📧 dmca@bitumencalcpro.com
+            📧 saadmalik298j@gmail.com
           </p>
         </div>
         <p className="text-slate-500 text-xs mt-4 m-0">
