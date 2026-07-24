@@ -1,7 +1,7 @@
 // app/dmca/page.tsx
 import type { Metadata } from "next";
 import LegalLayout from "../components/LegalLayout";
-import { ShieldCheck, FileText, Clock, Ban, RotateCcw, Mail } from "lucide-react";
+import { ShieldCheck, FileText, Clock, Ban, RotateCcw, Mail, Link } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "DMCA Policy | BitumenCalcPro",
@@ -84,7 +84,7 @@ export default function DmcaPage() {
           BitumenCalcPro respects the intellectual property of others and
           expects our users to do the same. We comply with the{" "}
           <strong className="text-cyan-700">
-            Digital Millennium Copyright Act (DMCA)
+            <Link href="https://www.copyright.gov/dmca/">Digital Millennium Copyright Act (DMCA)</Link>
           </strong>{" "}
           and will respond promptly to valid takedown notices. If you believe
           content on our site infringes your copyright, here's exactly what to
