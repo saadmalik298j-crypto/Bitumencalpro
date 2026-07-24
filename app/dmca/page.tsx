@@ -84,13 +84,13 @@ export default function DmcaPage() {
           BitumenCalcPro respects the intellectual property of others and
           expects our users to do the same. We comply with the{" "}
           <strong className="text-cyan-700">
-            <a href="https://www.copyright.gov/dmca/">Digital Millennium Copyright Act (DMCA)</a>
+            <Link href="https://www.copyright.gov/dmca/ " className="text-cyan-700 underline" target="_blank">Digital Millennium Copyright Act (DMCA)</Link>
           </strong>{" "}
           and will respond promptly to valid takedown notices. If you believe
           content on our site infringes your copyright, here's exactly what to
           do.
-        </p>
-      </div>
+          </p>
+        </div>
 
       {/* What is DMCA */}
       <div className="mb-10">
