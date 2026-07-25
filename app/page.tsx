@@ -176,15 +176,7 @@ export default function Home() {
         <div className="absolute -bottom-32 -right-32 w-[480px] h-[480px] rounded-full bg-teal-500/20 blur-[100px] pointer-events-none" />
 
         <div id="calculator" className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center mb-6">
-            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/5 border border-white/10 text-orange-200 text-sm font-semibold backdrop-blur-md shadow-[0_0_20px_rgba(249,115,22,0.15)]">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-400" />
-              </span>
-              Real-time estimation engine
-            </div>
-          </div>
+       
 
           <h1 className="text-center text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight drop-shadow-2xl">
             <span className="bg-gradient-to-r from-orange-400 to-yellow-300 bg-clip-text text-transparent">Bitumen</span> <span className="text-white">Calculator</span>
