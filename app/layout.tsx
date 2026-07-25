@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+
+const inter = Inter({ subsets: ["latin"], display: "swap" });
+
 export const metadata: Metadata = {
   title: {
     default: "BitumenCalcPro — Free Bitumen & Asphalt Calculator",
@@ -58,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body className="min-h-screen bg-gradient-to-br from-teal-600 to-orange-500 text-slate-800 flex flex-col selection:bg-teal-500/30">
         <Navbar/>
       <main className="flex-grow">
