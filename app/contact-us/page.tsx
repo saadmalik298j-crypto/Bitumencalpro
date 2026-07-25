@@ -1,5 +1,6 @@
 // app/contact-us/page.tsx
 import type { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
 import ContactForm from "../components/ContactForm";
 import {
@@ -26,8 +27,27 @@ export const metadata: Metadata = {
 };
 
 export default function ContactUsPage() {
+  const contactPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Us | BitumenCalcPro",
+    "url": "https://bitumencalcpro.com/contact-us",
+    "description": "Get in touch with the BitumenCalcPro team. Have a question, spotted a bug, or want to share feedback? We're here to help.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BitumenCalcPro",
+      "url": "https://bitumencalcpro.com"
+    }
+  };
+
   return (
     <>
+      <Script
+        id="schema-contact-page"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
+      />
       {/* Hero */}
       <div className="pt-20 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-violet-600/10 to-violet-600/0 pointer-events-none" />

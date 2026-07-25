@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Do you support imperial units (feet, inches)?",
-    a: "Currently the calculator works in metric units. Imperial unit support is on our roadmap — let us know via the contact form if it's a priority for you.",
+    a: "Yes — the calculator fully supports both metric and imperial units. For dimensions you can enter values in metres, centimetres, millimetres, feet, inches, or yards. Mix density can be entered in kg/m³, lb/yd³, or lb/ft³. Results can be displayed in cubic metres, cubic yards, or cubic feet for volume, and in metric tonnes, short tons, kilograms, or pounds for weight.",
   },
 ];
 

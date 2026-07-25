@@ -1,5 +1,6 @@
 // app/terms-and-conditions/page.tsx
 import type { Metadata } from "next";
+import Script from "next/script";
 import LegalLayout from "../components/LegalLayout";
 import { CheckCircle, XCircle, Scale, Globe, Mail } from "lucide-react";
 
@@ -65,8 +66,29 @@ const colorClasses: Record<string, { icon: string; bg: string; border: string }>
 };
 
 export default function TermsPage() {
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms and Conditions | BitumenCalcPro",
+    "url": "https://bitumencalcpro.com/terms-and-conditions",
+    "description": "Read the terms and conditions for using BitumenCalcPro. Understand your rights, responsibilities, and what you can expect from our free bitumen calculator.",
+    "dateModified": "2026-07-23",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BitumenCalcPro",
+      "url": "https://bitumencalcpro.com"
+    }
+  };
+
   return (
-    <LegalLayout
+    <>
+      <Script
+        id="schema-terms-page"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <LegalLayout
       title="Terms & Conditions"
       subtitle="Plain and simple ground rules for using BitumenCalcPro. We've written this to be readable — not to confuse you."
       lastUpdated="July 23, 2026"
@@ -185,5 +207,6 @@ export default function TermsPage() {
         </a>
       </div>
     </LegalLayout>
+    </>
   );
 }

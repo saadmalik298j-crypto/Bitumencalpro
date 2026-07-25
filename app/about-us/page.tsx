@@ -1,5 +1,6 @@
 // app/about-us/page.tsx
 import type { Metadata } from "next";
+import Script from "next/script";
 import LegalLayout from "../components/LegalLayout";
 import {
   Droplets,
@@ -67,8 +68,49 @@ const colorClasses: Record<string, { icon: string; bg: string; border: string }>
 
 
 export default function AboutUsPage() {
+  const aboutPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About BitumenCalcPro",
+    "url": "https://bitumencalcpro.com/about-us",
+    "description": "Learn about BitumenCalcPro — who we are, why we built this tool, and our mission to make bitumen calculation fast, accurate, and accessible for engineers worldwide.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BitumenCalcPro",
+      "url": "https://bitumencalcpro.com"
+    }
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BitumenCalcPro",
+    "url": "https://bitumencalcpro.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bitumencalcpro.com/logo.png"
+    },
+    "description": "Free online bitumen calculator for civil engineers and paving contractors worldwide.",
+    "sameAs": [
+      "https://twitter.com/bitumencalcpro"
+    ]
+  };
+
   return (
-    <LegalLayout
+    <>
+      <Script
+        id="schema-about-page"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
+      <Script
+        id="schema-organization"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <LegalLayout
       title="About BitumenCalcPro"
       subtitle="We're engineers and developers who got tired of doing bitumen calculations on spreadsheets. So we built something better."
       lastUpdated="July 23, 2026"
@@ -176,7 +218,7 @@ export default function AboutUsPage() {
         <h2 className="text-lg font-bold text-slate-900 mb-4">What's Coming Next</h2>
         <p className="text-slate-600 text-sm leading-relaxed mb-4">
           We're actively working on expanding BitumenCalcPro with more mix
-          types, support for additional unit systems, and detailed project
+          types and detailed project
           reporting features. Our roadmap is driven by user feedback — so if
           there's a feature you'd find useful, we genuinely want to hear about
           it.
@@ -204,5 +246,6 @@ export default function AboutUsPage() {
         </a>
       </div>
     </LegalLayout>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 // app/privacy-policy/page.tsx
 import type { Metadata } from "next";
+import Script from "next/script";
 import LegalLayout from "../components/LegalLayout";
 import { Eye, Lock, Share2, Cookie, Mail, RefreshCw } from "lucide-react";
 
@@ -158,8 +159,29 @@ const colorClasses: Record<
 };
 
 export default function PrivacyPolicyPage() {
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy | BitumenCalcPro",
+    "url": "https://bitumencalcpro.com/privacy-policy",
+    "description": "Learn how BitumenCalcPro collects, uses, and protects your personal information. We respect your privacy and are committed to keeping your data safe.",
+    "dateModified": "2026-07-23",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BitumenCalcPro",
+      "url": "https://bitumencalcpro.com"
+    }
+  };
+
   return (
-    <LegalLayout
+    <>
+      <Script
+        id="schema-privacy-page"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <LegalLayout
       title="Privacy Policy"
       subtitle="We believe privacy is a right, not a privilege. Here's exactly how we handle your information — no legal jargon, just plain English."
       lastUpdated="July 23, 2026"
@@ -235,5 +257,6 @@ export default function PrivacyPolicyPage() {
         means you accept the updated policy.
       </p>
     </LegalLayout>
+    </>
   );
 }

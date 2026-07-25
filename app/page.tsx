@@ -1,6 +1,7 @@
 // app/page.tsx
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import Calculator from "./components/Calculator";
 import {
   Info,
@@ -165,8 +166,122 @@ const FAQ_DATA = [
 ];
 
 export default function Home() {
+
+  /* ─── Structured Data (JSON-LD) ─── */
+  const webApplicationSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "BitumenCalcPro — Free Bitumen Calculator",
+    "url": "https://bitumencalcpro.com",
+    "description": "Free online bitumen calculator that estimates bitumen binder quantity, hot mix asphalt (HMA) weight, aggregate quantity, and project cost for pavement construction projects.",
+    "applicationCategory": "EngineeringApplication",
+    "applicationSubCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Bitumen quantity estimation",
+      "Hot Mix Asphalt (HMA) weight calculation",
+      "Aggregate quantity calculation",
+      "Bitumen cost estimation",
+      "Multiple unit support (metric and imperial)",
+      "Multi-layer pavement calculation",
+      "Instant results",
+      "AASHTO-aligned formulas"
+    ]
+  };
+
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BitumenCalcPro",
+    "url": "https://bitumencalcpro.com"
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BitumenCalcPro",
+    "url": "https://bitumencalcpro.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bitumencalcpro.com/logo.png"
+    },
+    "sameAs": [
+      "https://twitter.com/bitumencalcpro"
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://bitumencalcpro.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Bitumen Calculator",
+        "item": "https://bitumencalcpro.com/#calculator"
+      }
+    ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": FAQ_DATA.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
   return (
     <>
+      {/* ─── JSON-LD Structured Data ─── */}
+      <Script
+        id="schema-web-application"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationSchema) }}
+      />
+      <Script
+        id="schema-website"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+      />
+      <Script
+        id="schema-organization"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <Script
+        id="schema-breadcrumb"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <Script
+        id="schema-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* ═══════════════════════════════
           HERO 
       ═══════════════════════════════ */}
@@ -176,8 +291,7 @@ export default function Home() {
         <div className="absolute -bottom-32 -right-32 w-[480px] h-[480px] rounded-full bg-teal-500/20 blur-[100px] pointer-events-none" />
 
         <div id="calculator" className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-       
-
+        
           <h1 className="text-center text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight drop-shadow-2xl">
             <span className="bg-gradient-to-r from-orange-400 to-yellow-300 bg-clip-text text-transparent">Bitumen</span> <span className="text-white">Calculator</span>
           </h1>

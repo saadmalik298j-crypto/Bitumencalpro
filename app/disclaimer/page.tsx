@@ -1,5 +1,6 @@
 // app/disclaimer/page.tsx
 import type { Metadata } from "next";
+import Script from "next/script";
 import LegalLayout from "../components/LegalLayout";
 import { AlertTriangle, HardHat, BookOpen, ThumbsUp, Mail } from "lucide-react";
 
@@ -78,8 +79,29 @@ const colorClasses: Record<string, { icon: string; bg: string; border: string; i
 };
 
 export default function DisclaimerPage() {
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disclaimer | BitumenCalcPro",
+    "url": "https://bitumencalcpro.com/disclaimer",
+    "description": "Important disclaimer for BitumenCalcPro users. Understand the limitations of our bitumen calculator and when to consult a qualified engineer.",
+    "dateModified": "2026-07-23",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BitumenCalcPro",
+      "url": "https://bitumencalcpro.com"
+    }
+  };
+
   return (
-    <LegalLayout
+    <>
+      <Script
+        id="schema-disclaimer-page"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <LegalLayout
       title="Disclaimer"
       subtitle="We're upfront about what our tool can and cannot do. Please read this before using our calculator for any project decision-making."
       lastUpdated="July 23, 2026"
@@ -174,5 +196,6 @@ export default function DisclaimerPage() {
         </a>
       </div>
     </LegalLayout>
+    </>
   );
 }
