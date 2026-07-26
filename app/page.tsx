@@ -49,11 +49,20 @@ export const metadata: Metadata = {
  url: "https://bitumencalcpro.com",
  siteName: "BitumenCalcPro",
  type: "website",
+ images: [
+  {
+   url: "/bitumen-calculator-og-image.png",
+   width: 1200,
+   height: 630,
+   alt: "Free Bitumen Calculator — Estimate Bitumen & Asphalt Mix",
+  },
+ ],
  },
  twitter: {
  card: "summary_large_image",
  title: "Free Bitumen Calculator | Estimate Bitumen & Asphalt Mix",
  description: "Estimate bitumen quantity, asphalt mix weight, aggregate weight, and project cost in seconds. Fast, accurate, and free for engineers and contractors.",
+ images: ["/bitumen-calculator-og-image.png"],
  },
 };
 

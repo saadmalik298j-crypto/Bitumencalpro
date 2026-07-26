@@ -47,12 +47,21 @@ export const metadata: Metadata = {
     siteName: "BitumenCalcPro",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/bitumen-calculator-og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "BitumenCalcPro — Free Bitumen & Asphalt Calculator",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "BitumenCalcPro — Free Bitumen & Asphalt Calculator",
     description: "Free online bitumen and aggregate calculator for civil engineers and paving contractors.",
     creator: "@bitumencalcpro",
+    images: ["/bitumen-calculator-og-image.png"],
   },
 };
 
