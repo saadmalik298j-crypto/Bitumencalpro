@@ -438,9 +438,9 @@ export default function Home() {
  {/* Calculator Inputs Table */}
  <div className="mt-20 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-[2rem] overflow-hidden shadow-2xl max-w-5xl mx-auto">
  <div className="p-6 md:p-8 bg-black/40 border-b border-white/5">
- <h3 className="text-2xl font-bold text-white flex items-center gap-3">
+ <h2 className="text-2xl font-bold text-white flex items-center gap-3">
  <FileText className="text-teal-400" size={28} /> Calculator Inputs at a Glance
- </h3>
+ </h2>
  </div>
  <div className="overflow-x-auto">
  <table className="w-full text-left text-white text-base">
@@ -512,7 +512,7 @@ export default function Home() {
  The calculation process follows four main steps. Each calculation uses the values entered by the user, including pavement dimensions, mix density, and bitumen content percentage.
  </p>
  
- <h4 className="text-xl font-bold text-white mb-3 mt-8">Complete Bitumen Calculation Formula</h4>
+ <h3 className="text-xl font-bold text-white mb-3 mt-8">Complete Bitumen Calculation Formula</h3>
  <p className="text-white/70 leading-relaxed mb-4">
  For a quick estimate, the entire process can be combined into one calculation:
  </p>
@@ -785,7 +785,7 @@ export default function Home() {
  <div className="w-14 h-14 bg-cyan-500/20 border border-cyan-500/40 text-cyan-400 rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(6,182,212,0.2)]">
  <Droplets size={28} />
  </div>
- <h4 className="font-black text-white text-2xl mb-4 leading-tight">Converting Bitumen Weight to Litres and Drums</h4>
+ <h3 className="font-black text-white text-2xl mb-4 leading-tight">Converting Bitumen Weight to Litres and Drums</h3>
  <p className="text-white/80 text-base mb-6 leading-relaxed">
  Bitumen is often specified by weight (tonnes) in mix design but purchased or transported by volume (litres or drums), so this conversion comes up constantly in procurement.
  </p>
@@ -817,7 +817,7 @@ export default function Home() {
  <div className="w-14 h-14 bg-yellow-500/20 border border-yellow-500/40 text-yellow-400 rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(234,179,8,0.2)]">
  <Zap size={28} />
  </div>
- <h4 className="font-black text-white text-2xl mb-4 leading-tight">Bitumen Calculator vs. Spray Application Calculator</h4>
+ <h3 className="font-black text-white text-2xl mb-4 leading-tight">Bitumen Calculator vs. Spray Application Calculator</h3>
  <p className="text-white/80 text-base mb-6 leading-relaxed">
  These two calculations are often confused because both involve "how much bitumen," but they solve different problems.
  </p>
@@ -841,7 +841,7 @@ export default function Home() {
  <div className="w-14 h-14 bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(16,185,129,0.2)]">
  <DollarSign size={28} />
  </div>
- <h4 className="font-black text-white text-2xl mb-4 leading-tight">What Affects Bitumen Price</h4>
+ <h3 className="font-black text-white text-2xl mb-4 leading-tight">What Affects Bitumen Price</h3>
  <p className="text-white/80 text-base mb-6 leading-relaxed">
  Bitumen pricing isn't fixed the way a manufactured product's list price might be — it fluctuates for several structural reasons:
  </p>
@@ -903,17 +903,17 @@ export default function Home() {
  
  <div className="space-y-6">
  <div className="bg-gradient-to-r from-orange-500/10 to-transparent border border-orange-500/20 p-6 rounded-3xl shadow-lg hover:bg-orange-500/10 transition-colors">
- <h4 className="text-2xl font-black text-orange-400 mb-2">Bitumen</h4>
+ <h3 className="text-2xl font-black text-orange-400 mb-2">Bitumen</h3>
  <p className="text-white/80 text-base leading-relaxed">The black, sticky binder itself, derived from crude oil refining. It's an ingredient, not a finished road surface.</p>
  </div>
  
  <div className="bg-gradient-to-r from-white/10 to-transparent border border-white/10 p-6 rounded-3xl shadow-lg hover:bg-white/10 transition-colors">
- <h4 className="text-2xl font-black text-white mb-2">Asphalt</h4>
+ <h3 className="text-2xl font-black text-white mb-2">Asphalt</h3>
  <p className="text-white/80 text-base leading-relaxed">The finished mixture of bitumen binder and mineral aggregate, laid and compacted to form the pavement layer. (In American English, "asphalt" is also sometimes used to mean the binder itself — a common source of cross-Atlantic confusion).</p>
  </div>
 
  <div className="bg-black/30 border border-white/5 p-6 rounded-3xl shadow-inner">
- <h4 className="text-2xl font-black text-white/50 mb-2">Tar & Tarmac</h4>
+ <h3 className="text-2xl font-black text-white/50 mb-2">Tar & Tarmac</h3>
  <p className="text-white/60 text-base leading-relaxed mb-4"><strong className="text-white/80">Tar</strong> — a similar-looking black binder, but derived from coal rather than petroleum. Tar was used historically in road construction and is now largely phased out in most modern paving due to health and environmental concerns.</p>
  <p className="text-white/60 text-base leading-relaxed"><strong className="text-white/80">Tarmac</strong> — short for "tar-bound macadam," a historical road-surfacing method. The word has stuck around colloquially to mean any paved road surface, even though modern pavements are almost always bitumen-based asphalt rather than true tar-bound macadam.</p>
  </div>
@@ -987,12 +987,12 @@ export default function Home() {
  
  <div className="space-y-6">
  <div className="bg-gradient-to-r from-orange-500/10 to-transparent p-6 rounded-3xl border border-orange-500/20 shadow-lg hover:border-orange-500/40 transition-colors">
- <h4 className="text-2xl font-black text-white mb-3">Marshall Method</h4>
+ <h3 className="text-2xl font-black text-white mb-3">Marshall Method</h3>
  <p className="text-white/80 text-base leading-relaxed">Compacts trial mixes at several bitumen percentages, then tests stability and flow to find the percentage that best balances strength, density, and air voids. It remains widely used, particularly in South Asia and parts of the Middle East.</p>
  </div>
  
  <div className="bg-gradient-to-r from-blue-500/10 to-transparent p-6 rounded-3xl border border-blue-500/20 shadow-lg hover:border-blue-500/40 transition-colors">
- <h4 className="text-2xl font-black text-blue-400 mb-3">Superpave Method</h4>
+ <h3 className="text-2xl font-black text-blue-400 mb-3">Superpave Method</h3>
  <p className="text-white/80 text-base leading-relaxed">A more performance-based approach developed in the US that considers traffic level, climate, and aggregate properties using gyratory compaction rather than impact compaction, aiming to better predict long-term field performance.</p>
  </div>
 
@@ -1026,14 +1026,14 @@ export default function Home() {
  <div className="lg:col-span-5 space-y-8">
  
  <div className="bg-gradient-to-br from-orange-500/20 to-pink-600/20 rounded-[2rem] p-8 md:p-10 border border-white/20 shadow-2xl">
- <h3 className="text-3xl font-black text-white mb-4 flex items-center gap-3">
- <Zap className="text-orange-400" size={32}/> Why Use BitumenCalcPro?
- </h3>
+  <h2 className="text-3xl font-black text-white mb-4 flex items-center gap-3">
+                 <Zap className="text-orange-400" size={32}/> Why Use BitumenCalcPro?
+                </h2>
  <p className="text-white/90 text-base leading-relaxed mb-6 font-medium">
  BitumenCalcPro provides a transparent way to estimate asphalt material requirements without manually performing multiple calculations. Instead of showing only a final number, the calculator explains how pavement dimensions, density, and bitumen percentage affect the final result. 
  </p>
  <div className="bg-black/30 rounded-2xl p-6 border border-white/10">
- <h4 className="font-bold text-white mb-4 uppercase tracking-widest text-xs">Benefits</h4>
+  <h3 className="font-bold text-white mb-4 uppercase tracking-widest text-xs">Benefits</h3>
  <ul className="space-y-3 text-sm md:text-base text-white/90 font-medium">
  <li className="flex items-center gap-3"><CheckCircle2 size={20} className="text-orange-400 shrink-0"/> Faster preliminary estimates</li>
  <li className="flex items-center gap-3"><CheckCircle2 size={20} className="text-orange-400 shrink-0"/> Clear calculation methodology</li>
@@ -1045,9 +1045,9 @@ export default function Home() {
  </div>
 
  <div className="bg-white/5 rounded-[2rem] p-8 border border-white/10 shadow-xl">
- <h3 className="text-2xl font-black text-white mb-6 flex items-center gap-3">
- <Users className="text-violet-400" size={28}/> Who Uses This Calculator
- </h3>
+  <h2 className="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                 <Users className="text-violet-400" size={28}/> Who Uses This Calculator
+                </h2>
  <ul className="space-y-4 text-base text-white/70">
  <li className="flex flex-col"><strong className="text-white">Civil engineers</strong> <span>Preliminary pavement quantity calculations and project planning.</span></li>
  <li className="flex flex-col"><strong className="text-white">Site engineers</strong> <span>Quick material estimates before construction activities begin.</span></li>
@@ -1058,9 +1058,9 @@ export default function Home() {
  </div>
 
  <div className="bg-gradient-to-br from-red-900/20 to-black/40 rounded-[2rem] p-8 border border-red-500/20 shadow-xl">
- <h3 className="text-2xl font-black text-white mb-6 flex items-center gap-3">
- <AlertTriangle className="text-red-400" size={28}/> Common Mistakes in Bitumen Calculation
- </h3>
+  <h2 className="text-2xl font-black text-white mb-6 flex items-center gap-3">
+                 <AlertTriangle className="text-red-400" size={28}/> Common Mistakes in Bitumen Calculation
+                </h2>
  <ul className="space-y-4 text-base text-white/80">
  <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Density mix-up</strong> — using binder density where mix density is required (or vice versa), which can throw results off by more than half.</span></li>
  <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>By-mix-weight vs. by-aggregate-weight confusion</strong> — bitumen content is normally expressed as a percentage of total mix weight, not aggregate weight alone.</span></li>
@@ -1068,7 +1068,7 @@ export default function Home() {
  <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Using loose volume where compacted volume was needed</strong> — mixing up the two volume bases is one of the most common causes of mismatched delivery quantities on site.</span></li>
  </ul>
  <div className="mt-8 pt-8 border-t border-red-500/20">
- <h4 className="text-white font-black mb-3">Limitations of This Calculator</h4>
+  <h3 className="text-white font-black mb-3">Limitations of This Calculator</h3>
  <p className="text-sm text-white/60 leading-relaxed mb-3">
  This calculator produces an engineering estimate, not a certified material order. Specifically, it:
  </p>
@@ -1095,14 +1095,14 @@ export default function Home() {
  <div className="space-y-5">
  {FAQ_DATA.map((faq, i) => (
  <div key={i} className="bg-white/5 border border-white/10 rounded-[1.5rem] p-6 md:p-8 hover:bg-white/10 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 duration-300">
- <h4 className="text-xl font-bold text-white mb-4 leading-tight">{faq.q}</h4>
+ <h3 className="text-xl font-bold text-white mb-4 leading-tight">{faq.q}</h3>
  <p className="text-white/70 text-base leading-relaxed">{faq.a}</p>
  </div>
  ))}
  </div>
 
  <div className="mt-16 bg-gradient-to-br from-teal-500/20 via-blue-600/20 to-purple-600/20 rounded-[2.5rem] p-10 md:p-12 border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.3)]">
- <h3 className="text-3xl font-black text-white mb-6 drop-shadow-md">Conclusion</h3>
+  <h2 className="text-3xl font-black text-white mb-6 drop-shadow-md">Conclusion</h2>
  <p className="text-white/90 text-lg leading-relaxed mb-6 font-medium">
  Estimating bitumen and aggregate quantities doesn't need to involve manual formula work every time — but understanding what's behind the numbers matters, especially where mix density, binder density, and compaction factors are easy to mix up. 
  </p>
