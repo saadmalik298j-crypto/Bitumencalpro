@@ -52,8 +52,8 @@ export const metadata: Metadata = {
  images: [
   {
    url: "/bitumen-calculator-og-image.png",
-   width: 1200,
-   height: 630,
+   width: 1729,
+   height: 910,
    alt: "Free Bitumen Calculator — Estimate Bitumen & Asphalt Mix",
   },
  ],
