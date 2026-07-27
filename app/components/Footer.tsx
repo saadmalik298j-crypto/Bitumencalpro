@@ -13,9 +13,16 @@ export default function Footer() {
               </span>
               BitumenCalcPro
             </div>
-            <p className="text-slate-300 text-sm max-w-sm">
+            <p className="text-slate-300 text-sm max-w-sm mb-4">
               Engineered with precision for civil engineers, paving contractors, and construction professionals worldwide.
             </p>
+            <div className="flex items-center justify-center md:justify-start gap-4">
+              <a href="https://www.youtube.com/@bitumencalcpro" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-red-500 transition-colors" aria-label="YouTube Channel">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fillRule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.418-4.814a2.507 2.507 0 0 1 1.768-1.768C5.747 5 12 5 12 5s6.255 0 7.812.418ZM15.194 12 10 15V9l5.194 3Z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           {/* Links Grid */}
