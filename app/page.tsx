@@ -996,21 +996,21 @@ export default function Home() {
  
  <div className="space-y-6">
  <div className="bg-gradient-to-r from-orange-500/10 to-transparent p-6 rounded-3xl border border-orange-500/20 shadow-lg hover:border-orange-500/40 transition-colors">
- <h3 className="text-2xl font-black text-white mb-3">Marshall Method</h3>
+ <h3 className="text-2xl font-black  text-teal-400 mb-3">Marshall Method</h3>
  <p className="text-white/80 text-base leading-relaxed">Compacts trial mixes at several bitumen percentages, then tests stability and flow to find the percentage that best balances strength, density, and air voids. It remains widely used, particularly in South Asia and parts of the Middle East.</p>
  </div>
  
  <div className="bg-gradient-to-r from-blue-500/10 to-transparent p-6 rounded-3xl border border-blue-500/20 shadow-lg hover:border-blue-500/40 transition-colors">
- <h3 className="text-2xl font-black text-blue-400 mb-3">Superpave Method</h3>
+ <h3 className="text-2xl font-black text-blue-500 mb-3">Superpave Method</h3>
  <p className="text-white/80 text-base leading-relaxed">A more performance-based approach developed in the US that considers traffic level, climate, and aggregate properties using gyratory compaction rather than impact compaction, aiming to better predict long-term field performance.</p>
  </div>
 
  <div className="bg-black/30 p-8 rounded-3xl border border-white/10 shadow-inner">
  <h4 className="text-sm font-black text-white/50 mb-4 uppercase tracking-widest">Governing standards and bodies</h4>
  <ul className="text-white/80 text-base space-y-4">
- <li className="flex items-start gap-3"><span className="text-white font-bold w-1/3"><a href="https://www.transportation.org/" target="_blank" rel="noopener noreferrer" className="hover:underline">AASHTO</a> / <a href="https://www.asphaltinstitute.org/" target="_blank" rel="noopener noreferrer" className="hover:underline">MS-2</a></span> <span className="w-2/3 text-white/60">Widely referenced mix design procedures in North America.</span></li>
+ <li className="flex items-start gap-3"><span className="text-white font-bold w-1/3"><a href="https://www.transportation.org/" target="_blank" rel="noopener noreferrer" className=" text-teal-400 underline hover:underline">AASHTO</a> / <a href="https://www.asphaltinstitute.org/" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">MS-2</a></span> <span className="w-2/3 text-white/60">Widely referenced mix design procedures in North America.</span></li>
  <li className="flex items-start gap-3"><span className="text-white font-bold w-1/3">BS EN 12591 / EN 13108</span> <span className="w-2/3 text-white/60">European bitumen and asphalt mixture standards.</span></li>
- <li className="flex items-start gap-3"><span className="text-white font-bold w-1/3"><a href="https://morth.nic.in/" target="_blank" rel="noopener noreferrer" className="hover:underline">MoRTH</a> specifications</span> <span className="w-2/3 text-white/60">The standard reference for road and bridge works in India.</span></li>
+ <li className="flex items-start gap-3"><span className="text-white font-bold w-1/3"><a href="https://morth.nic.in/" target="_blank" rel="noopener noreferrer" className=" text-teal-400 hover:underline">MoRTH</a> specifications</span> <span className="w-2/3 text-white/60">The standard reference for road and bridge works in India.</span></li>
  </ul>
  </div>
  

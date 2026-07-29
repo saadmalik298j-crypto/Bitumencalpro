@@ -63,6 +63,8 @@ export const metadata: Metadata = {
     creator: "@bitumencalcpro",
     images: ["/bitumen-calculator-og-image.png"],
   },
+  icons: { icon: '/favicon.ico' },
+
 };
 
 export default function RootLayout({
@@ -73,13 +75,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body className="min-h-screen bg-gradient-to-br from-teal-600 to-orange-500 text-slate-800 flex flex-col selection:bg-teal-500/30">
-        <Navbar/>
-      <main className="flex-grow">
+        <Navbar />
+        <main className="flex-grow">
           {children}
-                <SpeedInsights />
+          <SpeedInsights />
 
-      </main>
-      <Footer />
+        </main>
+        <Footer />
       </body>
     </html>
   );
