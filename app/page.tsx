@@ -54,7 +54,7 @@ export const metadata: Metadata = {
    url: "/bitumen-calculator-og-image.png",
    width: 1729,
    height: 910,
-   alt: "Free Bitumen Calculator — Estimate Bitumen & Asphalt Mix",
+   alt: "Free Bitumen Calculator ,Estimate Bitumen & Asphalt Mix",
   },
  ],
  },
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
 const REFERENCE_DATA = [
  {
  name: "Dense Graded HMA",
- desc: "General purpose paving — roads, highways, and driveways.",
+ desc: "General purpose paving ,roads, highways, and driveways.",
  range: "5.0% – 6.0%",
  },
  {
@@ -84,7 +84,7 @@ const REFERENCE_DATA = [
  },
  {
  name: "Polymer Modified (PMB)",
- desc: "Heavy-duty — airports, industrial areas, bus terminals.",
+ desc: "Heavy-duty ,airports, industrial areas, bus terminals.",
  range: "5.5% – 7.0%",
  },
 ] as const;
@@ -122,7 +122,7 @@ const STEPS = [
  icon: Droplets,
  color: "violet",
  title: "3. Bitumen Binder Quantity Calculation",
- desc: "The calculator then separates the bitumen portion from the total asphalt mixture. Bitumen content represents the percentage of binder contained within the total HMA weight.",
+ desc: "After finding Total Asphalt Weight our calculator then separates the bitumen portion from the total asphalt mixture. Bitumen content represents the percentage of binder contained within the total HMA weight.",
  formula: "Bitumen Quantity = Total Mix Weight × (Bitumen Content ÷ 100)",
  unit: "tonnes",
  example: "411.25 × (5.5 ÷ 100) = 22.62 tonnes",
@@ -341,14 +341,12 @@ export default function Home() {
  </h2>
  <div className="prose prose-invert prose-lg max-w-none">
  <p className="text-white/80 leading-relaxed mb-5 font-medium text-lg">
- The Bitumen Calculator helps engineers, contractors, and construction professionals estimate the amount of bitumen binder, hot mix asphalt (HMA), and aggregate required for pavement projects. 
+A Bitumen Calculator is an online tool that helps engineers, contractors, estimators, and construction professionals calculate the amount of bitumen binder, hot mix asphalt (HMA), and aggregates required for pavement and road construction projects.
  </p>
  <p className="text-white/70 leading-relaxed mb-5">
- By entering pavement dimensions, asphalt mix density, and bitumen content, the calculator provides a quick estimate of total mix weight, binder quantity, and aggregate requirements — along with an optional cost estimate.
+Simply enter the pavement length, width, thickness, mix density, and bitumen content, and the calculator instantly estimates the total asphalt volume, mix weight, bitumen quantity, aggregate weight, and an optional material cost estimate. These calculations support project planning, material estimation, and budgeting.
  </p>
- <p className="text-white/70 leading-relaxed">
- A bitumen calculator is an online tool used to estimate the quantity of bitumen binder and asphalt materials required for pavement construction. It calculates total asphalt volume, HMA weight, bitumen content, and aggregate quantity using pavement dimensions, mix density, and binder percentage — turning project measurements into a material estimate that can support planning and preliminary quantity calculations.
- </p>
+
  </div>
  </div>
  
@@ -387,7 +385,7 @@ export default function Home() {
  How to Use This Calculator
  </h2>
  <p className="text-white/80 max-w-3xl mx-auto text-lg leading-relaxed font-medium">
- Using the Bitumen Calculator takes three simple steps. You don't need any software or manual formulas — just your project dimensions and mix data.
+ Using the Bitumen Calculator takes three simple steps. You don't need any software or manual formulas ,just your project dimensions and mix data.
  </p>
  </div>
 
@@ -402,7 +400,7 @@ export default function Home() {
  </div>
  <h3 className="text-2xl font-bold text-white mb-4">Enter Dimensions</h3>
  <p className="text-white/70 text-base leading-relaxed mb-6">
- Enter the length, width, and thickness of the pavement section you're working on. Thickness is usually the smallest number (often in millimetres), so double-check units before you calculate — a decimal error here throws off every result that follows.
+ Enter the length, width, and thickness of the pavement section you're working on. Thickness is usually the smallest number (often in millimetres), so double-check units before you calculate ,a decimal error here throws off every result that follows.
  </p>
  <div className="bg-black/40 rounded-xl p-4 border border-white/5 text-sm text-green-300 font-mono shadow-inner">
  Example:<br/>Length: 1,000 m<br/>Width: 3.5 m<br/>Thickness: 50 mm
@@ -419,7 +417,7 @@ export default function Home() {
  </div>
  <h3 className="text-2xl font-bold text-white mb-4">Select Units for Dimensions and Results</h3>
  <p className="text-white/70 text-base leading-relaxed">
- The Bitumen Calculator allows users to select different measurement units based on project requirements. Users can enter pavement dimensions using suitable units, while the calculator automatically converts values internally to perform accurate calculations.
+ Our Bitumen Calculator allows users to select different measurement units based on project requirements. Users can enter pavement dimensions using suitable units, while the calculator automatically converts values internally to perform accurate calculations.
  <br/><br/>
  Using the correct units helps prevent calculation errors and ensures the final asphalt, bitumen, and aggregate quantities are displayed in the required format.
  </p>
@@ -515,7 +513,7 @@ export default function Home() {
  </h2>
  <div className="prose prose-invert prose-lg max-w-none">
  <p className="text-white/80 font-medium leading-relaxed mb-6">
- The Bitumen Calculator uses standard pavement material estimation formulas to convert project dimensions and asphalt mix properties into total material requirements.
+ This Bitumen Quantity Calculator uses standard pavement material estimation formulas to convert project dimensions and asphalt mix properties into total material requirements.
  </p>
  <p className="text-white/70 leading-relaxed mb-6">
  The calculation process follows four main steps. Each calculation uses the values entered by the user, including pavement dimensions, mix density, and bitumen content percentage.
@@ -660,23 +658,23 @@ export default function Home() {
  <div className="w-14 h-14 bg-red-500/20 border border-red-500/40 text-red-400 rounded-2xl flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(239,68,68,0.2)]">
  <AlertTriangle size={28} />
  </div>
- <h3 className="text-3xl font-black text-white mb-6 leading-tight">Mix Density vs. Bitumen (Binder) Density — Don't Confuse These</h3>
+ <h3 className="text-3xl font-black text-white mb-6 leading-tight">Mix Density vs. Bitumen (Binder) Density ,Don't Confuse These</h3>
  <p className="text-white/80 text-lg leading-relaxed mb-6 font-medium">
  This is one of the most common sources of ordering errors, because both numbers look similar but do completely different jobs.
  </p>
  <ul className="space-y-4 text-base text-white/90 mb-8">
  <li className="flex gap-4 items-start bg-black/20 p-4 rounded-2xl border border-white/5">
  <span className="w-3 h-3 rounded-full bg-orange-400 mt-1.5 shrink-0 shadow-[0_0_10px_rgba(249,115,22,0.8)]" />
- <span><strong className="text-white">Mix density (roughly 2,200–2,450 kg/m³)</strong> is the weight of the finished asphalt mixture — bitumen plus aggregate plus filler — per cubic metre. This calculator uses mix density to turn your pavement volume into total mix weight.</span>
+ <span><strong className="text-white">Mix density (roughly 2,200–2,450 kg/m³)</strong> is the weight of the finished asphalt mixture ,bitumen plus aggregate plus filler ,per cubic metre. This calculator uses mix density to turn your pavement volume into total mix weight.</span>
  </li>
  <li className="flex gap-4 items-start bg-black/20 p-4 rounded-2xl border border-white/5">
  <span className="w-3 h-3 rounded-full bg-blue-400 mt-1.5 shrink-0 shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
- <span><strong className="text-white">Bitumen (binder) density (roughly 1,020–1,040 kg/m³)</strong> is the weight of pure bitumen alone, before it's mixed with anything. This number matters when you're converting a bitumen weight into a volume — for example, working out how many litres or drums of binder to order.</span>
+ <span><strong className="text-white">Bitumen (binder) density (roughly 1,020–1,040 kg/m³)</strong> is the weight of pure bitumen alone, before it's mixed with anything. This number matters when you're converting a bitumen weight into a volume ,for example, working out how many litres or drums of binder to order.</span>
  </li>
  </ul>
  <div className="bg-red-500/10 border border-red-500/30 rounded-2xl p-6 text-sm md:text-base text-red-200 shadow-inner">
  <strong className="text-white block mb-2 text-lg">Where the mix-up causes real errors:</strong> 
- If someone mistakenly uses binder density (≈1,030 kg/m³) instead of mix density (≈2,350 kg/m³) to convert the pavement volume into weight, the calculated tonnage comes out at less than half the correct figure. On the 175 m³ example above, that mistake would produce roughly 180 tonnes instead of 411 tonnes — a shortfall that would stop a paving crew mid-job.
+ If someone mistakenly uses binder density (≈1,030 kg/m³) instead of mix density (≈2,350 kg/m³) to convert the pavement volume into weight, the calculated tonnage comes out at less than half the correct figure. On the 175 m³ example above, that mistake would produce roughly 180 tonnes instead of 411 tonnes ,a shortfall that would stop a paving crew mid-job.
  <br/><br/>
  <span className="font-bold text-white uppercase tracking-wider text-xs bg-red-900/50 px-2 py-1 rounded inline-block mb-1">Rule of thumb:</span><br/>
  Use mix density for volume-to-weight conversions of the whole asphalt layer. Use binder density only when converting the bitumen portion into litres or drums.
@@ -691,7 +689,7 @@ export default function Home() {
  </div>
  <h3 className="text-3xl font-black text-white mb-6 leading-tight">Loose Volume vs. Compacted Volume</h3>
  <p className="text-white/80 text-lg leading-relaxed mb-6">
- Asphalt volume isn't fixed — it changes depending on whether the material is <strong>loose</strong> (as delivered/laid, before rolling) or <strong>compacted</strong> (after rolling, the finished in-place layer).
+ Asphalt volume isn't fixed ,it changes depending on whether the material is <strong>loose</strong> (as delivered/laid, before rolling) or <strong>compacted</strong> (after rolling, the finished in-place layer).
  </p>
  <div className="space-y-6">
  <div className="bg-black/20 p-5 rounded-2xl border border-white/5">
@@ -706,7 +704,7 @@ export default function Home() {
  </div>
  <div className="bg-blue-500/10 border border-blue-500/30 rounded-2xl p-6 text-base text-blue-100 shadow-inner mt-8">
  <strong className="text-white block mb-2 text-lg">Why it matters for ordering:</strong> 
- This calculator estimates material based on the finished, compacted pavement dimensions — the volume you actually want on the road once rolled. If you're ordering loose mix by weight from a plant, the plant-side loose volume will be larger than the compacted design volume. Mixing these two numbers up leads to either under-ordering (if compacted volume is treated as the loose delivery volume) or over-ordering (the reverse). Always confirm with your supplier which volume basis their quote is built on.
+ This calculator estimates material based on the finished, compacted pavement dimensions ,the volume you actually want on the road once rolled. If you're ordering loose mix by weight from a plant, the plant-side loose volume will be larger than the compacted design volume. Mixing these two numbers up leads to either under-ordering (if compacted volume is treated as the loose delivery volume) or over-ordering (the reverse). Always confirm with your supplier which volume basis their quote is built on.
  </div>
  </div>
 
@@ -716,7 +714,7 @@ export default function Home() {
  <div className="order-2 lg:order-1">
  <h3 className="text-3xl font-black text-white mb-6 drop-shadow-md">Multi-Layer Pavement Calculations</h3>
  <p className="text-white/80 text-lg leading-relaxed mb-8">
- Most pavements aren't a single layer — they typically consist of a base course, binder course, and wearing course, each with different thickness and bitumen content. Calculating them separately and summing the results gives a far more accurate material estimate than treating the pavement as one uniform layer.
+ Most pavements aren't a single layer ,they typically consist of a base course, binder course, and wearing course, each with different thickness and bitumen content. Calculating them separately and summing the results gives a far more accurate material estimate than treating the pavement as one uniform layer.
  </p>
  
  <div className="bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden text-base shadow-2xl ">
@@ -833,15 +831,15 @@ export default function Home() {
  <div className="space-y-4 mb-6">
  <div className="bg-black/20 p-4 rounded-xl border border-white/5">
  <strong className="text-white block mb-1">Mix-design calculation (this page):</strong>
- <span className="text-white/70 text-sm">Estimates the bitumen bound inside the hot mix asphalt itself — measured as a percentage of total mix weight (kg per tonne of mix).</span>
+ <span className="text-white/70 text-sm">Estimates the bitumen bound inside the hot mix asphalt itself ,measured as a percentage of total mix weight (kg per tonne of mix).</span>
  </div>
  <div className="bg-black/20 p-4 rounded-xl border border-white/5">
  <strong className="text-white block mb-1">Spray/coat-rate calculation:</strong>
- <span className="text-white/70 text-sm">Estimates bitumen sprayed onto a surface for tack/prime coats — measured as a rate per area (kg/m² or L/m²).</span>
+ <span className="text-white/70 text-sm">Estimates bitumen sprayed onto a surface for tack/prime coats ,measured as a rate per area (kg/m² or L/m²).</span>
  </div>
  </div>
  <div className="bg-yellow-900/20 p-4 rounded-xl border border-yellow-500/20 text-sm text-yellow-100/90 italic">
- If your project involves both — an HMA layer plus a tack coat beneath it — the two quantities need to be calculated and ordered separately; one does not substitute for the other.
+ If your project involves both ,an HMA layer plus a tack coat beneath it ,the two quantities need to be calculated and ordered separately; one does not substitute for the other.
  </div>
  </div>
 
@@ -852,24 +850,24 @@ export default function Home() {
  </div>
  <h3 className="font-black text-white text-2xl mb-4 leading-tight">What Affects Bitumen Price</h3>
  <p className="text-white/80 text-base mb-6 leading-relaxed">
- Bitumen pricing isn't fixed the way a manufactured product's list price might be — it fluctuates for several structural reasons:
+ Bitumen pricing isn't fixed the way a manufactured product's list price might be ,it fluctuates for several structural reasons:
  </p>
  <ul className="space-y-3 mb-6">
  <li className="flex items-start gap-3 bg-black/20 p-3 rounded-xl border border-white/5">
  <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0" />
- <span className="text-white/80 text-sm"><strong className="text-white">Crude oil linkage</strong> — bitumen is a refinery by-product, so its cost tracks crude oil prices to a significant degree.</span>
+ <span className="text-white/80 text-sm"><strong className="text-white">Crude oil linkage</strong> ,bitumen is a refinery by-product, so its cost tracks crude oil prices to a significant degree.</span>
  </li>
  <li className="flex items-start gap-3 bg-black/20 p-3 rounded-xl border border-white/5">
  <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0" />
- <span className="text-white/80 text-sm"><strong className="text-white">Grade</strong> — penetration grades and polymer-modified binders (PMB) carry different production costs.</span>
+ <span className="text-white/80 text-sm"><strong className="text-white">Grade</strong> ,penetration grades and polymer-modified binders (PMB) carry different production costs.</span>
  </li>
  <li className="flex items-start gap-3 bg-black/20 p-3 rounded-xl border border-white/5">
  <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0" />
- <span className="text-white/80 text-sm"><strong className="text-white">Region</strong> — proximity to refineries, import duties, and local demand all shift local pricing.</span>
+ <span className="text-white/80 text-sm"><strong className="text-white">Region</strong> ,proximity to refineries, import duties, and local demand all shift local pricing.</span>
  </li>
  <li className="flex items-start gap-3 bg-black/20 p-3 rounded-xl border border-white/5">
  <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0" />
- <span className="text-white/80 text-sm"><strong className="text-white">Order size</strong> — bulk tanker orders typically carry lower per-tonne pricing than small drummed quantities.</span>
+ <span className="text-white/80 text-sm"><strong className="text-white">Order size</strong> ,bulk tanker orders typically carry lower per-tonne pricing than small drummed quantities.</span>
  </li>
  </ul>
  <div className="bg-emerald-900/20 p-4 rounded-xl border border-emerald-500/20 text-sm text-emerald-100/90 font-medium text-center">
@@ -918,13 +916,13 @@ export default function Home() {
  
  <div className="bg-gradient-to-r from-white/10 to-transparent border border-white/10 p-6 rounded-3xl shadow-lg hover:bg-white/10 transition-colors">
  <h3 className="text-2xl font-black text-white mb-2">Asphalt</h3>
- <p className="text-white/80 text-base leading-relaxed">The finished mixture of bitumen binder and mineral aggregate, laid and compacted to form the pavement layer. (In American English, "asphalt" is also sometimes used to mean the binder itself — a common source of cross-Atlantic confusion).</p>
+ <p className="text-white/80 text-base leading-relaxed">The finished mixture of bitumen binder and mineral aggregate, laid and compacted to form the pavement layer. (In American English, "asphalt" is also sometimes used to mean the binder itself ,a common source of cross-Atlantic confusion).</p>
  </div>
 
  <div className="bg-black/30 border border-white/5 p-6 rounded-3xl shadow-inner">
  <h3 className="text-2xl font-black text-white/50 mb-2">Tar & Tarmac</h3>
- <p className="text-white/60 text-base leading-relaxed mb-4"><strong className="text-white/80">Tar</strong> — a similar-looking black binder, but derived from coal rather than petroleum. Tar was used historically in road construction and is now largely phased out in most modern paving due to health and environmental concerns.</p>
- <p className="text-white/60 text-base leading-relaxed"><strong className="text-white/80">Tarmac</strong> — short for "tar-bound macadam," a historical road-surfacing method. The word has stuck around colloquially to mean any paved road surface, even though modern pavements are almost always bitumen-based asphalt rather than true tar-bound macadam.</p>
+ <p className="text-white/60 text-base leading-relaxed mb-4"><strong className="text-white/80">Tar</strong> ,a similar-looking black binder, but derived from coal rather than petroleum. Tar was used historically in road construction and is now largely phased out in most modern paving due to health and environmental concerns.</p>
+ <p className="text-white/60 text-base leading-relaxed"><strong className="text-white/80">Tarmac</strong> ,short for "tar-bound macadam," a historical road-surfacing method. The word has stuck around colloquially to mean any paved road surface, even though modern pavements are almost always bitumen-based asphalt rather than true tar-bound macadam.</p>
  </div>
  </div>
  </div>
@@ -975,9 +973,9 @@ export default function Home() {
  <div className="mt-8 bg-black/20 p-5 rounded-2xl border border-white/5">
  <strong className="text-white text-sm block mb-2">These ranges shift based on:</strong>
  <ul className="text-white/60 text-sm space-y-2 list-disc list-inside">
- <li><strong className="text-white/80">Traffic loading</strong> — heavier traffic often calls for stiffer, lower-binder mixes to resist rutting.</li>
- <li><strong className="text-white/80">Climate</strong> — hotter regions may need modified binders or adjusted content to avoid softening.</li>
- <li><strong className="text-white/80">Aggregate grading</strong> — finer gradations generally need more binder to coat the increased surface area.</li>
+ <li><strong className="text-white/80">Traffic loading</strong> ,heavier traffic often calls for stiffer, lower-binder mixes to resist rutting.</li>
+ <li><strong className="text-white/80">Climate</strong> ,hotter regions may need modified binders or adjusted content to avoid softening.</li>
+ <li><strong className="text-white/80">Aggregate grading</strong> ,finer gradations generally need more binder to coat the increased surface area.</li>
  </ul>
  <p className="text-white/50 text-xs mt-4 italic text-center">
  None of these figures replace an approved, lab-verified mix design for the actual project.
@@ -1015,7 +1013,7 @@ export default function Home() {
  </div>
  
  <p className="text-white/70 text-sm font-medium italic bg-white/5 p-4 rounded-xl border border-white/10">
- A reference table can guide early estimating, but only lab-tested OBC — derived from the specific aggregate source, binder grade, and traffic condition of the project — should be used for final construction quantities.
+ A reference table can guide early estimating, but only lab-tested OBC ,derived from the specific aggregate source, binder grade, and traffic condition of the project ,should be used for final construction quantities.
  </p>
  </div>
  </div>
@@ -1071,10 +1069,10 @@ export default function Home() {
                  <AlertTriangle className="text-red-400" size={28}/> Common Mistakes in Bitumen Calculation
                 </h2>
  <ul className="space-y-4 text-base text-white/80">
- <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Density mix-up</strong> — using binder density where mix density is required (or vice versa), which can throw results off by more than half.</span></li>
- <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>By-mix-weight vs. by-aggregate-weight confusion</strong> — bitumen content is normally expressed as a percentage of total mix weight, not aggregate weight alone.</span></li>
- <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Skipping a waste allowance</strong> — real-world paving involves handling loss, spillage, and compaction variability. A calculator gives the theoretical material requirement; site teams typically add a contingency margin on top.</span></li>
- <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Using loose volume where compacted volume was needed</strong> — mixing up the two volume bases is one of the most common causes of mismatched delivery quantities on site.</span></li>
+ <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Density mix-up</strong> ,using binder density where mix density is required (or vice versa), which can throw results off by more than half.</span></li>
+ <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>By-mix-weight vs. by-aggregate-weight confusion</strong> ,bitumen content is normally expressed as a percentage of total mix weight, not aggregate weight alone.</span></li>
+ <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Skipping a waste allowance</strong> ,real-world paving involves handling loss, spillage, and compaction variability. A calculator gives the theoretical material requirement; site teams typically add a contingency margin on top.</span></li>
+ <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Using loose volume where compacted volume was needed</strong> ,mixing up the two volume bases is one of the most common causes of mismatched delivery quantities on site.</span></li>
  </ul>
  <div className="mt-8 pt-8 border-t border-red-500/20">
   <h3 className="text-white font-black mb-3">Limitations of This Calculator</h3>
@@ -1113,7 +1111,7 @@ export default function Home() {
  <div className="mt-16 bg-gradient-to-br from-teal-500/20 via-blue-600/20 to-purple-600/20 rounded-[2.5rem] p-10 md:p-12 border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.3)]">
   <h2 className="text-3xl font-black text-white mb-6 drop-shadow-md">Conclusion</h2>
  <p className="text-white/90 text-lg leading-relaxed mb-6 font-medium">
- Estimating bitumen and aggregate quantities doesn't need to involve manual formula work every time — but understanding what's behind the numbers matters, especially where mix density, binder density, and compaction factors are easy to mix up. 
+ Estimating bitumen and aggregate quantities doesn't need to involve manual formula work every time ,but understanding what's behind the numbers matters, especially where mix density, binder density, and compaction factors are easy to mix up. 
  </p>
  <p className="text-white/90 text-lg leading-relaxed font-medium">
  Used alongside an approved mix design, this calculator gives a fast, transparent way to plan pavement material quantities before committing to a final order.
@@ -1137,7 +1135,7 @@ export default function Home() {
  Questions or Feedback?
  </h2>
  <p className="text-white/80 text-lg md:text-xl mb-10 max-w-xl mx-auto leading-relaxed font-medium">
- We're engineers too — if you spot an error, want a new feature, or
+ We're engineers too ,if you spot an error, want a new feature, or
  just want to say hello, we&apos;d love to hear from you.
  </p>
  <div className="flex flex-col sm:flex-row gap-5 justify-center">
