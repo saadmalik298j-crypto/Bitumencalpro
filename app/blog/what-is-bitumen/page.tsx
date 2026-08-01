@@ -390,7 +390,7 @@ export default function WhatIsBitumenPage() {
               <ul className="space-y-2.5">
                 {[
                   "Bitumen is a semi-solid petroleum product that becomes liquid when heated",
-                  "It's the "glue" in asphalt, not the same substance as asphalt itself",
+                  "It's the \"glue\" in asphalt, not the same substance as asphalt itself",
                   "Most bitumen comes from crude oil refining; a smaller amount occurs naturally",
                   "Main uses: road paving, roofing membranes, waterproofing, and industrial coatings",
                   "Bitumen, asphalt, and tar are often confused but come from different sources",
