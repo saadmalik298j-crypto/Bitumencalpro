@@ -29,6 +29,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm font-medium">
             <div className="flex flex-col gap-3">
               <Link href="/about-us" className="hover:text-teal-400 transition-colors">About Us</Link>
+              <Link href="/blog" className="hover:text-teal-400 transition-colors">Blog</Link>
               <Link href="/contact-us" className="hover:text-teal-400 transition-colors">Contact</Link>
               <Link href="/" className="hover:text-teal-400 transition-colors">Calculator</Link>
             </div>

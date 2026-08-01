@@ -1110,16 +1110,77 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
 
  <div className="mt-16 bg-gradient-to-br from-teal-500/20 via-blue-600/20 to-purple-600/20 rounded-[2.5rem] p-10 md:p-12 border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.3)]">
   <h2 className="text-3xl font-black text-white mb-6 drop-shadow-md">Conclusion</h2>
- <p className="text-white/90 text-lg leading-relaxed mb-6 font-medium">
- Estimating bitumen and aggregate quantities doesn't need to involve manual formula work every time ,but understanding what's behind the numbers matters, especially where mix density, binder density, and compaction factors are easy to mix up. 
+  <p className="text-white/90 text-lg leading-relaxed mb-6 font-medium">
+  Estimating bitumen and aggregate quantities doesn&apos;t need to involve manual formula work every time — but understanding what&apos;s behind the numbers matters, especially where mix density, binder density, and compaction factors are easy to mix up.
+  </p>
+  <p className="text-white/90 text-lg leading-relaxed font-medium">
+  Used alongside an approved mix design, this calculator gives a fast, transparent way to plan pavement material quantities before committing to a final order.
+  </p>
+ </div>
+ </div>
+ </section>
+
+ {/* ═══════════════════════════════
+ FROM THE BLOG
+ ═══════════════════════════════ */}
+ <section className="py-24 relative overflow-hidden">
+ <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-teal-500/5 blur-[100px] pointer-events-none" />
+ <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+ <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-12">
+ <div>
+ <div className="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-400/30 text-teal-200 px-4 py-1.5 rounded-full text-xs font-bold mb-3">
+ <BookOpen size={12} />
+ Knowledge Hub
+ </div>
+ <h2 className="text-3xl sm:text-4xl font-black text-white">
+ From the Blog
+ </h2>
+ </div>
+ <Link
+ href="/blog"
+ className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold text-sm transition-colors group shrink-0"
+ >
+ View all articles
+ <ChevronRight size={15} className="group-hover:translate-x-1 transition-transform" />
+ </Link>
+ </div>
+
+ {/* Featured article card */}
+ <article className="group relative bg-gradient-to-br from-white/10 to-white/5 border border-white/15 rounded-[2rem] overflow-hidden shadow-2xl hover:border-white/30 transition-all duration-500 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+ <div className="absolute inset-0 bg-gradient-to-tr from-teal-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none rounded-[2rem]" />
+ <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[360px]">
+ <div className="relative w-full aspect-[4/3] lg:aspect-auto min-h-[260px] lg:min-h-[360px] overflow-hidden">
+ <Image
+ src="/what-is-bitumen.webp"
+ alt="What is bitumen — petroleum-based road paving binder"
+ fill
+ className="object-cover transition-transform duration-700 group-hover:scale-105"
+ sizes="(max-width: 1024px) 100vw, 50vw"
+ />
+ </div>
+ <div className="relative z-10 flex flex-col justify-center p-8 md:p-10">
+ <div className="flex flex-wrap items-center gap-3 mb-4">
+ <span className="bg-teal-500/20 border border-teal-400/30 text-teal-300 text-xs font-bold px-3 py-1.5 rounded-full">
+ Bitumen Fundamentals
+ </span>
+ <span className="text-white/40 text-xs">18 min read</span>
+ </div>
+ <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 leading-tight">
+ What Is Bitumen? Meaning, Uses, Properties &amp; How It Compares to Asphalt and Tar
+ </h3>
+ <p className="text-white/65 text-base leading-relaxed mb-8">
+ Bitumen is the sticky, petroleum-based binder that holds asphalt together. Learn how it&apos;s made, what grades mean, how it differs from tar, and when to use cold mix or modified bitumen.
  </p>
- <p className="text-white/90 text-lg leading-relaxed font-medium">
- Used alongside an approved mix design, this calculator gives a fast, transparent way to plan pavement material quantities before committing to a final order.
- </p>
+ <Link
+ href="/blog/what-is-bitumen"
+ className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 active:scale-95 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-[0_0_20px_rgba(249,115,22,0.35)] hover:shadow-[0_0_30px_rgba(249,115,22,0.55)] w-fit"
+ >
+ Read the Article
+ <ArrowRight size={15} />
+ </Link>
  </div>
  </div>
- </div>
- 
+ </article>
  </div>
  </section>
 
