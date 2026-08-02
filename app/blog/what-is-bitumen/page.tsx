@@ -425,15 +425,9 @@ export default function WhatIsBitumenPage() {
                 150–160°C, and it turns into a workable liquid that can be poured, mixed, and spread. As it cools,
                 it sets again. This heat-sensitive behavior is called <em>thermoplastic</em>, and it&apos;s the reason
                 bitumen is so useful for construction. According to the{" "}
-                <a
-                  href="https://en.wikipedia.org/wiki/Bitumen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
-                >
-                  Wikipedia entry on bitumen
-                  <ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
-                </a>
+               
+                  Federal Highway Administration
+                
                 , bitumen has been used in construction and waterproofing applications for thousands of years.
               </p>
             </section>
