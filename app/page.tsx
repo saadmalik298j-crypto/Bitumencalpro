@@ -911,33 +911,18 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  <div className="space-y-6">
  <div className="bg-gradient-to-r from-orange-500/10 to-transparent border border-orange-500/20 p-6 rounded-3xl shadow-lg hover:bg-orange-500/10 transition-colors">
  <h3 className="text-2xl font-black text-orange-400 mb-2">Bitumen</h3>
- <p className="text-white/80 text-base leading-relaxed">The black, sticky binder itself, derived from crude oil refining. It's an ingredient, not a finished road surface.</p>
+ <p className="text-white/80 text-base leading-relaxed">The black, sticky binder itself, derived from crude oil refining. It's an ingredient, not a finished road surface. Curious about properties and grades? Read our full <Link href="/blog/what-is-bitumen" className="text-orange-400 hover:text-orange-300 underline underline-offset-2">guide on what bitumen is</Link>.</p>
  </div>
  
  <div className="bg-gradient-to-r from-white/10 to-transparent border border-white/10 p-6 rounded-3xl shadow-lg hover:bg-white/10 transition-colors">
  <h3 className="text-2xl font-black text-white mb-2">Asphalt</h3>
- <p className="text-white/80 text-base leading-relaxed">The finished mixture of bitumen binder and mineral aggregate, laid and compacted to form the pavement layer. (In American English, "asphalt" is also sometimes used to mean the binder itself ,a common source of cross-Atlantic confusion).</p>
+ <p className="text-white/80 text-base leading-relaxed">The finished mixture of bitumen binder and mineral aggregate, laid and compacted to form the pavement layer. While hot mix is standard for construction, <Link href="/blog/cold-mix-bitumen" className="text-teal-400 hover:text-teal-300 underline underline-offset-2">cold mix bitumen</Link> is often used for quick repairs without heating equipment. (In American English, "asphalt" is also sometimes used to mean the binder itself ,a common source of cross-Atlantic confusion).</p>
  </div>
 
  <div className="bg-black/30 border border-white/5 p-6 rounded-3xl shadow-inner">
  <h3 className="text-2xl font-black text-white/50 mb-2">Tar & Tarmac</h3>
  <p className="text-white/60 text-base leading-relaxed mb-4"><strong className="text-white/80">Tar</strong> ,a similar-looking black binder, but derived from coal rather than petroleum. Tar was used historically in road construction and is now largely phased out in most modern paving due to health and environmental concerns.</p>
  <p className="text-white/60 text-base leading-relaxed"><strong className="text-white/80">Tarmac</strong> ,short for "tar-bound macadam," a historical road-surfacing method. The word has stuck around colloquially to mean any paved road surface, even though modern pavements are almost always bitumen-based asphalt rather than true tar-bound macadam.</p>
- </div>
-
- <div className="mt-8 bg-gradient-to-br from-teal-900/40 to-blue-900/40 border border-teal-500/30 p-6 rounded-3xl shadow-lg">
- <h3 className="text-xl font-bold text-teal-300 mb-3 flex items-center gap-2"><BookOpen size={20} /> Deep Dive Guides</h3>
- <p className="text-white/80 text-sm leading-relaxed mb-4">Want to learn more about the specific materials? Check out our comprehensive engineering guides:</p>
- <ul className="space-y-3">
- <li className="flex items-center gap-3">
- <div className="w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0" />
- <Link href="/blog/what-is-bitumen" className="text-white font-bold hover:text-teal-400 transition-colors underline underline-offset-4 decoration-white/20 hover:decoration-teal-400/50">What is Bitumen? Meaning, Uses, Properties & Types</Link>
- </li>
- <li className="flex items-center gap-3">
- <div className="w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0" />
- <Link href="/blog/cold-mix-bitumen" className="text-white font-bold hover:text-teal-400 transition-colors underline underline-offset-4 decoration-white/20 hover:decoration-teal-400/50">Cold Mix Bitumen Explained: Uses, Benefits & Hot Mix Comparison</Link>
- </li>
- </ul>
  </div>
  </div>
  </div>

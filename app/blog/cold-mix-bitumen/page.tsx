@@ -1,4 +1,4 @@
-﻿// app/blog/cold-mix-bitumen/page.tsx
+// app/blog/cold-mix-bitumen/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,8 +19,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Cold Mix Bitumen Explained: Uses, Benefits, Limitations & Hot Mix Comparison",
-  description: "Everything about cold mix bitumen — what it is, how it is made, cold vs hot mix asphalt, pothole repair uses, storage, costs, and when to use each. Expert guide.",
+  title: "Cold Mix Bitumen: Uses, Benefits & Hot Mix Comparison",
+  description: "What is cold mix bitumen? Learn its uses, benefits, limitations, application steps, and how it compares to hot mix asphalt for repairs and roads.",
   keywords: ["cold mix bitumen","cold mix asphalt","cold patch asphalt","pothole repair material","cold mix vs hot mix asphalt","bitumen emulsion cold mix","cold in-place recycling","cold mix bitumen uses","cold mix asphalt benefits","road repair material"],
   alternates: { canonical: "https://bitumencalcpro.com/blog/cold-mix-bitumen" },
   openGraph: {
