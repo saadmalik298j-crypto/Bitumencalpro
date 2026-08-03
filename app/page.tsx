@@ -911,7 +911,7 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  <div className="space-y-6">
  <div className="bg-gradient-to-r from-orange-500/10 to-transparent border border-orange-500/20 p-6 rounded-3xl shadow-lg hover:bg-orange-500/10 transition-colors">
  <h3 className="text-2xl font-black text-orange-400 mb-2">Bitumen</h3>
- <p className="text-white/80 text-base leading-relaxed">The black, sticky binder itself, derived from crude oil refining. It's an ingredient, not a finished road surface. Curious about properties and grades? Read our full <Link href="/blog/what-is-bitumen" className="text-orange-400 hover:text-orange-300 underline underline-offset-2">guide on what bitumen is</Link>.</p>
+ <p className="text-white/80 text-base leading-relaxed">The black, sticky binder itself, derived from crude oil refining. It's an ingredient, not a finished road surface. Curious about properties and grades? Read our full guide on  <Link href="/blog/what-is-bitumen" className="text-orange-400 hover:text-orange-300 underline underline-offset-2">What is bitumen?</Link>.</p>
  </div>
  
  <div className="bg-gradient-to-r from-white/10 to-transparent border border-white/10 p-6 rounded-3xl shadow-lg hover:bg-white/10 transition-colors">
