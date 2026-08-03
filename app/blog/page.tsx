@@ -46,6 +46,20 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: "cold-mix-bitumen",
+    category: "Asphalt & Paving Materials",
+    title: "Cold Mix Bitumen Explained: Uses, Benefits, Limitations & How It Compares to Hot Mix",
+    excerpt:
+      "Everything about cold mix bitumen — what it is, how it's made, cold vs hot mix asphalt, pothole repair uses, storage, costs, and when to use each.",
+    image: "/cold-mix-bitumen-guide-featured.webp",
+    imageAlt: "Cold mix bitumen guide — pothole repair and road maintenance material",
+    readTime: "22 min read",
+    date: "August 3, 2026",
+    dateISO: "2026-08-03",
+    tags: ["Cold Mix Bitumen", "Pothole Repair", "Asphalt", "Road Maintenance"],
+    featured: true,
+  },
+  {
     slug: "what-is-bitumen",
     category: "Bitumen Fundamentals",
     title: "What Is Bitumen? Meaning, Uses, Properties & How It Compares to Asphalt and Tar",
@@ -57,7 +71,7 @@ const POSTS = [
     date: "August 1, 2026",
     dateISO: "2026-08-01",
     tags: ["Bitumen", "Asphalt", "Road Construction", "Waterproofing"],
-    featured: true,
+    featured: false,
   },
 ];
 

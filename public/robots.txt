@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://bitumencalcpro.com
+
+# Sitemaps
+Sitemap: https://bitumencalcpro.com/sitemap.xml
