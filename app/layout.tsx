@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     creator: "@bitumencalcpro",
     images: ["/bitumen-calculator-og-image.png"],
   },
-  icons: { icon: '/favicon.ico' },
+
 
 };
 
