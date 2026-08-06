@@ -1037,7 +1037,7 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
                  <Zap className="text-orange-400" size={32}/> Why Use BitumenCalcPro?
                 </h2>
  <p className="text-white/90 text-base leading-relaxed mb-6 font-medium">
- BitumenCalcPro provides a transparent way to estimate asphalt material requirements without manually performing multiple calculations. Instead of showing only a final number, the calculator explains how pavement dimensions, density, and bitumen percentage affect the final result. 
+ BitumenCalcPro provides a transparent way to estimate asphalt material requirements without manually performing multiple calculations. Instead of showing only a final number, the calculator explains how pavement dimensions, <Link href="/blog/bitumen-density-chart" className="text-orange-400 hover:underline">density</Link>, and <Link href="/blog/what-is-bitumen" className="text-orange-400 hover:underline">bitumen</Link> percentage affect the final result. 
  </p>
  <div className="bg-black/30 rounded-2xl p-6 border border-white/10">
   <h3 className="font-bold text-white mb-4 uppercase tracking-widest text-xs">Benefits</h3>
@@ -1069,7 +1069,7 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
                  <AlertTriangle className="text-red-400" size={28}/> Common Mistakes in Bitumen Calculation
                 </h2>
  <ul className="space-y-4 text-base text-white/80">
- <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Density mix-up</strong> ,using binder density where mix density is required (or vice versa), which can throw results off by more than half.</span></li>
+ <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Density mix-up</strong> ,using binder density (see our <Link href="/blog/bitumen-density-chart" className="text-red-400 font-bold hover:underline">density chart</Link>) where mix density is required (or vice versa), which can throw results off by more than half.</span></li>
  <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>By-mix-weight vs. by-aggregate-weight confusion</strong> ,bitumen content is normally expressed as a percentage of total mix weight, not aggregate weight alone.</span></li>
  <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Skipping a waste allowance</strong> ,real-world paving involves handling loss, spillage, and compaction variability. A calculator gives the theoretical material requirement; site teams typically add a contingency margin on top.</span></li>
  <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Using loose volume where compacted volume was needed</strong> ,mixing up the two volume bases is one of the most common causes of mismatched delivery quantities on site.</span></li>
@@ -1124,65 +1124,6 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
 
 
 
- {/* ═══════════════════════════════
- INSIGHTS & RESOURCES
- ═══════════════════════════════ */}
- <section className="py-24 bg-black/40 border-t border-white/5 relative overflow-hidden">
- <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-  <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-  <div>
-   <h2 className="text-4xl font-black text-white drop-shadow-lg flex items-center gap-3">
-   <BookOpen className="text-teal-400" size={32} />
-   Knowledge &amp; Insights
-   </h2>
-   <p className="text-white/70 text-lg mt-4 max-w-2xl font-medium">
-   Deep dives into bitumen properties, asphalt testing, and road construction fundamentals.
-   </p>
-  </div>
-  <Link href="/blog" className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 font-bold transition-colors">
-   View All Articles <ArrowRight size={16} />
-  </Link>
-  </div>
-  
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  {/* Article 1 */}
-  <Link href="/blog/bitumen-density-chart" className="group bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden hover:bg-white/10 transition-all hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:border-white/20">
-   <div className="aspect-[4/3] relative">
-   <Image src="/bitumen-density-chart.webp" alt="Bitumen Density Chart" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
-   </div>
-   <div className="p-6 md:p-8">
-   <span className="inline-block text-xs font-bold text-orange-400 tracking-wider uppercase mb-3 bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">Bitumen Properties</span>
-   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors leading-tight">Bitumen Density Chart: Values by Grade &amp; Temp</h3>
-   <p className="text-white/60 text-sm leading-relaxed font-medium">See bitumen density values by grade — 60/70, 80/100, VG30 &amp; more. Includes temperature effects &amp; conversion formulas.</p>
-   </div>
-  </Link>
-
-  {/* Article 2 */}
-  <Link href="/blog/what-is-bitumen" className="group bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden hover:bg-white/10 transition-all hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:border-white/20">
-   <div className="aspect-[4/3] relative">
-   <Image src="/what-is-bitumen.webp" alt="What Is Bitumen" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
-   </div>
-   <div className="p-6 md:p-8">
-   <span className="inline-block text-xs font-bold text-teal-400 tracking-wider uppercase mb-3 bg-teal-500/10 px-3 py-1 rounded-full border border-teal-500/20">Fundamentals</span>
-   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors leading-tight">What Is Bitumen? Meaning, Uses &amp; Properties</h3>
-   <p className="text-white/60 text-sm leading-relaxed font-medium">Bitumen is a thick, black, petroleum-based material. Discover its properties, types, and how it differs from asphalt.</p>
-   </div>
-  </Link>
-
-  {/* Article 3 */}
-  <Link href="/blog/cold-mix-bitumen" className="group bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden hover:bg-white/10 transition-all hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:border-white/20 md:hidden lg:block">
-   <div className="aspect-[4/3] relative">
-   <Image src="/cold-mix-bitumen-guide-featured.webp" alt="Cold Mix Bitumen" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
-   </div>
-   <div className="p-6 md:p-8">
-   <span className="inline-block text-xs font-bold text-violet-400 tracking-wider uppercase mb-3 bg-violet-500/10 px-3 py-1 rounded-full border border-violet-500/20">Asphalt &amp; Paving</span>
-   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors leading-tight">Cold Mix Bitumen Explained: Hot Mix Comparison</h3>
-   <p className="text-white/60 text-sm leading-relaxed font-medium">Everything about cold mix bitumen — how it&apos;s made, cold vs hot mix, pothole repair uses, and costs.</p>
-   </div>
-  </Link>
-  </div>
- </div>
- </section>
 
  {/* ═══════════════════════════════
  BOTTOM CTA STRIP
