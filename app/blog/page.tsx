@@ -73,6 +73,20 @@ const POSTS = [
     tags: ["Bitumen", "Asphalt", "Road Construction", "Waterproofing"],
     featured: false,
   },
+  {
+    slug: "bitumen-density-chart",
+    category: "Bitumen Properties & Testing",
+    title: "Bitumen Density Chart: Density Values by Grade, Temperature Effects & How to Use Them",
+    excerpt:
+      "See bitumen density values by grade — 60/70, 80/100, VG30 & more. Includes temperature effects, conversion formulas, and a quality check guide.",
+    image: "/bitumen-density-chart.webp",
+    imageAlt: "Bitumen density chart — density values by grade and temperature",
+    readTime: "12 min read",
+    date: "August 6, 2026",
+    dateISO: "2026-08-06",
+    tags: ["Bitumen Density", "Specific Gravity", "Asphalt Testing"],
+    featured: false,
+  },
 ];
 
 export default function BlogPage() {

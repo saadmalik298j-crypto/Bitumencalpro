@@ -1125,6 +1125,66 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
 
 
  {/* ═══════════════════════════════
+ INSIGHTS & RESOURCES
+ ═══════════════════════════════ */}
+ <section className="py-24 bg-black/40 border-t border-white/5 relative overflow-hidden">
+ <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+  <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+  <div>
+   <h2 className="text-4xl font-black text-white drop-shadow-lg flex items-center gap-3">
+   <BookOpen className="text-teal-400" size={32} />
+   Knowledge &amp; Insights
+   </h2>
+   <p className="text-white/70 text-lg mt-4 max-w-2xl font-medium">
+   Deep dives into bitumen properties, asphalt testing, and road construction fundamentals.
+   </p>
+  </div>
+  <Link href="/blog" className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 font-bold transition-colors">
+   View All Articles <ArrowRight size={16} />
+  </Link>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {/* Article 1 */}
+  <Link href="/blog/bitumen-density-chart" className="group bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden hover:bg-white/10 transition-all hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:border-white/20">
+   <div className="aspect-[4/3] relative">
+   <Image src="/bitumen-density-chart.webp" alt="Bitumen Density Chart" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
+   </div>
+   <div className="p-6 md:p-8">
+   <span className="inline-block text-xs font-bold text-orange-400 tracking-wider uppercase mb-3 bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">Bitumen Properties</span>
+   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors leading-tight">Bitumen Density Chart: Values by Grade &amp; Temp</h3>
+   <p className="text-white/60 text-sm leading-relaxed font-medium">See bitumen density values by grade — 60/70, 80/100, VG30 &amp; more. Includes temperature effects &amp; conversion formulas.</p>
+   </div>
+  </Link>
+
+  {/* Article 2 */}
+  <Link href="/blog/what-is-bitumen" className="group bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden hover:bg-white/10 transition-all hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:border-white/20">
+   <div className="aspect-[4/3] relative">
+   <Image src="/what-is-bitumen.webp" alt="What Is Bitumen" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
+   </div>
+   <div className="p-6 md:p-8">
+   <span className="inline-block text-xs font-bold text-teal-400 tracking-wider uppercase mb-3 bg-teal-500/10 px-3 py-1 rounded-full border border-teal-500/20">Fundamentals</span>
+   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors leading-tight">What Is Bitumen? Meaning, Uses &amp; Properties</h3>
+   <p className="text-white/60 text-sm leading-relaxed font-medium">Bitumen is a thick, black, petroleum-based material. Discover its properties, types, and how it differs from asphalt.</p>
+   </div>
+  </Link>
+
+  {/* Article 3 */}
+  <Link href="/blog/cold-mix-bitumen" className="group bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden hover:bg-white/10 transition-all hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:border-white/20 md:hidden lg:block">
+   <div className="aspect-[4/3] relative">
+   <Image src="/cold-mix-bitumen-guide-featured.webp" alt="Cold Mix Bitumen" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 33vw" />
+   </div>
+   <div className="p-6 md:p-8">
+   <span className="inline-block text-xs font-bold text-violet-400 tracking-wider uppercase mb-3 bg-violet-500/10 px-3 py-1 rounded-full border border-violet-500/20">Asphalt &amp; Paving</span>
+   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors leading-tight">Cold Mix Bitumen Explained: Hot Mix Comparison</h3>
+   <p className="text-white/60 text-sm leading-relaxed font-medium">Everything about cold mix bitumen — how it&apos;s made, cold vs hot mix, pothole repair uses, and costs.</p>
+   </div>
+  </Link>
+  </div>
+ </div>
+ </section>
+
+ {/* ═══════════════════════════════
  BOTTOM CTA STRIP
  ═══════════════════════════════ */}
  <section className="py-24 relative overflow-hidden bg-black/40 border-t border-white/5">
