@@ -57,6 +57,9 @@ export const metadata: Metadata = {
       "Discover everything about bitumen — its meaning, uses, properties, grades, and how it differs from asphalt and tar.",
     images: ["/what-is-bitumen.webp"],
   },
+  robots: {
+    "max-image-preview": "large",
+  },
 };
 
 // ── Structured Data ──────────────────────────────────────

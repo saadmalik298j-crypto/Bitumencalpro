@@ -61,6 +61,9 @@ export const metadata: Metadata = {
       "Bitumen density values by grade — 60/70, 80/100, VG30 & more — with temperature effects and conversion formulas.",
     images: ["/bitumen-density-chart.webp"],
   },
+  robots: {
+    "max-image-preview": "large",
+  },
 };
 
 // ── Structured Data ──────────────────────────────────────

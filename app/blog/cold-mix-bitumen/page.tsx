@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     images: [{ url: "/cold-mix-bitumen-guide-featured.webp", width: 1200, height: 630, alt: "Cold mix bitumen guide" }],
   },
   twitter: { card: "summary_large_image", title: "Cold Mix Bitumen Explained: Uses, Benefits & Hot Mix Comparison", description: "Cold mix bitumen — uses, benefits, limitations, and hot mix comparison.", images: ["/cold-mix-bitumen-guide-featured.webp"] },
+  robots: {
+    "max-image-preview": "large",
+  },
 };
 
 const articleSchema = {
