@@ -208,21 +208,25 @@ export default function Calculator() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Volume Result Unit</label>
+              <label htmlFor="outVolUnit" className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Volume Result Unit</label>
               <select
+                id="outVolUnit"
                 value={outVolUnit}
                 onChange={(e) => setOutVolUnit(e.target.value)}
                 className="bg-white border border-slate-200 text-slate-800 rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-violet-200 outline-none"
+                aria-label="Volume result unit"
               >
                 {VOL_OUT_UNITS.map(u => <option key={u.value} value={u.value}>{u.label}</option>)}
               </select>
             </div>
             <div className="flex flex-col gap-1.5">
-              <label className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Weight Result Unit</label>
+              <label htmlFor="outWeightUnit" className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Weight Result Unit</label>
               <select
+                id="outWeightUnit"
                 value={outWeightUnit}
                 onChange={(e) => setOutWeightUnit(e.target.value)}
                 className="bg-white border border-slate-200 text-slate-800 rounded-lg px-3 py-2 text-sm font-medium focus:ring-2 focus:ring-violet-200 outline-none"
+                aria-label="Weight result unit"
               >
                 {WEIGHT_OUT_UNITS.map(u => <option key={u.value} value={u.value}>{u.label}</option>)}
               </select>
@@ -258,6 +262,7 @@ export default function Calculator() {
                       value={field.unit}
                       onChange={(e) => field.setUnit(e.target.value)}
                       className="bg-transparent text-slate-600 font-bold pl-3 pr-8 py-3 outline-none cursor-pointer appearance-none text-sm text-center min-w-[60px]"
+                      aria-label={`${field.label} unit`}
                     >
                       {LENGTH_UNITS.map(u => <option key={u.value} value={u.value}>{u.label}</option>)}
                     </select>
@@ -312,6 +317,7 @@ export default function Calculator() {
                     value={densityUnit}
                     onChange={(e) => setDensityUnit(e.target.value)}
                     className="bg-transparent text-slate-600 font-bold pl-3 pr-8 py-3 outline-none cursor-pointer appearance-none text-sm text-center min-w-[80px]"
+                    aria-label="Mix density unit"
                   >
                     {DENSITY_UNITS.map(u => <option key={u.value} value={u.value}>{u.label}</option>)}
                   </select>
@@ -333,6 +339,7 @@ export default function Calculator() {
                   value={currency}
                   onChange={(e) => setCurrency(e.target.value)}
                   className="bg-transparent text-slate-600 font-bold pl-3 pr-7 py-3 outline-none cursor-pointer appearance-none text-sm text-center min-w-[50px]"
+                  aria-label="Currency"
                 >
                   <option value="$">$</option>
                   <option value="€">€</option>
