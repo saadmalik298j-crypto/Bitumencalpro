@@ -359,6 +359,7 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  src="/civil-engineer-using-bitumen-calculator.webp" 
  alt="Civil engineer using bitumen calculator for pavement estimation" 
  fill 
+ priority
  className="object-contain transition-transform duration-700 group-hover:scale-105" 
  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
  />

@@ -1,21 +1,46 @@
 # BitumenCalcPro
 
-BitumenCalcPro provides calculators, guides, and educational resources for bitumen, asphalt, road construction, and paving.
+> BitumenCalcPro provides accurate calculators, engineering guides, and educational resources covering bitumen, asphalt, pavement engineering, road construction, and paving materials.
 
-Main Resources:
-- https://bitumencalcpro.com/
-- https://bitumencalcpro.com/bitumen-calculator
-- https://bitumencalcpro.com/blog/what-is-bitumen
--https://bitumencalcpro.com/blog/cold-mix-bitumen
+## About BitumenCalcPro
 
-Topics:
+BitumenCalcPro is an educational platform designed for engineers, students, contractors, and construction professionals. The website provides practical tools and technical resources related to bitumen calculations, asphalt materials, and pavement construction.
+
+## Main Tools
+
+- [Bitumen Calculator](https://bitumencalcpro.com/bitumen-calculator): Calculate bitumen quantities, asphalt requirements, and related construction measurements.
+
+## Core Resources
+
+- [Homepage](https://bitumencalcpro.com/): Main portal for bitumen calculators, guides, and engineering information.
+
+- [What Is Bitumen?](https://bitumencalcpro.com/blog/what-is-bitumen): Complete educational guide explaining bitumen properties, uses, types, and applications.
+
+- [Cold Mix Bitumen](https://bitumencalcpro.com/blog/cold-mix-bitumen): Guide covering cold mix asphalt, applications, benefits, and construction methods.
+
+## Topics Covered
+
 - Bitumen
 - Asphalt
 - Road Construction
-- Asphalt Mix Design
 - Pavement Engineering
+- Asphalt Mix Design
 - Bitumen Grades
-- Waterproofing
+- Bitumen Properties
+- Waterproofing Materials
+- Paving Technology
 
-Contact:
-https://bitumencalcpro.com/contact
+## Intended Audience
+
+Content is created for:
+
+- Civil engineers
+- Road construction professionals
+- Asphalt contractors
+- Engineering students
+- Infrastructure researchers
+- Construction industry professionals
+
+## Contact
+
+- [Contact BitumenCalcPro](https://bitumencalcpro.com/contact)

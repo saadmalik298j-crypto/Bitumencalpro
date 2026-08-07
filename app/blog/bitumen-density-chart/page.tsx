@@ -173,10 +173,12 @@ function SectionImage({
   src,
   alt,
   caption,
+  priority,
 }: {
   src: string;
   alt: string;
   caption?: string;
+  priority?: boolean;
 }) {
   return (
     <figure className="my-10 not-prose">
@@ -188,6 +190,7 @@ function SectionImage({
           height={675}
           className="w-full h-auto object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 900px"
+          priority={priority}
         />
       </div>
       {caption && (
@@ -335,6 +338,7 @@ export default function BitumenDensityChartPage() {
           src="/bitumen-density-chart.webp"
           alt="Bitumen density chart — density values by grade at 25°C"
           caption="Bitumen density varies by grade, temperature, and source — this chart covers the full picture"
+          priority
         />
       </div>
 
