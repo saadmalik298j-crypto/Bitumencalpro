@@ -46,6 +46,20 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: "bitumen-grades-explained",
+    category: "Bitumen Properties & Testing",
+    title: "Bitumen Grades Explained: Penetration, VG, PG & How to Choose the Right One",
+    excerpt:
+      "Understand bitumen grades — penetration grade (60/70, 80/100), viscosity grade (VG10–VG40), and performance grade (PG) — and learn how to choose the right one for climate and traffic conditions.",
+    image: "/bitumen-grades-explained-penetration-vg-pg.webp",
+    imageAlt: "Bitumen grades explained — penetration, viscosity and performance grade overview",
+    readTime: "14 min read",
+    date: "August 9, 2026",
+    dateISO: "2026-08-09",
+    tags: ["Bitumen Grades", "VG30", "PG Bitumen", "Penetration Grade"],
+    featured: true,
+  },
+  {
     slug: "cold-mix-bitumen",
     category: "Asphalt & Paving Materials",
     title: "Cold Mix Bitumen Explained: Uses, Benefits, Limitations & How It Compares to Hot Mix",
@@ -57,7 +71,7 @@ const POSTS = [
     date: "August 3, 2026",
     dateISO: "2026-08-03",
     tags: ["Cold Mix Bitumen", "Pothole Repair", "Asphalt", "Road Maintenance"],
-    featured: true,
+    featured: false,
   },
   {
     slug: "what-is-bitumen",

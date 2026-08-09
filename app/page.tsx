@@ -157,8 +157,8 @@ const FAQ_DATA = [
  a: "Asphalt quantity is calculated by multiplying pavement volume by HMA density. The result is converted from kilograms to tonnes to estimate the required asphalt material."
  },
  {
- q: "What bitumen content percentage should I use for asphalt calculation?",
- a: "The correct bitumen content comes from the approved asphalt mix design. Most HMA mixtures commonly contain around 4% to 7% bitumen by total mix weight."
+  q: "What bitumen content percentage should I use for asphalt calculation?",
+  a: "The correct bitumen content comes from the approved asphalt mix design. Most HMA mixtures commonly contain around 4% to 7% bitumen by total mix weight. The right percentage also depends on the bitumen grade specified — our guide on bitumen grades explains how penetration grade, VG, and PG systems influence mix design."
  },
  {
  q: "What density should be used in a Bitumen Calculator?",
@@ -860,7 +860,7 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  </li>
  <li className="flex items-start gap-3 bg-black/20 p-3 rounded-xl border border-white/5">
  <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0" />
- <span className="text-white/80 text-sm"><strong className="text-white">Grade</strong> ,penetration grades and polymer-modified binders (PMB) carry different production costs.</span>
+ <span className="text-white/80 text-sm"><strong className="text-white">Grade</strong> — <Link href="/blog/bitumen-grades-explained" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">penetration grades, VG, and PG bitumen</Link> carry different production costs, and polymer-modified binders (PMB) carry a further premium.</span>
  </li>
  <li className="flex items-start gap-3 bg-black/20 p-3 rounded-xl border border-white/5">
  <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0" />

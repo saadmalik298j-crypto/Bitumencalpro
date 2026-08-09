@@ -623,6 +623,16 @@ export default function WhatIsBitumenPage() {
                   </li>
                 ))}
               </ul>
+              <p className="text-white/80 leading-relaxed text-base">
+                Each grading system was designed for a different purpose and a different era of road engineering. For a full breakdown of how each system works, how to read a PG grade like PG 64-22, and how to choose the right grade for your project, see our dedicated guide:{" "}
+                <Link
+                  href="/blog/bitumen-grades-explained"
+                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
+                >
+                  Bitumen Grades Explained: Penetration, VG, PG &amp; How to Choose
+                </Link>
+                .
+              </p>
             </section>
 
             {/* ── SECTION: Bitumen vs Asphalt vs Concrete ── */}
