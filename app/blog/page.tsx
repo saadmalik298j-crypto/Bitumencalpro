@@ -60,6 +60,20 @@ const POSTS = [
     featured: true,
   },
   {
+    slug: "modified-bitumen-roofing",
+    category: "Roofing & Waterproofing",
+    title: "Modified Bitumen Roofing: The Complete Guide for Flat and Low-Slope Roofs",
+    excerpt:
+      "Everything you need to know about modified bitumen roofing for flat roofs: costs, installation methods, SBS vs APP, lifespan, and comparison with TPO and EPDM.",
+    image: "/modified-bitumen-roofing-flat-low-slope.webp",
+    imageAlt: "Modified bitumen roofing applied on a flat, low-slope commercial roof",
+    readTime: "13 min read",
+    date: "August 9, 2026",
+    dateISO: "2026-08-09",
+    tags: ["Modified Bitumen", "Flat Roof", "Roofing Membrane", "SBS", "APP"],
+    featured: false,
+  },
+  {
     slug: "cold-mix-bitumen",
     category: "Asphalt & Paving Materials",
     title: "Cold Mix Bitumen Explained: Uses, Benefits, Limitations & How It Compares to Hot Mix",

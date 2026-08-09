@@ -749,8 +749,9 @@ export default function WhatIsBitumenPage() {
                   },
                   {
                     title: "Roofing & waterproofing",
-                    desc: "Bitumen membranes are a standard choice for flat and low-slope roofs, foundations, basements, and bridge decks.",
+                    desc: "Bitumen membranes — particularly modified bitumen — are a standard choice for flat and low-slope roofs, foundations, basements, and bridge decks. Our guide on modified bitumen roofing explains the system layers and materials used.",
                     color: "teal",
+                    link: { href: "/blog/modified-bitumen-roofing", text: "modified bitumen roofing" },
                   },
                   {
                     title: "Industrial applications",
@@ -762,7 +763,7 @@ export default function WhatIsBitumenPage() {
                     desc: "Bitumen paint and bituminous coating products protect metal and concrete surfaces from corrosion and moisture — common in tanks, pipes, and exposed structural steel.",
                     color: "blue",
                   },
-                ].map(({ title, desc, color }) => (
+                ].map(({ title, desc, color, link }) => (
                   <div
                     key={title}
                     className={`bg-white/5 border border-white/10 rounded-xl p-5 border-l-4 ${
@@ -776,7 +777,19 @@ export default function WhatIsBitumenPage() {
                     }`}
                   >
                     <h3 className="text-white font-bold mb-2 text-base">{title}</h3>
-                    <p className="text-white/65 text-sm leading-relaxed">{desc}</p>
+                    <p className="text-white/65 text-sm leading-relaxed">
+                      {link ? (
+                        <>
+                          Bitumen membranes — particularly modified bitumen — are a standard choice for flat and low-slope roofs, foundations, basements, and bridge decks. Our guide on{" "}
+                          <Link href={link.href} className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">
+                            {link.text}
+                          </Link>{" "}
+                          explains the system layers and materials used.
+                        </>
+                      ) : (
+                        desc
+                      )}
+                    </p>
                   </div>
                 ))}
               </div>
