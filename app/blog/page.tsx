@@ -74,6 +74,20 @@ const POSTS = [
     featured: false,
   },
   {
+    slug: "modified-bitumen-roof-repair",
+    category: "Roofing & Waterproofing",
+    title: "Modified Bitumen Roof Repair: Common Problems, Fixes & When to Call a Professional",
+    excerpt:
+      "Learn how to repair a modified bitumen roof — blisters, seam failure, ponding water, punctures & cracks. Includes step-by-step fixes, DIY vs professional guide, and maintenance tips.",
+    image: "/modified-bitumen-roof-repair-guide.webp",
+    imageAlt: "Modified bitumen roof repair — fixing blisters, seams, and leaks on a flat roof",
+    readTime: "15 min read",
+    date: "August 10, 2026",
+    dateISO: "2026-08-10",
+    tags: ["Roof Repair", "Modified Bitumen", "Flat Roof", "Maintenance"],
+    featured: false,
+  },
+  {
     slug: "cold-mix-bitumen",
     category: "Asphalt & Paving Materials",
     title: "Cold Mix Bitumen Explained: Uses, Benefits, Limitations & How It Compares to Hot Mix",
@@ -353,17 +367,11 @@ export default function BlogPage() {
           <p className="text-white/70 text-lg mb-8 leading-relaxed">
             Use our free{" "}
             <Link href="/" className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">
-              Bitumen Calculator
+               Bitumen Quantity Calculator
             </Link>{" "}
             to instantly estimate bitumen quantity, asphalt mix weight, and aggregate requirements for any road or paving project.
           </p>
-          <Link
-            href="/"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-400 hover:to-teal-500 active:scale-95 text-white px-8 py-4 rounded-full font-black text-base transition-all shadow-[0_0_25px_rgba(20,184,166,0.4)] hover:shadow-[0_0_35px_rgba(20,184,166,0.6)]"
-          >
-            Open Bitumen Calculator
-            <ArrowRight size={18} />
-          </Link>
+          
         </div>
       </section>
     </>

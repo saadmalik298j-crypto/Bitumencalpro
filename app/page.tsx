@@ -341,12 +341,11 @@ export default function Home() {
  </h2>
  <div className="prose prose-invert prose-lg max-w-none">
  <p className="text-white/80 leading-relaxed mb-5 font-medium text-lg">
-A Bitumen Calculator is an online tool that helps engineers, contractors, estimators, and construction professionals calculate the amount of bitumen binder, hot mix asphalt (HMA), and aggregates required for pavement and road construction projects.
+ A Bitumen Calculator is an online tool that helps engineers, contractors, estimators, and construction professionals calculate the amount of bitumen binder, hot mix asphalt (HMA), and aggregates required for pavement and road construction projects.
  </p>
  <p className="text-white/70 leading-relaxed mb-5">
-Simply enter the pavement length, width, thickness, mix density, and bitumen content, and the calculator instantly estimates the total asphalt volume, mix weight, bitumen quantity, aggregate weight, and an optional material cost estimate. These calculations support project planning, material estimation, and budgeting. While this tool is designed for paving projects, bitumen is also heavily utilized in the building sector—you can read our guide on <Link href="/blog/modified-bitumen-roofing" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">modified bitumen roofing</Link> if you are dealing with commercial flat roofs. If you want to learn more about the base materials involved, you can read our detailed guide on <Link href="/blog/what-is-bitumen" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">what bitumen is, its properties, and how it compares to asphalt and tar</Link>.
+Simply enter the pavement length, width, thickness, mix density, and bitumen content, and the calculator instantly estimates the total asphalt volume, mix weight, bitumen quantity, aggregate weight, and an optional material cost estimate. These calculations support project planning, material estimation, and budgeting. While this tool is designed for paving projects, bitumen is also heavily utilized in the building sector—you can read our guide on <Link href="/blog/modified-bitumen-roofing" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">modified bitumen roofing</Link> if you are dealing with commercial flat roofs, or our guide on <Link href="/blog/modified-bitumen-roof-repair" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">modified bitumen roof repair</Link> if you need to fix a leak. If you want to learn more about the base materials involved, you can read our detailed guide on <Link href="/blog/what-is-bitumen" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">what bitumen is, its properties, and how it compares to asphalt and tar</Link>.
  </p>
-
  </div>
  </div>
  

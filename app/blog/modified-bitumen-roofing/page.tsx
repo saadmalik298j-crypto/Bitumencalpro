@@ -702,7 +702,12 @@ export default function ModifiedBitumenRoofingPage() {
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Catching problems early is almost always cheaper than waiting for a leak. Watch for:
               </p>
-
+              
+              <div className="bg-gradient-to-br from-teal-500/10 to-blue-600/5 border border-teal-400/20 rounded-2xl p-5 mb-6 not-prose">
+                <p className="text-white/85 text-sm leading-relaxed mb-0">
+                  <strong className="text-teal-300">Need to fix a leak?</strong> Read our comprehensive step-by-step guide on <Link href="/blog/modified-bitumen-roof-repair" className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">Modified Bitumen Roof Repair</Link> for detailed instructions on fixing blisters, seam failures, and ponding water.
+                </p>
+              </div>
               <ul className="space-y-3 mb-6 bg-white/5 p-6 rounded-2xl border border-white/10">
                 {[
                   { bold: "Blistering or bubbling", text: "on the membrane surface, which signals trapped moisture or air" },
@@ -864,6 +869,12 @@ export default function ModifiedBitumenRoofingPage() {
                     className="block text-white/60 hover:text-teal-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2"
                   >
                     Bitumen Grades Explained: Penetration, VG, PG
+                  </Link>
+                  <Link
+                    href="/blog/modified-bitumen-roof-repair"
+                    className="block text-white/60 hover:text-teal-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2"
+                  >
+                    Modified Bitumen Roof Repair: Fixes &amp; Guide
                   </Link>
                   <Link
                     href="/blog/cold-mix-bitumen"
