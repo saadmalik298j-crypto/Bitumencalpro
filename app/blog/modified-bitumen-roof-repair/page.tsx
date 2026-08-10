@@ -1,4 +1,4 @@
-﻿// app/blog/modified-bitumen-roof-repair/page.tsx
+// app/blog/modified-bitumen-roof-repair/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -294,7 +294,7 @@ export default function ModifiedBitumenRoofRepairPage() {
               />
 
               <StepCard number={4} title="Repair Seams">
-                <p>Clean out the separated seam, apply compatible lap cement or re-heat-weld the joint depending on the membrane type, and reinforce it with seam tape where needed. Because seam failure is the most common source of leaks on a <Link href="/blog/modified-bitumen-roofing" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 font-semibold">modified bitumen roof</Link>, a proper reseal here matters more than almost any other repair on the roof.</p>
+                <p>Clean out the separated seam, apply compatible lap cement or re-heat-weld the joint depending on the membrane type, and reinforce it with seam tape where needed. Because seam failure is the most common source of leaks on a modified bitumen roof, a proper reseal here matters more than almost any other repair on the roof.</p>
               </StepCard>
 
               {/* IMAGE 3: Inside How to Repair, immediately after Step 4: Repair Seams */}
@@ -380,9 +380,7 @@ export default function ModifiedBitumenRoofRepairPage() {
                 caption="Keeping drains clear and scheduling two inspections per year are the two highest-impact maintenance habits on a flat modified bitumen roof"
               />
               <p className="text-white/80 leading-relaxed mb-6 text-base">
-                Regular maintenance is what actually keeps a{" "}
-                <Link href="/blog/modified-bitumen-roofing" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-semibold">modified bitumen roof</Link>{" "}
-                out of repair cycles in the first place. For context on what material quality means for longevity, our guide on{" "}
+                Regular maintenance is what actually keeps a modified bitumen roof out of repair cycles in the first place. For context on what material quality means for longevity, our guide on{" "}
                 <Link href="/blog/what-is-bitumen" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">what bitumen is</Link>{" "}
                 explains how polymer modification affects durability at a material level.
               </p>
@@ -413,9 +411,7 @@ export default function ModifiedBitumenRoofRepairPage() {
               </p>
               <div className="mt-6 bg-gradient-to-br from-teal-500/15 to-blue-600/10 border border-teal-400/25 rounded-2xl p-6 not-prose">
                 <p className="text-white/85 text-sm leading-relaxed">
-                  <strong className="text-teal-300">Related reading:</strong> Our{" "}
-                  <Link href="/blog/modified-bitumen-roofing" className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">complete Modified Bitumen Roofing guide</Link>{" "}
-                  covers SBS vs APP systems, installation methods, and what affects overall membrane longevity. For a broader look at bitumen grades and their properties, see{" "}
+                  <strong className="text-teal-300">Related reading:</strong> For a broader look at bitumen grades and their properties, see{" "}
                   <Link href="/blog/bitumen-grades-explained" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">Bitumen Grades Explained</Link>.
                 </p>
               </div>
