@@ -324,16 +324,14 @@ export default function ModifiedBitumenRoofRepairPage() {
               />
 
               <InfoTable
-                headers={["Situation", "DIY-Friendly", "Call a Professional"]}
+                headers={["Situation", "Recommendation", "Official Guideline & Data"]}
                 rows={[
-                  ["Single small blister, not near a seam", "Yes", "—"],
-                  ["Minor surface crack", "Yes", "—"],
-                  ["Isolated seam lift, small section", "Often", "Recommended for larger sections"],
-                  ["Multiple seam failures across the roof", "—", "Yes"],
-                  ["Persistent ponding water", "—", "Yes — usually a drainage design issue"],
-                  ["Widespread alligatoring", "—", "Yes — likely nearing end of service life"],
-                  ["Recurring leak in the same spot after repair", "—", "Yes — points to a hidden moisture problem"],
-                  ["Roof older than 15 years with multiple issues", "—", "Yes — replacement may be more cost-effective than continued patching"],
+                  ["Single small blister (< 2 inches) or minor crack", "DIY possible (Cold-applied)", "NRCA allows temporary cold-patching for minor surface defects. Open flames (torches) should never be used by DIYers."],
+                  ["Torch-applied (Heat-welded) repairs", "Professional Required", "OSHA & NRCA (CERTA training) strictly restrict open-flame roofing to certified professionals due to extreme fire and injury hazards."],
+                  ["Active leak with unknown origin", "Professional Required", "NRCA guidelines recommend professional infrared thermography or core testing to locate trapped moisture and prevent deck rot."],
+                  ["Widespread seam failure or alligatoring", "Professional Required", "Indicates systemic membrane failure. Professional assessment needed for resurfacing vs. replacement (Avg. repair cost: $300-$1,200 minimum)."],
+                  ["Persistent ponding water (> 48 hours)", "Professional Required", "Building codes require positive drainage. Tapered insulation or new drain installation requires structural and plumbing expertise."],
+                  ["Roof under active manufacturer warranty", "Professional Required", "Performing unauthorized DIY repairs or using incompatible patches instantly voids most commercial roofing warranties."]
                 ]}
               />
               <div className="bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-400/20 rounded-2xl p-6 not-prose mt-6">
