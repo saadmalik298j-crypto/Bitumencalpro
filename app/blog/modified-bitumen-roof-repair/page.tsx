@@ -73,9 +73,9 @@ const breadcrumbSchema = {
 
 function SectionImage({ src, alt, caption, priority }: { src: string; alt: string; caption?: string; priority?: boolean }) {
   return (
-    <figure className="my-10 not-prose">
-      <div className="relative w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black/20">
-        <Image src={src} alt={alt} width={1200} height={675} className="w-full max-w-full h-auto object-cover" style={{ width: '100%', height: 'auto' }} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 900px" priority={priority} />
+    <figure className="my-8 sm:my-10 w-[calc(100vw-32px)] max-w-full lg:w-full overflow-hidden not-prose">
+      <div className="relative w-full max-w-full rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 shadow-xl sm:shadow-2xl bg-black/20">
+        <Image src={src} alt={alt} width={1200} height={675} className="w-full max-w-full h-auto object-contain sm:object-cover" style={{ maxWidth: '100%', height: 'auto', display: 'block' }} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 900px" priority={priority} />
       </div>
       {caption && <figcaption className="mt-3 text-center text-sm text-white/45 italic">{caption}</figcaption>}
     </figure>
