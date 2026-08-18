@@ -46,6 +46,20 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: "tpo-vs-modified-bitumen",
+    category: "Roofing & Waterproofing",
+    title: "TPO vs Modified Bitumen: Which Flat Roof System Is Right for Your Building?",
+    excerpt:
+      "Compare TPO vs modified bitumen roofing systems. Learn the differences in cost, durability, energy efficiency, and which flat roof is best for your building.",
+    image: "/tpo-vs-modified-bitumen-flat-roof.webp",
+    imageAlt: "TPO vs modified bitumen flat roof comparison on commercial building",
+    readTime: "7 min read",
+    date: "August 11, 2026",
+    dateISO: "2026-08-11",
+    tags: ["TPO", "Modified Bitumen", "Flat Roof", "Roofing Comparison"],
+    featured: false,
+  },
+  {
     slug: "bitumen-grades-explained",
     category: "Bitumen Properties & Testing",
     title: "Bitumen Grades Explained: Penetration, VG, PG & How to Choose the Right One",

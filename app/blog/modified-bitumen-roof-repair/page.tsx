@@ -75,7 +75,7 @@ function SectionImage({ src, alt, caption, priority }: { src: string; alt: strin
   return (
     <figure className="my-10 not-prose">
       <div className="relative w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black/20">
-        <Image src={src} alt={alt} width={1200} height={675} className="w-full h-auto object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 900px" priority={priority} />
+        <Image src={src} alt={alt} width={1200} height={675} className="w-full max-w-full h-auto object-cover" style={{ width: '100%', height: 'auto' }} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 900px" priority={priority} />
       </div>
       {caption && <figcaption className="mt-3 text-center text-sm text-white/45 italic">{caption}</figcaption>}
     </figure>

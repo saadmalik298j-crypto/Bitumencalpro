@@ -306,7 +306,7 @@ export default function Home() {
  </h1>
 
  <p className="text-center text-white/90 text-lg md:text-xl font-medium max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-md">
- Calculate Asphalt Mix Weight, Bitumen, and Aggregate Quantity. Instantly estimate binder and aggregate quantities for any road pavement project.
+Calculate bitumen, asphalt mix weight, and aggregate quantities instantly for any road pavement project.
  </p>
 
  <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-2 sm:gap-4 mb-14">

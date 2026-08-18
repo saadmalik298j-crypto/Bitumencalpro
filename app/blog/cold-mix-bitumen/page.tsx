@@ -81,7 +81,7 @@ function SectionImage({ src, alt, caption }: { src: string; alt: string; caption
   return (
     <figure className="my-10 not-prose">
       <div className="relative w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black/20">
-        <Image src={src} alt={alt} width={1200} height={675} className="w-full h-auto object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 900px" />
+        <Image src={src} alt={alt} width={1200} height={675} className="w-full max-w-full h-auto object-cover" style={{ width: '100%', height: 'auto' }} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 900px" />
       </div>
       {caption && <figcaption className="mt-3 text-center text-sm text-white/45 italic">{caption}</figcaption>}
     </figure>
@@ -153,7 +153,7 @@ export default function ColdMixBitumenPage() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <figure className="my-6 not-prose">
           <div className="relative w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black/20">
-            <Image src="/cold-mix-bitumen-guide-featured.webp" alt="Cold mix bitumen guide" width={1200} height={630} priority className="w-full h-auto object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 1200px" />
+            <Image src="/cold-mix-bitumen-guide-featured.webp" alt="Cold mix bitumen guide" width={1200} height={630} priority className="w-full max-w-full h-auto object-cover" style={{ width: '100%', height: 'auto' }} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 1200px" />
           </div>
           <figcaption className="mt-3 text-center text-sm text-white/45 italic">Cold mix bitumen: the ready-to-use repair material that works without heating equipment</figcaption>
         </figure>

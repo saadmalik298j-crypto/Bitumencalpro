@@ -191,7 +191,8 @@ function SectionImage({
           alt={alt}
           width={1200}
           height={675}
-          className="w-full h-auto object-cover"
+          className="w-full max-w-full h-auto object-cover"
+          style={{ width: '100%', height: 'auto' }}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 900px"
           priority={priority}
         />
