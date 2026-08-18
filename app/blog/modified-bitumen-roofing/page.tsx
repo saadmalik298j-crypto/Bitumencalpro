@@ -213,14 +213,14 @@ function InfoTable({
   rows: string[][];
 }) {
   return (
-    <div className="my-8 overflow-x-auto not-prose rounded-xl border border-white/10 shadow-lg">
-      <table className="w-full text-sm">
+    <div className="my-6 sm:my-8 -mx-4 sm:mx-0 overflow-x-auto not-prose sm:rounded-xl border-y sm:border border-white/10 shadow-lg">
+      <table className="w-full min-w-[320px] text-sm">
         <thead>
           <tr className="bg-teal-600/30 border-b border-white/10">
             {headers.map((h) => (
               <th
                 key={h}
-                className="text-left px-5 py-3.5 text-white font-bold text-xs uppercase tracking-wider whitespace-nowrap"
+                className="text-left px-3 py-2.5 sm:px-5 sm:py-3.5 text-white font-bold text-xs uppercase tracking-wider"
               >
                 {h}
               </th>
@@ -236,7 +236,7 @@ function InfoTable({
               } hover:bg-white/10 transition-colors`}
             >
               {row.map((cell, j) => (
-                <td key={j} className="px-5 py-3 text-white/80 leading-relaxed">
+                <td key={j} className="px-3 py-2 sm:px-5 sm:py-3 text-white/80 leading-relaxed text-xs sm:text-sm">
                   {cell}
                 </td>
               ))}

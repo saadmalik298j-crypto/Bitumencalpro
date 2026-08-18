@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 
 function walk(dir) {
   let results = [];
@@ -7,7 +6,7 @@ function walk(dir) {
   list.forEach(function(file) {
     file = dir + '/' + file;
     const stat = fs.statSync(file);
-    if (stat && stat.isDirectory()) { 
+    if (stat && stat.isDirectory()) {
       results = results.concat(walk(file));
     } else if (file.endsWith('.tsx')) {
       results.push(file);
@@ -19,27 +18,46 @@ function walk(dir) {
 const files = walk('d:/bitumencalcpro/app/blog');
 let modifiedCount = 0;
 
+// Old InfoTable outer wrapper patterns (various forms across files)
+const oldWrappers = [
+  `<div className="my-8 overflow-x-auto not-prose rounded-xl border border-white/10 shadow-lg">`,
+  `<div className="my-8 not-prose overflow-x-auto rounded-xl border border-white/10 shadow-lg">`,
+];
+
+// New wrapper: edge-to-edge on mobile (-mx-4), full rounded on sm+
+const newWrapper = `<div className="my-6 sm:my-8 -mx-4 sm:mx-0 overflow-x-auto not-prose sm:rounded-xl border-y sm:border border-white/10 shadow-lg">`;
+
+// Old table tag
+const oldTable = `<table className="w-full text-sm">`;
+// New table: auto width so it doesn't force overflow
+const newTable = `<table className="w-full min-w-[320px] text-sm">`;
+
+// Old th (what-is-bitumen multiline form)
+const oldTh = `className="text-left px-5 py-3.5 text-white font-bold text-xs uppercase tracking-wider whitespace-nowrap"`;
+const newTh  = `className="text-left px-3 py-2.5 sm:px-5 sm:py-3.5 text-white font-bold text-xs uppercase tracking-wider"`;
+
+// Old td
+const oldTd = `className="px-5 py-3 text-white/80 leading-relaxed"`;
+const newTd  = `className="px-3 py-2 sm:px-5 sm:py-3 text-white/80 leading-relaxed text-xs sm:text-sm"`;
+
 files.forEach(file => {
   let content = fs.readFileSync(file, 'utf8');
   let newContent = content;
 
-  // Replace figure to strictly bound width and avoid prose breaking it
-  newContent = newContent.replace(/<figure className="my-10 not-prose">/g, '<figure className="my-8 sm:my-10 w-[calc(100vw-32px)] max-w-full lg:w-full overflow-hidden not-prose">');
-  
-  // Also fix the div wrapper to never exceed parent width
-  newContent = newContent.replace(/<div className="relative w-full rounded-2xl overflow-hidden border border-white\/10 shadow-2xl bg-black\/20">/g, '<div className="relative w-full max-w-full rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 shadow-xl sm:shadow-2xl bg-black/20">');
-  
-  // Replace the image style to be extremely robust with inline max-width
-  newContent = newContent.replace(/className="w-full max-w-full h-auto object-cover"\s*style=\{\{\s*width:\s*'100%',\s*height:\s*'auto'\s*\}\}/g, `className="w-full max-w-full h-auto object-contain sm:object-cover" style={{ maxWidth: '100%', height: 'auto', display: 'block' }}`);
+  // Replace wrapper
+  oldWrappers.forEach(old => {
+    newContent = newContent.split(old).join(newWrapper);
+  });
 
-  // Any other variations
-  newContent = newContent.replace(/className="w-full max-w-full h-auto object-cover"\s*style=\{\{\s*width:\s*"100%",\s*height:\s*"auto"\s*\}\}/g, `className="w-full max-w-full h-auto object-contain sm:object-cover" style={{ maxWidth: '100%', height: 'auto', display: 'block' }}`);
+  newContent = newContent.split(oldTable).join(newTable);
+  newContent = newContent.split(oldTh).join(newTh);
+  newContent = newContent.split(oldTd).join(newTd);
 
   if (content !== newContent) {
     fs.writeFileSync(file, newContent, 'utf8');
     modifiedCount++;
-    console.log('Modified:', file);
+    console.log('Updated:', file);
   }
 });
 
-console.log('Total files modified:', modifiedCount);
+console.log('Done. Files modified:', modifiedCount);
