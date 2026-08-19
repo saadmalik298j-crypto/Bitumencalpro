@@ -46,6 +46,20 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: "bitumen-emulsion-explained",
+    category: "Bitumen Fundamentals",
+    title: "Bitumen Emulsion Explained: Types, Density, Production & How It Differs from Bitumen",
+    excerpt:
+      "Learn what bitumen emulsion is, how it differs from plain bitumen, the types (cationic vs anionic, RS/MS/SS), density values, production in a colloid mill, and road construction uses.",
+    image: "/bitumen-emulsion-explained.webp",
+    imageAlt: "Bitumen emulsion — water-based cold-applied road binder sprayer",
+    readTime: "16 min read",
+    date: "August 19, 2026",
+    dateISO: "2026-08-19",
+    tags: ["Bitumen Emulsion", "Cationic", "Anionic", "Tack Coat", "Cold Application"],
+    featured: true,
+  },
+  {
     slug: "tpo-vs-modified-bitumen",
     category: "Roofing & Waterproofing",
     title: "TPO vs Modified Bitumen: Which Flat Roof System Is Right for Your Building?",
@@ -71,7 +85,7 @@ const POSTS = [
     date: "August 9, 2026",
     dateISO: "2026-08-09",
     tags: ["Bitumen Grades", "VG30", "PG Bitumen", "Penetration Grade"],
-    featured: true,
+    featured: false,
   },
   {
     slug: "modified-bitumen-roofing",
