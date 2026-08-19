@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "Bitumen Emulsion Explained: Types, Density, Production & Uses",
   description:
-    "Learn what bitumen emulsion is, how it differs from plain bitumen, the types (cationic vs anionic, RS/MS/SS), density values, production in a colloid mill, and road construction uses.",
+    "Discover bitumen emulsion types (cationic & anionic), density, production, and how this cold-applied binder compares to plain bitumen in road paving.",
   keywords: [
     "bitumen emulsion",
     "what is bitumen emulsion",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title:
       "Bitumen Emulsion Explained: Types, Density, Production & Uses | BitumenCalcPro",
     description:
-      "Everything about bitumen emulsion — cationic vs anionic, setting speed grades, density values, colloid mill production, and road applications.",
+      "Discover bitumen emulsion types (cationic & anionic), density, production, and how this cold-applied binder compares to plain bitumen in road paving.",
     url: "https://bitumencalcpro.com/blog/bitumen-emulsion-explained",
     siteName: "BitumenCalcPro",
     type: "article",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bitumen Emulsion Explained: Types, Density, Production & Uses",
     description:
-      "Everything about bitumen emulsion — types, density values, production process, and road construction applications.",
+      "Discover bitumen emulsion types (cationic & anionic), density, production, and how this cold-applied binder compares to plain bitumen in road paving.",
     images: ["/bitumen-emulsion-explained.webp"],
   },
   robots: {
@@ -77,7 +77,7 @@ const articleSchema = {
   headline:
     "Bitumen Emulsion Explained: Types, Density, Production & How It Differs from Bitumen",
   description:
-    "Learn what bitumen emulsion is, how it differs from plain bitumen, the types (cationic vs anionic, RS/MS/SS), density values, production in a colloid mill, and road construction uses.",
+    "Discover bitumen emulsion types (cationic & anionic), density, production, and how this cold-applied binder compares to plain bitumen in road paving.",
   image: "https://bitumencalcpro.com/bitumen-emulsion-explained.webp",
   datePublished: "2026-08-19T00:00:00.000Z",
   dateModified: "2026-08-19T00:00:00.000Z",

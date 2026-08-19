@@ -50,7 +50,7 @@ const POSTS = [
     category: "Bitumen Fundamentals",
     title: "Bitumen Emulsion Explained: Types, Density, Production & How It Differs from Bitumen",
     excerpt:
-      "Learn what bitumen emulsion is, how it differs from plain bitumen, the types (cationic vs anionic, RS/MS/SS), density values, production in a colloid mill, and road construction uses.",
+      "Discover bitumen emulsion types (cationic & anionic), density, production, and how this cold-applied binder compares to plain bitumen in road paving.",
     image: "/bitumen-emulsion-explained.webp",
     imageAlt: "Bitumen emulsion — water-based cold-applied road binder sprayer",
     readTime: "16 min read",
