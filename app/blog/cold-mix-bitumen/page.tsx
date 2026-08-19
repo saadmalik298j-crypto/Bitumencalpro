@@ -217,7 +217,7 @@ export default function ColdMixBitumenPage() {
               <div className="space-y-4 mb-6">
                 <div className="bg-white/5 border border-white/10 rounded-xl p-5 border-l-4 border-l-teal-400">
                   <h3 className="text-white font-bold mb-2">Bitumen Emulsion</h3>
-                  <p className="text-white/70 text-sm leading-relaxed">Breaks bitumen into tiny droplets suspended in water, held together by an emulsifying agent. Once the emulsion coats the aggregate and gets compacted, the water evaporates and the emulsion breaks, leaving a continuous bitumen film binding the stone together. Common grades include medium-setting and cationic slow-setting emulsions, picked based on how fast the mix needs to cure on site.</p>
+                  <p className="text-white/70 text-sm leading-relaxed">Breaks bitumen into tiny droplets suspended in water, held together by an emulsifying agent. Once the emulsion coats the aggregate and gets compacted, the water evaporates and the emulsion breaks, leaving a continuous bitumen film binding the stone together. You can learn more about its properties and classification in our <Link href="/blog/bitumen-emulsion-explained" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">guide to bitumen emulsion</Link>. Common grades include medium-setting and cationic slow-setting emulsions, picked based on how fast the mix needs to cure on site.</p>
                 </div>
                 <div className="bg-white/5 border border-white/10 rounded-xl p-5 border-l-4 border-l-orange-400">
                   <h3 className="text-white font-bold mb-2">Cutback Bitumen</h3>

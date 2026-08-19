@@ -624,7 +624,14 @@ export default function WhatIsBitumenPage() {
                 ))}
               </ul>
               <p className="text-white/80 leading-relaxed text-base">
-                Each grading system was designed for a different purpose and a different era of road engineering. For a full breakdown of how each system works, how to read a PG grade like PG 64-22, and how to choose the right grade for your project, see our dedicated guide:{" "}
+                Emulsion grades in particular follow their own classification system by electrical charge and setting speed — our dedicated{" "}
+                <Link
+                  href="/blog/bitumen-emulsion-explained"
+                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
+                >
+                  bitumen emulsion guide
+                </Link>{" "}
+                covers grade codes like CRS-1, MS-2, and SS-1 in full detail. For a breakdown of how each grading system works for hot mix binders, how to read a PG grade like PG 64-22, and how to choose the right grade for your project, see our dedicated guide:{" "}
                 <Link
                   href="/blog/bitumen-grades-explained"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
