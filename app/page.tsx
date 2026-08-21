@@ -898,7 +898,7 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  
  <div className="bg-gradient-to-r from-white/10 to-transparent border border-white/10 p-6 rounded-3xl shadow-lg hover:bg-white/10 transition-colors">
  <h3 className="text-2xl font-black text-white mb-2">Asphalt</h3>
- <p className="text-white/80 text-base leading-relaxed">The finished mixture of bitumen binder and mineral aggregate, laid and compacted to form the pavement layer. While hot mix is standard for construction, <Link href="/blog/cold-mix-bitumen" className="text-teal-400 hover:text-teal-300 underline underline-offset-2">cold mix bitumen</Link> is often used for quick repairs without heating equipment. (In American English, "asphalt" is also sometimes used to mean the binder itself ,a common source of cross-Atlantic confusion).</p>
+ <p className="text-white/80 text-base leading-relaxed">The finished mixture of bitumen binder and mineral aggregate, laid and compacted to form the pavement layer. While hot mix is standard for construction, <Link href="/blog/cold-mix-bitumen" className="text-teal-400 hover:text-teal-300 underline underline-offset-2">cold mix bitumen</Link> is often used for quick repairs without heating equipment. Pavement depth varies widely by application — see our <Link href="/blog/asphalt-thickness" className="text-orange-400 hover:text-orange-300 underline underline-offset-2">asphalt thickness guide</Link> for driveways, roads, and heavy-duty surfaces. (In American English, "asphalt" is also sometimes used to mean the binder itself ,a common source of cross-Atlantic confusion).</p>
  </div>
 
  <div className="bg-black/30 border border-white/5 p-6 rounded-3xl shadow-inner">
@@ -1050,6 +1050,9 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
   <h2 className="text-2xl font-black text-white mb-6 flex items-center gap-3">
                  <AlertTriangle className="text-red-400" size={28}/> Common Mistakes in Bitumen Calculation
                 </h2>
+                <p className="text-white/70 text-sm mb-6 leading-relaxed">
+                  For a deeper dive into estimation errors that increase project costs, see our full guide on <Link href="/blog/asphalt-estimation-mistakes" className="text-red-400 hover:text-red-300 underline underline-offset-2">asphalt estimation mistakes</Link>.
+                </p>
  <ul className="space-y-4 text-base text-white/80">
  <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Density mix-up</strong> ,using binder density (see our <Link href="/blog/bitumen-density-chart" className="text-red-400 font-bold hover:underline">density chart</Link>) where mix density is required (or vice versa), which can throw results off by more than half.</span></li>
  <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>By-mix-weight vs. by-aggregate-weight confusion</strong> ,bitumen content is normally expressed as a percentage of total mix weight, not aggregate weight alone.</span></li>
