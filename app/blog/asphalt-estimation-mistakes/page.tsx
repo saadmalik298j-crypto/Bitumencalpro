@@ -292,7 +292,7 @@ function MistakeHeader({
         ? "bg-orange-500/20 text-orange-300 border-orange-400/30"
         : "bg-teal-500/20 text-teal-300 border-teal-400/30";
   return (
-    <h2
+    <h3
       className={`text-2xl sm:text-3xl font-black text-white mb-5 border-l-4 ${border} pl-4 flex items-center gap-3`}
     >
       <span
@@ -301,7 +301,7 @@ function MistakeHeader({
         #{num}
       </span>
       {title}
-    </h2>
+    </h3>
   );
 }
 
@@ -514,6 +514,13 @@ export default function AsphaltEstimationMistakesPage() {
                 </Link>{" "}
                 before ordering eliminates several of these risk points at once.
               </p>
+            </section>
+
+            {/* ── THE 10 MISTAKES (H2 Parent) ── */}
+            <section id="the-10-mistakes" className="scroll-mt-24">
+              <h2 className="text-3xl font-black text-white mb-10 border-l-4 border-teal-400 pl-4">
+                The 10 Most Common Asphalt Estimation Mistakes
+              </h2>
             </section>
 
             {/* ── MISTAKE 1 ── */}
