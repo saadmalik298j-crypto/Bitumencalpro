@@ -64,7 +64,7 @@ const POSTS = [
     category: "Asphalt & Paving Materials",
     title: "Common Asphalt Estimation Mistakes That Increase Project Costs",
     excerpt:
-      "Avoid the 10 most costly asphalt estimation mistakes — wrong density, skipped compaction shrinkage, missing waste allowance, and more. Practical fixes included.",
+      "Avoid costly asphalt estimation mistakes. Fix density, waste & compaction calculation errors to lower paving costs.",
     image: "/common-asphalt-estimation-mistakes-project-costs.webp",
     imageAlt: "Common asphalt estimation mistakes that increase project costs",
     readTime: "14 min read",
@@ -78,7 +78,7 @@ const POSTS = [
     category: "Asphalt & Paving Materials",
     title: "Asphalt Thickness: Complete Chart for Driveways, Roads, Parking Lots & Heavy Equipment",
     excerpt:
-      "How thick should asphalt be? Get the complete chart — 2–3 in for driveways, 4–12 in for roads, 6–8 in for heavy trucks — with aggregate base specs and key factors explained.",
+      "Complete asphalt thickness chart & guide. Get exact paving depth & base specs for driveways, roads & parking lots.",
     image: "/asphalt-thickness-driveway-road-parking-lot.webp",
     imageAlt: "Asphalt thickness guide for driveways, roads, and parking lots showing different pavement applications",
     readTime: "12 min read",

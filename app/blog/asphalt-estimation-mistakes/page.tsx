@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: "Common Asphalt Estimation Mistakes That Increase Project Costs",
   description:
-    "Avoid the 10 most costly asphalt estimation mistakes — wrong density, skipped compaction shrinkage, missing waste allowance, and more. Practical fixes with a quick-reference table.",
+    "Avoid costly asphalt estimation mistakes. Fix density, waste & compaction calculation errors to lower paving costs.",
   keywords: [
     "asphalt estimation mistakes",
     "asphalt calculation errors",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title:
       "Common Asphalt Estimation Mistakes That Increase Project Costs | BitumenCalcPro",
     description:
-      "Avoid the 10 most costly asphalt estimation mistakes — wrong density, skipped compaction shrinkage, missing waste allowance, and more. Practical fixes included.",
+      "Avoid costly asphalt estimation mistakes. Fix density, waste & compaction calculation errors to lower paving costs.",
     url: "https://bitumencalcpro.com/blog/asphalt-estimation-mistakes",
     siteName: "BitumenCalcPro",
     type: "article",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Common Asphalt Estimation Mistakes That Increase Project Costs",
     description:
-      "A 10% estimating error can cost thousands. Learn the 10 most common asphalt calculation mistakes and how to avoid every one of them.",
+      "Avoid costly asphalt estimation mistakes. Fix density, waste & compaction calculation errors to lower paving costs.",
     images: ["/common-asphalt-estimation-mistakes-project-costs.webp"],
   },
   robots: {
@@ -72,7 +72,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Common Asphalt Estimation Mistakes That Increase Project Costs",
   description:
-    "The 10 most common asphalt estimation mistakes — including wrong density values, missing compaction shrinkage, and skipped waste allowance — with practical fixes for each.",
+    "Avoid costly asphalt estimation mistakes. Fix density, waste & compaction calculation errors to lower paving costs.",
   image:
     "https://bitumencalcpro.com/common-asphalt-estimation-mistakes-project-costs.webp",
   datePublished: "2026-08-21T00:00:00.000Z",

@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: "Asphalt Thickness Chart: Driveways, Roads, Parking Lots & Trucks",
   description:
-    "Complete asphalt thickness guide with charts for driveways (2–3 in), roads (4–12 in), parking lots (3–6 in), and heavy equipment areas (6–8 in). Includes aggregate base specs.",
+    "Complete asphalt thickness chart & guide. Get exact paving depth & base specs for driveways, roads & parking lots.",
   keywords: [
     "asphalt thickness",
     "asphalt thickness for driveway",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title:
       "Asphalt Thickness: Complete Chart for Driveways, Roads, Parking Lots & Heavy Equipment | BitumenCalcPro",
     description:
-      "Complete asphalt thickness guide with charts for driveways (2–3 in), roads (4–12 in), parking lots (3–6 in), and heavy equipment areas (6–8 in). Includes aggregate base specs.",
+      "Complete asphalt thickness chart & guide. Get exact paving depth & base specs for driveways, roads & parking lots.",
     url: "https://bitumencalcpro.com/blog/asphalt-thickness",
     siteName: "BitumenCalcPro",
     type: "article",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Asphalt Thickness Chart: Driveways, Roads, Parking Lots & Trucks",
     description:
-      "How thick should asphalt be? Get the complete chart — 2–3 in for driveways, 4–12 in for roads, 6–8 in for trucks — with aggregate base specs.",
+      "Complete asphalt thickness chart & guide. Get exact paving depth & base specs for driveways, roads & parking lots.",
     images: ["/asphalt-thickness-driveway-road-parking-lot.webp"],
   },
   robots: {
@@ -73,7 +73,7 @@ const articleSchema = {
   headline:
     "Asphalt Thickness: Complete Chart for Driveways, Roads, Parking Lots & Heavy Equipment",
   description:
-    "Complete asphalt thickness guide with charts for driveways, roads, parking lots, and heavy equipment areas, including aggregate base specifications.",
+    "Complete asphalt thickness chart & guide. Get exact paving depth & base specs for driveways, roads & parking lots.",
   image:
     "https://bitumencalcpro.com/asphalt-thickness-driveway-road-parking-lot.webp",
   datePublished: "2026-08-21T00:00:00.000Z",
@@ -849,9 +849,10 @@ export default function AsphaltThicknessPage() {
                 Video: Asphalt Thickness Explained
               </h2>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
-                Watch this overview to see how pavement thickness decisions are
-                made in practice, including how base preparation and compaction
-                affect final depth.
+                This video explains why proper asphalt lift thickness is key to
+                compaction and pavement performance. Learn how to choose minimum
+                thickness based on aggregate size and why thicker lifts are better
+                for achieving density, especially in cooler conditions.
               </p>
               <div className="relative w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black/30 aspect-video">
                 <iframe
