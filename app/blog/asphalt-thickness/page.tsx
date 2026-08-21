@@ -849,10 +849,11 @@ export default function AsphaltThicknessPage() {
                 Video: Asphalt Thickness Explained
               </h2>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
-                This video explains why proper asphalt lift thickness is key to
-                compaction and pavement performance. Learn how to choose minimum
-                thickness based on aggregate size and why thicker lifts are better
-                for achieving density, especially in cooler conditions.
+                Getting the lift thickness right isn't just about total pavement depth — it 
+                directly impacts how well the asphalt compacts. This visual breakdown explains 
+                the relationship between aggregate size and minimum layer thickness, showing 
+                how a thicker pour retains heat longer to ensure maximum density even on 
+                cooler paving days.
               </p>
               <div className="relative w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black/30 aspect-video">
                 <iframe
