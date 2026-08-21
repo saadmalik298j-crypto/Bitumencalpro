@@ -178,31 +178,38 @@ export default function Home() {
 
  /* ─── Structured Data (JSON-LD) ─── */
  const webApplicationSchema = {
- "@context": "https://schema.org",
- "@type": "WebApplication",
- "name": "BitumenCalcPro — Free Bitumen Calculator",
- "url": "https://bitumencalcpro.com",
- "description": "Free online bitumen calculator that estimates bitumen binder quantity, hot mix asphalt (HMA) weight, aggregate quantity, and project cost for pavement construction projects.",
- "applicationCategory": "EngineeringApplication",
- "applicationSubCategory": "UtilitiesApplication",
- "operatingSystem": "Any",
- "browserRequirements": "Requires JavaScript",
- "offers": {
- "@type": "Offer",
- "price": "0",
- "priceCurrency": "USD"
- },
- "featureList": [
- "Bitumen quantity estimation",
- "Hot Mix Asphalt (HMA) weight calculation",
- "Aggregate quantity calculation",
- "Bitumen cost estimation",
- "Multiple unit support (metric and imperial)",
- "Multi-layer pavement calculation",
- "Instant results",
- "AASHTO-aligned formulas"
- ]
- };
+		"@context": "https://schema.org",
+		"@type": "WebApplication",
+		"@id": "https://bitumencalcpro.com",
+		"url": "https://bitumencalcpro.com",
+		"name": "Bitumen Calculator",
+		"description": "Free online bitumen calculator that estimates bitumen binder quantity, hot mix asphalt (HMA) weight, aggregate quantity, and project cost for pavement construction projects.",
+		"applicationCategory": "BusinessApplication",
+		"applicationSubCategory": "UtilitiesApplication",
+		"operatingSystem": "All",
+		"browserRequirements": "Requires HTML5 canvas or JavaScript support.",
+		"explanationOfUses": "Calculates required volumes and weights for bitumen, hot mix asphalt, and aggregates for pavement civil engineering projects.",
+		"isAccessibleForFree": true,
+		"offers": {
+			"@type": "Offer",
+			"price": "0",
+			"priceCurrency": "USD"
+		},
+		"featureList": [
+			"Bitumen quantity estimation",
+			"Hot Mix Asphalt (HMA) weight calculation",
+			"Aggregate quantity calculation",
+			"Bitumen cost estimation",
+			"Multiple unit support (metric and imperial)",
+			"Multi-layer pavement calculation",
+			"Instant results",
+			"AASHTO-aligned formulas"
+		],
+		"author": {
+			"@type": "Organization",
+			"name": "BitumenCalcPro"
+		}
+	};
 
  const webSiteSchema = {
  "@context": "https://schema.org",
@@ -222,25 +229,6 @@ export default function Home() {
  },
  "sameAs": [
  "https://twitter.com/bitumencalcpro"
- ]
- };
-
- const breadcrumbSchema = {
- "@context": "https://schema.org",
- "@type": "BreadcrumbList",
- "itemListElement": [
- {
- "@type": "ListItem",
- "position": 1,
- "name": "Home",
- "item": "https://bitumencalcpro.com"
- },
- {
- "@type": "ListItem",
- "position": 2,
- "name": "Bitumen Calculator",
- "item": "https://bitumencalcpro.com/#calculator"
- }
  ]
  };
 
@@ -277,12 +265,6 @@ export default function Home() {
  type="application/ld+json"
  strategy="beforeInteractive"
  dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
- />
- <Script
- id="schema-breadcrumb"
- type="application/ld+json"
- strategy="beforeInteractive"
- dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
  />
  <Script
  id="schema-faq"
