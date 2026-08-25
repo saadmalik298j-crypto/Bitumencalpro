@@ -94,11 +94,8 @@ figure img {
 
 /* ── Scroll Flicker / Blink Fix ─────────────────────────────── */
 
-/* 1. Body background: promote to GPU layer without changing
-      the original gradient appearance */
-body {
-  will-change: scroll-position;
-}
+/* 1. Background is now a fixed <div> in layout.tsx — GPU composited,
+      never repaints on scroll. No body rule needed here. */
 
 /* 2. Sticky navbar with backdrop-blur: force GPU compositing so
       the blur doesn't trigger a full page repaint on scroll */
