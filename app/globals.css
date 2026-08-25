@@ -94,10 +94,10 @@ figure img {
 
 /* ── Scroll Flicker / Blink Fix ─────────────────────────────── */
 
-/* 1. Body background: isolate the gradient so the GPU caches it
-      and does not repaint it on every scroll frame */
+/* 1. Body background: promote to GPU layer without changing
+      the original gradient appearance */
 body {
-  background-attachment: fixed;
+  will-change: scroll-position;
 }
 
 /* 2. Sticky navbar with backdrop-blur: force GPU compositing so
