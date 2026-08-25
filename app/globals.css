@@ -92,3 +92,37 @@ figure img {
   height: auto !important;
 }
 
+/* ── Scroll Flicker / Blink Fix ─────────────────────────────── */
+
+/* 1. Body background: isolate the gradient so the GPU caches it
+      and does not repaint it on every scroll frame */
+body {
+  background-attachment: fixed;
+}
+
+/* 2. Sticky navbar with backdrop-blur: force GPU compositing so
+      the blur doesn't trigger a full page repaint on scroll */
+header {
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 3. Decorative blur orbs (all hero orbs are pointer-events-none + absolute):
+      Promote every such element to its own GPU compositor layer.
+      This is the main scroll-blink culprit on all pages. */
+.pointer-events-none {
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 5. Article layout containment — tells the browser these sections
+      don't affect outside paint, shrinks repaint scope */
+article section {
+  contain: layout style;
+}
