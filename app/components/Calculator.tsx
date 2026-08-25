@@ -195,7 +195,7 @@ export default function Calculator() {
               <CalcIcon size={22} />
             </div>
             <div>
-              <h2 className="text-xl font-black text-slate-900 mb-0.5">Parameters</h2>
+              <div  className="text-2xl font-black text-slate-900 mb-0.5">Parameters</div>
               <p className="text-sm text-slate-500 font-medium">Configure all dimensions & units individually</p>
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function Calculator() {
 
         {/* Dimensions */}
         <div className="mb-6">
-          <h3 className="text-xs font-bold text-orange-500 tracking-wider uppercase mb-4">Dimensions</h3>
+          <div className=" font-bold text-orange-500 tracking-wider uppercase mb-4">Dimensions</div>
           <div className="space-y-4">
             {[
               { id: "length", label: "Length", value: length, set: setLength, unit: lengthUnit, setUnit: setLengthUnit },
@@ -276,7 +276,7 @@ export default function Calculator() {
 
         {/* Mix Properties */}
         <div className="mb-6">
-          <h3 className="text-xs font-bold text-cyan-600 tracking-wider uppercase mb-4">Mix Properties</h3>
+          <div className="font-bold text-cyan-600 tracking-wider uppercase mb-4">Mix Properties</div>
           <div className="space-y-4">
             <div className="flex flex-col gap-1.5">
               <label htmlFor="bitumenContent" className="text-sm font-semibold text-slate-700">Bitumen Content</label>
@@ -330,7 +330,7 @@ export default function Calculator() {
 
         {/* Cost Estimation */}
         <div className="mb-8">
-          <h3 className="text-xs font-bold text-green-600 tracking-wider uppercase mb-4">Cost Estimation <span className="font-normal text-slate-400">(Optional)</span></h3>
+          <div className=" font-bold text-green-600 tracking-wider uppercase mb-4">Cost Estimation <span className="font-normal text-slate-400">(Optional)</span></div>
           <div className="flex flex-col gap-1.5">
             <label htmlFor="price" className="text-sm font-semibold text-slate-700">Price per unit of bitumen</label>
             <div className="flex rounded-xl overflow-hidden border border-slate-200 focus-within:border-green-400 focus-within:ring-4 focus-within:ring-green-100 transition-all bg-white shadow-sm">
@@ -388,7 +388,7 @@ export default function Calculator() {
             <div className="w-20 h-20 bg-slate-50 border border-slate-100 rounded-3xl flex items-center justify-center mb-6 text-slate-300 shadow-inner">
               <Database size={32} strokeWidth={2} />
             </div>
-            <h3 className="text-2xl font-black text-slate-800 mb-3">Ready to Calculate</h3>
+            <div className="text-2xl font-black text-slate-800 mb-3">Ready to Calculate</div>
             <p className="text-base text-slate-500 max-w-sm mx-auto leading-relaxed">
               Mix and match any units you want on the left. We'll automatically convert everything and present your results here.
             </p>
@@ -399,7 +399,7 @@ export default function Calculator() {
               <div className="bg-green-500 text-white p-2.5 rounded-xl shadow-md shadow-green-500/20">
                 <Database size={22} />
               </div>
-              <h3 className="text-2xl font-black text-slate-900">Final Results</h3>
+              <div className="text-2xl font-black text-slate-900">Final Results</div>
             </div>
 
             <div className="space-y-4 flex-1 flex flex-col">

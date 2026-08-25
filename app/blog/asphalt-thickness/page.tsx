@@ -234,7 +234,7 @@ function InfoTable({
 }) {
   return (
     <div className="my-6 sm:my-8 -mx-4 sm:mx-0 overflow-x-auto not-prose sm:rounded-xl border-y sm:border border-white/10 shadow-lg">
-      <table className="w-full min-w-[400px] text-sm">
+      <table className="w-full min-w-[320px] text-sm">
         <thead>
           <tr className="bg-teal-600/30 border-b border-white/10">
             {headers.map((h) => (
@@ -295,7 +295,7 @@ export default function AsphaltThicknessPage() {
       />
 
       {/* ── HERO BAND ── */}
-      <div className="relative pt-16 pb-12 overflow-hidden">
+      <div className="relative pt-16 pb-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-teal-600/10 pointer-events-none" />
         <div className="absolute -top-32 -right-32 w-[400px] h-[400px] rounded-full bg-orange-500/10 blur-[100px] pointer-events-none" />
         <div className="absolute -bottom-20 -left-20 w-[300px] h-[300px] rounded-full bg-teal-500/10 blur-[80px] pointer-events-none" />
@@ -332,7 +332,7 @@ export default function AsphaltThicknessPage() {
           </h1>
 
           {/* Meta row */}
-          <div className="flex flex-wrap items-center gap-4 text-white/50 text-sm">
+          <div className="flex flex-wrap items-center gap-4 text-white/50 text-sm mb-10">
             <span className="flex items-center gap-1.5">
               <Calendar size={13} />
               <time dateTime="2026-08-21">August 21, 2026</time>
@@ -891,18 +891,9 @@ export default function AsphaltThicknessPage() {
                 </p>
                 <p className="text-white/85 leading-relaxed text-base">
                   Getting the thickness right from the start, rather than
-                  cutting corners on either the asphalt or the base beneath it,
+                  cutting corners on either the asphalt or the base beneath ,it
                   is the difference between decades of reliable performance and a
-                  surface that needs costly repairs within a few years. Once
-                  you've confirmed your thickness specifications, use our{" "}
-                  <Link
-                    href="/"
-                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
-                  >
-                    free bitumen and asphalt calculator
-                  </Link>{" "}
-                  to estimate exact material quantities based on your project
-                  dimensions.
+                  surface that needs costly repairs within a few years. 
                 </p>
               </div>
             </section>

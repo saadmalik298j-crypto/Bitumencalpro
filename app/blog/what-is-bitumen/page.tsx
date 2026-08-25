@@ -401,7 +401,7 @@ export default function WhatIsBitumenPage() {
                   "Most bitumen comes from crude oil refining; a smaller amount occurs naturally",
                   "Main uses: road paving, roofing membranes, waterproofing, and industrial coatings",
                   "Bitumen, asphalt, and tar are often confused but come from different sources",
-                  "Cold mix and modified bitumen extend its use to repairs and extreme climates",
+                  'Cold mix and modified bitumen extend its use to repairs and extreme climates',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-white/75 text-sm leading-relaxed">
                     <CheckCircle2 size={15} className="text-teal-400 mt-0.5 shrink-0" />
@@ -698,7 +698,8 @@ export default function WhatIsBitumenPage() {
                 {
                   id: "cold-mix-bitumen",
                   title: "Cold Mix Bitumen",
-                  body: "Cold mix bitumen is asphalt made using emulsified or cutback bitumen that can be applied without heating, staying workable at or near normal outdoor temperature — unlike hot mix, which must be produced and laid hot.",
+                  body: <>
+                 <Link href='/blog/cold-mix-bitumen' className="text-orange-500"> Cold mix bitumen</Link> is asphalt made using emulsified or cutback bitumen that can be applied without heating, staying workable at or near normal outdoor temperature — unlike hot mix, which must be produced and laid hot.</>,
                   extras: [
                     { label: "Uses", text: "Pothole repairs, patching cracks, temporary road maintenance, and any location without a hot mix plant nearby." },
                     { label: "Benefits", text: "Safer and easier to handle (no heating equipment needed), can be stored for later use, and works in wet or cold conditions." },

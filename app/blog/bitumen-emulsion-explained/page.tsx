@@ -893,7 +893,7 @@ export default function BitumenEmulsionExplainedPage() {
                   href="/"
                   className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                 >
-                  Bitumen Calculator
+                  Fast Bitumen Calculator
                 </Link>{" "}
                 can help you estimate binder quantities for tack coat, prime coat, and emulsion-based
                 projects quickly.

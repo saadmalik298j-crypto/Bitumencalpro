@@ -233,7 +233,7 @@ function InfoTable({
 }) {
   return (
     <div className="my-6 sm:my-8 -mx-4 sm:mx-0 overflow-x-auto not-prose sm:rounded-xl border-y sm:border border-white/10 shadow-lg">
-      <table className="w-full min-w-[500px] text-sm">
+      <table className="w-full min-w-[320px] text-sm">
         <thead>
           <tr className="bg-teal-600/30 border-b border-white/10">
             {headers.map((h) => (
@@ -329,7 +329,7 @@ export default function AsphaltEstimationMistakesPage() {
       />
 
       {/* ── HERO BAND ── */}
-      <div className="relative pt-16 pb-12 overflow-hidden">
+      <div className="relative pt-16 pb-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/10 pointer-events-none" />
         <div className="absolute -top-32 -right-32 w-[400px] h-[400px] rounded-full bg-red-500/10 blur-[100px] pointer-events-none" />
         <div className="absolute -bottom-20 -left-20 w-[300px] h-[300px] rounded-full bg-orange-500/10 blur-[80px] pointer-events-none" />
@@ -367,7 +367,7 @@ export default function AsphaltEstimationMistakesPage() {
           </h1>
 
           {/* Meta row */}
-          <div className="flex flex-wrap items-center gap-4 text-white/50 text-sm">
+          <div className="flex flex-wrap items-center gap-4 text-white/50 text-sm mb-10">
             <span className="flex items-center gap-1.5">
               <Calendar size={13} />
               <time dateTime="2026-08-21">August 21, 2026</time>
@@ -399,7 +399,7 @@ export default function AsphaltEstimationMistakesPage() {
             />
 
             {/* Quick Answer */}
-            <div className="mb-8 bg-gradient-to-br from-red-500/15 to-red-600/10 border border-red-400/25 rounded-2xl p-6 md:p-8">
+            <div className='mb-10 bg-gradient-to-br from-teal-500/15 to-teal-600/10 border border-teal-400/25 rounded-2xl p-6 md:p-8'>
               <h2 className="text-lg font-black text-red-300 mb-3 flex items-center gap-2">
                 <CheckCircle2 size={18} />
                 Quick Answer
@@ -992,7 +992,7 @@ export default function AsphaltEstimationMistakesPage() {
                     href="/"
                     className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                   >
-                    Bitumen Calculator
+                    Bitumen Calculator Free
                   </Link>{" "}
                   instead of a manual spreadsheet removes several of the most
                   common error points at once: density, unit conversion, and
