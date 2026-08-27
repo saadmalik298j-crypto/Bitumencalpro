@@ -26,7 +26,7 @@ import {
   DollarSign,
   FileText,
   Users,
-  Route,
+  Navigation2,
   Milestone,
   Car,
   Footprints,
@@ -928,7 +928,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-500/30 text-teal-100 px-5 py-2 rounded-full text-sm font-bold mb-6 shadow-[0_0_15px_rgba(20,184,166,0.2)]">
-              <Route size={16} />
+              <Navigation2 size={16} />
               Applications
             </div>
             <h2 className="text-4xl sm:text-5xl font-black text-white mb-6 drop-shadow-xl">
@@ -942,7 +942,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: Route,
+                icon: Navigation2,
                 color: "teal",
                 title: "Urban & Rural Roads",
                 bullets: [
@@ -1047,7 +1047,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-500/30 text-teal-100 px-5 py-2 rounded-full text-sm font-bold mb-6 shadow-[0_0_15px_rgba(20,184,166,0.2)]">
-              <Route size={16} />
+              <Navigation2 size={16} />
               Applications
             </div>
             <h2 className="text-4xl sm:text-5xl font-black text-white mb-6 drop-shadow-xl">
@@ -1061,7 +1061,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: Route,
+                icon: Navigation2,
                 color: "teal",
                 title: "Urban & Rural Roads",
                 bullets: [
