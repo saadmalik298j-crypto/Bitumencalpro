@@ -98,7 +98,7 @@ export default function LegalLayout({
       {/* ════════════════════════════════════
           CONTENT AREA
       ════════════════════════════════════ */}
-      <main className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
+      <main className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
         <div className="bg-white/95 backdrop-blur-3xl rounded-3xl shadow-2xl border border-white/20 p-8 md:p-12">
           {children}
         </div>

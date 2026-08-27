@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 import {
+import AuthorBio from "../../components/AuthorBio";
   ChevronRight,
   Clock,
   Calendar,
@@ -816,7 +817,9 @@ export default function ModifiedBitumenRoofingPage() {
                 National Roofing Contractors Assoc. (NRCA) <ExternalLink size={14} className="group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
-          </article>
+          
+          <AuthorBio />
+        </article>
 
           {/* ── SIDEBAR ── */}
           <aside className="hidden xl:block w-72 shrink-0">

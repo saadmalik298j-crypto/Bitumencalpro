@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 import {
+import AuthorBio from "../../components/AuthorBio";
   ChevronRight,
   Clock,
   Calendar,
@@ -538,7 +539,9 @@ export default function ColdMixBitumenPage() {
               <Link href="/blog" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold text-sm transition-colors group"><ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> Back to Blog</Link>
               <Link href="/" className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-[0_0_20px_rgba(249,115,22,0.35)] hover:shadow-[0_0_30px_rgba(249,115,22,0.55)]">Try the Bitumen Calculator <ArrowRight size={15} /></Link>
             </div>
-          </article>
+          
+          <AuthorBio />
+        </article>
 
           {/* SIDEBAR */}
           <aside className="hidden xl:block w-72 shrink-0">

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 import {
+import AuthorBio from "../../components/AuthorBio";
   ChevronRight,
   Clock,
   Calendar,
@@ -1169,7 +1170,9 @@ export default function BitumenEmulsionExplainedPage() {
                 <ArrowRight size={15} />
               </Link>
             </div>
-          </article>
+          
+          <AuthorBio />
+        </article>
 
           {/* ── SIDEBAR: Table of Contents ── */}
           <aside className="hidden xl:block w-72 shrink-0">
