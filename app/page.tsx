@@ -1242,7 +1242,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════
   REFERENCES & STANDARDS
   ═══════════════════════════════ */}
       <section className="py-24 relative overflow-hidden">
