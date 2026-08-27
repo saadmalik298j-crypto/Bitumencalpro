@@ -1242,8 +1242,6 @@ export default function Home() {
         </div>
       </section>
 
-  REFERENCES & STANDARDS
-  ═══════════════════════════════ */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute right-0 top-0 w-[700px] h-[700px] rounded-full bg-violet-500/5 blur-[140px] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
