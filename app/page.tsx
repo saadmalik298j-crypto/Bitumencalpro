@@ -912,8 +912,246 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  </div>
  </section>
 
- {/* ═══════════════════════════════
- REFERENCE TABLE & OBC
+   {/* ═══════════════════════════════
+  WHERE BITUMEN CALCULATION IS USED
+  ═══════════════════════════════ */}
+  <section className="py-24 bg-black/20 border-y border-white/5 relative overflow-hidden">
+    <div className="absolute -left-32 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-teal-500/5 blur-[120px] pointer-events-none" />
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <div className="text-center mb-16">
+        <div className="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-500/30 text-teal-100 px-5 py-2 rounded-full text-sm font-bold mb-6 shadow-[0_0_15px_rgba(20,184,166,0.2)]">
+          <Route size={16} />
+          Applications
+        </div>
+        <h2 className="text-4xl sm:text-5xl font-black text-white mb-6 drop-shadow-xl">
+          Where Is Bitumen Calculation Used?
+        </h2>
+        <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed">
+          From residential driveways to motorways and industrial port aprons, bitumen quantity estimation is needed across every pavement category. Knowing the right mix density and bitumen content for each application type is what separates an accurate order from a costly shortfall.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          {
+            icon: Route,
+            color: "teal",
+            title: "Urban & Rural Roads",
+            bullets: [
+              "Municipal road resurfacing and patch repairs",
+              "Rural sealed road construction with base and wearing courses",
+              "Kerb-to-kerb bitumen quantity takeoffs for council contracts",
+            ],
+          },
+          {
+            icon: Milestone,
+            color: "blue",
+            title: "Highways & Motorways",
+            bullets: [
+              "Multi-lane carriageway paving with separate layer calculations",
+              "SMA and PMB mixes for high-speed, high-traffic surfaces",
+              "Pavement rehabilitation: milling depth vs. overlay tonnage",
+            ],
+          },
+          {
+            icon: Car,
+            color: "violet",
+            title: "Car Parks & Forecourts",
+            bullets: [
+              "Retail and commercial car park surface estimation",
+              "Petrol station forecourt dense-graded HMA quantities",
+              "Airport apron and taxiway binder course calculation",
+            ],
+          },
+          {
+            icon: Footprints,
+            color: "orange",
+            title: "Footpaths & Cycle Paths",
+            bullets: [
+              "Thin wearing course for pedestrian paths (30–40 mm layers)",
+              "Shared cycle and footway combined bitumen estimates",
+              "Urban trail networks with open-graded friction course mixes",
+            ],
+          },
+          {
+            icon: Home,
+            color: "emerald",
+            title: "Driveways & Private Roads",
+            bullets: [
+              "Residential driveway surface and base course quantities",
+              "Private estate roads with varying layer configurations",
+              "Homeowner supply estimates: tonnes of asphalt per square metre",
+            ],
+          },
+          {
+            icon: Building2,
+            color: "red",
+            title: "Industrial & Port Projects",
+            bullets: [
+              "Heavy-duty yard paving for logistics centres and warehouses",
+              "Port terminal apron: thick base course, PMB wearing course",
+              "Mining haul roads: high-density mix design, bitumen per tonne",
+            ],
+          },
+        ].map(({ icon: Icon, color, title, bullets }) => {
+          const colors: Record<string, string> = {
+            teal: "from-teal-500/20 to-transparent border-teal-500/20 hover:border-teal-500/50",
+            blue: "from-blue-500/20 to-transparent border-blue-500/20 hover:border-blue-500/50",
+            violet: "from-violet-500/20 to-transparent border-violet-500/20 hover:border-violet-500/50",
+            orange: "from-orange-500/20 to-transparent border-orange-500/20 hover:border-orange-500/50",
+            emerald: "from-emerald-500/20 to-transparent border-emerald-500/20 hover:border-emerald-500/50",
+            red: "from-red-500/20 to-transparent border-red-500/20 hover:border-red-500/50",
+          };
+          const iconColors: Record<string, string> = {
+            teal: "bg-teal-500/20 border-teal-500/40 text-teal-400",
+            blue: "bg-blue-500/20 border-blue-500/40 text-blue-400",
+            violet: "bg-violet-500/20 border-violet-500/40 text-violet-400",
+            orange: "bg-orange-500/20 border-orange-500/40 text-orange-400",
+            emerald: "bg-emerald-500/20 border-emerald-500/40 text-emerald-400",
+            red: "bg-red-500/20 border-red-500/40 text-red-400",
+          };
+          return (
+            <div key={title} className={`bg-gradient-to-br ${colors[color]} rounded-[2rem] p-8 border transition-all duration-300 hover:-translate-y-1 shadow-xl group`}>
+              <div className={`w-12 h-12 ${iconColors[color]} border rounded-2xl flex items-center justify-center mb-6 shadow-lg`}>
+                <Icon size={24} />
+              </div>
+              <h3 className="text-xl font-black text-white mb-4">{title}</h3>
+              <ul className="space-y-3">
+                {bullets.map((b, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white/70 text-sm leading-relaxed">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2 shrink-0" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+    {/* ═══════════════════════════════
+  WHERE BITUMEN CALCULATION IS USED
+  ═══════════════════════════════ */}
+  <section className="py-24 bg-black/20 border-y border-white/5 relative overflow-hidden">
+    <div className="absolute -left-32 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-teal-500/5 blur-[120px] pointer-events-none" />
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <div className="text-center mb-16">
+        <div className="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-500/30 text-teal-100 px-5 py-2 rounded-full text-sm font-bold mb-6 shadow-[0_0_15px_rgba(20,184,166,0.2)]">
+          <Route size={16} />
+          Applications
+        </div>
+        <h2 className="text-4xl sm:text-5xl font-black text-white mb-6 drop-shadow-xl">
+          Where Is Bitumen Calculation Used?
+        </h2>
+        <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed">
+          From residential driveways to motorways and industrial port aprons, bitumen quantity estimation is needed across every pavement category. Knowing the right mix density and bitumen content for each application type is what separates an accurate order from a costly shortfall.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          {
+            icon: Route,
+            color: "teal",
+            title: "Urban & Rural Roads",
+            bullets: [
+              "Municipal road resurfacing and patch repairs",
+              "Rural sealed road construction with base and wearing courses",
+              "Kerb-to-kerb bitumen quantity takeoffs for council contracts",
+            ],
+          },
+          {
+            icon: Milestone,
+            color: "blue",
+            title: "Highways & Motorways",
+            bullets: [
+              "Multi-lane carriageway paving with separate layer calculations",
+              "SMA and PMB mixes for high-speed, high-traffic surfaces",
+              "Pavement rehabilitation: milling depth vs. overlay tonnage",
+            ],
+          },
+          {
+            icon: Car,
+            color: "violet",
+            title: "Car Parks & Forecourts",
+            bullets: [
+              "Retail and commercial car park surface estimation",
+              "Petrol station forecourt dense-graded HMA quantities",
+              "Airport apron and taxiway binder course calculation",
+            ],
+          },
+          {
+            icon: Footprints,
+            color: "orange",
+            title: "Footpaths & Cycle Paths",
+            bullets: [
+              "Thin wearing course for pedestrian paths (30–40 mm layers)",
+              "Shared cycle and footway combined bitumen estimates",
+              "Urban trail networks with open-graded friction course mixes",
+            ],
+          },
+          {
+            icon: Home,
+            color: "emerald",
+            title: "Driveways & Private Roads",
+            bullets: [
+              "Residential driveway surface and base course quantities",
+              "Private estate roads with varying layer configurations",
+              "Homeowner supply estimates: tonnes of asphalt per square metre",
+            ],
+          },
+          {
+            icon: Building2,
+            color: "red",
+            title: "Industrial & Port Projects",
+            bullets: [
+              "Heavy-duty yard paving for logistics centres and warehouses",
+              "Port terminal apron: thick base course, PMB wearing course",
+              "Mining haul roads: high-density mix design, bitumen per tonne",
+            ],
+          },
+        ].map(({ icon: Icon, color, title, bullets }) => {
+          const colors: Record<string, string> = {
+            teal: "from-teal-500/20 to-transparent border-teal-500/20 hover:border-teal-500/50",
+            blue: "from-blue-500/20 to-transparent border-blue-500/20 hover:border-blue-500/50",
+            violet: "from-violet-500/20 to-transparent border-violet-500/20 hover:border-violet-500/50",
+            orange: "from-orange-500/20 to-transparent border-orange-500/20 hover:border-orange-500/50",
+            emerald: "from-emerald-500/20 to-transparent border-emerald-500/20 hover:border-emerald-500/50",
+            red: "from-red-500/20 to-transparent border-red-500/20 hover:border-red-500/50",
+          };
+          const iconColors: Record<string, string> = {
+            teal: "bg-teal-500/20 border-teal-500/40 text-teal-400",
+            blue: "bg-blue-500/20 border-blue-500/40 text-blue-400",
+            violet: "bg-violet-500/20 border-violet-500/40 text-violet-400",
+            orange: "bg-orange-500/20 border-orange-500/40 text-orange-400",
+            emerald: "bg-emerald-500/20 border-emerald-500/40 text-emerald-400",
+            red: "bg-red-500/20 border-red-500/40 text-red-400",
+          };
+          return (
+            <div key={title} className={`bg-gradient-to-br ${colors[color]} rounded-[2rem] p-8 border transition-all duration-300 hover:-translate-y-1 shadow-xl group`}>
+              <div className={`w-12 h-12 ${iconColors[color]} border rounded-2xl flex items-center justify-center mb-6 shadow-lg`}>
+                <Icon size={24} />
+              </div>
+              <h3 className="text-xl font-black text-white mb-4">{title}</h3>
+              <ul className="space-y-3">
+                {bullets.map((b, i) => (
+                  <li key={i} className="flex items-start gap-3 text-white/70 text-sm leading-relaxed">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white/40 mt-2 shrink-0" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  {/* ═══════════════════════════════
+  REFERENCE TABLE & OBC
  ═══════════════════════════════ */}
  <section id="reference" className="py-24 relative">
  <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -996,8 +1234,254 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  </div>
  </section>
 
- {/* ═══════════════════════════════
- WHY USE & FAQ
+   {/* ═══════════════════════════════
+  REFERENCES & STANDARDS
+  ═══════════════════════════════ */}
+  <section className="py-24 relative overflow-hidden">
+    <div className="absolute right-0 top-0 w-[700px] h-[700px] rounded-full bg-violet-500/5 blur-[140px] pointer-events-none" />
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+      <div className="text-center mb-16">
+        <div className="inline-flex items-center gap-2 bg-violet-500/20 border border-violet-500/30 text-violet-100 px-5 py-2 rounded-full text-sm font-bold mb-6 shadow-[0_0_15px_rgba(139,92,246,0.2)]">
+          <Award size={16} />
+          Industry Standards
+        </div>
+        <h2 className="text-4xl sm:text-5xl font-black text-white mb-6 drop-shadow-xl">
+          Industry Standards &amp; References
+        </h2>
+        <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed">
+          Bitumen calculator results are only as good as the mix design inputs behind them. These are the standards that govern how bitumen content, mix density, and volumetric properties are determined, tested, and specified.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {[
+          {
+            code: "AASHTO M323",
+            title: "Superpave Volumetric Mix Design",
+            body: "AASHTO",
+            color: "teal",
+            href: "https://www.transportation.org/",
+            desc: "Defines the volumetric criteria (VMA, VFA, Gmm) used to specify and verify Superpave mix designs for North American highway projects.",
+          },
+          {
+            code: "AASHTO T166",
+            title: "Bulk Specific Gravity of HMA",
+            body: "AASHTO",
+            color: "teal",
+            href: "https://www.transportation.org/",
+            desc: "Test method for determining compacted HMA bulk specific gravity — the lab-measured value underpinning the mix density figure entered into this calculator.",
+          },
+          {
+            code: "AASHTO T209",
+            title: "Maximum Specific Gravity (Rice)",
+            body: "AASHTO",
+            color: "teal",
+            href: "https://www.transportation.org/",
+            desc: "Rice test — determines the theoretical maximum density (Gmm) of uncompacted asphalt mix, used to calculate percent air voids and VMA.",
+          },
+          {
+            code: "Asphalt Institute MS-2",
+            title: "Mix Design Methods for Asphalt",
+            body: "Asphalt Institute",
+            color: "violet",
+            href: "https://www.asphaltinstitute.org/",
+            desc: "The industry reference manual for Marshall and Superpave mix design. Defines OBC determination, compaction criteria, and stability/flow testing.",
+          },
+          {
+            code: "BS EN 12591",
+            title: "Bitumen Specification & Testing",
+            body: "CEN",
+            color: "blue",
+            href: "https://www.bsigroup.com/",
+            desc: "European standard specifying penetration grade and multi-grade bitumen — defines the binder grades (50/70, 70/100) referenced in European mix designs.",
+          },
+          {
+            code: "BS EN 13108",
+            title: "Asphalt Mixture Specifications",
+            body: "CEN",
+            color: "blue",
+            href: "https://www.bsigroup.com/",
+            desc: "The suite of European asphalt mixture product standards covering HMA, SMA, BBTM, and porous asphalt — specifying binder content ranges and volumetric limits.",
+          },
+          {
+            code: "MoRTH Section 500",
+            title: "Flexible Pavement Construction",
+            body: "MoRTH",
+            color: "orange",
+            href: "https://morth.nic.in/",
+            desc: "India's Ministry of Road Transport & Highways specifications for bituminous surface and base courses — governs DBM, BC, and BM mix design in Indian road projects.",
+          },
+          {
+            code: "IRC SP:16",
+            title: "Marshall Mix Design Guidelines",
+            body: "IRC",
+            color: "orange",
+            href: "https://www.irc.org.in/",
+            desc: "Indian Roads Congress guidelines for Marshall method mix design — widely referenced alongside MoRTH for determining OBC on Indian highway projects.",
+          },
+        ].map(({ code, title, body, color, href, desc }) => {
+          const badgeColors: Record<string, string> = {
+            teal:   "bg-teal-500/20 text-teal-300 border-teal-500/30",
+            violet: "bg-violet-500/20 text-violet-300 border-violet-500/30",
+            blue:   "bg-blue-500/20 text-blue-300 border-blue-500/30",
+            orange: "bg-orange-500/20 text-orange-300 border-orange-500/30",
+          };
+          const cardBorder: Record<string, string> = {
+            teal:   "border-teal-500/20 hover:border-teal-500/50",
+            violet: "border-violet-500/20 hover:border-violet-500/50",
+            blue:   "border-blue-500/20 hover:border-blue-500/50",
+            orange: "border-orange-500/20 hover:border-orange-500/50",
+          };
+          return (
+            <div key={code} className={`bg-gradient-to-b from-white/10 to-transparent ${cardBorder[color]} border rounded-[2rem] p-7 transition-all duration-300 hover:-translate-y-1 shadow-xl flex flex-col gap-4`}>
+              <div className="flex items-start justify-between gap-2">
+                <span className={`text-xs font-black px-3 py-1.5 rounded-full border ${badgeColors[color]} uppercase tracking-wider shrink-0`}>{body}</span>
+                <a href={href} target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-white/70 transition-colors shrink-0" aria-label={`External link for ${code}`}>
+                  <ExternalLink size={14} />
+                </a>
+              </div>
+              <div>
+                <h3 className="text-base font-black text-white mb-1 leading-tight">{code}</h3>
+                <p className="text-white/50 text-xs font-semibold">{title}</p>
+              </div>
+              <p className="text-white/65 text-sm leading-relaxed flex-1">{desc}</p>
+            </div>
+          );
+        })}
+      </div>
+
+      <p className="text-white/40 text-sm text-center mt-10 italic">
+        Always verify that the edition of any standard in force in your jurisdiction matches the mix design data you are entering into the calculator.
+      </p>
+    </div>
+  </section>
+
+    {/* ═══════════════════════════════
+  REFERENCES & STANDARDS
+  ═══════════════════════════════ */}
+  <section className="py-24 relative overflow-hidden">
+    <div className="absolute right-0 top-0 w-[700px] h-[700px] rounded-full bg-violet-500/5 blur-[140px] pointer-events-none" />
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+      <div className="text-center mb-16">
+        <div className="inline-flex items-center gap-2 bg-violet-500/20 border border-violet-500/30 text-violet-100 px-5 py-2 rounded-full text-sm font-bold mb-6 shadow-[0_0_15px_rgba(139,92,246,0.2)]">
+          <Award size={16} />
+          Industry Standards
+        </div>
+        <h2 className="text-4xl sm:text-5xl font-black text-white mb-6 drop-shadow-xl">
+          Industry Standards &amp; References
+        </h2>
+        <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed">
+          Bitumen calculator results are only as good as the mix design inputs behind them. These are the standards that govern how bitumen content, mix density, and volumetric properties are determined, tested, and specified.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {[
+          {
+            code: "AASHTO M323",
+            title: "Superpave Volumetric Mix Design",
+            body: "AASHTO",
+            color: "teal",
+            href: "https://www.transportation.org/",
+            desc: "Defines the volumetric criteria (VMA, VFA, Gmm) used to specify and verify Superpave mix designs for North American highway projects.",
+          },
+          {
+            code: "AASHTO T166",
+            title: "Bulk Specific Gravity of HMA",
+            body: "AASHTO",
+            color: "teal",
+            href: "https://www.transportation.org/",
+            desc: "Test method for determining compacted HMA bulk specific gravity — the lab-measured value underpinning the mix density figure entered into this calculator.",
+          },
+          {
+            code: "AASHTO T209",
+            title: "Maximum Specific Gravity (Rice)",
+            body: "AASHTO",
+            color: "teal",
+            href: "https://www.transportation.org/",
+            desc: "Rice test — determines the theoretical maximum density (Gmm) of uncompacted asphalt mix, used to calculate percent air voids and VMA.",
+          },
+          {
+            code: "Asphalt Institute MS-2",
+            title: "Mix Design Methods for Asphalt",
+            body: "Asphalt Institute",
+            color: "violet",
+            href: "https://www.asphaltinstitute.org/",
+            desc: "The industry reference manual for Marshall and Superpave mix design. Defines OBC determination, compaction criteria, and stability/flow testing.",
+          },
+          {
+            code: "BS EN 12591",
+            title: "Bitumen Specification & Testing",
+            body: "CEN",
+            color: "blue",
+            href: "https://www.bsigroup.com/",
+            desc: "European standard specifying penetration grade and multi-grade bitumen — defines the binder grades (50/70, 70/100) referenced in European mix designs.",
+          },
+          {
+            code: "BS EN 13108",
+            title: "Asphalt Mixture Specifications",
+            body: "CEN",
+            color: "blue",
+            href: "https://www.bsigroup.com/",
+            desc: "The suite of European asphalt mixture product standards covering HMA, SMA, BBTM, and porous asphalt — specifying binder content ranges and volumetric limits.",
+          },
+          {
+            code: "MoRTH Section 500",
+            title: "Flexible Pavement Construction",
+            body: "MoRTH",
+            color: "orange",
+            href: "https://morth.nic.in/",
+            desc: "India's Ministry of Road Transport & Highways specifications for bituminous surface and base courses — governs DBM, BC, and BM mix design in Indian road projects.",
+          },
+          {
+            code: "IRC SP:16",
+            title: "Marshall Mix Design Guidelines",
+            body: "IRC",
+            color: "orange",
+            href: "https://www.irc.org.in/",
+            desc: "Indian Roads Congress guidelines for Marshall method mix design — widely referenced alongside MoRTH for determining OBC on Indian highway projects.",
+          },
+        ].map(({ code, title, body, color, href, desc }) => {
+          const badgeColors: Record<string, string> = {
+            teal:   "bg-teal-500/20 text-teal-300 border-teal-500/30",
+            violet: "bg-violet-500/20 text-violet-300 border-violet-500/30",
+            blue:   "bg-blue-500/20 text-blue-300 border-blue-500/30",
+            orange: "bg-orange-500/20 text-orange-300 border-orange-500/30",
+          };
+          const cardBorder: Record<string, string> = {
+            teal:   "border-teal-500/20 hover:border-teal-500/50",
+            violet: "border-violet-500/20 hover:border-violet-500/50",
+            blue:   "border-blue-500/20 hover:border-blue-500/50",
+            orange: "border-orange-500/20 hover:border-orange-500/50",
+          };
+          return (
+            <div key={code} className={`bg-gradient-to-b from-white/10 to-transparent ${cardBorder[color]} border rounded-[2rem] p-7 transition-all duration-300 hover:-translate-y-1 shadow-xl flex flex-col gap-4`}>
+              <div className="flex items-start justify-between gap-2">
+                <span className={`text-xs font-black px-3 py-1.5 rounded-full border ${badgeColors[color]} uppercase tracking-wider shrink-0`}>{body}</span>
+                <a href={href} target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-white/70 transition-colors shrink-0" aria-label={`External link for ${code}`}>
+                  <ExternalLink size={14} />
+                </a>
+              </div>
+              <div>
+                <h3 className="text-base font-black text-white mb-1 leading-tight">{code}</h3>
+                <p className="text-white/50 text-xs font-semibold">{title}</p>
+              </div>
+              <p className="text-white/65 text-sm leading-relaxed flex-1">{desc}</p>
+            </div>
+          );
+        })}
+      </div>
+
+      <p className="text-white/40 text-sm text-center mt-10 italic">
+        Always verify that the edition of any standard in force in your jurisdiction matches the mix design data you are entering into the calculator.
+      </p>
+    </div>
+  </section>
+
+  {/* ═══════════════════════════════
+  WHY USE & FAQ
  ═══════════════════════════════ */}
  <section className="py-24 bg-black/30 border-t border-white/5 relative overflow-hidden">
  <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
