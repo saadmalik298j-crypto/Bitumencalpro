@@ -34,6 +34,8 @@ import {
   Building2,
   Award,
   ExternalLink,
+  ShoppingCart,
+  FlaskConical,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -483,11 +485,10 @@ export default function Home() {
                 fine for early-stage estimating.
               </p>
               <h3 className="text-lg font-bold text-white mb-2">
-                Optional: Add Price for Cost Estimate
+                Optional: Cost &amp; Advanced Settings
               </h3>
               <p className="text-white/70 text-sm leading-relaxed">
-                If you want a rough binder cost, enter a price per tonne or per litre. This gives a
-                budgeting figure only.
+                Enter a price per unit for a budgeting cost figure. You can also configure advanced options like wastage allowances, compaction factors, and custom binder density.
               </p>
             </div>
           </div>
@@ -570,7 +571,35 @@ export default function Home() {
                     </td>
                     <td className="p-5 md:p-6 text-white/80">Optional binder cost calculation</td>
                     <td className="p-5 md:p-6 font-mono text-sm text-white/60 bg-black/20 rounded-md m-2 inline-block">
-                      $/tonne or local currency
+                      $/unit or local currency
+                    </td>
+                  </tr>
+                  {/* Advanced Options */}
+                  <tr className="hover:bg-white/5 transition-colors group">
+                    <td className="p-5 md:p-6 font-bold text-amber-300 group-hover:text-amber-200 flex items-center gap-2">
+                      <ShoppingCart size={16} /> Wastage Allowance
+                    </td>
+                    <td className="p-5 md:p-6 text-white/80">Extra percentage to add to the order quantity</td>
+                    <td className="p-5 md:p-6 font-mono text-sm text-white/60 bg-black/20 rounded-md m-2 inline-block">
+                      %
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/5 transition-colors group">
+                    <td className="p-5 md:p-6 font-bold text-sky-300 group-hover:text-sky-200 flex items-center gap-2">
+                      <Layers size={16} /> Compaction Factor
+                    </td>
+                    <td className="p-5 md:p-6 text-white/80">Ratio to convert compacted volume to loose volume</td>
+                    <td className="p-5 md:p-6 font-mono text-sm text-white/60 bg-black/20 rounded-md m-2 inline-block">
+                      ratio (e.g. 1.00)
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/5 transition-colors group">
+                    <td className="p-5 md:p-6 font-bold text-teal-300 group-hover:text-teal-200 flex items-center gap-2">
+                      <FlaskConical size={16} /> Binder Density
+                    </td>
+                    <td className="p-5 md:p-6 text-white/80">Density of pure bitumen for litres conversion</td>
+                    <td className="p-5 md:p-6 font-mono text-sm text-white/60 bg-black/20 rounded-md m-2 inline-block">
+                      kg/L
                     </td>
                   </tr>
                 </tbody>
