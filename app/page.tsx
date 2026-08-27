@@ -417,7 +417,7 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  <p className="text-white/70 text-base leading-relaxed mb-6">
  Add the mix density (kg/m³) and the bitumen content percentage from your approved mix design. If you don't have a project-specific value, a typical reference range is fine for early-stage estimating.
  </p>
- <h4 className="text-lg font-bold text-white mb-2">Optional: Add Price for Cost Estimate</h4>
+ <h3 className="text-lg font-bold text-white mb-2">Optional: Add Price for Cost Estimate</h3>
  <p className="text-white/70 text-sm leading-relaxed">
  If you want a rough binder cost, enter a price per tonne or per litre. This gives a budgeting figure only.
  </p>
@@ -602,7 +602,7 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  <HardHat size={32} className="text-orange-400" />
  </div>
  <div>
- <h4 className="text-white font-black mb-3 text-2xl">Important Calculation Note</h4>
+ <h3 className="text-white font-black mb-3 text-2xl">Important Calculation Note</h3>
  <p className="text-white/90 text-lg leading-relaxed mb-4">
  The accuracy of the result depends on the values entered into the calculator. For the most reliable estimate, use:
  </p>
@@ -701,7 +701,7 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  
  <div className="bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden text-base shadow-2xl ">
  <div className="p-6 bg-black/40 border-b border-white/5">
- <h4 className="font-bold text-white">Worked example (1,000 m × 3.5 m section):</h4>
+ <h3 className="font-bold text-white">Worked example (1,000 m × 3.5 m section):</h3>
  </div>
  <div className="overflow-x-auto">
  <table className="w-full text-left text-white/90 min-w-[500px]">
@@ -985,14 +985,7 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  <p className="text-white/80 text-base leading-relaxed">A more performance-based approach developed in the US that considers traffic level, climate, and aggregate properties using gyratory compaction rather than impact compaction, aiming to better predict long-term field performance.</p>
  </div>
 
- <div className="bg-black/30 p-8 rounded-3xl border border-white/10 shadow-inner">
- <h4 className="text-sm font-black text-white/50 mb-4 uppercase tracking-widest">Governing standards and bodies</h4>
- <ul className="text-white/80 text-base space-y-4">
- <li className="flex items-start gap-3"><span className="text-white font-bold w-1/3"><a href="https://www.transportation.org/" target="_blank" rel="noopener noreferrer" className=" text-teal-400 underline hover:underline">AASHTO</a> / <a href="https://www.asphaltinstitute.org/" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">MS-2</a></span> <span className="w-2/3 text-white/60">Widely referenced mix design procedures in North America.</span></li>
- <li className="flex items-start gap-3"><span className="text-white font-bold w-1/3">BS EN 12591 / EN 13108</span> <span className="w-2/3 text-white/60">European bitumen and asphalt mixture standards.</span></li>
- <li className="flex items-start gap-3"><span className="text-white font-bold w-1/3"><a href="https://morth.nic.in/" target="_blank" rel="noopener noreferrer" className=" text-teal-400 hover:underline">MoRTH</a> specifications</span> <span className="w-2/3 text-white/60">The standard reference for road and bridge works in India.</span></li>
- </ul>
- </div>
+ 
  
  <p className="text-white/70 text-sm font-medium italic bg-white/5 p-4 rounded-xl border border-white/10">
  A reference table can guide early estimating, but only lab-tested OBC ,derived from the specific aggregate source, binder grade, and traffic condition of the project ,should be used for final construction quantities.
@@ -1013,71 +1006,36 @@ Simply enter the pavement length, width, thickness, mix density, and bitumen con
  
  {/* Left side: Why Use, Users & Mistakes */}
  <div className="lg:col-span-5 space-y-8">
- 
- <div className="bg-gradient-to-br from-orange-500/20 to-pink-600/20 rounded-[2rem] p-8 md:p-10 border border-white/20 shadow-2xl">
-  <h2 className="text-3xl font-black text-white mb-4 flex items-center gap-3">
-                 <Zap className="text-orange-400" size={32}/> Why Use BitumenCalcPro?
-                </h2>
- <p className="text-white/90 text-base leading-relaxed mb-6 font-medium">
- BitumenCalcPro provides a transparent way to estimate asphalt material requirements without manually performing multiple calculations. Instead of showing only a final number, the calculator explains how pavement dimensions, <Link href="/blog/bitumen-density-chart" className="text-orange-400 hover:underline">density</Link>, and <Link href="/blog/what-is-bitumen" className="text-orange-400 hover:underline">bitumen</Link> percentage affect the final result. 
- </p>
- <div className="bg-black/30 rounded-2xl p-6 border border-white/10">
-  <h3 className="font-bold text-white mb-4 uppercase tracking-widest text-xs">Benefits</h3>
- <ul className="space-y-3 text-sm md:text-base text-white/90 font-medium">
- <li className="flex items-center gap-3"><CheckCircle2 size={20} className="text-orange-400 shrink-0"/> Faster preliminary estimates</li>
- <li className="flex items-center gap-3"><CheckCircle2 size={20} className="text-orange-400 shrink-0"/> Clear calculation methodology</li>
- <li className="flex items-center gap-3"><CheckCircle2 size={20} className="text-orange-400 shrink-0"/> Helps reduce ordering mistakes</li>
- <li className="flex items-center gap-3"><CheckCircle2 size={20} className="text-orange-400 shrink-0"/> Useful for engineers, contractors, and students</li>
- <li className="flex items-center gap-3"><CheckCircle2 size={20} className="text-orange-400 shrink-0"/> Supports early project planning</li>
- </ul>
- </div>
- </div>
+        {/* Merged: Who Uses BitumenCalcPro */}
+        <div className="bg-gradient-to-br from-orange-500/20 to-violet-600/20 rounded-[2rem] p-8 md:p-10 border border-white/20 shadow-2xl">
+          <h2 className="text-3xl font-black text-white mb-4 flex items-center gap-3">
+            <Users className="text-orange-400" size={32}/> Who Uses BitumenCalcPro?
+          </h2>
+          <p className="text-white/80 text-base leading-relaxed mb-6">
+            BitumenCalcPro gives pavement professionals a transparent, formula-driven estimate — showing exactly how dimensions, <Link href="/blog/bitumen-density-chart" className="text-orange-400 hover:underline">mix density</Link>, and <Link href="/blog/what-is-bitumen" className="text-orange-400 hover:underline">bitumen content</Link> drive the final quantities, in metric <em>or</em> imperial units.
+          </p>
+          <ul className="space-y-3 text-sm md:text-base">
+            <li className="flex items-start gap-3 bg-black/20 p-4 rounded-2xl border border-white/5">
+              <CheckCircle2 size={20} className="text-orange-400 shrink-0 mt-0.5"/>
+              <span><strong className="text-white">Civil &amp; site engineers</strong> <span className="text-white/70">— preliminary quantity takeoffs and project planning.</span></span>
+            </li>
+            <li className="flex items-start gap-3 bg-black/20 p-4 rounded-2xl border border-white/5">
+              <CheckCircle2 size={20} className="text-orange-400 shrink-0 mt-0.5"/>
+              <span><strong className="text-white">Road contractors &amp; estimators</strong> <span className="text-white/70">— fast binder and aggregate figures for tendering and procurement.</span></span>
+            </li>
+            <li className="flex items-start gap-3 bg-black/20 p-4 rounded-2xl border border-white/5">
+              <CheckCircle2 size={20} className="text-orange-400 shrink-0 mt-0.5"/>
+              <span><strong className="text-white">Quantity surveyors</strong> <span className="text-white/70">— early-stage cost modelling before lab-tested values are available.</span></span>
+            </li>
+            <li className="flex items-start gap-3 bg-black/20 p-4 rounded-2xl border border-white/5">
+              <CheckCircle2 size={20} className="text-orange-400 shrink-0 mt-0.5"/>
+              <span><strong className="text-white">Engineering students</strong> <span className="text-white/70">— understanding how mix density, bitumen percentage, and pavement geometry interact.</span></span>
+            </li>
+          </ul>
+        </div>
+        </div>
 
- <div className="bg-white/5 rounded-[2rem] p-8 border border-white/10 shadow-xl">
-  <h2 className="text-2xl font-black text-white mb-6 flex items-center gap-3">
-                 <Users className="text-violet-400" size={28}/> Who Uses This Calculator
-                </h2>
- <ul className="space-y-4 text-base text-white/70">
- <li className="flex flex-col"><strong className="text-white">Civil engineers</strong> <span>Preliminary pavement quantity calculations and project planning.</span></li>
- <li className="flex flex-col"><strong className="text-white">Site engineers</strong> <span>Quick material estimates before construction activities begin.</span></li>
- <li className="flex flex-col"><strong className="text-white">Road contractors</strong> <span>Approximate bitumen and aggregate quantities for tendering and procurement.</span></li>
- <li className="flex flex-col"><strong className="text-white">Quantity surveyors</strong> <span>Early-stage cost estimation and material planning.</span></li>
- <li className="flex flex-col"><strong className="text-white">Engineering students</strong> <span>Understanding the relationship between pavement dimensions, mix density, and bitumen percentage.</span></li>
- </ul>
- </div>
-
- <div className="bg-gradient-to-br from-red-900/20 to-black/40 rounded-[2rem] p-8 border border-red-500/20 shadow-xl">
-  <h2 className="text-2xl font-black text-white mb-6 flex items-center gap-3">
-                 <AlertTriangle className="text-red-400" size={28}/> Common Mistakes in Bitumen Calculation
-                </h2>
-                <p className="text-white/70 text-sm mb-6 leading-relaxed">
-                  For a deeper dive into estimation errors that increase project costs, see our full guide on <Link href="/blog/asphalt-estimation-mistakes" className="text-red-400 hover:text-red-300 underline underline-offset-2">asphalt estimation mistakes</Link>.
-                </p>
- <ul className="space-y-4 text-base text-white/80">
- <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Density mix-up</strong> ,using binder density (see our <Link href="/blog/bitumen-density-chart" className="text-red-400 font-bold hover:underline">density chart</Link>) where mix density is required (or vice versa), which can throw results off by more than half.</span></li>
- <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>By-mix-weight vs. by-aggregate-weight confusion</strong> ,bitumen content is normally expressed as a percentage of total mix weight, not aggregate weight alone.</span></li>
- <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Skipping a waste allowance</strong> ,real-world paving involves handling loss, spillage, and compaction variability. A calculator gives the theoretical material requirement; site teams typically add a contingency margin on top.</span></li>
- <li className="flex items-start gap-3"><div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-2 shrink-0" /> <span><strong>Using loose volume where compacted volume was needed</strong> ,mixing up the two volume bases is one of the most common causes of mismatched delivery quantities on site.</span></li>
- </ul>
- <div className="mt-8 pt-8 border-t border-red-500/20">
-  <h3 className="text-white font-black mb-3">Limitations of This Calculator</h3>
- <p className="text-sm text-white/60 leading-relaxed mb-3">
- This calculator produces an engineering estimate, not a certified material order. Specifically, it:
- </p>
- <ul className="list-disc list-inside text-sm text-white/60 space-y-1 mb-4 ml-1">
- <li>Uses the density and bitumen content values you enter</li>
- <li>Does not account for compaction losses, handling waste, or site-specific variability</li>
- <li>Assumes a single uniform layer unless you calculate each pavement course separately</li>
- <li>Does not calculate spray application rates for tack, prime, or seal coats</li>
- </ul>
- <p className="text-sm text-white/70 font-medium">
- Should not be used as the sole basis for final procurement, tendering, or construction decisions. Always confirm final quantities against laboratory-tested mix design data and project specifications.
- </p>
- </div>
- </div>
- </div>
-
- {/* Right side: FAQ & Conclusion */}
+        {/* Right side: FAQ & Conclusion */}
  <div className="lg:col-span-7">
  <div className="flex items-center gap-4 mb-10">
  <HelpCircle size={40} className="text-teal-400 drop-shadow-[0_0_15px_rgba(45,212,191,0.5)]" />
