@@ -1,10 +1,10 @@
+import AuthorBio from "../../components/AuthorBio";
 // app/blog/modified-bitumen-roof-repair/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 import {
-import AuthorBio from "../../components/AuthorBio";
   ChevronRight, Clock, Calendar, BookOpen, ArrowRight, ArrowLeft,
   CheckCircle2, AlertCircle, ExternalLink, Wrench, ShieldCheck, AlertTriangle,
 } from "lucide-react";
