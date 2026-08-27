@@ -47,7 +47,6 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        {/* Mobile Toggle */}
         <button
           className="md:hidden text-white p-2"
           onClick={() => setIsOpen(!isOpen)}
