@@ -1479,36 +1479,12 @@ export default function Home() {
                 desc: "Defines the volumetric criteria (VMA, VFA, Gmm) used to specify and verify Superpave mix designs for North American highway projects.",
               },
               {
-                code: "AASHTO T166",
-                title: "Bulk Specific Gravity of HMA",
-                body: "AASHTO",
-                color: "teal",
-                href: "https://www.transportation.org/",
-                desc: "Test method for determining compacted HMA bulk specific gravity — the lab-measured value underpinning the mix density figure entered into this calculator.",
-              },
-              {
-                code: "AASHTO T209",
-                title: "Maximum Specific Gravity (Rice)",
-                body: "AASHTO",
-                color: "teal",
-                href: "https://www.transportation.org/",
-                desc: "Rice test — determines the theoretical maximum density (Gmm) of uncompacted asphalt mix, used to calculate percent air voids and VMA.",
-              },
-              {
                 code: "Asphalt Institute MS-2",
                 title: "Mix Design Methods for Asphalt",
                 body: "Asphalt Institute",
                 color: "violet",
                 href: "https://www.asphaltinstitute.org/",
                 desc: "The industry reference manual for Marshall and Superpave mix design. Defines OBC determination, compaction criteria, and stability/flow testing.",
-              },
-              {
-                code: "BS EN 12591",
-                title: "Bitumen Specification & Testing",
-                body: "CEN",
-                color: "blue",
-                href: "https://www.bsigroup.com/",
-                desc: "European standard specifying penetration grade and multi-grade bitumen — defines the binder grades (50/70, 70/100) referenced in European mix designs.",
               },
               {
                 code: "BS EN 13108",
@@ -1525,14 +1501,6 @@ export default function Home() {
                 color: "orange",
                 href: "https://morth.nic.in/",
                 desc: "India's Ministry of Road Transport & Highways specifications for bituminous surface and base courses — governs DBM, BC, and BM mix design in Indian road projects.",
-              },
-              {
-                code: "IRC SP:16",
-                title: "Marshall Mix Design Guidelines",
-                body: "IRC",
-                color: "orange",
-                href: "https://www.irc.org.in/",
-                desc: "Indian Roads Congress guidelines for Marshall method mix design — widely referenced alongside MoRTH for determining OBC on Indian highway projects.",
               },
             ].map(({ code, title, body, color, href, desc }) => {
               const badgeColors: Record<string, string> = {
