@@ -320,77 +320,76 @@ export default function Home() {
           WHAT IS A BITUMEN CALCULATOR
           ═══════════════════════════════ */}
       <section className="py-24 relative bg-black/10 border-y border-white/5">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
-            <div className="lg:w-1/2">
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500/20 to-transparent border-l-4 border-teal-400 text-white px-4 py-2 rounded-r-lg text-sm font-bold mb-6">
-                <Info size={16} className="text-teal-400" />
-                Overview
-              </div>
-              <h2 className="text-3xl sm:text-5xl font-black text-white mb-6 leading-tight drop-shadow-lg">
-                What Is a Bitumen Calculator?
-              </h2>
-              <div className="prose prose-invert prose-lg max-w-none">
-                <p className="text-white/80 leading-relaxed mb-5 font-medium text-lg">
-                  A Bitumen Calculator is an online tool that helps engineers, contractors,
-                  estimators, and construction professionals calculate the amount of bitumen binder,
-                  hot mix asphalt (HMA), and aggregates required for pavement and road construction
-                  projects.
-                </p>
-                <p className="text-white/70 leading-relaxed mb-5">
-                  Simply enter the pavement length, width, thickness, mix density, and bitumen
-                  content, and the calculator instantly estimates the total asphalt volume, mix
-                  weight, bitumen quantity, aggregate weight, and an optional material cost estimate.
-                  These calculations support project planning, material estimation, and budgeting.
-                  While this tool is designed for paving projects, bitumen is also heavily utilized
-                  in the building sector—you can read our guide on{" "}
-                  <Link
-                    href="/blog/modified-bitumen-roofing"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
-                  >
-                    modified bitumen roofing
-                  </Link>{" "}
-                  if you are dealing with commercial flat roofs, or our guide on{" "}
-                  <Link
-                    href="/blog/modified-bitumen-roof-repair"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
-                  >
-                    modified bitumen roof repair
-                  </Link>{" "}
-                  if you need to fix a leak. If you want to learn more about the base materials
-                  involved, you can read our detailed guide on{" "}
-                  <Link
-                    href="/blog/what-is-bitumen"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
-                  >
-                    what bitumen is, its properties, and how it compares to asphalt and tar
-                  </Link>
-                  , or explore{" "}
-                  <Link
-                    href="/blog/bitumen-emulsion-explained"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
-                  >
-                    bitumen emulsion
-                  </Link>{" "}
-                  for cold application alternatives.
-                </p>
-              </div>
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <div className="flex flex-col items-center text-center mb-10">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500/20 to-transparent border-l-4 border-teal-400 text-white px-4 py-2 rounded-r-lg text-sm font-bold mb-6">
+              <Info size={16} className="text-teal-400" />
+              Overview
             </div>
+            <h2 className="text-3xl sm:text-5xl font-black text-white mb-6 leading-tight drop-shadow-lg">
+              What Is a Bitumen Calculator?
+            </h2>
+          </div>
 
-            {/* Enhanced Image Container */}
-            <div className="lg:w-1/2 w-full">
-              <div className="relative rounded-[2rem] p-4 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] group">
-                <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-teal-500/20 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
-                <div className="relative w-full aspect-video sm:aspect-[4/3] rounded-xl overflow-hidden bg-black/40 border border-white/5">
-                  <Image
-                    src="/civil-engineer-using-bitumen-calculator.webp"
-                    alt="Civil engineer using bitumen calculator for pavement estimation"
-                    fill
-                    priority
-                    className="object-contain transition-transform duration-700 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
+          <div className="prose prose-invert prose-lg max-w-none mb-12 text-center mx-auto">
+            <p className="text-white/80 leading-relaxed mb-5 font-medium text-lg">
+              A Bitumen Calculator is an online tool that helps engineers, contractors,
+              estimators, and construction professionals calculate the amount of bitumen binder,
+              hot mix asphalt (HMA), and aggregates required for pavement and road construction
+              projects.
+            </p>
+            <p className="text-white/70 leading-relaxed mb-5">
+              Simply enter the pavement length, width, thickness, mix density, and bitumen
+              content, and the calculator instantly estimates the total asphalt volume, mix
+              weight, bitumen quantity, aggregate weight, and an optional material cost estimate.
+              These calculations support project planning, material estimation, and budgeting.
+              While this tool is designed for paving projects, bitumen is also heavily utilized
+              in the building sector—you can read our guide on{" "}
+              <Link
+                href="/blog/modified-bitumen-roofing"
+                className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
+              >
+                modified bitumen roofing
+              </Link>{" "}
+              if you are dealing with commercial flat roofs, or our guide on{" "}
+              <Link
+                href="/blog/modified-bitumen-roof-repair"
+                className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
+              >
+                modified bitumen roof repair
+              </Link>{" "}
+              if you need to fix a leak. If you want to learn more about the base materials
+              involved, you can read our detailed guide on{" "}
+              <Link
+                href="/blog/what-is-bitumen"
+                className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
+              >
+                what bitumen is, its properties, and how it compares to asphalt and tar
+              </Link>
+              , or explore{" "}
+              <Link
+                href="/blog/bitumen-emulsion-explained"
+                className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
+              >
+                bitumen emulsion
+              </Link>{" "}
+              for cold application alternatives.
+            </p>
+          </div>
+
+          {/* Enhanced Image Container */}
+          <div className="w-full">
+            <div className="relative rounded-[2rem] p-4 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] group max-w-4xl mx-auto">
+              <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-teal-500/20 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/40 border border-white/5">
+                <Image
+                  src="/civil-engineer-using-bitumen-calculator.webp"
+                  alt="Civil engineer using bitumen calculator for pavement estimation"
+                  fill
+                  priority
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 900px"
+                />
               </div>
             </div>
           </div>
@@ -614,56 +613,54 @@ export default function Home() {
           ═══════════════════════════════ */}
       <section id="how-it-works" className="py-24 bg-black/20 border-y border-white/5 relative">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-16 items-center mb-16">
-            <div className="lg:w-1/2">
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-transparent border-l-4 border-blue-400 text-white px-4 py-2 rounded-r-lg text-sm font-bold mb-6">
-                <BookOpen size={16} className="text-blue-400" />
-                Calculation Methodology
-              </div>
-              <h2 className="text-3xl sm:text-5xl font-black text-white mb-6 drop-shadow-lg">
-                Bitumen Calculator Formula: How the Calculation Works
-              </h2>
-              <div className="prose prose-invert prose-lg max-w-none">
-                <p className="text-white/80 font-medium leading-relaxed mb-6">
-                  This Bitumen Quantity Calculator uses standard pavement material estimation
-                  formulas to convert project dimensions and asphalt mix properties into total
-                  material requirements.
-                </p>
-                <p className="text-white/70 leading-relaxed mb-6">
-                  The calculation process follows four main steps. Each calculation uses the values
-                  entered by the user, including pavement dimensions, mix density, and bitumen
-                  content percentage.
-                </p>
+          <div className="flex flex-col items-center text-center mb-16 max-w-5xl mx-auto">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-transparent border-l-4 border-blue-400 text-white px-4 py-2 rounded-r-lg text-sm font-bold mb-6">
+              <BookOpen size={16} className="text-blue-400" />
+              Calculation Methodology
+            </div>
+            <h2 className="text-3xl sm:text-5xl font-black text-white mb-6 drop-shadow-lg">
+              Bitumen Calculator Formula: How the Calculation Works
+            </h2>
+            <div className="prose prose-invert prose-lg max-w-none w-full text-center">
+              <p className="text-white/80 font-medium leading-relaxed mb-6">
+                This Bitumen Quantity Calculator uses standard pavement material estimation
+                formulas to convert project dimensions and asphalt mix properties into total
+                material requirements.
+              </p>
+              <p className="text-white/70 leading-relaxed mb-6">
+                The calculation process follows four main steps. Each calculation uses the values
+                entered by the user, including pavement dimensions, mix density, and bitumen
+                content percentage.
+              </p>
 
-                <h3 className="text-xl font-bold text-white mb-3 mt-8">
-                  Complete Bitumen Calculation Formula
-                </h3>
-                <p className="text-white/70 leading-relaxed mb-4">
-                  For a quick estimate, the entire process can be combined into one calculation:
-                </p>
-                <div className="bg-gradient-to-r from-blue-900/40 to-violet-900/40 p-4 rounded-xl border border-blue-500/30 shadow-[0_0_30px_rgba(59,130,246,0.15)] inline-block">
-                  <strong className="text-white font-mono text-sm md:text-base">
-                    Bitumen Quantity = (Length × Width × Thickness in meters × Mix Density) ×
-                    (Bitumen Content ÷ 100)
-                  </strong>
-                </div>
-                <p className="text-white/60 text-sm mt-3 italic">
-                  This formula helps estimate the approximate binder requirement for an asphalt
-                  pavement section when the project dimensions and mix properties are known.
-                </p>
+              <h3 className="text-xl font-bold text-white mb-3 mt-8">
+                Complete Bitumen Calculation Formula
+              </h3>
+              <p className="text-white/70 leading-relaxed mb-4">
+                For a quick estimate, the entire process can be combined into one calculation:
+              </p>
+              <div className="bg-gradient-to-r from-blue-900/40 to-violet-900/40 p-4 rounded-xl border border-blue-500/30 shadow-[0_0_30px_rgba(59,130,246,0.15)] inline-block">
+                <strong className="text-white font-mono text-sm md:text-base">
+                  Bitumen Quantity = (Length × Width × Thickness in meters × Mix Density) ×
+                  (Bitumen Content ÷ 100)
+                </strong>
               </div>
+              <p className="text-white/60 text-sm mt-3 italic">
+                This formula helps estimate the approximate binder requirement for an asphalt
+                pavement section when the project dimensions and mix properties are known.
+              </p>
             </div>
 
-            <div className="lg:w-1/2 w-full">
-              <div className="relative rounded-[2rem] p-4 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] group">
+            <div className="w-full mt-12">
+              <div className="relative rounded-[2rem] p-4 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] group max-w-4xl mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
-                <div className="relative w-full aspect-video sm:aspect-[4/3] rounded-xl overflow-hidden bg-black/40 border border-white/5">
+                <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/40 border border-white/5">
                   <Image
                     src="/bitumen-calculator-calculation-process.webp"
                     alt="Bitumen calculator calculation process visualization"
                     fill
-                    className="object-contain transition-transform duration-700 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 900px"
                   />
                 </div>
               </div>
@@ -916,92 +913,90 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16">
-            <div className="order-2 lg:order-1">
-              <h3 className="text-3xl font-black text-white mb-6 drop-shadow-md">
-                Multi-Layer Pavement Calculations
-              </h3>
-              <p className="text-white/80 text-lg leading-relaxed mb-8">
-                Most pavements aren&apos;t a single layer ,they typically consist of a base course, binder
-                course, and wearing course, each with different thickness and bitumen content.
-                Calculating them separately and summing the results gives a far more accurate
-                material estimate than treating the pavement as one uniform layer.
-              </p>
+          <div className="flex flex-col items-center text-center mb-16 max-w-5xl mx-auto">
+            <h3 className="text-3xl font-black text-white mb-6 drop-shadow-md">
+              Multi-Layer Pavement Calculations
+            </h3>
+            <p className="text-white/80 text-lg leading-relaxed mb-8">
+              Most pavements aren&apos;t a single layer ,they typically consist of a base course, binder
+              course, and wearing course, each with different thickness and bitumen content.
+              Calculating them separately and summing the results gives a far more accurate
+              material estimate than treating the pavement as one uniform layer.
+            </p>
 
-              <div className="bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden text-base shadow-2xl">
-                <div className="p-6 bg-black/40 border-b border-white/5">
-                  <h3 className="font-bold text-white">
-                    Worked example (1,000 m × 3.5 m section):
-                  </h3>
-                </div>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-left text-white/90 min-w-[500px]">
-                    <thead className="bg-black/20 border-b border-white/10 text-white/50 text-sm uppercase tracking-wider">
-                      <tr>
-                        <th className="p-4 md:p-5">Layer</th>
-                        <th className="p-4 md:p-5">Thickness</th>
-                        <th className="p-4 md:p-5">Bitumen %</th>
-                        <th className="p-4 md:p-5">Mix Weight</th>
-                        <th className="p-4 md:p-5 text-orange-300">Bitumen Weight</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-white/5 font-medium">
-                      <tr className="hover:bg-white/5 transition-colors">
-                        <td className="p-4 md:p-5 font-bold text-white">Base course</td>
-                        <td className="p-4 md:p-5 text-white/70">75 mm</td>
-                        <td className="p-4 md:p-5 text-white/70">4.0%</td>
-                        <td className="p-4 md:p-5 font-mono text-sm">616.9 t</td>
-                        <td className="p-4 md:p-5 text-orange-300 font-mono text-sm bg-orange-900/10">
-                          24.7 t
-                        </td>
-                      </tr>
-                      <tr className="hover:bg-white/5 transition-colors">
-                        <td className="p-4 md:p-5 font-bold text-white">Binder course</td>
-                        <td className="p-4 md:p-5 text-white/70">50 mm</td>
-                        <td className="p-4 md:p-5 text-white/70">4.5%</td>
-                        <td className="p-4 md:p-5 font-mono text-sm">411.3 t</td>
-                        <td className="p-4 md:p-5 text-orange-300 font-mono text-sm bg-orange-900/10">
-                          18.5 t
-                        </td>
-                      </tr>
-                      <tr className="hover:bg-white/5 transition-colors">
-                        <td className="p-4 md:p-5 font-bold text-white">Wearing course</td>
-                        <td className="p-4 md:p-5 text-white/70">40 mm</td>
-                        <td className="p-4 md:p-5 text-white/70">5.5%</td>
-                        <td className="p-4 md:p-5 font-mono text-sm">329.0 t</td>
-                        <td className="p-4 md:p-5 text-orange-300 font-mono text-sm bg-orange-900/10">
-                          18.1 t
-                        </td>
-                      </tr>
-                    </tbody>
-                    <tfoot className="bg-gradient-to-r from-orange-900/40 to-orange-900/10 border-t border-orange-500/20 font-black">
-                      <tr>
-                        <td colSpan={4} className="p-5 text-right text-orange-100">
-                          Total bitumen required across all three layers:
-                        </td>
-                        <td className="p-5 text-orange-400 font-mono text-lg">≈ 61.3 t</td>
-                      </tr>
-                    </tfoot>
-                  </table>
-                </div>
+            <div className="bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden text-base shadow-2xl w-full text-left">
+              <div className="p-6 bg-black/40 border-b border-white/5">
+                <h3 className="font-bold text-white">
+                  Worked example (1,000 m × 3.5 m section):
+                </h3>
               </div>
-              <p className="text-white/60 text-sm mt-4 italic px-2">
-                Noticeably different from calculating a single average layer, and closer to what a
-                real procurement order needs.
-              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-white/90 min-w-[500px]">
+                  <thead className="bg-black/20 border-b border-white/10 text-white/50 text-sm uppercase tracking-wider">
+                    <tr>
+                      <th className="p-4 md:p-5">Layer</th>
+                      <th className="p-4 md:p-5">Thickness</th>
+                      <th className="p-4 md:p-5">Bitumen %</th>
+                      <th className="p-4 md:p-5">Mix Weight</th>
+                      <th className="p-4 md:p-5 text-orange-300">Bitumen Weight</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/5 font-medium">
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="p-4 md:p-5 font-bold text-white">Base course</td>
+                      <td className="p-4 md:p-5 text-white/70">75 mm</td>
+                      <td className="p-4 md:p-5 text-white/70">4.0%</td>
+                      <td className="p-4 md:p-5 font-mono text-sm">616.9 t</td>
+                      <td className="p-4 md:p-5 text-orange-300 font-mono text-sm bg-orange-900/10">
+                        24.7 t
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="p-4 md:p-5 font-bold text-white">Binder course</td>
+                      <td className="p-4 md:p-5 text-white/70">50 mm</td>
+                      <td className="p-4 md:p-5 text-white/70">4.5%</td>
+                      <td className="p-4 md:p-5 font-mono text-sm">411.3 t</td>
+                      <td className="p-4 md:p-5 text-orange-300 font-mono text-sm bg-orange-900/10">
+                        18.5 t
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-white/5 transition-colors">
+                      <td className="p-4 md:p-5 font-bold text-white">Wearing course</td>
+                      <td className="p-4 md:p-5 text-white/70">40 mm</td>
+                      <td className="p-4 md:p-5 text-white/70">5.5%</td>
+                      <td className="p-4 md:p-5 font-mono text-sm">329.0 t</td>
+                      <td className="p-4 md:p-5 text-orange-300 font-mono text-sm bg-orange-900/10">
+                        18.1 t
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot className="bg-gradient-to-r from-orange-900/40 to-orange-900/10 border-t border-orange-500/20 font-black">
+                    <tr>
+                      <td colSpan={4} className="p-5 text-right text-orange-100">
+                        Total bitumen required across all three layers:
+                      </td>
+                      <td className="p-5 text-orange-400 font-mono text-lg">≈ 61.3 t</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
             </div>
+            <p className="text-white/60 text-sm mt-4 italic px-2">
+              Noticeably different from calculating a single average layer, and closer to what a
+              real procurement order needs.
+            </p>
 
             {/* Enhanced Image Container */}
-            <div className="order-1 lg:order-2 w-full">
-              <div className="relative rounded-[2rem] p-4 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] group">
+            <div className="w-full mt-12">
+              <div className="relative rounded-[2rem] p-4 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] group max-w-4xl mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
-                <div className="relative w-full aspect-video sm:aspect-[4/3] rounded-xl overflow-hidden bg-black/40 border border-white/5">
+                <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/40 border border-white/5">
                   <Image
                     src="/bitumen-calculator-asphalt-pavement-estimation.webp"
                     alt="Asphalt pavement estimation and multi-layer calculation"
                     fill
-                    className="object-contain transition-transform duration-700 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 900px"
                   />
                 </div>
               </div>
@@ -1148,88 +1143,87 @@ export default function Home() {
           MATERIALS COMPARISON
           ═══════════════════════════════ */}
       <section className="py-24 bg-black/20 border-y border-white/5 relative">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <div className="flex flex-col items-center text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-black text-white mb-6 drop-shadow-lg leading-tight">
+              Bitumen vs. Asphalt vs. Tar vs. Tarmac
+            </h2>
+            <p className="text-white/80 text-lg leading-relaxed mb-8">
+              These four terms get used interchangeably in everyday speech, but in civil
+              engineering, they mean different things:
+            </p>
+
+            <div className="space-y-6 w-full text-left">
+              <div className="bg-gradient-to-r from-orange-500/10 to-transparent border border-orange-500/20 p-6 rounded-3xl shadow-lg hover:bg-orange-500/10 transition-colors">
+                <h3 className="text-2xl font-black text-orange-400 mb-2">Bitumen</h3>
+                <p className="text-white/80 text-base leading-relaxed">
+                  The black, sticky binder itself, derived from crude oil refining. It&apos;s an
+                  ingredient, not a finished road surface. Curious about properties and grades?
+                  Read our full guide on{" "}
+                  <Link
+                    href="/blog/what-is-bitumen"
+                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2"
+                  >
+                    What is bitumen?
+                  </Link>
+                  .
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-r from-white/10 to-transparent border border-white/10 p-6 rounded-3xl shadow-lg hover:bg-white/10 transition-colors">
+                <h3 className="text-2xl font-black text-white mb-2">Asphalt</h3>
+                <p className="text-white/80 text-base leading-relaxed">
+                  The finished mixture of bitumen binder and mineral aggregate, laid and compacted
+                  to form the pavement layer. While hot mix is standard for construction,{" "}
+                  <Link
+                    href="/blog/cold-mix-bitumen"
+                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2"
+                  >
+                    cold mix bitumen
+                  </Link>{" "}
+                  is often used for quick repairs without heating equipment. Pavement depth varies
+                  widely by application — see our{" "}
+                  <Link
+                    href="/blog/asphalt-thickness"
+                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2"
+                  >
+                    asphalt thickness guide
+                  </Link>{" "}
+                  for driveways, roads, and heavy-duty surfaces. (In American English,
+                  &quot;asphalt&quot; is also sometimes used to mean the binder itself ,a common source of
+                  cross-Atlantic confusion).
+                </p>
+              </div>
+
+              <div className="bg-black/30 border border-white/5 p-6 rounded-3xl shadow-inner">
+                <h3 className="text-2xl font-black text-white/50 mb-2">Tar &amp; Tarmac</h3>
+                <p className="text-white/60 text-base leading-relaxed mb-4">
+                  <strong className="text-white/80">Tar</strong> ,a similar-looking black binder,
+                  but derived from coal rather than petroleum. Tar was used historically in road
+                  construction and is now largely phased out in most modern paving due to health
+                  and environmental concerns.
+                </p>
+                <p className="text-white/60 text-base leading-relaxed">
+                  <strong className="text-white/80">Tarmac</strong> ,short for &quot;tar-bound
+                  macadam,&quot; a historical road-surfacing method. The word has stuck around
+                  colloquially to mean any paved road surface, even though modern pavements are
+                  almost always bitumen-based asphalt rather than true tar-bound macadam.
+                </p>
+              </div>
+            </div>
+
             {/* Enhanced Image Container */}
-            <div className="lg:w-1/2 w-full order-2 lg:order-1">
-              <div className="relative rounded-[2rem] p-4 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] group">
+            <div className="w-full mt-12">
+              <div className="relative rounded-[2rem] p-4 sm:p-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] group max-w-4xl mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
-                <div className="relative w-full aspect-video sm:aspect-[4/3] rounded-xl overflow-hidden bg-black/40 border border-white/5">
+                <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/40 border border-white/5">
                   <Image
                     src="/bitumen-asphalt-aggregate-materials-comparison.webp"
                     alt="Comparison of bitumen, asphalt, and aggregate materials"
                     fill
-                    className="object-contain transition-transform duration-700 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 900px"
                   />
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-1/2 order-1 lg:order-2">
-              <h2 className="text-4xl sm:text-5xl font-black text-white mb-6 drop-shadow-lg leading-tight">
-                Bitumen vs. Asphalt vs. Tar vs. Tarmac
-              </h2>
-              <p className="text-white/80 text-lg leading-relaxed mb-8">
-                These four terms get used interchangeably in everyday speech, but in civil
-                engineering, they mean different things:
-              </p>
-
-              <div className="space-y-6">
-                <div className="bg-gradient-to-r from-orange-500/10 to-transparent border border-orange-500/20 p-6 rounded-3xl shadow-lg hover:bg-orange-500/10 transition-colors">
-                  <h3 className="text-2xl font-black text-orange-400 mb-2">Bitumen</h3>
-                  <p className="text-white/80 text-base leading-relaxed">
-                    The black, sticky binder itself, derived from crude oil refining. It&apos;s an
-                    ingredient, not a finished road surface. Curious about properties and grades?
-                    Read our full guide on{" "}
-                    <Link
-                      href="/blog/what-is-bitumen"
-                      className="text-orange-400 hover:text-orange-300 underline underline-offset-2"
-                    >
-                      What is bitumen?
-                    </Link>
-                    .
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-r from-white/10 to-transparent border border-white/10 p-6 rounded-3xl shadow-lg hover:bg-white/10 transition-colors">
-                  <h3 className="text-2xl font-black text-white mb-2">Asphalt</h3>
-                  <p className="text-white/80 text-base leading-relaxed">
-                    The finished mixture of bitumen binder and mineral aggregate, laid and compacted
-                    to form the pavement layer. While hot mix is standard for construction,{" "}
-                    <Link
-                      href="/blog/cold-mix-bitumen"
-                      className="text-teal-400 hover:text-teal-300 underline underline-offset-2"
-                    >
-                      cold mix bitumen
-                    </Link>{" "}
-                    is often used for quick repairs without heating equipment. Pavement depth varies
-                    widely by application — see our{" "}
-                    <Link
-                      href="/blog/asphalt-thickness"
-                      className="text-orange-400 hover:text-orange-300 underline underline-offset-2"
-                    >
-                      asphalt thickness guide
-                    </Link>{" "}
-                    for driveways, roads, and heavy-duty surfaces. (In American English,
-                    &quot;asphalt&quot; is also sometimes used to mean the binder itself ,a common source of
-                    cross-Atlantic confusion).
-                  </p>
-                </div>
-
-                <div className="bg-black/30 border border-white/5 p-6 rounded-3xl shadow-inner">
-                  <h3 className="text-2xl font-black text-white/50 mb-2">Tar &amp; Tarmac</h3>
-                  <p className="text-white/60 text-base leading-relaxed mb-4">
-                    <strong className="text-white/80">Tar</strong> ,a similar-looking black binder,
-                    but derived from coal rather than petroleum. Tar was used historically in road
-                    construction and is now largely phased out in most modern paving due to health
-                    and environmental concerns.
-                  </p>
-                  <p className="text-white/60 text-base leading-relaxed">
-                    <strong className="text-white/80">Tarmac</strong> ,short for &quot;tar-bound
-                    macadam,&quot; a historical road-surfacing method. The word has stuck around
-                    colloquially to mean any paved road surface, even though modern pavements are
-                    almost always bitumen-based asphalt rather than true tar-bound macadam.
-                  </p>
                 </div>
               </div>
             </div>
@@ -1374,11 +1368,11 @@ export default function Home() {
           REFERENCE TABLE & OBC
           ═══════════════════════════════ */}
       <section id="reference" className="py-24 relative">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <div className="flex flex-col gap-16">
             {/* Table side */}
-            <div className="bg-gradient-to-br from-white/10 to-transparent rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-white/20">
-              <div className="flex items-start gap-5 mb-8">
+            <div className="bg-gradient-to-br from-white/10 to-transparent rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-white/20 w-full">
+              <div className="flex flex-col items-center text-center gap-5 mb-8">
                 <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0 shadow-inner">
                   <Info size={28} className="text-white" />
                 </div>
@@ -1394,7 +1388,7 @@ export default function Home() {
                 {REFERENCE_DATA.map((item) => (
                   <div
                     key={item.name}
-                    className="flex justify-between items-center p-5 rounded-2xl border border-white/10 bg-black/30 transition-all cursor-default hover:bg-black/50 hover:scale-[1.02] shadow-lg"
+                    className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-5 rounded-2xl border border-white/10 bg-black/30 transition-all cursor-default hover:bg-black/50 hover:scale-[1.02] shadow-lg gap-4"
                   >
                     <div className="flex items-center gap-4">
                       <span className="w-3 h-3 rounded-full shrink-0 shadow-[0_0_10px_rgba(255,255,255,0.8)] bg-white" />
@@ -1403,7 +1397,7 @@ export default function Home() {
                         <p className="text-sm text-white/60 mt-1">{item.desc}</p>
                       </div>
                     </div>
-                    <span className="font-mono font-black px-4 py-2 rounded-xl border border-white/20 bg-white/10 text-white text-sm md:text-base ml-4 shrink-0 shadow-inner">
+                    <span className="font-mono font-black px-4 py-2 rounded-xl border border-white/20 bg-white/10 text-white text-sm md:text-base shrink-0 shadow-inner">
                       {item.range}
                     </span>
                   </div>
@@ -1411,7 +1405,7 @@ export default function Home() {
               </div>
 
               <div className="mt-8 bg-black/20 p-5 rounded-2xl border border-white/5">
-                <strong className="text-white text-sm block mb-2">
+                <strong className="text-white text-sm block mb-2 text-center sm:text-left">
                   These ranges shift based on:
                 </strong>
                 <ul className="text-white/60 text-sm space-y-2 list-disc list-inside">
@@ -1436,7 +1430,7 @@ export default function Home() {
             </div>
 
             {/* OBC side */}
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col items-center text-center w-full">
               <h2 className="text-4xl font-black text-white mb-6 drop-shadow-lg">
                 Optimum Bitumen Content (OBC) &amp; Mix Design Standards
               </h2>
@@ -1446,7 +1440,7 @@ export default function Home() {
                 Content (OBC).
               </p>
 
-              <div className="space-y-6">
+              <div className="space-y-6 w-full text-left">
                 <div className="bg-gradient-to-r from-orange-500/10 to-transparent p-6 rounded-3xl border border-orange-500/20 shadow-lg hover:border-orange-500/40 transition-colors">
                   <h3 className="text-2xl font-black text-teal-400 mb-3">Marshall Method</h3>
                   <p className="text-white/80 text-base leading-relaxed">
@@ -1465,7 +1459,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <p className="text-white/70 text-sm font-medium italic bg-white/5 p-4 rounded-xl border border-white/10">
+                <p className="text-white/70 text-sm font-medium italic bg-white/5 p-4 rounded-xl border border-white/10 text-center">
                   A reference table can guide early estimating, but only lab-tested OBC ,derived
                   from the specific aggregate source, binder grade, and traffic condition of the
                   project ,should be used for final construction quantities.
@@ -1586,15 +1580,15 @@ export default function Home() {
           WHY USE & FAQ
           ═══════════════════════════════ */}
       <section className="py-24 bg-black/30 border-t border-white/5 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-            {/* Left side: Who Uses */}
-            <div className="lg:col-span-5 space-y-8">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 relative z-10">
+          <div className="flex flex-col gap-16">
+            {/* Who Uses */}
+            <div className="w-full">
               <div className="bg-gradient-to-br from-orange-500/20 to-violet-600/20 rounded-[2rem] p-8 md:p-10 border border-white/20 shadow-2xl">
-                <h2 className="text-3xl font-black text-white mb-4 flex items-center gap-3">
+                <h2 className="text-3xl font-black text-white mb-4 flex items-center justify-center gap-3 text-center">
                   <Users className="text-orange-400" size={32} /> Who Uses BitumenCalcPro?
                 </h2>
-                <p className="text-white/80 text-base leading-relaxed mb-6">
+                <p className="text-white/80 text-base leading-relaxed mb-6 text-center">
                   BitumenCalcPro gives pavement professionals a transparent, formula-driven estimate
                   — showing exactly how dimensions,{" "}
                   <Link
@@ -1654,9 +1648,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right side: FAQ & Conclusion */}
-            <div className="lg:col-span-7">
-              <div className="flex items-center gap-4 mb-10">
+            {/* FAQ & Conclusion */}
+            <div className="w-full">
+              <div className="flex flex-col items-center gap-4 mb-10 text-center">
                 <HelpCircle
                   size={40}
                   className="text-teal-400 drop-shadow-[0_0_15px_rgba(45,212,191,0.5)]"
@@ -1678,7 +1672,7 @@ export default function Home() {
                 ))}
               </div>
 
-              <div className="mt-16 bg-gradient-to-br from-teal-500/20 via-blue-600/20 to-purple-600/20 rounded-[2.5rem] p-10 md:p-12 border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.3)]">
+              <div className="mt-16 bg-gradient-to-br from-teal-500/20 via-blue-600/20 to-purple-600/20 rounded-[2.5rem] p-10 md:p-12 border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.3)] text-center">
                 <h2 className="text-3xl font-black text-white mb-6 drop-shadow-md">Conclusion</h2>
                 <p className="text-white/90 text-lg leading-relaxed mb-6 font-medium">
                   Estimating bitumen and aggregate quantities doesn&apos;t need to involve manual formula
