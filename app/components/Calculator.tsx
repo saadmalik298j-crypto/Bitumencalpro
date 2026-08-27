@@ -564,6 +564,10 @@ export default function Calculator() {
                 </div>
               )}
 
+              {/* Disclaimer Note */}
+              <div className="text-xs text-slate-500 mt-4 text-center px-4 font-medium">
+                * Note: Consider adding a 3–5% margin to these results to account for site-specific material waste during transport and laying.
+              </div>
             </div>
           </div>
         )}

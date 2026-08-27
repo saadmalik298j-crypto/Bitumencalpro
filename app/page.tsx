@@ -152,24 +152,24 @@ const STEPS = [
 
 const FAQ_DATA = [
   {
-    q: "What is a Bitumen Calculator?",
-    a: "A Bitumen Calculator is an online tool that estimates bitumen binder, hot mix asphalt (HMA), and aggregate quantities for pavement projects. It uses pavement dimensions, mix density, and bitumen content to calculate material requirements.",
+    q: "What does a bitumen calculator do?",
+    a: "It instantly estimates the amount of binder, hot mix asphalt (HMA), and aggregates needed for a paving job. By inputting your pavement dimensions and mix properties, you can quickly generate accurate material takeoffs without doing the math manually.",
   },
   {
-    q: "How do you calculate bitumen quantity for asphalt?",
-    a: "Bitumen quantity is calculated by multiplying the total asphalt mix weight by the bitumen content percentage. Formula: Bitumen Quantity = Total Mix Weight × (Bitumen Content ÷ 100)",
+    q: "What is the formula for calculating bitumen quantity?",
+    a: "To find the bitumen quantity, first determine the total weight of your asphalt mix (Volume × Mix Density). Then, multiply that total weight by your mix design's target bitumen content percentage.",
   },
   {
-    q: "What information is required to use a Bitumen Calculator?",
-    a: "You need pavement length, width, thickness, HMA density, and bitumen content percentage. These values help calculate asphalt volume, total mix weight, and binder quantity.",
+    q: "What inputs do I need to estimate asphalt materials?",
+    a: "You'll need the basic dimensions of the area to be paved (length, width, and thickness), the compacted density of the asphalt mix you plan to use, and the target binder content (usually between 4% and 7%).",
   },
   {
-    q: "How do you calculate asphalt quantity in tonnes?",
-    a: "Asphalt quantity is calculated by multiplying pavement volume by HMA density. The result is converted from kilograms to tonnes to estimate the required asphalt material.",
+    q: "How do I convert my pavement volume into tonnes?",
+    a: "Multiply your total pavement volume (in cubic meters) by the compacted density of the asphalt (typically around 2,400 kg/m³). Divide the result by 1,000 to convert kilograms into tonnes for ordering.",
   },
   {
-    q: "What bitumen content percentage should I use for asphalt calculation?",
-    a: "The correct bitumen content comes from the approved asphalt mix design. Most HMA mixtures commonly contain around 4% to 7% bitumen by total mix weight. The right percentage also depends on the bitumen grade specified — our guide on bitumen grades explains how penetration grade, VG, and PG systems influence mix design.",
+    q: "How do I know what bitumen percentage to use?",
+    a: "The exact percentage must come from a lab-approved mix design for your specific project. However, for early estimating, wearing courses typically use 5–6.5%, binder courses 4.5–5.5%, and base courses 4–5%.",
   },
   {
     q: "What density should be used in a Bitumen Calculator?",
