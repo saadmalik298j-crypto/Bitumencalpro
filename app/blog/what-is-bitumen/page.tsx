@@ -420,9 +420,9 @@ export default function WhatIsBitumenPage() {
 
             {/* ── SECTION: What Is Bitumen Made Of? ── */}
             <section id="what-is-bitumen-made-of" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 What Is Bitumen Made Of?
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Bitumen is made mostly of hydrocarbons, along with smaller amounts of sulfur, nitrogen, and trace
                 metals like nickel and vanadium. These hydrocarbons fall into a few groups — <strong className="text-white">asphaltenes</strong>,{" "}
@@ -456,9 +456,9 @@ export default function WhatIsBitumenPage() {
 
             {/* ── SECTION: Where Does Bitumen Come From? ── */}
             <section id="where-does-bitumen-come-from" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
                 Where Does Bitumen Come From? (How It&apos;s Made)
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Bitumen comes from two sources: oil refineries and natural deposits.
               </p>
@@ -581,9 +581,9 @@ export default function WhatIsBitumenPage() {
 
             {/* ── SECTION: Bitumen Grades ── */}
             <section id="bitumen-grades" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 Bitumen Grades
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Bitumen is classified into several grading systems depending on region and application:
               </p>
@@ -852,9 +852,9 @@ export default function WhatIsBitumenPage() {
 
             {/* ── SECTION: Bitumen vs Asphalt vs Tar ── */}
             <section id="bitumen-vs-asphalt-vs-tar" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 Bitumen vs. Asphalt vs. Tar
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-6 text-base">
                 These three terms get mixed up constantly, and the confusion is understandable since all three are dark,
                 sticky, and used in paving. But they&apos;re not the same material.
@@ -884,9 +884,9 @@ export default function WhatIsBitumenPage() {
 
             {/* ── SECTION: Asphalt Binder ── */}
             <section id="asphalt-binder" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
                 Asphalt Binder Explained
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 When engineers talk about &ldquo;binder&rdquo; in paving, they mean bitumen. Asphalt binder is simply another
                 name for the bitumen portion of an asphalt mix — the substance that coats and holds the aggregate
@@ -911,9 +911,9 @@ export default function WhatIsBitumenPage() {
 
             {/* ── SECTION: Bituminous Concrete ── */}
             <section id="bituminous-concrete" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 What Is Bituminous Concrete?
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Bituminous concrete, sometimes called asphalt concrete, is the technical name for pavement made by
                 mixing bitumen with graded aggregate — a precise combination of different stone and sand sizes. It&apos;s
@@ -927,9 +927,9 @@ export default function WhatIsBitumenPage() {
 
             {/* ── SECTION: What Is Asphalt Made Of? ── */}
             <section id="what-is-asphalt-made-of" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
                 What Is Asphalt Made Of?
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Asphalt is made of aggregate (crushed stone, gravel, and sand) and bitumen, the binder holding it
                 together. Aggregate typically makes up <strong className="text-white">90–95% of the mix by weight</strong>, with
@@ -944,22 +944,22 @@ export default function WhatIsBitumenPage() {
 
             {/* ── SECTION: Blacktop / Tarmac ── */}
             <section id="bitumen-blacktop-tarmac" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 Is Bitumen the Same as Blacktop or Tarmac?
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Not quite, though the terms are often used interchangeably in everyday conversation.
               </p>
               <div className="space-y-4 mb-4">
                 <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-                  <h3 className="text-white font-bold mb-2">Blacktop</h3>
+                  <h4>Blacktop</h4>
                   <p className="text-white/70 text-sm leading-relaxed">
                     A general term for asphalt pavement, especially in North America. It refers to the finished road
                     surface, not the binder itself.
                   </p>
                 </div>
                 <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-                  <h3 className="text-white font-bold mb-2">Tarmac</h3>
+                  <h4>Tarmac</h4>
                   <p className="text-white/70 text-sm leading-relaxed">
                     A British term, short for &ldquo;tar-macadam,&rdquo; originally made with tar rather than bitumen. Modern
                     tarmac typically uses bitumen as the binder, so the name has stuck even though the ingredients
@@ -1024,9 +1024,9 @@ export default function WhatIsBitumenPage() {
 
             {/* ── SECTION: Repair and Maintenance ── */}
             <section id="repair-maintenance" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 Repair and Maintenance
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-6 text-base">
                 Keeping bitumen surfaces in good condition relies on a few standard techniques:
               </p>
