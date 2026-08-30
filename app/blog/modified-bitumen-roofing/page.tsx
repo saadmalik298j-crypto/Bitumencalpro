@@ -351,31 +351,6 @@ export default function ModifiedBitumenRoofingPage() {
               priority
             />
 
-            {/* Key Takeaways */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 mt-10">
-              <h2 className="text-lg font-black text-orange-300 mb-4 flex items-center gap-2">
-                <AlertCircle size={18} />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2.5">
-                {[
-                  "Modified bitumen (mod bit) is built-up roofing's modern successor — factory-made rolls instead of layers mopped on-site.",
-                  "Two polymer types exist: SBS (rubber-based, flexible, good in cold climates) and APP (plastic-based, rigid, better UV resistance).",
-                  "Four installation methods are used: torch-applied, hot-mopped (asphalt), cold-adhesive, and self-adhered (peel-and-stick).",
-                  "Expect $4–$12 per square foot installed and a 15–25 year lifespan, depending on ply count and installation quality.",
-                  "It handles foot traffic and punctures better than single-ply membranes like TPO or EPDM, but it's not the top pick for energy efficiency.",
-                  "Regular drainage checks and seam inspections are what actually determine whether a mod bit roof hits 15 years or 25.",
-                ].map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 text-white/75 text-sm leading-relaxed"
-                  >
-                    <CheckCircle2 size={15} className="text-blue-400 mt-0.5 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* ── SECTION: What Is Modified Bitumen Roofing? ── */}
             <section id="what-is-modified-bitumen" className="mb-12 scroll-mt-24">

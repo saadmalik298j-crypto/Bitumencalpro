@@ -365,28 +365,6 @@ export default function BitumenDensityChartPage() {
               </p>
             </div>
 
-            {/* Key Takeaways */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-              <h2 className="text-lg font-black text-orange-300 mb-4 flex items-center gap-2">
-                <AlertCircle size={18} />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2.5">
-                {[
-                  "Most paving-grade bitumen has a density close to water, roughly 1.00–1.05 g/cm³ at 25°C",
-                  "Density decreases as temperature rises, so lab and supplier values are always tied to a specific test temperature",
-                  "Grade affects density: harder grades and oxidized bitumen run slightly denser than softer penetration grades",
-                  "Density figures vary between suppliers and sources, so always confirm exact values against a certificate of analysis",
-                  "Accurate density values matter for converting between weight and volume in transport, storage, and mix design",
-                  "Unusually low or high density readings can be an early sign of diluted or contaminated bitumen",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/75 text-sm leading-relaxed">
-                    <CheckCircle2 size={15} className="text-teal-400 mt-0.5 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* ── SECTION: What Is Bitumen Density? ── */}
             <section id="what-is-bitumen-density" className="mb-12 scroll-mt-24">

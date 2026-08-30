@@ -175,26 +175,6 @@ export default function ColdMixBitumenPage() {
               </p>
             </div>
 
-            {/* Key Takeaways */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-              <h2 className="text-lg font-black text-orange-300 mb-4 flex items-center gap-2"><AlertCircle size={18} /> Key Takeaways</h2>
-              <ul className="space-y-2.5">
-                {[
-                  "Cold mix bitumen uses emulsified or cutback bitumen, so it never needs heating equipment",
-                  "Its main job is pothole and crack repair, especially in cold weather or remote locations",
-                  "Bagged cold mix can sit in storage for months; hot mix must be used within hours",
-                  "Two main types exist — dense-graded for strength, open-graded for drainage",
-                  "Cold recycling methods (CIR and CCPR) let old pavement be reused with cold binders",
-                  "It is roughly 5-6% cheaper per job but far less durable than hot mix, so it is a repair tool, not a construction material",
-                  "Correct surface prep and compaction matter more to how long a patch lasts than the product itself",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/75 text-sm leading-relaxed">
-                    <CheckCircle2 size={15} className="text-teal-400 mt-0.5 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* SECTION: What Is Cold Mix Bitumen? */}
             <section id="what-is-cold-mix-bitumen" className="mb-12 scroll-mt-24">

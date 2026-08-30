@@ -179,26 +179,6 @@ export default function ModifiedBitumenRoofRepairPage() {
               </p>
             </div>
 
-            {/* Key Takeaways */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-              <h2 className="text-lg font-black text-teal-300 mb-4 flex items-center gap-2">
-                <AlertCircle size={18} />Key Takeaways
-              </h2>
-              <ul className="space-y-2.5">
-                {[
-                  "Seam failure is the leading cause of leaks on modified bitumen roofs, not punctures or weather damage",
-                  "Blisters form when trapped air or moisture expands under heat, separating the membrane from the layer below",
-                  "Standing water left for more than 48 hours after rain is considered ponding and needs attention",
-                  "Most small repairs (blisters, cracks, minor seam separation) can be handled with basic roofing tools",
-                  "Repeated failures in the same spot usually signal a moisture problem underneath, not just a surface issue",
-                  "A well-maintained modified bitumen roof typically lasts 15 to 20 years; poor maintenance can cut that closer to 10",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/75 text-sm leading-relaxed">
-                    <CheckCircle2 size={15} className="text-orange-400 mt-0.5 shrink-0" />{item}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* SECTION: What Is Modified Bitumen */}
             <section id="what-is-modified-bitumen" className="mb-12 scroll-mt-24">

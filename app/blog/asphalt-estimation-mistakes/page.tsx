@@ -418,34 +418,6 @@ export default function AsphaltEstimationMistakesPage() {
               </p>
             </div>
 
-            {/* Key Takeaways */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-              <h2 className="text-lg font-black text-orange-300 mb-4 flex items-center gap-2">
-                <AlertCircle size={18} />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2.5">
-                {[
-                  "A 10% estimating error is common and can cost thousands of dollars in wasted material or emergency reorders",
-                  "Asphalt loses roughly 10% of its volume to compaction after rolling — skip this and you'll under-order",
-                  "Using a generic density figure instead of the actual grade's value throws off tonnage calculations",
-                  "Forgetting unit conversions (inches to feet, cubic feet to tons) is one of the most frequent, avoidable errors",
-                  "The aggregate base is often underestimated even when the asphalt quantity is calculated correctly",
-                  "A proper site assessment before estimating catches problems a desk calculation alone will miss",
-                ].map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 text-white/75 text-sm leading-relaxed"
-                  >
-                    <CheckCircle2
-                      size={15}
-                      className="text-red-400 mt-0.5 shrink-0"
-                    />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* ── SECTION: Terminology Note ── */}
             <section id="terminology" className="mb-12 scroll-mt-24">

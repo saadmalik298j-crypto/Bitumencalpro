@@ -389,34 +389,6 @@ export default function BitumenEmulsionExplainedPage() {
               </p>
             </div>
 
-            {/* Key Takeaways */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-              <h2 className="text-lg font-black text-orange-300 mb-4 flex items-center gap-2">
-                <AlertCircle size={18} />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2.5">
-                {[
-                  "Bitumen emulsion is roughly 60% bitumen and 40% water, held together by an emulsifier",
-                  "It's classified two ways: by electrical charge (cationic or anionic) and by setting speed (RS, MS, SS)",
-                  "Cationic emulsions bond well with most aggregate types; anionic emulsions suit alkaline aggregate like limestone",
-                  "Production happens in a colloid mill, which shears bitumen into droplets as small as 1–10 microns",
-                  "Density sits close to plain bitumen, typically around 1.02–1.05 g/cm³, since water and bitumen are similar in weight",
-                  "Cold application cuts energy use significantly compared to heated bitumen, since no fuel is burned to keep it workable",
-                ].map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 text-white/75 text-sm leading-relaxed"
-                  >
-                    <CheckCircle2
-                      size={15}
-                      className="text-teal-400 mt-0.5 shrink-0"
-                    />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* ── SECTION: What Is Bitumen Emulsion? ── */}
             <section id="what-is-bitumen-emulsion" className="mb-12 scroll-mt-24">

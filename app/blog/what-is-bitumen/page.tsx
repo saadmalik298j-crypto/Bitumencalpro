@@ -389,28 +389,6 @@ export default function WhatIsBitumenPage() {
               ]}
             />
 
-            {/* Key Takeaways */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-              <h2 className="text-lg font-black text-orange-300 mb-4 flex items-center gap-2">
-                <AlertCircle size={18} />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2.5">
-                {[
-                  "Bitumen is a semi-solid petroleum product that becomes liquid when heated",
-                  "It's the \"glue\" in asphalt, not the same substance as asphalt itself",
-                  "Most bitumen comes from crude oil refining; a smaller amount occurs naturally",
-                  "Main uses: road paving, roofing membranes, waterproofing, and industrial coatings",
-                  "Bitumen, asphalt, and tar are often confused but come from different sources",
-                  'Cold mix and modified bitumen extend its use to repairs and extreme climates',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/75 text-sm leading-relaxed">
-                    <CheckCircle2 size={15} className="text-teal-400 mt-0.5 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* ── SECTION: What Is Bitumen? ── */}
             <section id="what-is-bitumen" className="mb-12 scroll-mt-24">

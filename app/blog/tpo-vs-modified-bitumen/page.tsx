@@ -324,29 +324,6 @@ export default function TpoVsModifiedBitumenPage() {
               </p>
             </div>
 
-            {/* Key Takeaways */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-              <h2 className="text-lg font-black text-orange-300 mb-4 flex items-center gap-2">
-                <AlertCircle size={18} />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2.5">
-                {[
-                  "TPO is a single-ply thermoplastic membrane, usually white, installed as one welded sheet.",
-                  "Modified bitumen is an asphalt-based system reinforced with fiberglass or polyester and built up in layers.",
-                  "TPO generally costs less to buy and install; modified bitumen costs more but holds up better under foot traffic and impact.",
-                  "TPO reflects sunlight and cuts cooling costs; modified bitumen absorbs heat unless coated.",
-                  "Modified bitumen typically lasts 15–20 years; TPO can last 20–30 years when installed correctly.",
-                  "Seam quality is the main failure point for TPO; UV aging and cracking are the main risks for modified bitumen.",
-                  "Climate, roof traffic, slope, and budget should drive the decision — not just price.",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-white/75 text-sm leading-relaxed">
-                    <CheckCircle2 size={15} className="text-teal-400 mt-0.5 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* ── SECTION: What Is TPO Roofing? ── */}
             <section id="what-is-tpo-roofing" className="mb-12 scroll-mt-24">

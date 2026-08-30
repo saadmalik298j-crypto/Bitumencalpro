@@ -383,31 +383,6 @@ export default function BitumenGradesExplainedPage() {
               </p>
             </div>
 
-            {/* Key Takeaways */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-              <h2 className="text-lg font-black text-orange-300 mb-4 flex items-center gap-2">
-                <AlertCircle size={18} />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2.5">
-                {[
-                  "Penetration grade measures hardness using a needle test at 25°C — lower numbers mean harder bitumen",
-                  "Viscosity grade (VG10–VG40) measures flow resistance at 60°C, giving a more reliable read on hot-weather performance",
-                  "Performance grade (PG) ties directly to the actual temperature range a pavement will experience",
-                  "Softer, lower-viscosity grades suit cold climates and light traffic; stiffer, higher grades suit heat and heavy loads",
-                  "VG30 is the most widely used general-purpose grade for standard road construction",
-                  "Choosing the wrong grade is a leading cause of early rutting or cracking, so always confirm against local specifications",
-                ].map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 text-white/75 text-sm leading-relaxed"
-                  >
-                    <CheckCircle2 size={15} className="text-teal-400 mt-0.5 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* ── SECTION: What Are Bitumen Grades? ── */}
             <section id="what-are-bitumen-grades" className="mb-12 scroll-mt-24">

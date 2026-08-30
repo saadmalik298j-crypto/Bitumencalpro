@@ -381,34 +381,6 @@ export default function AsphaltThicknessPage() {
               priority
             />
 
-            {/* Key Takeaways */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 mt-8">
-              <h2 className="text-lg font-black text-teal-300 mb-4 flex items-center gap-2">
-                <AlertCircle size={18} />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2.5">
-                {[
-                  "Residential driveways typically need 2–3 inches of compacted asphalt over a 4–8 inch aggregate base",
-                  "Commercial parking lots generally need 3–4 inches, with drive lanes and entrances needing 4–6 inches",
-                  "Heavy equipment, loading docks, and truck routes need 6–8 inches or more, sometimes with reinforced base layers",
-                  "Roads and highways can range from 4 to 12 inches depending on traffic volume and vehicle weight",
-                  "The aggregate base beneath the asphalt matters as much as the asphalt itself for long-term durability",
-                  "Asphalt that's too thin develops fatigue cracks quickly, which lead to potholes and much costlier repairs",
-                ].map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 text-white/75 text-sm leading-relaxed"
-                  >
-                    <CheckCircle2
-                      size={15}
-                      className="text-orange-400 mt-0.5 shrink-0"
-                    />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* ── SECTION: Why Asphalt Thickness Matters ── */}
             <section id="why-thickness-matters" className="mb-12 scroll-mt-24">
