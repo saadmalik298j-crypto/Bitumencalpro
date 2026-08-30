@@ -383,6 +383,36 @@ export default function BitumenGradesExplainedPage() {
               </p>
             </div>
 
+            {/* Table of Contents */}
+            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                  <BookOpen size={14} className="text-teal-400" />
+                  Table of Contents
+                </h3>
+                <nav className="space-y-1">
+                  {[
+                    { id: "what-are-bitumen-grades", label: "What Are Bitumen Grades?" },
+                    { id: "penetration-grade", label: "Penetration Grade" },
+                    { id: "viscosity-grade", label: "Viscosity Grade (VG)" },
+                    { id: "performance-grade", label: "Performance Grade (PG)" },
+                    { id: "other-bitumen-types", label: "Other Bitumen Types" },
+                    { id: "how-to-choose", label: "How to Choose a Grade" },
+                    { id: "comparison", label: "Penetration vs VG vs PG" },
+                    { id: "summary", label: "Summary" },
+                    { id: "faq", label: "FAQ" },
+                  ].map(({ id, label }) => (
+                    <a
+                      key={id}
+                      href={`#${id}`}
+                      className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
+                    >
+                      {label}
+                    </a>
+                  ))}
+                </nav>
+            </div>
+
+
 
             {/* ── SECTION: What Are Bitumen Grades? ── */}
             <section id="what-are-bitumen-grades" className="mb-12 scroll-mt-24">
@@ -915,79 +945,7 @@ export default function BitumenGradesExplainedPage() {
           <AuthorBio />
         </article>
 
-          {/* ── SIDEBAR ── */}
-          <aside className="hidden xl:block w-72 shrink-0">
-            <div className="sticky top-24">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                  <BookOpen size={14} className="text-teal-400" />
-                  Table of Contents
-                </h3>
-                <nav className="space-y-1">
-                  {[
-                    { id: "what-are-bitumen-grades", label: "What Are Bitumen Grades?" },
-                    { id: "penetration-grade", label: "Penetration Grade" },
-                    { id: "viscosity-grade", label: "Viscosity Grade (VG)" },
-                    { id: "performance-grade", label: "Performance Grade (PG)" },
-                    { id: "other-bitumen-types", label: "Other Bitumen Types" },
-                    { id: "how-to-choose", label: "How to Choose a Grade" },
-                    { id: "comparison", label: "Penetration vs VG vs PG" },
-                    { id: "summary", label: "Summary" },
-                    { id: "faq", label: "FAQ" },
-                  ].map(({ id, label }) => (
-                    <a
-                      key={id}
-                      href={`#${id}`}
-                      className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              </div>
-
-              {/* Related Articles */}
-              <div className="mt-5 bg-white/5 border border-white/10 rounded-2xl p-5">
-                <h3 className="text-white font-black text-xs uppercase tracking-wider mb-4 flex items-center gap-2">
-                  <BookOpen size={12} className="text-orange-400" />
-                  Related Articles
-                </h3>
-                <div className="space-y-3">
-                  <Link
-                    href="/blog/what-is-bitumen"
-                    className="block text-white/60 hover:text-teal-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2"
-                  >
-                    What Is Bitumen? Meaning, Uses &amp; Properties
-                  </Link>
-                  <Link
-                    href="/blog/bitumen-density-chart"
-                    className="block text-white/60 hover:text-teal-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2"
-                  >
-                    Bitumen Density Chart by Grade &amp; Temperature
-                  </Link>
-                  <Link
-                    href="/blog/cold-mix-bitumen"
-                    className="block text-white/60 hover:text-teal-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2"
-                  >
-                    Cold Mix Bitumen: Uses, Benefits &amp; Comparison
-                  </Link>
-                </div>
-              </div>
-
-              {/* CTA */}
-              <div className="mt-5 bg-gradient-to-br from-orange-500/15 to-teal-500/10 border border-white/10 rounded-2xl p-5 text-center">
-                <p className="text-white/80 text-xs leading-relaxed mb-4">
-                  Know your grade? Estimate your bitumen quantities instantly.
-                </p>
-                <Link
-                  href="/"
-                  className="block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-4 py-2.5 rounded-xl font-bold text-xs transition-all shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:shadow-[0_0_25px_rgba(249,115,22,0.5)]"
-                >
-                  Free Bitumen Calculator →
-                </Link>
-              </div>
-            </div>
-          </aside>
+          
         </div>
       </div>
     </>

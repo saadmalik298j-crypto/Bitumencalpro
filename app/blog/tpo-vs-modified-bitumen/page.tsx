@@ -324,6 +324,38 @@ export default function TpoVsModifiedBitumenPage() {
               </p>
             </div>
 
+            {/* Table of Contents */}
+            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                  <BookOpen size={14} className="text-teal-400" />
+                  Table of Contents
+                </h3>
+                <nav className="space-y-1">
+                  {[
+                    { id: "what-is-tpo-roofing", label: "What Is TPO Roofing?" },
+                    { id: "what-is-modified-bitumen-roofing", label: "What Is Modified Bitumen?" },
+                    { id: "side-by-side-comparison", label: "Side-by-Side Comparison" },
+                    { id: "cost-comparison", label: "Cost Comparison" },
+                    { id: "durability-and-lifespan", label: "Durability and Lifespan" },
+                    { id: "energy-efficiency", label: "Energy Efficiency" },
+                    { id: "weather-and-climate-performance", label: "Weather Performance" },
+                    { id: "installation-and-maintenance", label: "Installation & Maintenance" },
+                    { id: "which-one-should-you-choose", label: "Which One to Choose?" },
+                    { id: "summary", label: "Summary" },
+                    { id: "faq", label: "Common Questions" },
+                  ].map(({ id, label }) => (
+                    <a
+                      key={id}
+                      href={`#${id}`}
+                      className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
+                    >
+                      {label}
+                    </a>
+                  ))}
+                </nav>
+            </div>
+
+
 
             {/* ── SECTION: What Is TPO Roofing? ── */}
             <section id="what-is-tpo-roofing" className="mb-12 scroll-mt-24">
@@ -711,52 +743,7 @@ export default function TpoVsModifiedBitumenPage() {
         </article>
 
           {/* ── SIDEBAR: Table of Contents ── */}
-          <aside className="hidden xl:block w-72 shrink-0">
-            <div className="sticky top-24">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                  <BookOpen size={14} className="text-teal-400" />
-                  Table of Contents
-                </h3>
-                <nav className="space-y-1">
-                  {[
-                    { id: "what-is-tpo-roofing", label: "What Is TPO Roofing?" },
-                    { id: "what-is-modified-bitumen-roofing", label: "What Is Modified Bitumen?" },
-                    { id: "side-by-side-comparison", label: "Side-by-Side Comparison" },
-                    { id: "cost-comparison", label: "Cost Comparison" },
-                    { id: "durability-and-lifespan", label: "Durability and Lifespan" },
-                    { id: "energy-efficiency", label: "Energy Efficiency" },
-                    { id: "weather-and-climate-performance", label: "Weather Performance" },
-                    { id: "installation-and-maintenance", label: "Installation & Maintenance" },
-                    { id: "which-one-should-you-choose", label: "Which One to Choose?" },
-                    { id: "summary", label: "Summary" },
-                    { id: "faq", label: "Common Questions" },
-                  ].map(({ id, label }) => (
-                    <a
-                      key={id}
-                      href={`#${id}`}
-                      className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              </div>
-
-              {/* Sidebar CTA */}
-              <div className="mt-5 bg-gradient-to-br from-orange-500/15 to-teal-500/10 border border-white/10 rounded-2xl p-5 text-center">
-                <p className="text-white/80 text-xs leading-relaxed mb-4">
-                  Planning a commercial roof project? Estimate your materials instantly.
-                </p>
-                <Link
-                  href="/"
-                  className="block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-4 py-2.5 rounded-xl font-bold text-xs transition-all shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:shadow-[0_0_25px_rgba(249,115,22,0.5)]"
-                >
-                  Free Roof Calculator →
-                </Link>
-              </div>
-            </div>
-          </aside>
+          
         </div>
       </div>
     </>

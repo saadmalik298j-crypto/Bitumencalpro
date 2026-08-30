@@ -373,6 +373,46 @@ export default function WhatIsBitumenPage() {
               </p>
             </div>
 
+            {/* Table of Contents */}
+            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                  <BookOpen size={14} className="text-teal-400" />
+                  Table of Contents
+                </h3>
+                <nav className="space-y-1">
+                  {[
+                    { id: "what-is-bitumen", label: "What Is Bitumen?" },
+                    { id: "what-is-bitumen-made-of", label: "What Is It Made Of?" },
+                    { id: "where-does-bitumen-come-from", label: "Where Does It Come From?" },
+                    { id: "bitumen-properties", label: "Bitumen Properties" },
+                    { id: "bitumen-grading", label: "Grading & Testing" },
+                    { id: "bitumen-grades", label: "Bitumen Grades" },
+                    { id: "bitumen-vs-asphalt-vs-concrete", label: "vs Asphalt vs Concrete" },
+                    { id: "types-of-bitumen", label: "Types of Bitumen" },
+                    { id: "bitumen-uses", label: "What Is It Used For?" },
+                    { id: "advantages-disadvantages", label: "Advantages & Disadvantages" },
+                    { id: "bitumen-safety", label: "Is It Safe?" },
+                    { id: "bitumen-vs-asphalt-vs-tar", label: "vs Asphalt vs Tar" },
+                    { id: "asphalt-binder", label: "Asphalt Binder" },
+                    { id: "bituminous-concrete", label: "Bituminous Concrete" },
+                    { id: "bitumen-road-construction", label: "Road Construction" },
+                    { id: "repair-maintenance", label: "Repair & Maintenance" },
+                    { id: "quick-facts", label: "Quick Facts" },
+                    { id: "conclusion", label: "Conclusion" },
+                    { id: "faq", label: "FAQ" },
+                  ].map(({ id, label }) => (
+                    <a
+                      key={id}
+                      href={`#${id}`}
+                      className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
+                    >
+                      {label}
+                    </a>
+                  ))}
+                </nav>
+            </div>
+
+
 {/* ── SECTION: What Is Bitumen? ── */}
             <section id="what-is-bitumen" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
@@ -1156,60 +1196,7 @@ export default function WhatIsBitumenPage() {
         </article>
 
           {/* ── SIDEBAR: Table of Contents ── */}
-          <aside className="hidden xl:block w-72 shrink-0">
-            <div className="sticky top-24">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                  <BookOpen size={14} className="text-teal-400" />
-                  Table of Contents
-                </h3>
-                <nav className="space-y-1">
-                  {[
-                    { id: "what-is-bitumen", label: "What Is Bitumen?" },
-                    { id: "what-is-bitumen-made-of", label: "What Is It Made Of?" },
-                    { id: "where-does-bitumen-come-from", label: "Where Does It Come From?" },
-                    { id: "bitumen-properties", label: "Bitumen Properties" },
-                    { id: "bitumen-grading", label: "Grading & Testing" },
-                    { id: "bitumen-grades", label: "Bitumen Grades" },
-                    { id: "bitumen-vs-asphalt-vs-concrete", label: "vs Asphalt vs Concrete" },
-                    { id: "types-of-bitumen", label: "Types of Bitumen" },
-                    { id: "bitumen-uses", label: "What Is It Used For?" },
-                    { id: "advantages-disadvantages", label: "Advantages & Disadvantages" },
-                    { id: "bitumen-safety", label: "Is It Safe?" },
-                    { id: "bitumen-vs-asphalt-vs-tar", label: "vs Asphalt vs Tar" },
-                    { id: "asphalt-binder", label: "Asphalt Binder" },
-                    { id: "bituminous-concrete", label: "Bituminous Concrete" },
-                    { id: "bitumen-road-construction", label: "Road Construction" },
-                    { id: "repair-maintenance", label: "Repair & Maintenance" },
-                    { id: "quick-facts", label: "Quick Facts" },
-                    { id: "conclusion", label: "Conclusion" },
-                    { id: "faq", label: "FAQ" },
-                  ].map(({ id, label }) => (
-                    <a
-                      key={id}
-                      href={`#${id}`}
-                      className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              </div>
-
-              {/* Sidebar CTA */}
-              <div className="mt-5 bg-gradient-to-br from-orange-500/15 to-teal-500/10 border border-white/10 rounded-2xl p-5 text-center">
-                <p className="text-white/80 text-xs leading-relaxed mb-4">
-                  Planning a paving project? Estimate your bitumen quantities instantly.
-                </p>
-                <Link
-                  href="/"
-                  className="block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-4 py-2.5 rounded-xl font-bold text-xs transition-all shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:shadow-[0_0_25px_rgba(249,115,22,0.5)]"
-                >
-                  Free Bitumen Calculator →
-                </Link>
-              </div>
-            </div>
-          </aside>
+          
         </div>
       </div>
     </>

@@ -418,6 +418,42 @@ export default function AsphaltEstimationMistakesPage() {
               </p>
             </div>
 
+            {/* Table of Contents */}
+            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                  <BookOpen size={14} className="text-orange-400" />
+                  10 Mistakes Covered
+                </h3>
+                <nav className="space-y-1">
+                  {[
+                    { id: "terminology", label: "Bitumen vs. HMA — Key Distinction" },
+                    { id: "why-mistakes-cost-more", label: "Why Mistakes Cost More" },
+                    { id: "mistake-1-area-volume", label: "#1 Miscalculated Area/Volume" },
+                    { id: "mistake-2-unit-conversions", label: "#2 Unit Conversion Errors" },
+                    { id: "mistake-3-density-value", label: "#3 Wrong Density Value" },
+                    { id: "mistake-4-compaction", label: "#4 Ignoring Compaction" },
+                    { id: "mistake-5-waste-allowance", label: "#5 No Waste Allowance" },
+                    { id: "mistake-6-aggregate-base", label: "#6 Base Underestimated" },
+                    { id: "mistake-7-surface-conditions", label: "#7 Surface Not Inspected" },
+                    { id: "mistake-8-secondary-materials", label: "#8 Secondary Materials" },
+                    { id: "mistake-9-pricing-errors", label: "#9 Inconsistent Pricing" },
+                    { id: "mistake-10-contingency", label: "#10 No Contingency" },
+                    { id: "quick-reference-table", label: "Quick Reference Table" },
+                    { id: "how-to-estimate-accurately", label: "Accurate Estimating Steps" },
+                    { id: "faq", label: "FAQs" },
+                  ].map(({ id, label }) => (
+                    <a
+                      key={id}
+                      href={`#${id}`}
+                      className="block text-white/55 hover:text-red-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
+                    >
+                      {label}
+                    </a>
+                  ))}
+                </nav>
+            </div>
+
+
 
             {/* ── SECTION: Terminology Note ── */}
             <section id="terminology" className="mb-12 scroll-mt-24">
@@ -1096,98 +1132,7 @@ export default function AsphaltEstimationMistakesPage() {
           <AuthorBio />
         </article>
 
-          {/* ── SIDEBAR ── */}
-          <aside className="hidden xl:block w-72 shrink-0">
-            <div className="sticky top-24">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                  <BookOpen size={14} className="text-orange-400" />
-                  10 Mistakes Covered
-                </h3>
-                <nav className="space-y-1">
-                  {[
-                    { id: "terminology", label: "Bitumen vs. HMA — Key Distinction" },
-                    { id: "why-mistakes-cost-more", label: "Why Mistakes Cost More" },
-                    { id: "mistake-1-area-volume", label: "#1 Miscalculated Area/Volume" },
-                    { id: "mistake-2-unit-conversions", label: "#2 Unit Conversion Errors" },
-                    { id: "mistake-3-density-value", label: "#3 Wrong Density Value" },
-                    { id: "mistake-4-compaction", label: "#4 Ignoring Compaction" },
-                    { id: "mistake-5-waste-allowance", label: "#5 No Waste Allowance" },
-                    { id: "mistake-6-aggregate-base", label: "#6 Base Underestimated" },
-                    { id: "mistake-7-surface-conditions", label: "#7 Surface Not Inspected" },
-                    { id: "mistake-8-secondary-materials", label: "#8 Secondary Materials" },
-                    { id: "mistake-9-pricing-errors", label: "#9 Inconsistent Pricing" },
-                    { id: "mistake-10-contingency", label: "#10 No Contingency" },
-                    { id: "quick-reference-table", label: "Quick Reference Table" },
-                    { id: "how-to-estimate-accurately", label: "Accurate Estimating Steps" },
-                    { id: "faq", label: "FAQs" },
-                  ].map(({ id, label }) => (
-                    <a
-                      key={id}
-                      href={`#${id}`}
-                      className="block text-white/55 hover:text-red-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              </div>
-
-              {/* Sidebar CTA */}
-              <div className="mt-5 bg-gradient-to-br from-orange-500/15 to-red-500/10 border border-white/10 rounded-2xl p-5 text-center">
-                <p className="text-white/80 text-xs leading-relaxed mb-4">
-                  Stop estimating by hand. Run your asphalt quantities instantly
-                  with our free calculator.
-                </p>
-                <Link
-                  href="/"
-                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-4 py-2.5 rounded-full font-bold text-xs transition-all w-full"
-                >
-                  Open Calculator
-                  <ArrowRight size={13} />
-                </Link>
-              </div>
-
-              {/* Related articles */}
-              <div className="mt-5 bg-white/5 border border-white/10 rounded-2xl p-5">
-                <h3 className="text-white font-black text-xs uppercase tracking-wider mb-4">
-                  Related Guides
-                </h3>
-                <div className="space-y-3">
-                  {[
-                    {
-                      href: "/blog/bitumen-density-chart",
-                      label: "Bitumen Density Chart by Grade",
-                    },
-                    {
-                      href: "/blog/asphalt-thickness",
-                      label: "Asphalt Thickness Guide & Chart",
-                    },
-                    {
-                      href: "/blog/what-is-bitumen",
-                      label: "What Is Bitumen? Complete Guide",
-                    },
-                    {
-                      href: "/blog/bitumen-grades-explained",
-                      label: "Bitumen Grades Explained",
-                    },
-                  ].map(({ href, label }) => (
-                    <Link
-                      key={href}
-                      href={href}
-                      className="flex items-start gap-2 text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1.5 px-2 rounded-lg hover:bg-white/5 transition-all group"
-                    >
-                      <ArrowRight
-                        size={11}
-                        className="mt-0.5 shrink-0 group-hover:translate-x-0.5 transition-transform"
-                      />
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </aside>
+          
         </div>
       </div>
     </>

@@ -365,6 +365,39 @@ export default function BitumenDensityChartPage() {
               </p>
             </div>
 
+            {/* Table of Contents */}
+            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+
+                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                  <BookOpen size={14} className="text-teal-400" />
+                  Table of Contents
+                </h3>
+                <nav className="space-y-1">
+                  {[
+                    { id: "what-is-bitumen-density", label: "What Is Bitumen Density?" },
+                    { id: "bitumen-density-chart", label: "Density Chart by Grade" },
+                    { id: "temperature-effects", label: "Temperature Effects" },
+                    { id: "density-vs-specific-gravity", label: "Density vs Specific Gravity" },
+                    { id: "why-density-matters", label: "Why Density Matters" },
+                    { id: "density-testing", label: "How Density Is Tested" },
+                    { id: "density-comparison", label: "Density Comparison" },
+                    { id: "quality-issues", label: "Quality Issues" },
+                    { id: "using-the-chart", label: "Using the Chart" },
+                    { id: "summary", label: "Summary" },
+                    { id: "faq", label: "FAQ" },
+                  ].map(({ id, label }) => (
+                    <a
+                      key={id}
+                      href={`#${id}`}
+                      className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
+                    >
+                      {label}
+                    </a>
+                  ))}
+                </nav>
+            </div>
+
+
 
             {/* ── SECTION: What Is Bitumen Density? ── */}
             <section id="what-is-bitumen-density" className="mb-12 scroll-mt-24">
@@ -879,80 +912,7 @@ export default function BitumenDensityChartPage() {
           <AuthorBio />
         </article>
 
-          {/* ── SIDEBAR ── */}
-          <aside className="hidden xl:block w-72 shrink-0">
-            <div className="sticky top-24">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                  <BookOpen size={14} className="text-teal-400" />
-                  Table of Contents
-                </h3>
-                <nav className="space-y-1">
-                  {[
-                    { id: "what-is-bitumen-density", label: "What Is Bitumen Density?" },
-                    { id: "bitumen-density-chart", label: "Density Chart by Grade" },
-                    { id: "temperature-effects", label: "Temperature Effects" },
-                    { id: "density-vs-specific-gravity", label: "Density vs Specific Gravity" },
-                    { id: "why-density-matters", label: "Why Density Matters" },
-                    { id: "density-testing", label: "How Density Is Tested" },
-                    { id: "density-comparison", label: "Density Comparison" },
-                    { id: "quality-issues", label: "Quality Issues" },
-                    { id: "using-the-chart", label: "Using the Chart" },
-                    { id: "summary", label: "Summary" },
-                    { id: "faq", label: "FAQ" },
-                  ].map(({ id, label }) => (
-                    <a
-                      key={id}
-                      href={`#${id}`}
-                      className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              </div>
-
-              {/* Sidebar CTA */}
-              <div className="mt-5 bg-gradient-to-br from-orange-500/15 to-teal-500/10 border border-white/10 rounded-2xl p-5 text-center">
-                <p className="text-white/80 text-xs leading-relaxed mb-4">
-                  Need to convert bitumen weight to volume? Use our free calculator.
-                </p>
-                <Link
-                  href="/"
-                  className="block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-4 py-2.5 rounded-xl font-bold text-xs transition-all shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:shadow-[0_0_25px_rgba(249,115,22,0.5)]"
-                >
-                  Free Bitumen Calculator →
-                </Link>
-              </div>
-
-              {/* Related Posts */}
-              <div className="mt-5 bg-white/5 border border-white/10 rounded-2xl p-5">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-4">
-                  Related Articles
-                </h3>
-                <div className="space-y-3">
-                  <Link
-                    href="/blog/what-is-bitumen"
-                    className="block group hover:bg-white/5 rounded-xl p-3 transition-colors -mx-1"
-                  >
-                    <p className="text-white/70 text-xs font-semibold group-hover:text-teal-400 transition-colors leading-snug">
-                      What Is Bitumen? Meaning, Uses &amp; Properties
-                    </p>
-                    <span className="text-white/35 text-xs mt-1 block">Bitumen Fundamentals</span>
-                  </Link>
-                  <Link
-                    href="/blog/cold-mix-bitumen"
-                    className="block group hover:bg-white/5 rounded-xl p-3 transition-colors -mx-1"
-                  >
-                    <p className="text-white/70 text-xs font-semibold group-hover:text-teal-400 transition-colors leading-snug">
-                      Cold Mix Bitumen: Uses, Benefits &amp; Hot Mix Comparison
-                    </p>
-                    <span className="text-white/35 text-xs mt-1 block">Asphalt &amp; Paving</span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </aside>
+          
         </div>
       </div>
     </>

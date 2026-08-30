@@ -343,6 +343,38 @@ export default function ModifiedBitumenRoofingPage() {
               </p>
             </div>
 
+            {/* Table of Contents */}
+            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                  <BookOpen size={14} className="text-blue-400" />
+                  Table of Contents
+                </h3>
+                <nav className="space-y-1">
+                  {[
+                    { id: "what-is-modified-bitumen", label: "What Is Modified Bitumen?" },
+                    { id: "sbs-vs-app", label: "SBS vs APP" },
+                    { id: "installation", label: "Installation Methods" },
+                    { id: "system-layers", label: "System Layers" },
+                    { id: "cost", label: "How Much Does It Cost?" },
+                    { id: "lifespan", label: "How Long Does It Last?" },
+                    { id: "comparison", label: "Mod Bit vs TPO vs EPDM" },
+                    { id: "pros-cons", label: "Pros and Cons" },
+                    { id: "repair-signs", label: "Signs of Repair" },
+                    { id: "conclusion", label: "Conclusion" },
+                    { id: "faq", label: "FAQ" },
+                  ].map(({ id, label }) => (
+                    <a
+                      key={id}
+                      href={`#${id}`}
+                      className="block text-white/55 hover:text-blue-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
+                    >
+                      {label}
+                    </a>
+                  ))}
+                </nav>
+            </div>
+
+
             {/* Image 1 — Exactly placed after Quick Answer, before Key Takeaways */}
             <SectionImage
               src="/modified-bitumen-roofing-flat-low-slope.webp"
@@ -796,87 +828,7 @@ export default function ModifiedBitumenRoofingPage() {
           <AuthorBio />
         </article>
 
-          {/* ── SIDEBAR ── */}
-          <aside className="hidden xl:block w-72 shrink-0">
-            <div className="sticky top-24">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                  <BookOpen size={14} className="text-blue-400" />
-                  Table of Contents
-                </h3>
-                <nav className="space-y-1">
-                  {[
-                    { id: "what-is-modified-bitumen", label: "What Is Modified Bitumen?" },
-                    { id: "sbs-vs-app", label: "SBS vs APP" },
-                    { id: "installation", label: "Installation Methods" },
-                    { id: "system-layers", label: "System Layers" },
-                    { id: "cost", label: "How Much Does It Cost?" },
-                    { id: "lifespan", label: "How Long Does It Last?" },
-                    { id: "comparison", label: "Mod Bit vs TPO vs EPDM" },
-                    { id: "pros-cons", label: "Pros and Cons" },
-                    { id: "repair-signs", label: "Signs of Repair" },
-                    { id: "conclusion", label: "Conclusion" },
-                    { id: "faq", label: "FAQ" },
-                  ].map(({ id, label }) => (
-                    <a
-                      key={id}
-                      href={`#${id}`}
-                      className="block text-white/55 hover:text-blue-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              </div>
-
-              {/* Related Articles */}
-              <div className="mt-5 bg-white/5 border border-white/10 rounded-2xl p-5">
-                <h3 className="text-white font-black text-xs uppercase tracking-wider mb-4 flex items-center gap-2">
-                  <BookOpen size={12} className="text-orange-400" />
-                  Related Articles
-                </h3>
-                <div className="space-y-3">
-                  <Link
-                    href="/blog/what-is-bitumen"
-                    className="block text-white/60 hover:text-teal-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2"
-                  >
-                    What Is Bitumen? Meaning, Uses &amp; Properties
-                  </Link>
-                  <Link
-                    href="/blog/bitumen-grades-explained"
-                    className="block text-white/60 hover:text-teal-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2"
-                  >
-                    Bitumen Grades Explained: Penetration, VG, PG
-                  </Link>
-                  <Link
-                    href="/blog/modified-bitumen-roof-repair"
-                    className="block text-white/60 hover:text-teal-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2"
-                  >
-                    Modified Bitumen Roof Repair: Fixes &amp; Guide
-                  </Link>
-                  <Link
-                    href="/blog/cold-mix-bitumen"
-                    className="block text-white/60 hover:text-teal-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2"
-                  >
-                    Cold Mix Bitumen: Uses, Benefits &amp; Comparison
-                  </Link>
-                </div>
-              </div>
-
-              {/* CTA */}
-              <div className="mt-5 bg-gradient-to-br from-blue-500/15 to-teal-500/10 border border-white/10 rounded-2xl p-5 text-center">
-                <p className="text-white/80 text-xs leading-relaxed mb-4">
-                  Need to calculate bitumen for pavement projects instead?
-                </p>
-                <Link
-                  href="/"
-                  className="block bg-gradient-to-r from-blue-500 to-teal-600 hover:from-blue-400 hover:to-teal-500 text-white px-4 py-2.5 rounded-xl font-bold text-xs transition-all shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:shadow-[0_0_25px_rgba(59,130,246,0.5)]"
-                >
-                  Free Bitumen Calculator →
-                </Link>
-              </div>
-            </div>
-          </aside>
+          
         </div>
       </div>
     </>

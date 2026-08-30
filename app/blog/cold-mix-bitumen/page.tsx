@@ -175,6 +175,34 @@ export default function ColdMixBitumenPage() {
               </p>
             </div>
 
+            {/* Table of Contents */}
+            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2"><BookOpen size={14} className="text-teal-400" /> Table of Contents</h3>
+                <nav className="space-y-1">
+                  {[
+                    { id: "what-is-cold-mix-bitumen", label: "What Is Cold Mix Bitumen?" },
+                    { id: "how-cold-mix-is-made", label: "How It Is Made" },
+                    { id: "types-of-cold-mix", label: "Types of Cold Mix" },
+                    { id: "cold-mix-recycled-asphalt", label: "Cold Mix & RAP Recycling" },
+                    { id: "cold-mix-vs-hot-mix", label: "Cold Mix vs Hot Mix" },
+                    { id: "cold-mix-uses", label: "What Is It Used For?" },
+                    { id: "choosing-cold-mix", label: "Choosing the Right Product" },
+                    { id: "benefits-cold-mix", label: "Benefits" },
+                    { id: "limitations-cold-mix", label: "Limitations" },
+                    { id: "how-to-apply-cold-mix", label: "How to Apply" },
+                    { id: "why-patches-fail", label: "Why Patches Fail" },
+                    { id: "cold-mix-cost", label: "Cost Factors" },
+                    { id: "cold-mix-lifespan", label: "How Long Does It Last?" },
+                    { id: "cold-mix-storage", label: "Storage" },
+                    { id: "conclusion", label: "Conclusion" },
+                    { id: "faq", label: "FAQ" },
+                  ].map(({ id, label }) => (
+                    <a key={id} href={`#${id}`} className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all">{label}</a>
+                  ))}
+                </nav>
+            </div>
+
+
 
             {/* SECTION: What Is Cold Mix Bitumen? */}
             <section id="what-is-cold-mix-bitumen" className="mb-12 scroll-mt-24">
@@ -524,55 +552,7 @@ export default function ColdMixBitumenPage() {
         </article>
 
           {/* SIDEBAR */}
-          <aside className="hidden xl:block w-72 shrink-0">
-            <div className="sticky top-24">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2"><BookOpen size={14} className="text-teal-400" /> Table of Contents</h3>
-                <nav className="space-y-1">
-                  {[
-                    { id: "what-is-cold-mix-bitumen", label: "What Is Cold Mix Bitumen?" },
-                    { id: "how-cold-mix-is-made", label: "How It Is Made" },
-                    { id: "types-of-cold-mix", label: "Types of Cold Mix" },
-                    { id: "cold-mix-recycled-asphalt", label: "Cold Mix & RAP Recycling" },
-                    { id: "cold-mix-vs-hot-mix", label: "Cold Mix vs Hot Mix" },
-                    { id: "cold-mix-uses", label: "What Is It Used For?" },
-                    { id: "choosing-cold-mix", label: "Choosing the Right Product" },
-                    { id: "benefits-cold-mix", label: "Benefits" },
-                    { id: "limitations-cold-mix", label: "Limitations" },
-                    { id: "how-to-apply-cold-mix", label: "How to Apply" },
-                    { id: "why-patches-fail", label: "Why Patches Fail" },
-                    { id: "cold-mix-cost", label: "Cost Factors" },
-                    { id: "cold-mix-lifespan", label: "How Long Does It Last?" },
-                    { id: "cold-mix-storage", label: "Storage" },
-                    { id: "conclusion", label: "Conclusion" },
-                    { id: "faq", label: "FAQ" },
-                  ].map(({ id, label }) => (
-                    <a key={id} href={`#${id}`} className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all">{label}</a>
-                  ))}
-                </nav>
-              </div>
-
-              {/* Related Article */}
-              <div className="mt-5 bg-white/5 border border-white/10 rounded-2xl p-5">
-                <h4 className="text-white/80 text-xs font-bold uppercase tracking-wider mb-3">Related Reading</h4>
-                <Link href="/blog/what-is-bitumen" className="group flex items-start gap-3 hover:bg-white/5 rounded-xl p-2 -m-2 transition-all">
-                  <div className="w-12 h-12 rounded-lg overflow-hidden shrink-0 bg-black/30 border border-white/10">
-                    <Image src="/what-is-bitumen.webp" alt="What is bitumen guide" width={48} height={48} className="w-full h-full object-cover" />
-                  </div>
-                  <div>
-                    <p className="text-white/80 text-xs font-semibold leading-snug group-hover:text-teal-400 transition-colors">What Is Bitumen? Uses, Properties &amp; Types</p>
-                    <p className="text-white/40 text-xs mt-1">18 min read</p>
-                  </div>
-                </Link>
-              </div>
-
-              {/* Sidebar CTA */}
-              <div className="mt-5 bg-gradient-to-br from-orange-500/15 to-teal-500/10 border border-white/10 rounded-2xl p-5 text-center">
-                <p className="text-white/80 text-xs leading-relaxed mb-4">Estimating materials for a paving or repair project? Get instant quantity calculations.</p>
-                <Link href="/" className="block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-4 py-2.5 rounded-xl font-bold text-xs transition-all shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:shadow-[0_0_25px_rgba(249,115,22,0.5)]">Free Bitumen Calculator</Link>
-              </div>
-            </div>
-          </aside>
+          
         </div>
       </div>
     </>

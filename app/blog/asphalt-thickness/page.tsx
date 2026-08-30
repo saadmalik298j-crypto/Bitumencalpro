@@ -373,6 +373,37 @@ export default function AsphaltThicknessPage() {
               </p>
             </div>
 
+            {/* Table of Contents */}
+            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                  <BookOpen size={14} className="text-teal-400" />
+                  Table of Contents
+                </h3>
+                <nav className="space-y-1">
+                  {[
+                    { id: "why-thickness-matters", label: "Why Thickness Matters" },
+                    { id: "thickness-chart", label: "Thickness Chart by Use Case" },
+                    { id: "residential-driveways", label: "Residential Driveways" },
+                    { id: "asphalt-thickness-roads", label: "Roads & Highways" },
+                    { id: "parking-lot-thickness", label: "Parking Lots" },
+                    { id: "heavy-equipment-asphalt", label: "Heavy Equipment & Trucks" },
+                    { id: "thickness-factors", label: "Factors Affecting Thickness" },
+                    { id: "asphalt-mistakes", label: "Common Mistakes" },
+                    { id: "video-guide", label: "Video Guide" },
+                    { id: "faq", label: "FAQs" },
+                  ].map(({ id, label }) => (
+                    <a
+                      key={id}
+                      href={`#${id}`}
+                      className="block text-white/55 hover:text-orange-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
+                    >
+                      {label}
+                    </a>
+                  ))}
+                </nav>
+            </div>
+
+
             {/* Featured Image — Placement 1 */}
             <SectionImage
               src="/asphalt-thickness-driveway-road-parking-lot.webp"
@@ -950,93 +981,7 @@ export default function AsphaltThicknessPage() {
           <AuthorBio />
         </article>
 
-          {/* ── SIDEBAR ── */}
-          <aside className="hidden xl:block w-72 shrink-0">
-            <div className="sticky top-24">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                  <BookOpen size={14} className="text-teal-400" />
-                  Table of Contents
-                </h3>
-                <nav className="space-y-1">
-                  {[
-                    { id: "why-thickness-matters", label: "Why Thickness Matters" },
-                    { id: "thickness-chart", label: "Thickness Chart by Use Case" },
-                    { id: "residential-driveways", label: "Residential Driveways" },
-                    { id: "asphalt-thickness-roads", label: "Roads & Highways" },
-                    { id: "parking-lot-thickness", label: "Parking Lots" },
-                    { id: "heavy-equipment-asphalt", label: "Heavy Equipment & Trucks" },
-                    { id: "thickness-factors", label: "Factors Affecting Thickness" },
-                    { id: "asphalt-mistakes", label: "Common Mistakes" },
-                    { id: "video-guide", label: "Video Guide" },
-                    { id: "faq", label: "FAQs" },
-                  ].map(({ id, label }) => (
-                    <a
-                      key={id}
-                      href={`#${id}`}
-                      className="block text-white/55 hover:text-orange-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              </div>
-
-              {/* Sidebar CTA */}
-              <div className="mt-5 bg-gradient-to-br from-orange-500/15 to-teal-500/10 border border-white/10 rounded-2xl p-5 text-center">
-                <p className="text-white/80 text-xs leading-relaxed mb-4">
-                  Know your thickness? Estimate exact asphalt and bitumen
-                  quantities for your project.
-                </p>
-                <Link
-                  href="/"
-                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-4 py-2.5 rounded-full font-bold text-xs transition-all w-full"
-                >
-                  Open Calculator
-                  <ArrowRight size={13} />
-                </Link>
-              </div>
-
-              {/* Related articles */}
-              <div className="mt-5 bg-white/5 border border-white/10 rounded-2xl p-5">
-                <h3 className="text-white font-black text-xs uppercase tracking-wider mb-4">
-                  Related Guides
-                </h3>
-                <div className="space-y-3">
-                  {[
-                    {
-                      href: "/blog/bitumen-grades-explained",
-                      label: "Bitumen Grades for Roads & Pavements",
-                    },
-                    {
-                      href: "/blog/cold-mix-bitumen",
-                      label: "Cold Mix Bitumen for Pothole Repair",
-                    },
-                    {
-                      href: "/blog/what-is-bitumen",
-                      label: "What Is Bitumen? Complete Guide",
-                    },
-                    {
-                      href: "/blog/bitumen-density-chart",
-                      label: "Bitumen Density Chart by Grade",
-                    },
-                  ].map(({ href, label }) => (
-                    <Link
-                      key={href}
-                      href={href}
-                      className="flex items-start gap-2 text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1.5 px-2 rounded-lg hover:bg-white/5 transition-all group"
-                    >
-                      <ArrowRight
-                        size={11}
-                        className="mt-0.5 shrink-0 group-hover:translate-x-0.5 transition-transform"
-                      />
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </aside>
+          
         </div>
       </div>
     </>

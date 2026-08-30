@@ -394,6 +394,39 @@ export default function ModifiedBitumenRoofRepairPage() {
                   <Link href="/blog/bitumen-grades-explained" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">Bitumen Grades Explained</Link>.
                 </p>
               </div>
+
+            {/* Table of Contents */}
+            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                  <BookOpen size={14} className="text-orange-400" />
+                  Table of Contents
+                </h3>
+                <nav className="space-y-1">
+                  {[
+                    { id: "what-is-modified-bitumen", label: "What Is Modified Bitumen?" },
+                    { id: "common-problems", label: "Common Problems" },
+                    { id: "seam-failure", label: "  Seam Failure" },
+                    { id: "blisters", label: "  Blisters" },
+                    { id: "ponding-water", label: "  Ponding Water" },
+                    { id: "punctures", label: "  Punctures" },
+                    { id: "alligatoring", label: "  Alligatoring & Cracking" },
+                    { id: "flashing-failure", label: "  Flashing Failure" },
+                    { id: "signs-of-repair", label: "Signs You Need Repair" },
+                    { id: "how-to-repair", label: "How to Repair (Steps)" },
+                    { id: "diy-vs-professional", label: "DIY vs Professional" },
+                    { id: "cost-factors", label: "Repair Cost Factors" },
+                    { id: "preventing-repairs", label: "Preventing Future Repairs" },
+                    { id: "repair-lifespan", label: "How Long Repairs Last" },
+                    { id: "summary", label: "Summary" },
+                    { id: "faq", label: "FAQ" },
+                  ].map(({ id, label }) => (
+                    <a key={id} href={`#${id}`} className="block text-white/55 hover:text-orange-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all">
+                      {label}
+                    </a>
+                  ))}
+                </nav>
+            </div>
+
             </section>
 
             {/* SECTION: Summary */}
@@ -449,69 +482,7 @@ export default function ModifiedBitumenRoofRepairPage() {
         </article>
 
           {/* SIDEBAR */}
-          <aside className="hidden xl:block w-72 shrink-0">
-            <div className="sticky top-24">
-              <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                  <BookOpen size={14} className="text-orange-400" />
-                  Table of Contents
-                </h3>
-                <nav className="space-y-1">
-                  {[
-                    { id: "what-is-modified-bitumen", label: "What Is Modified Bitumen?" },
-                    { id: "common-problems", label: "Common Problems" },
-                    { id: "seam-failure", label: "  Seam Failure" },
-                    { id: "blisters", label: "  Blisters" },
-                    { id: "ponding-water", label: "  Ponding Water" },
-                    { id: "punctures", label: "  Punctures" },
-                    { id: "alligatoring", label: "  Alligatoring & Cracking" },
-                    { id: "flashing-failure", label: "  Flashing Failure" },
-                    { id: "signs-of-repair", label: "Signs You Need Repair" },
-                    { id: "how-to-repair", label: "How to Repair (Steps)" },
-                    { id: "diy-vs-professional", label: "DIY vs Professional" },
-                    { id: "cost-factors", label: "Repair Cost Factors" },
-                    { id: "preventing-repairs", label: "Preventing Future Repairs" },
-                    { id: "repair-lifespan", label: "How Long Repairs Last" },
-                    { id: "summary", label: "Summary" },
-                    { id: "faq", label: "FAQ" },
-                  ].map(({ id, label }) => (
-                    <a key={id} href={`#${id}`} className="block text-white/55 hover:text-orange-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all">
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              </div>
-
-              {/* Sidebar CTA */}
-              <div className="mt-5 bg-gradient-to-br from-orange-500/15 to-teal-500/10 border border-white/10 rounded-2xl p-5 text-center">
-                <p className="text-white/80 text-xs leading-relaxed mb-4">Need to estimate bitumen quantities for a paving or roofing project?</p>
-                <Link href="/" className="block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-4 py-2.5 rounded-xl font-bold text-xs transition-all shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:shadow-[0_0_25px_rgba(249,115,22,0.5)]">
-                  Free Bitumen Calculator →
-                </Link>
-              </div>
-
-              {/* Related Posts */}
-              <div className="mt-5 bg-white/5 border border-white/10 rounded-2xl p-5">
-                <h3 className="text-white font-black text-xs uppercase tracking-wider mb-4 flex items-center gap-2">
-                  <BookOpen size={12} className="text-teal-400" /> Related Articles
-                </h3>
-                <div className="space-y-3">
-                  <Link href="/blog/modified-bitumen-roofing" className="block text-white/60 hover:text-orange-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2">
-                    Modified Bitumen Roofing: The Complete Guide
-                  </Link>
-                  <Link href="/blog/what-is-bitumen" className="block text-white/60 hover:text-orange-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2">
-                    What Is Bitumen? Meaning, Uses &amp; Properties
-                  </Link>
-                  <Link href="/blog/bitumen-grades-explained" className="block text-white/60 hover:text-orange-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2">
-                    Bitumen Grades Explained: Penetration, VG, PG
-                  </Link>
-                  <Link href="/blog/bitumen-density-chart" className="block text-white/60 hover:text-orange-300 text-xs leading-relaxed py-1 transition-colors hover:underline underline-offset-2">
-                    Bitumen Density Chart: Values by Grade &amp; Temperature
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </aside>
+          
         </div>
       </div>
     </>
