@@ -420,10 +420,10 @@ export default function AsphaltEstimationMistakesPage() {
 
             {/* Table of Contents */}
             <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                <div className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
                   <BookOpen size={14} className="text-orange-400" />
                   10 Mistakes Covered
-                </h3>
+                </div>
                 <nav className="space-y-1">
                   {[
                     { id: "terminology", label: "Bitumen vs. HMA — Key Distinction" },

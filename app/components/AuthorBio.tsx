@@ -19,7 +19,7 @@ export default function AuthorBio() {
         </div>
         
         <div className="flex-1 text-center sm:text-left">
-          <h3 className="text-xl font-bold text-white mb-1">Nabeel Awan</h3>
+          <div className="text-xl font-bold text-white mb-1">Nabeel Awan</div>
           <p className="text-violet-400 font-medium text-sm mb-3">Founder & Web Developer</p>
           <div className="space-y-3 text-white/70 text-sm leading-relaxed">
             <p>

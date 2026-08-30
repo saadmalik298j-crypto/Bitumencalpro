@@ -326,10 +326,10 @@ export default function TpoVsModifiedBitumenPage() {
 
             {/* Table of Contents */}
             <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
-                <h3 className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                <div className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
                   <BookOpen size={14} className="text-teal-400" />
                   Table of Contents
-                </h3>
+                </div>
                 <nav className="space-y-1">
                   {[
                     { id: "what-is-tpo-roofing", label: "What Is TPO Roofing?" },
