@@ -10,6 +10,8 @@ import {
   Info,
   CheckCircle2,
   TrendingUp,
+  Facebook,
+  Instagram,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -130,13 +132,33 @@ export default function AboutUsPage() {
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-1">Nabeel Awan</h3>
               <p className="text-violet-600 font-medium text-sm mb-4">Founder & Web Developer</p>
-              <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
+              <div className="space-y-4 text-slate-600 text-sm leading-relaxed mb-6">
                 <p>
                   Nabeel Awan is a web developer and the founder of BitumenCalcPro. His work focuses on web development and building practical online tools, with a strong interest in <strong>civil engineering, asphalt, bitumen, pavement construction, and construction technology</strong>.
                 </p>
                 <p>
                   He develops and maintains BitumenCalcPro, including its calculators, website, technical content, and ongoing improvements.
                 </p>
+              </div>
+              <div className="flex items-center justify-center md:justify-start gap-4">
+                <a
+                  href="https://web.facebook.com/p/Nabeel-Awan-61592639548311/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors shadow-sm"
+                  aria-label="Facebook Profile"
+                >
+                  <Facebook size={20} />
+                </a>
+                <a
+                  href="https://www.instagram.com/nabeelawan78y7/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-pink-50 text-pink-600 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-colors shadow-sm"
+                  aria-label="Instagram Profile"
+                >
+                  <Instagram size={20} />
+                </a>
               </div>
             </div>
           </div>
