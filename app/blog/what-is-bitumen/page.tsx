@@ -655,41 +655,36 @@ export default function WhatIsBitumenPage() {
 
               {[
                 {
-                  id: "bituminous-coating",
-                  title: "Bituminous Coating",
-                  body: "Bituminous coating is a liquid or semi-liquid form of bitumen, often mixed with solvents, applied as a protective layer on metal, concrete, or masonry. It's commonly brushed or sprayed onto surfaces that need to resist moisture and corrosion, like underground pipes or foundation walls.",
-                },
-                {
-                  id: "bitumen-membrane",
-                  title: "Bitumen Membrane",
-                  body: "A bitumen membrane is a manufactured sheet, usually reinforced with fiberglass or polyester, used to waterproof roofs and below-ground structures. These membranes are either torched down with heat or self-adhesive, and they form a continuous, watertight barrier.",
-                },
-                {
-                  id: "bitumen-paint",
-                  title: "Bitumen Paint",
-                  body: "Bitumen paint is a thinner, ready-to-apply version of bituminous coating. It's popular for smaller waterproofing jobs, like sealing gutters, garden ponds, or metal fencing, where a full membrane isn't practical.",
+                  id: "paving-grade-bitumen",
+                  title: "Paving-Grade Bitumen",
+                  body: <>Paving-grade bitumen is the standard binder chosen specifically for road use, matched to the traffic and climate a road actually has to survive. It’s classified by penetration grade, viscosity grade, or performance grade (PG), and which system applies depends on the country and specification you’re working under. For a full breakdown of how each system works and how to pick the right one, see our <Link href="/blog/bitumen-grades-explained" className="text-orange-500 hover:underline">Bitumen Grades Explained</Link> guide.</>,
                 },
                 {
                   id: "modified-bitumen",
                   title: "Modified Bitumen",
-                  body: "Modified bitumen is regular bitumen blended with additional materials to improve performance in demanding conditions — chosen when standard grades won't hold up.",
+                  body: "Modified bitumen is regular bitumen blended with polymers to handle tougher conditions than a standard grade can manage. Something like SBS (styrene-butadiene-styrene) changes how the binder stretches, recovers, and resists cracking or rutting — but it’s worth saying plainly: modified bitumen isn’t automatically the better choice for every road. Whether it’s worth the extra cost comes down to traffic, climate, and how demanding the project actually is.",
                   bullets: [
                     "Polymer modified bitumen (PMB) — plastic or rubber polymers boost elasticity and heat resistance, common on highways and runways",
-                    "Crumb rubber modified bitumen — recycled tire rubber improves durability and reduces road noise",
-                    "Oxidized bitumen — air blown through hot bitumen raises its softening point; mainly used in roofing, not roads",
-                    "Cutback bitumen — thinned with solvent to stay workable at lower temperatures",
+                    "Crumb rubber modified bitumen — recycled tire rubber improves durability and cuts down on road noise",
+                  ],
+                  extras: [
+                    { label: "Note", text: <><Link href="/blog/modified-bitumen-roofing" className="text-orange-500 hover:underline">See our Modified Bitumen Roofing guide</Link> for how these binders get used outside of paving.</> },
                   ],
                 },
                 {
-                  id: "cold-mix-bitumen",
-                  title: "Cold Mix Bitumen",
-                  body: <>
-                 <Link href='/blog/cold-mix-bitumen' className="text-orange-500"> Cold mix bitumen</Link> is asphalt made using emulsified or cutback bitumen that can be applied without heating, staying workable at or near normal outdoor temperature — unlike hot mix, which must be produced and laid hot.</>,
-                  extras: [
-                    { label: "Uses", text: "Pothole repairs, patching cracks, temporary road maintenance, and any location without a hot mix plant nearby." },
-                    { label: "Benefits", text: "Safer and easier to handle (no heating equipment needed), can be stored for later use, and works in wet or cold conditions." },
-                    { label: "Limitations", text: "Lower strength and durability than hot mix, so it suits repairs and low-traffic areas rather than new road construction." },
-                  ],
+                  id: "bitumen-emulsion",
+                  title: "Bitumen Emulsion",
+                  body: <>Emulsion takes bitumen and breaks it into tiny droplets suspended in water, so it can be sprayed and handled cold instead of kept at hot-mix temperatures. Once it’s applied, the water evaporates, the emulsion “breaks,” and the bitumen is left bonded to the surface — used constantly for tack coats, surface treatments, and patching work. We cover the full picture, including cationic vs. anionic types and how it’s produced, in our dedicated <Link href="/blog/bitumen-emulsion-explained" className="text-orange-500 hover:underline">Bitumen Emulsion guide</Link>.</>,
+                },
+                {
+                  id: "cutback-bitumen",
+                  title: "Cutback Bitumen",
+                  body: "Cutback bitumen gets thinned with a petroleum solvent so it flows without needing heat. As the solvent evaporates after it’s laid, the bitumen firms back up on its own. It’s fallen out of favor in a lot of places, though — the solvents involved raise fire risk and release VOCs, so many regions have shifted to emulsions instead.",
+                },
+                {
+                  id: "oxidized-blown-bitumen",
+                  title: "Oxidized (Blown) Bitumen",
+                  body: "Oxidized bitumen gets there differently — air is blown through hot bitumen, which pushes its softening point higher and changes how it responds to temperature. You won’t find much of it on roads; it’s roofing, waterproofing, and pipe coating where this one earns its keep.",
                 },
               ].map(({ id, title, body, bullets, extras }) => (
                 <div key={id} id={id} className="mb-8 scroll-mt-24 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 hover:bg-white/[0.08] transition-colors">

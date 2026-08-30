@@ -185,15 +185,8 @@ export default function ColdMixBitumenPage() {
                     { id: "types-of-cold-mix", label: "Types of Cold Mix" },
                     { id: "cold-mix-recycled-asphalt", label: "Cold Mix & RAP Recycling" },
                     { id: "cold-mix-vs-hot-mix", label: "Cold Mix vs Hot Mix" },
-                    { id: "cold-mix-uses", label: "What Is It Used For?" },
-                    { id: "choosing-cold-mix", label: "Choosing the Right Product" },
-                    { id: "benefits-cold-mix", label: "Benefits" },
-                    { id: "limitations-cold-mix", label: "Limitations" },
-                    { id: "how-to-apply-cold-mix", label: "How to Apply" },
-                    { id: "why-patches-fail", label: "Why Patches Fail" },
-                    { id: "cold-mix-cost", label: "Cost Factors" },
-                    { id: "cold-mix-lifespan", label: "How Long Does It Last?" },
-                    { id: "cold-mix-storage", label: "Storage" },
+                    { id: "uses-selection-application", label: "Uses, Selection & Application" },
+                    { id: "performance-cost-storage", label: "Performance, Cost & Storage" },
                     { id: "conclusion", label: "Conclusion" },
                     { id: "faq", label: "FAQ" },
                   ].map(({ id, label }) => (
@@ -311,9 +304,13 @@ export default function ColdMixBitumenPage() {
                 </p>
               </div>
             </section>
-            {/* SECTION: Uses */}
+            {/* ── SECTION: Uses, Selection & Application (parent) ── */}
+            <section id="uses-selection-application" className="mb-12 scroll-mt-24">
+              <h2 className="text-3xl font-black text-white mb-8 border-l-4 border-teal-400 pl-4">Uses, Selection &amp; Application</h2>
+
+              {/* Sub: Uses */}
             <section id="cold-mix-uses" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">What Is Cold Mix Bitumen Used For?</h2>
+              <h3 className="text-2xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">What Is Cold Mix Bitumen Used For?</h3>
               <p className="text-white/80 leading-relaxed mb-6 text-base">Cold mix earns its place in road maintenance in situations where hot mix simply is not practical.</p>
               <ul className="space-y-3 mb-6">
                 {[
@@ -338,9 +335,9 @@ export default function ColdMixBitumenPage() {
               <SectionImage src="/pothole-repair-worker-cold-patch.webp" alt="Pothole repair worker applying cold patch" caption="A worker applies cold patch to a pothole — no heating required, repairs can start immediately in any weather" />
             </section>
 
-            {/* SECTION: Choosing the Right Product */}
+              {/* Sub: Choosing */}
             <section id="choosing-cold-mix" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">Choosing the Right Cold Mix Product</h2>
+              <h3 className="text-2xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">Choosing the Right Cold Mix Product</h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">Not every bag of cold patch performs the same, and picking the wrong one is a common reason repairs fail early.</p>
               <div className="space-y-3 mb-6">
                 {[
@@ -359,9 +356,16 @@ export default function ColdMixBitumenPage() {
               <p className="text-white/75 text-sm leading-relaxed bg-white/5 border border-white/10 rounded-xl p-4">For engineered applications like base courses or recycling projects, selection goes through a formal mix design process that matches binder and aggregate to the project traffic loads and climate, typically specified by a paving engineer.</p>
             </section>
 
-            {/* SECTION: Benefits */}
+            </section>
+            {/* ── END: Uses, Selection & Application ── */}
+
+            {/* ── SECTION: Performance, Cost & Storage (parent) ── */}
+            <section id="performance-cost-storage" className="mb-12 scroll-mt-24">
+              <h2 className="text-3xl font-black text-white mb-8 border-l-4 border-orange-400 pl-4">Performance, Cost &amp; Storage</h2>
+
+              {/* Sub: Benefits */}
             <section id="benefits-cold-mix" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">Benefits of Cold Mix Bitumen</h2>
+              <h3 className="text-2xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">Benefits of Cold Mix Bitumen</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   { title: "No heating equipment required", desc: "Removing a major cost and safety barrier — crews do not need hot boxes, heated trucks, or burn-risk handling" },
@@ -386,9 +390,9 @@ export default function ColdMixBitumenPage() {
               </div>
             </section>
 
-            {/* SECTION: Limitations */}
+              {/* Sub: Limitations */}
             <section id="limitations-cold-mix" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">Limitations of Cold Mix Bitumen</h2>
+              <h3 className="text-2xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">Limitations of Cold Mix Bitumen</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   { title: "Lower strength", desc: "Cold mix does not compact and bond as tightly as hot mix, so it cannot handle the same traffic loads" },
@@ -413,9 +417,9 @@ export default function ColdMixBitumenPage() {
               </div>
             </section>
 
-            {/* SECTION: How to Apply */}
+              {/* Sub: How to Apply */}
             <section id="how-to-apply-cold-mix" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">How to Apply Cold Mix Bitumen</h2>
+              <h3 className="text-2xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">How to Apply Cold Mix Bitumen</h3>
               <p className="text-white/80 leading-relaxed mb-6 text-base">Applying cold mix correctly makes a real difference in how long the repair holds, even though the process is designed to be simple.</p>
               <div className="space-y-3 mb-6">
                 {[
@@ -439,9 +443,9 @@ export default function ColdMixBitumenPage() {
                 <strong className="text-white">Important:</strong> Skipping the cleaning step is one of the most common reasons cold mix patches fail early. Loose material and debris under the patch stop it from bonding to the surrounding surface.
               </div>
             </section>
-            {/* SECTION: Why Patches Fail */}
+              {/* Sub: Why Patches Fail */}
             <section id="why-patches-fail" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">Why Cold Mix Patches Fail (and How to Prevent It)</h2>
+              <h3 className="text-2xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">Why Cold Mix Patches Fail (and How to Prevent It)</h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">Most premature failures trace back to a handful of preventable mistakes, not a flaw in the material itself.</p>
               <div className="space-y-3 mb-6">
                 {[
@@ -461,9 +465,9 @@ export default function ColdMixBitumenPage() {
               <p className="text-white/70 text-sm leading-relaxed">Taking a few extra minutes on prep and compaction matters more than the brand of cold mix used. The material itself is forgiving, but only when it has a clean, well-compacted surface to bond to.</p>
             </section>
 
-            {/* SECTION: Cost */}
+              {/* Sub: Cost */}
             <section id="cold-mix-cost" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">What Affects Cold Mix Bitumen Cost</h2>
+              <h3 className="text-2xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">What Affects Cold Mix Bitumen Cost</h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">Cold mix pricing depends on several factors, though exact costs vary by region, supplier, and product grade.</p>
               <InfoTable
                 headers={["Cost Factor", "Impact"]}
@@ -480,9 +484,9 @@ export default function ColdMixBitumenPage() {
               </p>
             </section>
 
-            {/* SECTION: How Long Does It Last */}
+              {/* Sub: Lifespan */}
             <section id="cold-mix-lifespan" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">How Long Does Cold Mix Bitumen Last?</h2>
+              <h3 className="text-2xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">How Long Does Cold Mix Bitumen Last?</h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">Cold mix cures faster than most people expect but keeps developing strength over time. Most formulations allow light traffic within one to two hours and can typically handle full traffic within about a day, though this varies by product, mix design, and weather.</p>
               <InfoTable
                 headers={["Use Case", "Typical Curing / Lifespan"]}
@@ -497,13 +501,16 @@ export default function ColdMixBitumenPage() {
               <p className="text-white/70 text-sm leading-relaxed mt-3">Engineered cold mix used in recycling projects goes through a formal mix design process and is built to perform as a structural pavement layer for years — very different from a bagged stop-gap patch.</p>
             </section>
 
-            {/* SECTION: Cold Mix Storage */}
+              {/* Sub: Storage */}
             <section id="cold-mix-storage" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">Cold Mix Bitumen Storage</h2>
+              <h3 className="text-2xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">Cold Mix Bitumen Storage</h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">One of the practical advantages of cold mix is shelf life. Properly bagged or bulk-packaged cold mix can typically be stored for several months without hardening or losing workability, as long as it is kept sealed and away from excess moisture. This is a major reason highway departments stockpile it before winter — cold mix bought in the fall is often still usable when spring pothole season arrives.</p>
               <p className="text-white/80 leading-relaxed mb-6 text-base">Storing cold mix in a dry, covered area further extends its shelf life. Bags left exposed to rain or left open to air tend to harden at the surface, which forces crews to break up the crust before the material underneath can be used.</p>
               <SectionImage src="/cold-mix-bitumen-bags-covered-storage.webp" alt="Cold mix bitumen bags in covered storage" caption="Covered, dry storage keeps bagged cold mix workable for months — highway departments regularly stockpile before winter pothole season" />
             </section>
+
+            </section>
+            {/* ── END: Performance, Cost & Storage ── */}
 
             {/* SECTION: Conclusion */}
             <section id="conclusion" className="mb-12 scroll-mt-24">
