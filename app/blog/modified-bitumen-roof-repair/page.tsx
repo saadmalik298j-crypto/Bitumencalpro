@@ -457,14 +457,18 @@ export default function ModifiedBitumenRoofRepairPage() {
                   { q: "How long does a modified bitumen roof last?", a: "Typically 15 to 20 years with regular maintenance. Without it, that lifespan can drop to around 10 years as small issues go unaddressed and compound." },
                   { q: "What is the difference between repairing modified bitumen and other bitumen roofing?", a: "The repair techniques are similar, but modified bitumen's polymer-enhanced membrane and heat-welded or adhesive seam systems call for compatible repair materials. For a broader look at bitumen-based roofing systems, see our general bitumen roofing and materials guides." },
                 ].map(({ q, a }, i) => (
-                  <details key={i} className="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden open:border-white/20 transition-all hover:bg-white/[0.08]">
-                    <summary className="flex items-center justify-between gap-4 cursor-pointer p-5 md:p-6 font-bold text-white text-base select-none list-none">
-                      <h3 className="text-base font-bold text-white m-0 leading-snug">{q}</h3>
-                      <ChevronRight size={18} className="text-orange-400 shrink-0 group-open:rotate-90 transition-transform duration-200" />
-                    </summary>
-                    <div className="px-5 md:px-6 pb-5 text-white/70 text-sm leading-relaxed border-t border-white/5 pt-4">{a}</div>
-                  </details>
-                ))}
+      <div
+        key={i}
+        className="bg-white/5 border border-white/10 rounded-2xl p-5 md:p-6 transition-colors hover:bg-white/[0.08]"
+      >
+        <h3 className="text-lg font-bold text-white mb-2 leading-snug">
+          {q}
+        </h3>
+        <p className="text-white/70 text-sm leading-relaxed">
+          {a}
+        </p>
+      </div>
+    ))}
               </div>
             </section>
 

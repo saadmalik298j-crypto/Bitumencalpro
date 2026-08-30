@@ -872,22 +872,18 @@ export default function BitumenDensityChartPage() {
                     a: "25°C is the standard reference temperature for most reported density values, though testing at higher temperatures matters for applications closer to actual mixing or application conditions.",
                   },
                 ].map(({ q, a }, i) => (
-                  <details
-                    key={i}
-                    className="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden open:border-white/20 transition-all hover:bg-white/[0.08]"
-                  >
-                    <summary className="flex items-center justify-between gap-4 cursor-pointer p-5 md:p-6 font-bold text-white text-base select-none list-none">
-                      <h3 className="text-base font-bold text-white m-0 leading-snug">{q}</h3>
-                      <ChevronRight
-                        size={18}
-                        className="text-teal-400 shrink-0 group-open:rotate-90 transition-transform duration-200"
-                      />
-                    </summary>
-                    <div className="px-5 md:px-6 pb-5 text-white/70 text-sm leading-relaxed border-t border-white/5 pt-4">
-                      {a}
-                    </div>
-                  </details>
-                ))}
+      <div
+        key={i}
+        className="bg-white/5 border border-white/10 rounded-2xl p-5 md:p-6 transition-colors hover:bg-white/[0.08]"
+      >
+        <h3 className="text-lg font-bold text-white mb-2 leading-snug">
+          {q}
+        </h3>
+        <p className="text-white/70 text-sm leading-relaxed">
+          {a}
+        </p>
+      </div>
+    ))}
               </div>
             </section>
 
