@@ -20,9 +20,9 @@ import {
 // ── Metadata ──────────────────────────────────────────────
 export const metadata: Metadata = {
   title:
-    "Bitumen Driveway Cost: Worldwide 2026 Price Guide (UK, US, AU, NZ, Canada, Ireland)",
+    "Bitumen Driveway Cost Guide 2026: Worldwide Prices & Specs",
   description:
-    "Real 2026 bitumen driveway costs by country: UK £45–£100/m², Ireland €40–€70/m², Australia $35–$100/m², US $75–$140/m², Canada $32–$88 CAD/m². Includes size tables, factors, and local rules.",
+    "Compare bitumen and asphalt driveway costs across the UK, US, Australia, NZ, Ireland, and Canada. Learn standard specs, labor factors, and budget tips.",
   keywords: [
     "bitumen driveway cost",
     "asphalt driveway cost",
@@ -79,7 +79,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Bitumen Driveway Cost: A Worldwide 2026 Price Guide",
+    "Bitumen Driveway Cost Guide 2026: Worldwide Prices & Specs",
   description:
     "Real 2026 bitumen and asphalt driveway costs by country — UK, Ireland, Australia, New Zealand, US, and Canada — with size tables, cost factors, maintenance costs, and local planning rules.",
   image:
@@ -473,12 +473,7 @@ export default function BitumenDrivewayWorldwidePage() {
                   not different products. What varies is labour cost, local specification,
                   and market competition. For a deeper look at the material itself, see our
                   guide on{" "}
-                  <Link
-                    href="/blog/what-is-bitumen"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
-                  >
-                    what bitumen is and how it&apos;s made
-                  </Link>
+                  what bitumen is and how it&apos;s made
                   .
                 </p>
               </div>
@@ -544,9 +539,9 @@ export default function BitumenDrivewayWorldwidePage() {
 
             {/* ── SECTION: UK ── */}
             <section id="uk-pricing" className="mb-10 scroll-mt-24">
-              <h2 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
                 United Kingdom: Tarmac Driveway Costs
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-4 text-base">
                 UK bitumen (tarmac) driveways cost <strong className="text-white">£45 to £100 per m²</strong>,
                 with £45–£80 typical for a standard job and higher figures reflecting London
@@ -567,9 +562,9 @@ export default function BitumenDrivewayWorldwidePage() {
 
             {/* ── SECTION: Ireland ── */}
             <section id="ireland-pricing" className="mb-10 scroll-mt-24">
-              <h2 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
                 Ireland: Tarmac Driveway Pricing
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-4 text-base">
                 Irish pricing runs <strong className="text-white">€40 to €70 per m²</strong>,
                 making tarmac the cheapest full driveway surface available, ahead of block
@@ -589,9 +584,9 @@ export default function BitumenDrivewayWorldwidePage() {
 
             {/* ── SECTION: Australia ── */}
             <section id="australia-pricing" className="mb-10 scroll-mt-24">
-              <h2 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
                 Australia: Asphalt Driveway Costs
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-4 text-base">
                 Australian asphalt driveways cost{" "}
                 <strong className="text-white">$35 to $45 per m² for a standard job</strong>,
@@ -612,9 +607,9 @@ export default function BitumenDrivewayWorldwidePage() {
 
             {/* ── SECTION: NZ ── */}
             <section id="nz-pricing" className="mb-10 scroll-mt-24">
-              <h2 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
                 New Zealand: Asphalt Driveway Prices
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-4 text-base">
                 NZ pricing sits a little below plain concrete, which runs $100 to $150 per
                 m². Asphalt driveways commonly land in the{" "}
@@ -634,9 +629,9 @@ export default function BitumenDrivewayWorldwidePage() {
 
             {/* ── SECTION: US ── */}
             <section id="us-pricing" className="mb-10 scroll-mt-24">
-              <h2 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
                 United States: Asphalt Driveway Cost
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-4 text-base">
                 US asphalt driveways cost{" "}
                 <strong className="text-white">$7 to $13 per sq ft for a new installation</strong>,
@@ -665,9 +660,9 @@ export default function BitumenDrivewayWorldwidePage() {
 
             {/* ── SECTION: Canada ── */}
             <section id="canada-pricing" className="mb-12 scroll-mt-24">
-              <h2 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 border-l-4 border-orange-400 pl-4">
                 Canada: Asphalt Driveway Cost
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-4 text-base">
                 Canadian hot-mix asphalt costs{" "}
                 <strong className="text-white">$3.00 to $8.17 per sq ft</strong>, or about
@@ -859,12 +854,7 @@ export default function BitumenDrivewayWorldwidePage() {
                 it&apos;s laid. This is why asking contractors specifically about sub-base
                 depth is one of the most useful questions you can ask when comparing quotes —
                 our{" "}
-                <Link
-                  href="/blog/asphalt-thickness"
-                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
-                >
-                  asphalt thickness guide
-                </Link>{" "}
+                asphalt thickness guide{" "}
                 explains the recommended depths for different applications.
               </p>
             </section>
@@ -1120,12 +1110,7 @@ export default function BitumenDrivewayWorldwidePage() {
                 Quotes get confusing fast when contractors mix units. A few conversions worth
                 keeping handy. Avoiding these conversion pitfalls is one of the key points
                 covered in our{" "}
-                <Link
-                  href="/blog/asphalt-estimation-mistakes"
-                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
-                >
-                  guide to common asphalt estimation mistakes
-                </Link>
+                guide to common asphalt estimation mistakes
                 .
               </p>
 
@@ -1182,12 +1167,7 @@ export default function BitumenDrivewayWorldwidePage() {
                     bitumen and asphalt knowledge hub
                   </Link>
                   , or use our free{" "}
-                  <Link
-                    href="/"
-                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
-                  >
-                    bitumen quantity calculator
-                  </Link>{" "}
+                  bitumen quantity calculator{" "}
                   to estimate material needs before you approach contractors.
                 </p>
               </div>
@@ -1238,54 +1218,7 @@ export default function BitumenDrivewayWorldwidePage() {
               </div>
             </section>
 
-            {/* ── Related Articles ── */}
-            <section className="mb-12" aria-label="Related articles">
-              <h2 className="text-2xl font-black text-white mb-6 border-l-4 border-orange-400 pl-4">
-                Related Guides
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  {
-                    href: "/blog/asphalt-thickness",
-                    title: "Asphalt Thickness Guide",
-                    desc: "Exact depth specs for driveways, roads & parking lots — with base requirements.",
-                    label: "Asphalt & Paving",
-                  },
-                  {
-                    href: "/blog/asphalt-estimation-mistakes",
-                    title: "Common Asphalt Estimation Mistakes",
-                    desc: "Avoid density, waste & compaction errors that inflate paving project costs.",
-                    label: "Cost & Estimating",
-                  },
-                  {
-                    href: "/blog/what-is-bitumen",
-                    title: "What Is Bitumen?",
-                    desc: "Properties, uses, grades, and how bitumen differs from asphalt and tar.",
-                    label: "Bitumen Fundamentals",
-                  },
-                  {
-                    href: "/blog/bitumen-grades-explained",
-                    title: "Bitumen Grades Explained",
-                    desc: "Penetration, VG & PG grades — and how to choose the right one for your climate.",
-                    label: "Grades & Testing",
-                  },
-                ].map(({ href, title, desc, label }) => (
-                  <Link
-                    key={href}
-                    href={href}
-                    className="group bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-teal-400/40 hover:bg-white/[0.08] transition-all"
-                  >
-                    <span className="text-xs text-teal-400 font-bold uppercase tracking-wide mb-2 block">
-                      {label}
-                    </span>
-                    <p className="text-white font-bold text-sm mb-1.5 group-hover:text-teal-300 transition-colors">
-                      {title}
-                    </p>
-                    <p className="text-white/55 text-xs leading-relaxed">{desc}</p>
-                  </Link>
-                ))}
-              </div>
-            </section>
+
 
             {/* ── Navigation ── */}
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10">
