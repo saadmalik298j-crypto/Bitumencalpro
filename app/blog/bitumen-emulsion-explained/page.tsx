@@ -443,6 +443,17 @@ export default function BitumenEmulsionExplainedPage() {
 
 
 
+            
+            {/* ── SECTION: Intro ── */}
+            <section className="mb-12">
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                Most road problems — failed tack coats, patchy surface treatments, crumbling spray seals — trace back to a bitumen emulsion that was applied wrong, chosen wrong, or misunderstood entirely. And that happens because emulsion looks like a single product when it's actually a family of dozens, each built for a specific job.
+              </p>
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                This guide covers exactly how bitumen emulsion works, how it's made, and how to read the grade codes that tell you what each product actually does. By the end, you'll know how to pick the right type for the job — and why getting it wrong is more common than most contractors admit.
+              </p>
+            </section>
+
             {/* ── SECTION: What Is Bitumen Emulsion? ── */}
             <section id="what-is-bitumen-emulsion" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">

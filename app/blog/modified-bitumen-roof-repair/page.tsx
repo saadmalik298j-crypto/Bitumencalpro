@@ -180,6 +180,17 @@ export default function ModifiedBitumenRoofRepairPage() {
             </div>
 
 
+            
+            {/* ── SECTION: Intro ── */}
+            <section className="mb-12">
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                Most modified bitumen roof leaks don't come from the membrane itself — they start at seams, flashings, and penetrations that were never fully bonded or have worked loose over years of thermal cycling. Knowing where to look changes how you diagnose a leak and whether a repair actually holds.
+              </p>
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                This guide walks through every common failure mode, how to spot each one, and what a proper repair looks like — including when a patch won't cut it and a replacement becomes the cheaper option long-term.
+              </p>
+            </section>
+
             {/* SECTION: What Is Modified Bitumen */}
             <section id="what-is-modified-bitumen" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">What Is Modified Bitumen Roofing?</h2>

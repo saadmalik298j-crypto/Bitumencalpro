@@ -414,6 +414,17 @@ export default function BitumenGradesExplainedPage() {
 
 
 
+            
+            {/* ── SECTION: Intro ── */}
+            <section className="mb-12">
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                Pick the wrong bitumen grade and the road pays for it — literally. Too soft a binder and the pavement ruts in summer heat. Too stiff and it cracks in the cold. Bitumen grades exist to match the binder's behavior to the actual conditions a road will face, and getting that match right is the difference between a 20-year road and a 7-year one.
+              </p>
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                This guide explains the three main grading systems — penetration, viscosity, and performance grade — and shows you how to read them, compare them, and choose the right one for a given project.
+              </p>
+            </section>
+
             {/* ── SECTION: What Are Bitumen Grades? ── */}
             <section id="what-are-bitumen-grades" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">

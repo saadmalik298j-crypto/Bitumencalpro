@@ -413,7 +413,18 @@ export default function WhatIsBitumenPage() {
             </div>
 
 
-{/* ── SECTION: What Is Bitumen? ── */}
+
+            {/* ── SECTION: Intro ── */}
+            <section className="mb-12">
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                Bitumen is one of the oldest and most used construction materials on the planet — and also one of the most misunderstood. Most people recognise it as the black stuff in roads, but that barely scratches the surface of what it is, where it comes from, and why so many different industries rely on it.
+              </p>
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                This guide covers the complete picture: the chemistry, the grades, the uses, and how bitumen compares to asphalt and tar — so whether you're specifying it for a project or just trying to understand it properly, you'll find clear answers here.
+              </p>
+            </section>
+
+            {/* ── SECTION: What Is Bitumen? ── */}
             <section id="what-is-bitumen" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
                 What Is Bitumen?

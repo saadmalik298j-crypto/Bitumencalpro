@@ -413,6 +413,17 @@ export default function AsphaltThicknessPage() {
             />
 
 
+            
+            {/* ── SECTION: Intro ── */}
+            <section className="mb-12">
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                Asphalt that's too thin fails early — it cracks, ruts, and breaks down under loads it was never built to handle. Asphalt that's too thick wastes money. Getting asphalt thickness right is one of the most consequential decisions in any paving job, and most guides give you the numbers without explaining the reasoning behind them.
+              </p>
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                This guide gives you thickness recommendations for driveways, roads, parking lots, and heavy equipment areas — along with the factors that push those numbers up or down on any specific project.
+              </p>
+            </section>
+
             {/* ── SECTION: Why Asphalt Thickness Matters ── */}
             <section id="why-thickness-matters" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">

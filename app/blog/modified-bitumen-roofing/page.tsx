@@ -384,6 +384,17 @@ export default function ModifiedBitumenRoofingPage() {
             />
 
 
+            
+            {/* ── SECTION: Intro ── */}
+            <section className="mb-12">
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                Modified bitumen roofing has been waterproofing flat and low-slope commercial buildings since the 1970s — and it's still one of the most widely specified systems today. That track record comes from one thing: it works reliably when installed correctly, across a wide range of climates and building types.
+              </p>
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                This guide covers the full picture — how it's made, how it's installed, what it costs, and how it compares to TPO and EPDM — so you can decide whether it's the right fit for your roof.
+              </p>
+            </section>
+
             {/* ── SECTION: What Is Modified Bitumen Roofing? ── */}
             <section id="what-is-modified-bitumen" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">

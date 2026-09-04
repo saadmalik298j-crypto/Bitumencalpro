@@ -358,6 +358,17 @@ export default function TpoVsModifiedBitumenPage() {
 
 
 
+            
+            {/* ── SECTION: Intro ── */}
+            <section className="mb-12">
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                TPO vs modified bitumen is one of the most debated roofing decisions in commercial construction — and the honest answer is that neither system is universally better. Each has conditions where it outperforms the other, and making the wrong call adds years of maintenance headaches or an early replacement.
+              </p>
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                This guide breaks down both systems side by side — cost, durability, energy performance, climate suitability, and installation complexity — so you can make the call based on your specific roof, not a general recommendation.
+              </p>
+            </section>
+
             {/* ── SECTION: What Is TPO Roofing? ── */}
             <section id="what-is-tpo-roofing" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">

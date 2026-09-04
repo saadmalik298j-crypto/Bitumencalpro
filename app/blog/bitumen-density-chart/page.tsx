@@ -399,6 +399,17 @@ export default function BitumenDensityChartPage() {
 
 
 
+            
+            {/* ── SECTION: Intro ── */}
+            <section className="mb-12">
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                Bitumen density is one of those values that's easy to get approximately right and easy to get exactly wrong. Use the wrong figure — or ignore how much it shifts with temperature — and your quantity calculations will be off. That leads to material shortfalls, ordering errors, and wasted budget on jobs of any size.
+              </p>
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                This guide gives you a ready-to-use bitumen density chart by grade and temperature, explains what drives those variations, and shows you exactly how to apply the figures in real calculations.
+              </p>
+            </section>
+
             {/* ── SECTION: What Is Bitumen Density? ── */}
             <section id="what-is-bitumen-density" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">

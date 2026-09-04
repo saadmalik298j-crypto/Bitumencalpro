@@ -455,6 +455,17 @@ export default function AsphaltEstimationMistakesPage() {
 
 
 
+            
+            {/* ── SECTION: Intro ── */}
+            <section className="mb-12">
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                A contractor once ordered 18 tonnes of asphalt for a car park. They needed 26. The mistake? A single wrong number in the area calculation — caught only after the crew was already on site. Asphalt estimation mistakes are rarely obvious until they're expensive.
+              </p>
+              <p className="text-white/85 leading-relaxed mb-4 text-base">
+                This guide breaks down the 10 most common errors that inflate project costs or cause shortfalls, with direct fixes for each. Whether you're estimating a driveway or a commercial road, these are the mistakes worth knowing before the order goes in.
+              </p>
+            </section>
+
             {/* ── SECTION: Terminology Note ── */}
             <section id="terminology" className="mb-12 scroll-mt-24">
               <div className="bg-gradient-to-br from-blue-500/10 to-teal-500/5 border border-blue-400/20 rounded-2xl p-6 md:p-8">
