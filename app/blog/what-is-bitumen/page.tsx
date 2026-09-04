@@ -743,7 +743,7 @@ export default function WhatIsBitumenPage() {
                 {[
                   {
                     title: "Road construction & driveways",
-                    desc: "Bitumen's biggest use. It binds crushed stone and sand into asphalt, which is then laid and compacted to form road surfaces, driveways, parking lots, and airport runways.",
+                    desc: <>Bitumen&apos;s biggest use. It binds crushed stone and sand into asphalt, which is then laid and compacted to form road surfaces, parking lots, airport runways, and driveways—with <Link href="/blog/bitumen-driveway-cost-worldwide" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">bitumen driveway costs</Link> varying significantly based on global location and size.</>,
                     color: "orange",
                   },
                   {

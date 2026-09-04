@@ -462,7 +462,7 @@ export default function AsphaltEstimationMistakesPage() {
                 A contractor once ordered 18 tonnes of asphalt for a car park. They needed 26. The mistake? A single wrong number in the area calculation — caught only after the crew was already on site. Asphalt estimation mistakes are rarely obvious until they're expensive.
               </p>
               <p className="text-white/85 leading-relaxed mb-4 text-base">
-                This guide breaks down the 10 most common errors that inflate project costs or cause shortfalls, with direct fixes for each. Whether you're estimating a driveway or a commercial road, these are the mistakes worth knowing before the order goes in.
+                This guide breaks down the 10 most common errors that inflate project costs or cause shortfalls, with direct fixes for each. Whether you're estimating a <Link href="/blog/bitumen-driveway-cost-worldwide" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">residential driveway</Link> or a commercial road, these are the mistakes worth knowing before the order goes in.
               </p>
             </section>
 
