@@ -928,9 +928,9 @@ export default function BitumenEmulsionExplainedPage() {
 
             {/* ── SECTION: Advantages ── */}
             <section id="advantages" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
                 Advantages of Bitumen Emulsion
-              </h2>
+              </h3>
               <div className="bg-teal-500/10 border border-teal-400/20 rounded-2xl p-6 md:p-8 mb-6">
                 <ul className="space-y-3">
                   {[
@@ -972,9 +972,9 @@ export default function BitumenEmulsionExplainedPage() {
 
             {/* ── SECTION: Video ── */}
             <section id="video" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 Bitumen Emulsion Explained: Video Overview
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-6 text-base">
                 Watch the video below for a visual walkthrough of how bitumen emulsion is made,
                 classified, and applied in road construction — covering the colloid mill process and
@@ -1001,9 +1001,9 @@ export default function BitumenEmulsionExplainedPage() {
 
             {/* ── SECTION: Storage and Shelf Life ── */}
             <section id="storage-shelf-life" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
                 Bitumen Emulsion Storage and Shelf Life
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Bitumen emulsion is generally stable for a defined shelf life when stored correctly —
                 typically around <strong className="text-white">10°C to 50°C</strong>, sealed away
@@ -1053,7 +1053,7 @@ export default function BitumenEmulsionExplainedPage() {
 
             {/* ── SECTION: Final Verdict ── */}
             <section id="conclusion" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 Final Verdict
               </h2>
               <div className="bg-gradient-to-br from-teal-500/15 via-blue-600/10 to-purple-600/10 border border-white/15 rounded-2xl p-6 md:p-8">

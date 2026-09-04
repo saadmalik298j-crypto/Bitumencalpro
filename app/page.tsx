@@ -1691,36 +1691,7 @@ export default function Home() {
 
       {/* ═══════════════════════════════
           BOTTOM CTA STRIP
-          ═══════════════════════════════ */}
-      <section className="py-24 relative overflow-hidden bg-black/40 border-t border-white/5">
-        <div className="absolute inset-0 bg-gradient-to-br from-violet-600/10 to-transparent pointer-events-none" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-orange-500/10 rounded-full blur-[100px] pointer-events-none" />
-
-        <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-5xl font-black text-white mb-6 drop-shadow-lg">
-            Questions or Feedback?
-          </h2>
-          <p className="text-white/80 text-lg md:text-xl mb-10 max-w-xl mx-auto leading-relaxed font-medium">
-            We&apos;re engineers too ,if you spot an error, want a new feature, or just want to say
-            hello, we&apos;d love to hear from you.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <Link
-              href="/contact-us"
-              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 active:scale-95 text-white px-8 py-4 rounded-full font-black text-base transition-all shadow-[0_0_20px_rgba(249,115,22,0.4)] hover:shadow-[0_0_30px_rgba(249,115,22,0.6)]"
-            >
-              Get in Touch
-              <ChevronRight size={20} />
-            </Link>
-            <Link
-              href="/about-us"
-              className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/20 text-white px-8 py-4 rounded-full font-bold text-base transition-all shadow-lg"
-            >
-              About BitumenCalcPro
-            </Link>
-          </div>
-        </div>
-      </section>
+          ═══════════════════════════════ */}      
     </>
   );
 }

@@ -528,9 +528,9 @@ export default function AsphaltThicknessPage() {
 
             {/* ── SECTION: Residential Driveways ── */}
             <section id="residential-driveways" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
                 Asphalt Thickness for Residential Driveways
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Most residential driveways handling standard passenger vehicles
                 need{" "}
@@ -564,9 +564,9 @@ export default function AsphaltThicknessPage() {
 
             {/* ── SECTION: Roads ── */}
             <section id="asphalt-thickness-roads" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 Asphalt Thickness for Roads
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Road thickness varies more than any other category, since it
                 depends heavily on traffic volume, vehicle weight, and the
@@ -600,9 +600,9 @@ export default function AsphaltThicknessPage() {
 
             {/* ── SECTION: Parking Lots ── */}
             <section id="parking-lot-thickness" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-blue-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-blue-400 pl-4">
                 Asphalt Thickness for Parking Lots
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Parking lots aren't uniform — different zones within the same lot
                 often need different thicknesses depending on how they're used.
@@ -663,9 +663,9 @@ export default function AsphaltThicknessPage() {
 
             {/* ── SECTION: Heavy Equipment ── */}
             <section id="heavy-equipment-asphalt" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
                 Asphalt Thickness for Heavy Equipment and Trucks
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Areas that regularly handle heavy trucks, construction equipment,
                 or other high-axle-weight vehicles need substantially more
@@ -849,9 +849,9 @@ export default function AsphaltThicknessPage() {
 
             {/* ── VIDEO SECTION ── */}
             <section id="video-guide" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 Video: Asphalt Thickness Explained
-              </h2>
+              </h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Getting the thickness of an asphalt layer right is super important 
                 for making it strong. This video explains how the size of the stones 
@@ -873,9 +873,9 @@ export default function AsphaltThicknessPage() {
 
             {/* ── SECTION: Conclusion ── */}
             <section id="conclusion" className="mb-12 scroll-mt-24">
-              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
+              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
                 In Short
-              </h2>
+              </h3>
               <div className="bg-gradient-to-br from-orange-500/15 via-teal-600/10 to-blue-600/10 border border-white/15 rounded-2xl p-6 md:p-8">
                 <p className="text-white/85 leading-relaxed mb-4 text-base">
                   Asphalt thickness isn't one-size-fits-all — it scales directly
