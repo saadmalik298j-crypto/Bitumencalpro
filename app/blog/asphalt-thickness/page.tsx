@@ -349,6 +349,16 @@ export default function AsphaltThicknessPage() {
         </div>
       </div>
 
+      {/* ── HERO IMAGE ── */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionImage
+          src="/asphalt-thickness-driveway-road-parking-lot.webp"
+          alt="Asphalt thickness guide for driveways, roads, and parking lots showing different pavement applications"
+          caption="Asphalt thickness requirements vary significantly by application — from 2-inch residential driveways to 12-inch heavy-duty highways"
+          priority
+        />
+      </div>
+
       {/* ── ARTICLE BODY + SIDEBAR ── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24">
         <div className="flex flex-col xl:flex-row gap-12 items-start">
@@ -404,13 +414,7 @@ export default function AsphaltThicknessPage() {
             </div>
 
 
-            {/* Featured Image — Placement 1 */}
-            <SectionImage
-              src="/asphalt-thickness-driveway-road-parking-lot.webp"
-              alt="Asphalt thickness guide for driveways, roads, and parking lots showing different pavement applications"
-              caption="Asphalt thickness requirements vary significantly by application — from 2-inch residential driveways to 12-inch heavy-duty highways"
-              priority
-            />
+
 
 
             
