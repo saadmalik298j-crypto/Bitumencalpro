@@ -17,7 +17,7 @@ export default function Footer() {
               BitumenCalcPro
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-5">
-              Free bitumen and asphalt calculators, grade guides, and technical resources for civil engineers, paving contractors, and construction professionals worldwide.
+              Precision calculator and real-world technical guides built for paving pros. We equip civil engineers and contractors worldwide with the tools to get the job done right.
             </p>
             {/* Social Icons */}
             <div className="flex items-center justify-center md:justify-start gap-4">
