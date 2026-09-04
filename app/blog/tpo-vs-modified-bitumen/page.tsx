@@ -665,9 +665,9 @@ export default function TpoVsModifiedBitumenPage() {
 
             {/* ── SECTION: Summary ── */}
             <section id="summary" className="mb-12 scroll-mt-24">
-              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 Summary
-              </h3>
+              </h2>
               <div className="bg-gradient-to-br from-teal-500/15 via-blue-600/10 to-purple-600/10 border border-white/15 rounded-2xl p-6 md:p-8">
                 <p className="text-white/85 leading-relaxed text-base">
                   TPO and modified bitumen solve the same problem — keeping water out of a flat or low-slope roof — but they get there differently. TPO leans on a single reflective membrane that&apos;s cheaper to install and better at cutting cooling costs. Modified bitumen leans on layered, reinforced asphalt that holds up better under impact and foot traffic, at a higher price. The right choice depends less on which material is &quot;better&quot; overall and more on your climate, your roof&apos;s traffic level, and your budget for upfront cost versus long-term durability. A roofing professional who can inspect your specific building will give you a far more reliable answer than any general comparison.

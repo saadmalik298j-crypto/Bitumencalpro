@@ -1024,9 +1024,9 @@ export default function AsphaltEstimationMistakesPage() {
 
             {/* ── SECTION: Conclusion ── */}
             <section id="conclusion" className="mb-12 scroll-mt-24">
-              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-red-400 pl-4">
+              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-red-400 pl-4">
                 To Sum Things Up
-              </h3>
+              </h2>
               <div className="bg-gradient-to-br from-red-500/10 via-orange-600/5 to-blue-600/10 border border-white/15 rounded-2xl p-6 md:p-8">
                 <p className="text-white/85 leading-relaxed mb-4 text-base">
                   Most asphalt estimation mistakes come down to a handful of

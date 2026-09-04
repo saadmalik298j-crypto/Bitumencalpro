@@ -431,7 +431,7 @@ export default function ModifiedBitumenRoofRepairPage() {
 
             {/* SECTION: Summary */}
             <section id="summary" className="mb-12 scroll-mt-24">
-              <h3 className="text-2xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">Summary</h3>
+              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">Summary</h2>
               <div className="bg-gradient-to-br from-orange-500/15 via-teal-600/10 to-blue-600/10 border border-white/15 rounded-2xl p-6 md:p-8">
                 <p className="text-white/85 leading-relaxed mb-4 text-base">Most modified bitumen roof problems trace back to a handful of causes — failed seams, trapped moisture under blisters, ponding water, punctures, or UV-driven cracking — and most have a straightforward repair once correctly diagnosed. Small, isolated issues are reasonable DIY fixes; recurring failures, widespread seam problems, or persistent ponding are signs it is time to bring in a professional.</p>
                 <p className="text-white/85 leading-relaxed text-base">

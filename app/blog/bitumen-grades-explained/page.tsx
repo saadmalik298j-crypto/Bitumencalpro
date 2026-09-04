@@ -841,9 +841,9 @@ export default function BitumenGradesExplainedPage() {
 
             {/* ── SECTION: Summary ── */}
             <section id="summary" className="mb-12 scroll-mt-24">
-              <h3 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
                 Summary
-              </h3>
+              </h2>
               <div className="bg-gradient-to-br from-teal-500/15 via-blue-600/10 to-purple-600/10 border border-white/15 rounded-2xl p-6 md:p-8">
                 <p className="text-white/85 leading-relaxed mb-4 text-base">
                   Bitumen grading exists to match binder behavior to real-world conditions —
