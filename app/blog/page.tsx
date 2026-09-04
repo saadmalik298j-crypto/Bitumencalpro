@@ -185,6 +185,20 @@ const POSTS = [
     tags: ["Bitumen Density", "Specific Gravity", "Asphalt Testing"],
     featured: false,
   },
+  {
+    slug: "bitumen-driveway-cost-worldwide",
+    category: "Asphalt & Paving Materials",
+    title: "Bitumen Driveway Cost: A Worldwide 2026 Price Guide",
+    excerpt:
+      "Real 2026 bitumen and asphalt driveway costs for UK (£45–£100/m²), Ireland, Australia, New Zealand, US, and Canada — with size tables, cost factors, and local planning rules.",
+    image: "/bitumen-driveway-cost-worldwide-2026.webp",
+    imageAlt: "Bitumen driveway cost worldwide 2026 price guide — asphalt tarmac driveway pricing by country",
+    readTime: "18 min read",
+    date: "September 4, 2026",
+    dateISO: "2026-09-04",
+    tags: ["Driveway Cost", "Bitumen", "Asphalt", "Tarmac", "2026 Pricing"],
+    featured: false,
+  },
 ];
 
 export default function BlogPage() {
