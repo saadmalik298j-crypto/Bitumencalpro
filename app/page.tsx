@@ -1672,7 +1672,7 @@ export default function Home() {
                 ))}
               </div>
 
-              <div className="mt-16 bg-gradient-to-br from-teal-500/20 via-blue-600/20 to-purple-600/20 rounded-[2.5rem] p-10 md:p-12 border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.3)] text-center">
+              <div className="mt-16 bg-gradient-to-br from-teal-500/20 via-blue-600/20 to-purple-600/20 rounded-[2.5rem] p-8 md:p-8 border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.3)] text-center">
                 <h2 className="text-3xl font-black text-white mb-6 drop-shadow-md">Conclusion</h2>
                 <p className="text-white/90 text-lg leading-relaxed mb-6 font-medium">
                   Estimating bitumen and aggregate quantities doesn&apos;t need to involve manual formula

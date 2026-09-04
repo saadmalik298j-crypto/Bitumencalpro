@@ -80,7 +80,6 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <body className="min-h-screen text-slate-800 flex flex-col selection:bg-teal-500/30">
         {/* Fixed background layer — GPU composited, never repaints on scroll */}
-        <div className="fixed inset-0 -z-10 bg-gradient-to-br from-teal-600 to-orange-500" />
         <Navbar />
         <main className="flex-grow">
           {children}
