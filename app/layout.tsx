@@ -77,10 +77,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={`${inter.className} bg-slate-900`}>
       <body className="min-h-screen text-slate-800 flex flex-col selection:bg-teal-500/30">
-        {/* Fixed background layer — GPU composited, never repaints on scroll */}
-        <div className="fixed inset-0 -z-10 bg-gradient-to-br from-teal-600 to-orange-500" />
+        {/* Fixed background layer — Oversized to prevent mobile address bar flickering, GPU composited */}
+        <div className="fixed -inset-[100px] -z-10 bg-gradient-to-br from-teal-600 to-orange-500 pointer-events-none transform-gpu" />
         <Navbar />
         <main className="flex-grow">
           {children}
