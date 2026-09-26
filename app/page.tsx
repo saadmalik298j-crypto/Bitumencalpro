@@ -100,13 +100,6 @@ const REFERENCE_DATA = [
   },
 ] as const;
 
-const TRUST_BADGES = [
-  { icon: ShieldCheck, label: "AASHTO-aligned formulas" },
-  { icon: Zap, label: "Instant results" },
-  { icon: BookOpen, label: "Transparent methodology" },
-  { icon: HardHat, label: "Built for site engineers" },
-];
-
 const STEPS = [
   {
     num: "01",
@@ -296,23 +289,6 @@ export default function Home() {
             </span>{" "}
             <span className="text-white">Calculator</span>
           </h1>
-
-          <p className="text-center text-white/90 text-lg md:text-xl font-medium max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-md">
-            Calculate bitumen, asphalt mix weight, and aggregate quantities instantly for any road
-            pavement project.
-          </p>
-
-          <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-2 sm:gap-4 mb-14">
-            {TRUST_BADGES.map(({ icon: Icon, label }) => (
-              <div
-                key={label}
-                className="flex items-center gap-2 bg-black/20 border border-white/10 rounded-full px-4 py-2 text-white text-xs sm:text-sm font-medium justify-center shadow-inner hover:bg-black/30 transition-colors"
-              >
-                <Icon size={16} className="text-orange-400 shrink-0" />
-                <span className="truncate">{label}</span>
-              </div>
-            ))}
-          </div>
 
           <Calculator />
         </div>
