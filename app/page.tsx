@@ -408,8 +408,14 @@ export default function Home() {
               <p className="text-white/70 text-base leading-relaxed mb-6">
                 Enter the length, width, and thickness of the pavement section you&apos;re working on.
                 Thickness is usually the smallest number (often in millimetres), so double-check
-                units before you calculate ,a decimal error here throws off every result that
-                follows.
+                units before you calculate. See our{" "}
+                <Link
+                  href="/blog/asphalt-thickness"
+                  className="text-teal-400 hover:text-teal-300 font-semibold underline underline-offset-2 transition-colors"
+                >
+                  Asphalt Layer Thickness Guide
+                </Link>{" "}
+                for standard depth recommendations.
               </p>
               <div className="bg-black/40 rounded-xl p-4 border border-white/5 text-sm text-green-300 font-mono shadow-inner">
                 Example:
@@ -625,7 +631,14 @@ Bitumen Calculation Formulas & Step-by-Step Method
               </div>
               <p className="text-white/60 text-sm mt-3 italic">
                 This formula helps estimate the approximate binder requirement for an asphalt
-                pavement section when the project dimensions and mix properties are known.
+                pavement section. You can refer to our{" "}
+                <Link
+                  href="/blog/bitumen-density-chart"
+                  className="text-teal-400 hover:text-teal-300 font-semibold underline underline-offset-2 transition-colors not-italic"
+                >
+                  Bitumen &amp; Asphalt Density Chart
+                </Link>{" "}
+                for standard job-mix values.
               </p>
             </div>
 
@@ -1568,21 +1581,21 @@ Bitumen Calculation Formulas & Step-by-Step Method
                 </h2>
                 <p className="text-white/80 text-base leading-relaxed mb-6 text-center">
                   BitumenCalcPro gives pavement professionals a transparent, formula-driven estimate
-                  — showing exactly how dimensions,{" "}
+                  — helping contractors and engineers avoid{" "}
                   <Link
-                    href="/blog/bitumen-density-chart"
-                    className="text-orange-400 hover:underline"
+                    href="/blog/asphalt-estimation-mistakes"
+                    className="text-orange-400 hover:text-orange-300 font-bold underline underline-offset-2 transition-colors"
                   >
-                    mix density
-                  </Link>
-                  , and{" "}
-                  <Link
-                    href="/blog/what-is-bitumen"
-                    className="text-orange-400 hover:underline"
-                  >
-                    bitumen content
+                    top asphalt estimation mistakes
                   </Link>{" "}
-                  drive the final quantities, in metric <em>or</em> imperial units.
+                  and understand how binder selection and{" "}
+                  <Link
+                    href="/blog/bitumen-grades-explained"
+                    className="text-orange-400 hover:text-orange-300 font-bold underline underline-offset-2 transition-colors"
+                  >
+                    bitumen grades
+                  </Link>{" "}
+                  drive project requirements.
                 </p>
                 <ul className="space-y-3 text-sm md:text-base">
                   <li className="flex items-start gap-3 bg-black/20 p-4 rounded-2xl border border-white/5">
