@@ -296,8 +296,9 @@ export default function Home() {
             <span className="text-white">Calculator</span>
           </h1>
 
-          <p className="text-center text-white/90 text-sm sm:text-base md:text-lg font-medium max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed drop-shadow-md">
-            Calculate bitumen binder, hot mix asphalt (HMA) weight, and aggregate quantities instantly for road paving and construction projects.
+          <p className="text-center text-white/90 text-lg md:text-xl font-medium max-w-3xl mx-auto mb-8 leading-relaxed drop-shadow-md">
+            Calculate bitumen, asphalt mix weight, and aggregate quantities instantly for any road
+            pavement project.
           </p>
 
           <Calculator />
