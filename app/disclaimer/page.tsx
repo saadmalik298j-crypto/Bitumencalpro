@@ -98,7 +98,7 @@ export default function DisclaimerPage() {
       <Script
         id="schema-disclaimer-page"
         type="application/ld+json"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <LegalLayout

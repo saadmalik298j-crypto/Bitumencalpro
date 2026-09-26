@@ -72,7 +72,7 @@ export default function TermsPage() {
     "name": "Terms and Conditions | BitumenCalcPro",
     "url": "https://bitumencalcpro.com/terms-and-conditions",
     "description": "Read the terms and conditions for using BitumenCalcPro. Understand your rights, responsibilities, and what you can expect from our free bitumen calculator.",
-    "dateModified": "2026-07-23",
+    "dateModified": "2026-09-26",
     "isPartOf": {
       "@type": "WebSite",
       "name": "BitumenCalcPro",
@@ -85,7 +85,7 @@ export default function TermsPage() {
       <Script
         id="schema-terms-page"
         type="application/ld+json"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <LegalLayout

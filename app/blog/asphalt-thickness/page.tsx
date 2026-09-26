@@ -80,9 +80,10 @@ const articleSchema = {
   datePublished: "2026-08-21T00:00:00.000Z",
   dateModified: "2026-08-21T00:00:00.000Z",
   author: {
-    "@type": "Organization",
-    name: "BitumenCalcPro",
-    url: "https://bitumencalcpro.com",
+    "@type": "Person",
+    name: "Nabeel Awan",
+    url: "https://bitumencalcpro.com/about-us",
+    image: "https://bitumencalcpro.com/nabeel-awan-bitumencalcpro-founder.webp",
   },
   publisher: {
     "@type": "Organization",

@@ -70,7 +70,7 @@ const articleSchema = {
   image: "https://bitumencalcpro.com/tpo-vs-modified-bitumen-flat-roof.webp",
   datePublished: "2026-08-11T00:00:00.000Z",
   dateModified: "2026-08-11T00:00:00.000Z",
-  author: { "@type": "Organization", name: "BitumenCalcPro", url: "https://bitumencalcpro.com" },
+  author: { "@type": "Person", name: "Nabeel Awan", url: "https://bitumencalcpro.com/about-us", image: "https://bitumencalcpro.com/nabeel-awan-bitumencalcpro-founder.webp" },
   publisher: {
     "@type": "Organization",
     name: "BitumenCalcPro",

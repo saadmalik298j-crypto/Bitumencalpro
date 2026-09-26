@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         url: "/bitumen-calculator-og-image.png",
         width: 1729,
         height: 910,
-        alt: "Free Bitumen Calculator ,Estimate Bitumen & Asphalt Mix",
+        alt: "Free Bitumen Calculator — Estimate Bitumen & Asphalt Mix",
       },
     ],
   },
@@ -238,6 +238,8 @@ export default function Home() {
     logo: {
       "@type": "ImageObject",
       url: "https://bitumencalcpro.com/logo.png",
+      width: 512,
+      height: 512,
     },
     sameAs: ["https://twitter.com/bitumencalcpro"],
   };

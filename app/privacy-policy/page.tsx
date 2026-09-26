@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import LegalLayout from "../components/LegalLayout";
-import { Eye, Lock, Share2, Cookie, Mail, RefreshCw } from "lucide-react";
+import { Eye, Lock, Share2, Cookie, Mail, RefreshCw, BarChart2 } from "lucide-react";
 
 /* ─── Site-wide design tokens (match homepage) ─── */
 const BRAND_CTA = "bg-violet-600 hover:bg-violet-500 shadow-md shadow-violet-200";
@@ -112,11 +112,30 @@ const sections = [
       },
       {
         subtitle: "Deletion",
-        text: "You can ask us to delete your personal data at any time. Just contact us and we'll take care of it promptly.",
+        text: "You can ask us to delete your personal data at any time. Just contact us and we\u2019ll take care of it promptly.",
       },
       {
         subtitle: "GDPR & CCPA",
         text: "If you are based in the European Union or California, additional rights apply under GDPR and CCPA respectively. We honour all such requests. Contact us at the email below for any data rights inquiry.",
+      },
+    ],
+  },
+  {
+    icon: BarChart2,
+    color: "orange",
+    title: "Advertising & Third-Party Cookies",
+    content: [
+      {
+        subtitle: "Google AdSense",
+        text: "We use Google AdSense to display advertisements on this website. Google AdSense uses cookies, including the DoubleClick DART cookie, to serve ads based on users\u2019 prior visits to our site and other sites on the internet. You may opt out of personalised advertising by visiting Google\u2019s Ads Settings at https://www.google.com/settings/ads.",
+      },
+      {
+        subtitle: "Third-Party Advertising Vendors",
+        text: "Third-party vendors, including Google, use cookies to serve ads based on a user\u2019s prior visits to our website or other websites. Google\u2019s use of advertising cookies enables it and its partners to serve ads based on visits to this site and/or other sites on the internet.",
+      },
+      {
+        subtitle: "Cookie Opt-Out",
+        text: "You may opt out of personalised advertising by visiting https://www.google.com/settings/ads or https://optout.aboutads.info/. You can also control and delete cookies at any time through your browser settings. Opting out does not affect the functionality of the calculator.",
       },
     ],
   },
@@ -178,7 +197,7 @@ export default function PrivacyPolicyPage() {
       <Script
         id="schema-privacy-page"
         type="application/ld+json"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <LegalLayout

@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   title: {
     default: "BitumenCalcPro — Free Bitumen & Asphalt Calculator",
-    template: "%s",
+    template: "%s | BitumenCalcPro",
   },
   description:
     "Free online bitumen and aggregate calculator for civil engineers and paving contractors. Fast, accurate estimates for Dense Graded HMA, SMA, OGFC, and Polymer Modified mixes.",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "aggregate calculator",
     "civil engineering tools",
   ],
-  authors: [{ name: "BitumenCalcPro" }],
+  authors: [{ name: "Nabeel Awan" }],
   creator: "BitumenCalcPro",
   publisher: "BitumenCalcPro",
   formatDetection: {

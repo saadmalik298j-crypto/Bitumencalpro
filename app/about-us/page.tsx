@@ -53,11 +53,41 @@ export default function AboutUsPage() {
     "url": "https://bitumencalcpro.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://bitumencalcpro.com/logo.png"
+      "url": "https://bitumencalcpro.com/logo.png",
+      "width": 512,
+      "height": 512
     },
     "description": "Free online bitumen calculator for civil engineers and paving contractors worldwide.",
     "sameAs": [
       "https://twitter.com/bitumencalcpro"
+    ]
+  };
+
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nabeel Awan",
+    "url": "https://bitumencalcpro.com/about-us",
+    "image": "https://bitumencalcpro.com/nabeel-awan-bitumencalcpro-founder.webp",
+    "jobTitle": "Founder & Web Developer",
+    "description": "Web developer and founder of BitumenCalcPro. Specialises in civil engineering calculation tools for bitumen, asphalt, and pavement estimation, with research grounded in AASHTO standards, IS codes, and Asphalt Institute guidelines.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "BitumenCalcPro",
+      "url": "https://bitumencalcpro.com"
+    },
+    "sameAs": [
+      "https://web.facebook.com/p/Nabeel-Awan-61592639548311/",
+      "https://www.instagram.com/nabeelawan78y7/"
+    ],
+    "knowsAbout": [
+      "Bitumen calculation",
+      "Asphalt mix design",
+      "Pavement engineering",
+      "Hot mix asphalt",
+      "Road construction",
+      "AASHTO standards",
+      "IS codes"
     ]
   };
 
@@ -66,14 +96,20 @@ export default function AboutUsPage() {
       <Script
         id="schema-about-page"
         type="application/ld+json"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
       />
       <Script
         id="schema-organization"
         type="application/ld+json"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <Script
+        id="schema-person"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
       <LegalLayout
         title="About BitumenCalcPro"
@@ -96,10 +132,10 @@ export default function AboutUsPage() {
               BitumenCalcPro is an independent online resource created to make <strong>bitumen, asphalt, and pavement calculations simpler, faster, and easier to understand</strong>.
             </p>
             <p>
-              The project was founded by <strong>Nabeel Awan, a web developer with a strong interest in civil engineering, road construction, asphalt, bitumen, and construction technology</strong>.
+              The project was founded by <strong>Nabeel Awan, a web developer with several years of focused research into civil engineering calculation methods, asphalt mix design, pavement material estimation, and construction technology</strong>.
             </p>
             <p>
-              The idea started with a simple goal: make common material calculations easier without requiring complicated spreadsheets or manual calculations. BitumenCalcPro brings these calculations into practical online tools that can be used from anywhere.
+              All calculation methodologies on BitumenCalcPro are grounded in <strong>published pavement engineering references</strong>, including AASHTO standards, IS codes, and Asphalt Institute Mix Design guidelines (MS-2). Results are intended for estimation and educational purposes only and should always be verified by a qualified engineer for project-specific use.
             </p>
             <p>
               Our goal is not just to provide a number. Where practical, we explain the inputs, calculation methods, units, and assumptions so users can better understand and verify the results.
