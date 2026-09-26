@@ -345,37 +345,13 @@ export default function Home() {
               content, and the calculator instantly estimates the total asphalt volume, mix
               weight, bitumen quantity, aggregate weight, and an optional material cost estimate.
               These calculations support project planning, material estimation, and budgeting.
-              While this tool is designed for paving projects, bitumen is also heavily utilized
-              in the building sector—you can read our guide on{" "}
-              <Link
-                href="/blog/modified-bitumen-roofing"
-                className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
-              >
-                modified bitumen roofing
-              </Link>{" "}
-              if you are dealing with commercial flat roofs, or our guide on{" "}
-              <Link
-                href="/blog/modified-bitumen-roof-repair"
-                className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
-              >
-                modified bitumen roof repair
-              </Link>{" "}
-              if you need to fix a leak. If you want to learn more about the base materials
-              involved, you can read our detailed guide on{" "}
+              To learn more about material properties and classification grades, read our overview on{" "}
               <Link
                 href="/blog/what-is-bitumen"
-                className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
+                className="text-teal-400 hover:text-teal-300 font-semibold underline underline-offset-2 transition-colors"
               >
-                what bitumen is, its properties, and how it compares to asphalt and tar
-              </Link>
-              , or explore{" "}
-              <Link
-                href="/blog/bitumen-emulsion-explained"
-                className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
-              >
-                bitumen emulsion
-              </Link>{" "}
-              for cold application alternatives.
+                what bitumen is
+              </Link>.
             </p>
           </div>
 
