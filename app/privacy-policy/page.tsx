@@ -127,11 +127,11 @@ const sections = [
     content: [
       {
         subtitle: "Google AdSense",
-        text: "We use Google AdSense to display advertisements on this website. Google AdSense uses cookies, including the DoubleClick DART cookie, to serve ads based on users\u2019 prior visits to our site and other sites on the internet. You may opt out of personalised advertising by visiting Google\u2019s Ads Settings at https://www.google.com/settings/ads.",
+        text: "We may use Google AdSense to display advertisements on this website. Google AdSense uses cookies, including the DoubleClick DART cookie, to serve ads based on users\u2019 prior visits to our site and other sites on the internet. You may opt out of personalised advertising by visiting Google\u2019s Ads Settings at https://www.google.com/settings/ads.",
       },
       {
         subtitle: "Third-Party Advertising Vendors",
-        text: "Third-party vendors, including Google, use cookies to serve ads based on a user\u2019s prior visits to our website or other websites. Google\u2019s use of advertising cookies enables it and its partners to serve ads based on visits to this site and/or other sites on the internet.",
+        text: "Third-party vendors, including Google, may use cookies to serve ads based on a user\u2019s prior visits to our website or other websites. Google\u2019s use of advertising cookies enables it and its partners to serve ads based on visits to this site and/or other sites on the internet.",
       },
       {
         subtitle: "Cookie Opt-Out",
