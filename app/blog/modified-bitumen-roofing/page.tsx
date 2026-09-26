@@ -401,13 +401,8 @@ export default function ModifiedBitumenRoofingPage() {
                 What Is Modified Bitumen Roofing?
               </h2>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
-                <Link
-                  href="/blog/what-is-bitumen"
-                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
-                >
-                  Modified bitumen
-                </Link>{" "}
-                is an asphalt-based roofing membrane with polymers mixed into the asphalt to change how it behaves. Plain asphalt gets brittle in the cold and soft in the heat. Add a polymer — either a rubber compound or a plastic one — and the material stays flexible across a wider temperature range and resists cracking for longer.
+              
+                  Modified bitumen is an asphalt-based roofing membrane with polymers mixed into the asphalt to change how it behaves. Plain asphalt gets brittle in the cold and soft in the heat. Add a polymer — either a rubber compound or a plastic one — and the material stays flexible across a wider temperature range and resists cracking for longer.
               </p>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 The membrane isn't built layer by layer on the roof the way old built-up roofing (BUR) was. It's manufactured in a factory as reinforced rolls, usually 3 to 4 feet wide, then shipped to the job site and applied over a base layer. Most systems use two or three plies: a base sheet for structure and a cap sheet on top that handles UV exposure and weather.
@@ -592,7 +587,7 @@ export default function ModifiedBitumenRoofingPage() {
                   href="/"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
                 >
-                  Bitumen Calculator
+                  Bitumen Calculator Online
                 </Link>
                 .
               </p>

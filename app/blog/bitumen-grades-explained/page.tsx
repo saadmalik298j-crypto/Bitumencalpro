@@ -692,10 +692,10 @@ export default function BitumenGradesExplainedPage() {
                       <>
                         {desc}
                         <Link
-                          href="/blog/cold-mix-bitumen"
+                          href="/blog/bitumen-emulsion-explained"
                           className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
                         >
-                          cold mix bitumen in depth
+                          Bitumen emulsion in depth
                         </Link>
                         .
                       </>

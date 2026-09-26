@@ -178,7 +178,37 @@ export default function ModifiedBitumenRoofRepairPage() {
                 Modified bitumen roof repair usually means fixing <strong className="text-white">blisters, seam failures, punctures, or ponding water</strong> on a polymer-modified bitumen membrane. Most repairs involve cleaning the damaged area, cutting out the failed section, and resealing it with compatible lap cement, seam tape, or a heat-welded patch. Small issues caught early are simple DIY fixes; widespread seam failure or repeated leaks usually call for a professional.
               </p>
             </div>
-
+      {/* Table of Contents */}
+            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+                <div className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
+                  <BookOpen size={14} className="text-orange-400" />
+                  Table of Contents
+                </div>
+                <nav className="space-y-1">
+                  {[
+                    { id: "what-is-modified-bitumen", label: "What Is Modified Bitumen?" },
+                    { id: "common-problems", label: "Common Problems" },
+                    { id: "seam-failure", label: "  Seam Failure" },
+                    { id: "blisters", label: "  Blisters" },
+                    { id: "ponding-water", label: "  Ponding Water" },
+                    { id: "punctures", label: "  Punctures" },
+                    { id: "alligatoring", label: "  Alligatoring & Cracking" },
+                    { id: "flashing-failure", label: "  Flashing Failure" },
+                    { id: "signs-of-repair", label: "Signs You Need Repair" },
+                    { id: "how-to-repair", label: "How to Repair (Steps)" },
+                    { id: "diy-vs-professional", label: "DIY vs Professional" },
+                    { id: "cost-factors", label: "Repair Cost Factors" },
+                    { id: "preventing-repairs", label: "Preventing Future Repairs" },
+                    { id: "repair-lifespan", label: "How Long Repairs Last" },
+                    { id: "summary", label: "Summary" },
+                    { id: "faq", label: "FAQ" },
+                  ].map(({ id, label }) => (
+                    <a key={id} href={`#${id}`} className="block text-white/55 hover:text-orange-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all">
+                      {label}
+                    </a>
+                  ))}
+                </nav>
+            </div>
 
             
             {/* ── SECTION: Intro ── */}
@@ -395,8 +425,8 @@ export default function ModifiedBitumenRoofRepairPage() {
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">How Long Do Modified Bitumen Roof Repairs Last?</h2>
               <p className="text-white/80 leading-relaxed mb-5 text-base">A well-executed repair on an otherwise sound roof can last for years, effectively matching the remaining service life of the membrane around it. A well-maintained modified bitumen roof overall typically lasts <strong className="text-white">15 to 20 years</strong>, though skipped maintenance and unaddressed minor damage can shorten that closer to 10.</p>
               <p className="text-white/80 leading-relaxed text-base">
-                Repairs done on a roof already near the end of that range tend to be shorter-term fixes, since the surrounding membrane is aging at the same rate as the repaired section. At that stage, a full cost-benefit assessment of repair vs. replacement is usually more financially sensible than continued patching. Our free{" "}
-                <Link href="/" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-semibold">Bitumen Calculator</Link>{" "}
+                Repairs done on a roof already near the end of that range tend to be shorter-term fixes, since the surrounding membrane is aging at the same rate as the repaired section. At that stage, a full cost-benefit assessment of repair vs. replacement is usually more financially sensible than continued patching. Our {" "}
+                <Link href="/" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-semibold">Free Bitumen Calculator</Link>{" "}
                 can help estimate material quantities if a larger resurfacing or replacement is on the table.
               </p>
               <div className="mt-6 bg-gradient-to-br from-teal-500/15 to-blue-600/10 border border-teal-400/25 rounded-2xl p-6 not-prose">
@@ -406,37 +436,7 @@ export default function ModifiedBitumenRoofRepairPage() {
                 </p>
               </div>
 
-            {/* Table of Contents */}
-            <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
-                <div className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                  <BookOpen size={14} className="text-orange-400" />
-                  Table of Contents
-                </div>
-                <nav className="space-y-1">
-                  {[
-                    { id: "what-is-modified-bitumen", label: "What Is Modified Bitumen?" },
-                    { id: "common-problems", label: "Common Problems" },
-                    { id: "seam-failure", label: "  Seam Failure" },
-                    { id: "blisters", label: "  Blisters" },
-                    { id: "ponding-water", label: "  Ponding Water" },
-                    { id: "punctures", label: "  Punctures" },
-                    { id: "alligatoring", label: "  Alligatoring & Cracking" },
-                    { id: "flashing-failure", label: "  Flashing Failure" },
-                    { id: "signs-of-repair", label: "Signs You Need Repair" },
-                    { id: "how-to-repair", label: "How to Repair (Steps)" },
-                    { id: "diy-vs-professional", label: "DIY vs Professional" },
-                    { id: "cost-factors", label: "Repair Cost Factors" },
-                    { id: "preventing-repairs", label: "Preventing Future Repairs" },
-                    { id: "repair-lifespan", label: "How Long Repairs Last" },
-                    { id: "summary", label: "Summary" },
-                    { id: "faq", label: "FAQ" },
-                  ].map(({ id, label }) => (
-                    <a key={id} href={`#${id}`} className="block text-white/55 hover:text-orange-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all">
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-            </div>
+      
 
             </section>
 

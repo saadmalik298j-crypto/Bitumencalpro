@@ -619,7 +619,7 @@ export default function Home() {
               Calculation Methodology
             </div>
             <h2 className="text-3xl sm:text-5xl font-black text-white mb-6 drop-shadow-lg">
-              Bitumen Calculator Formula: How the Calculation Works
+Bitumen Calculation Formulas & Step-by-Step Method
             </h2>
             <div className="prose prose-invert prose-lg max-w-none w-full text-center">
               <p className="text-white/80 font-medium leading-relaxed mb-6">
@@ -810,7 +810,7 @@ export default function Home() {
                 <AlertTriangle size={28} />
               </div>
               <h3 className="text-3xl font-black text-white mb-6 leading-tight">
-                Mix Density vs. Bitumen (Binder) Density ,Don&apos;t Confuse These
+                Mix Density vs. Bitumen (Binder) Density
               </h3>
               <p className="text-white/80 text-lg leading-relaxed mb-6 font-medium">
                 This is one of the most common sources of ordering errors, because both numbers look
@@ -927,7 +927,7 @@ export default function Home() {
             <div className="bg-white/5 border border-white/10 rounded-[2rem] overflow-hidden text-base shadow-2xl w-full text-left">
               <div className="p-6 bg-black/40 border-b border-white/5">
                 <h3 className="font-bold text-white">
-                  Worked example (1,000 m × 3.5 m section):
+                  Step-by-Step Worked Example
                 </h3>
               </div>
               <div className="overflow-x-auto">

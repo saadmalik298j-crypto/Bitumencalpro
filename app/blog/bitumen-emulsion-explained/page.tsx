@@ -478,12 +478,9 @@ export default function BitumenEmulsionExplainedPage() {
                 formulations, once the electrical charge neutralizes on contact with aggregate — the
                 bitumen droplets merge back together and &ldquo;break,&rdquo; leaving a continuous
                 binder film behind. That final film is functionally identical to what{" "}
-                <Link
-                  href="/blog/what-is-bitumen"
-                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
-                >
+               
                   heated bitumen
-                </Link>{" "}
+                
                 would leave, just applied without ever needing a burner.
               </p>
             </section>
@@ -1077,38 +1074,7 @@ export default function BitumenEmulsionExplainedPage() {
                   at moderate temperatures, it delivers most of what plain bitumen offers while
                   cutting the energy, safety, and handling demands that come with working hot.
                 </p>
-                <p className="text-white/85 leading-relaxed mb-4 text-base">
-                  For a broader introduction to bitumen itself, see our guide on{" "}
-                  <Link
-                    href="/blog/what-is-bitumen"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
-                  >
-                    what bitumen is
-                  </Link>
-                  . For grade selection across bitumen types, see our{" "}
-                  <Link
-                    href="/blog/bitumen-grades-explained"
-                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
-                  >
-                    Bitumen Grades Explained guide
-                  </Link>
-                  . For density values across grades, see the{" "}
-                  <Link
-                    href="/blog/bitumen-density-chart"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
-                  >
-                    Bitumen Density Chart
-                  </Link>
-                  . To estimate quantities for a tack coat, prime coat, or emulsion-based project,
-                  try our free{" "}
-                  <Link
-                    href="/"
-                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
-                  >
-                    Bitumen Calculator
-                  </Link>
-                  .
-                </p>
+               
                 <p className="text-white/80 leading-relaxed text-sm">
                   For authoritative technical specifications on bitumen emulsion grades and test
                   methods, the{" "}
