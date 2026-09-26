@@ -282,14 +282,9 @@ export default function Home() {
         <div className="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-orange-500/10 blur-[100px] pointer-events-none" />
         <div className="absolute -bottom-32 -right-32 w-[480px] h-[480px] rounded-full bg-teal-500/20 blur-[100px] pointer-events-none" />
 
-        <div id="calculator" className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-          {/* Subtle Top Pill Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-orange-200 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-5 shadow-sm backdrop-blur-md">
-            <CalcIcon size={15} className="text-orange-400" />
-            <span>Free Pavement Material Takeoff Tool</span>
-          </div>
+        <div id="calculator" className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <h1 className="text-center text-3xl sm:text-5xl md:text-6xl font-black tracking-tight mb-4 leading-tight drop-shadow-2xl">
+          <h1 className="text-center text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight drop-shadow-2xl">
             <span className="bg-gradient-to-r from-orange-400 to-yellow-300 bg-clip-text text-transparent">
               Bitumen
             </span>{" "}
