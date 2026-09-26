@@ -74,7 +74,7 @@ export default function DmcaPage() {
     <LegalLayout
       title="DMCA Policy"
       subtitle="We respect intellectual property rights. Here's how to file a takedown request and what happens next — explained step by step."
-      lastUpdated="July 23, 2026"
+      lastUpdated="September 26, 2026"
       badge="Copyright Protection"
       accentColor="cyan"
     >

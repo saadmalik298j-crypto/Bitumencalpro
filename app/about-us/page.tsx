@@ -114,7 +114,7 @@ export default function AboutUsPage() {
       <LegalLayout
         title="About BitumenCalcPro"
         subtitle="Simple, practical tools for bitumen, asphalt, and pavement calculations."
-        lastUpdated="August 27, 2026"
+        lastUpdated="September 26, 2026"
         badge="About Us"
         accentColor="violet"
       >

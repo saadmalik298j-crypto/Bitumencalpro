@@ -184,7 +184,7 @@ export default function PrivacyPolicyPage() {
     "name": "Privacy Policy | BitumenCalcPro",
     "url": "https://bitumencalcpro.com/privacy-policy",
     "description": "Learn how BitumenCalcPro collects, uses, and protects your personal information. We respect your privacy and are committed to keeping your data safe.",
-    "dateModified": "2026-07-23",
+    "dateModified": "2026-09-26",
     "isPartOf": {
       "@type": "WebSite",
       "name": "BitumenCalcPro",
@@ -203,7 +203,7 @@ export default function PrivacyPolicyPage() {
       <LegalLayout
       title="Privacy Policy"
       subtitle="We believe privacy is a right, not a privilege. Here's exactly how we handle your information — no legal jargon, just plain English."
-      lastUpdated="July 23, 2026"
+      lastUpdated="September 26, 2026"
       badge="Your Privacy Matters"
       accentColor="violet"
     >

@@ -91,7 +91,7 @@ export default function TermsPage() {
       <LegalLayout
       title="Terms & Conditions"
       subtitle="Plain and simple ground rules for using BitumenCalcPro. We've written this to be readable — not to confuse you."
-      lastUpdated="July 23, 2026"
+      lastUpdated="September 26, 2026"
       badge="Fair & Transparent"
       accentColor="blue"
     >

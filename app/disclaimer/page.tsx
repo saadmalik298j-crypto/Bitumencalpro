@@ -85,7 +85,7 @@ export default function DisclaimerPage() {
     "name": "Disclaimer | BitumenCalcPro",
     "url": "https://bitumencalcpro.com/disclaimer",
     "description": "Important disclaimer for BitumenCalcPro users. Understand the limitations of our bitumen calculator and when to consult a qualified engineer.",
-    "dateModified": "2026-07-23",
+    "dateModified": "2026-09-26",
     "isPartOf": {
       "@type": "WebSite",
       "name": "BitumenCalcPro",
@@ -104,7 +104,7 @@ export default function DisclaimerPage() {
       <LegalLayout
       title="Disclaimer"
       subtitle="We're upfront about what our tool can and cannot do. Please read this before using our calculator for any project decision-making."
-      lastUpdated="July 23, 2026"
+      lastUpdated="September 26, 2026"
       badge="Important Information"
       accentColor="orange"
     >
