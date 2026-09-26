@@ -9,6 +9,7 @@ import {
   Clock,
   Shield,
   ArrowLeft,
+  MapPin,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -93,6 +94,16 @@ export default function ContactUsPage() {
               <p className="text-slate-500 text-sm mb-1">We aim to reply within:</p>
               <p className="text-blue-600 font-bold text-sm">1 business day</p>
               <p className="text-slate-400 text-xs mt-2">Mon – Fri, 9am – 6pm UTC</p>
+            </div>
+
+            <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+              <div className="w-10 h-10 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center mb-4">
+                <MapPin size={20} className="text-teal-600" />
+              </div>
+              <h3 className="font-bold text-slate-900 mb-1">Operating Headquarters</h3>
+              <p className="text-slate-500 text-sm mb-1">Based in:</p>
+              <p className="text-teal-700 font-bold text-sm">Islamabad, Pakistan</p>
+              <p className="text-slate-400 text-xs mt-2">Serving civil engineers & contractors globally</p>
             </div>
 
             <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
