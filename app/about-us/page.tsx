@@ -10,22 +10,18 @@ import {
   Info,
   CheckCircle2,
   TrendingUp,
-  MapPin,
-  Award,
-  BookOpenCheck,
-  ShieldCheck,
-  Mail
+  ExternalLink,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us | BitumenCalcPro",
   description:
-    "Learn about BitumenCalcPro — founded by Nabeel Awan in Islamabad, Pakistan. Discover our engineering computational methodologies, AASHTO/ASTM standards alignment, and pavement estimation tools.",
+    "Learn about BitumenCalcPro — an independent online resource for simple, practical bitumen, asphalt, and pavement calculations founded by Nabeel Awan in Islamabad, Pakistan.",
   alternates: { canonical: "https://bitumencalcpro.com/about-us" },
   openGraph: {
     title: "About Us | BitumenCalcPro",
     description:
-      "Learn about BitumenCalcPro — founded by Nabeel Awan in Islamabad, Pakistan. Discover our engineering computational methodologies, AASHTO/ASTM standards alignment, and pavement estimation tools.",
+      "Learn about BitumenCalcPro — an independent online resource for simple, practical bitumen, asphalt, and pavement calculations founded by Nabeel Awan in Islamabad, Pakistan.",
     url: "https://bitumencalcpro.com/about-us",
     siteName: "BitumenCalcPro",
     type: "website",
@@ -33,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Us | BitumenCalcPro",
-    description: "Learn about BitumenCalcPro — founded by Nabeel Awan in Islamabad, Pakistan. Civil engineering calculation tools grounded in AASHTO and ASTM standards.",
+    description: "Learn about BitumenCalcPro — an independent online resource for simple, practical bitumen, asphalt, and pavement calculations.",
   },
 };
 
@@ -43,7 +39,7 @@ export default function AboutUsPage() {
     "@type": "AboutPage",
     "name": "About BitumenCalcPro",
     "url": "https://bitumencalcpro.com/about-us",
-    "description": "Learn about BitumenCalcPro — an independent online engineering resource for precise bitumen, asphalt, and pavement material calculation grounded in international standards.",
+    "description": "Learn about BitumenCalcPro — an independent online resource for simple, practical bitumen, asphalt, and pavement calculations.",
     "isPartOf": {
       "@type": "WebSite",
       "name": "BitumenCalcPro",
@@ -62,16 +58,11 @@ export default function AboutUsPage() {
       "width": 512,
       "height": 512
     },
-    "description": "Specialized engineering calculation tools and technical resources for bitumen, asphalt, and pavement contractors worldwide.",
+    "description": "Free online bitumen calculator for civil engineers and paving contractors worldwide.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Islamabad",
       "addressCountry": "PK"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Technical Support",
-      "url": "https://bitumencalcpro.com/contact-us"
     },
     "sameAs": [
       "https://twitter.com/bitumencalcpro"
@@ -84,8 +75,8 @@ export default function AboutUsPage() {
     "name": "Nabeel Awan",
     "url": "https://bitumencalcpro.com/about-us",
     "image": "https://bitumencalcpro.com/nabeel-awan-bitumencalcpro-founder.webp",
-    "jobTitle": "Founder & Lead Technical Developer",
-    "description": "Software engineer and lead technical developer of BitumenCalcPro based in Islamabad, Pakistan. Specializes in civil engineering computational modeling, pavement estimation algorithms, and mix design software grounded in AASHTO, ASTM, and Asphalt Institute MS-2 standards.",
+    "jobTitle": "Founder & Technical Developer",
+    "description": "Web developer and founder of BitumenCalcPro based in Islamabad, Pakistan. Specialises in civil engineering calculation tools for bitumen, asphalt, and pavement estimation.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Islamabad",
@@ -101,13 +92,11 @@ export default function AboutUsPage() {
       "https://www.instagram.com/nabeelawan78y7/"
     ],
     "knowsAbout": [
-      "Bitumen Volumetric Calculation",
-      "Hot Mix Asphalt (HMA) Design",
-      "Pavement Engineering Algorithms",
-      "AASHTO T 245 & T 166 Standards",
-      "ASTM D6926 & D2041 Test Methods",
-      "Asphalt Institute MS-2 Guidelines",
-      "MoRTH Section 500 Specifications"
+      "Bitumen calculation",
+      "Asphalt mix design",
+      "Pavement engineering",
+      "AASHTO standards",
+      "ASTM testing methods"
     ]
   };
 
@@ -133,70 +122,98 @@ export default function AboutUsPage() {
       />
       <LegalLayout
         title="About BitumenCalcPro"
-        subtitle="Precision software, verified engineering formulas, and practical tools for global pavement estimation."
+        subtitle="Simple, practical tools for bitumen, asphalt, and pavement calculations."
         lastUpdated="September 26, 2026"
         badge="About Us"
         accentColor="violet"
       >
-        {/* Operating Location & Identity Banner */}
-        <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-teal-950 rounded-2xl p-6 mb-12 border border-slate-700/60 shadow-lg text-white">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-teal-500/20 border border-teal-500/40 flex items-center justify-center text-teal-300 shrink-0">
-                <MapPin size={22} />
-              </div>
-              <div>
-                <div className="text-xs font-bold text-teal-300 uppercase tracking-wider">Operating Headquarters</div>
-                <div className="text-base font-bold text-white">Islamabad, Pakistan</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-violet-500/20 border border-violet-500/40 flex items-center justify-center text-violet-300 shrink-0">
-                <Award size={22} />
-              </div>
-              <div>
-                <div className="text-xs font-bold text-violet-300 uppercase tracking-wider">Engineering Compliance</div>
-                <div className="text-base font-bold text-white">AASHTO, ASTM & MS-2 Aligned</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Our Story */}
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-600 to-blue-500 flex items-center justify-center text-white font-black text-lg shadow-md shadow-violet-200">
               S
             </div>
-            <h2 className="text-2xl font-bold text-slate-900 m-0">Our Purpose & Background</h2>
+            <h2 className="text-2xl font-bold text-slate-900 m-0">Our Story</h2>
           </div>
 
           <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
             <p>
-              BitumenCalcPro is a dedicated engineering computation platform developed to provide <strong>accurate, transparent, and standardized bitumen, asphalt, and pavement material estimation tools</strong> for civil engineers, site managers, paving contractors, and students worldwide.
+              BitumenCalcPro is an independent online resource created to make <strong>bitumen, asphalt, and pavement calculations simpler, faster, and easier to understand</strong>.
             </p>
             <p>
-              The platform was created by <strong>Nabeel Awan</strong>, a software developer and technical researcher operating from <strong>Islamabad, Pakistan</strong>. Combining web application architecture with rigorous study of international highway and pavement materials specifications, Nabeel established BitumenCalcPro to replace prone-to-error manual estimation spreadsheets with precise, accessible web algorithms.
+              The project was founded by <strong>Nabeel Awan</strong>, a web developer based in <strong>Islamabad, Pakistan</strong>, with focused research into civil engineering calculation methods, asphalt mix design, pavement material estimation, and construction technology.
             </p>
             <p>
-              Rather than relying on unverified generic estimates, all calculation formulas on BitumenCalcPro are directly coded from <strong>governing civil engineering references and laboratory standards</strong>, including AASHTO mix design procedures, ASTM volumetric testing protocols, and Asphalt Institute MS-2 specifications.
+              All calculation methodologies on BitumenCalcPro are grounded in published pavement engineering references and international standards, including:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-slate-700">
+              <li>
+                <a
+                  href="https://www.transportation.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-violet-600 hover:text-violet-800 font-medium inline-flex items-center gap-1 hover:underline"
+                >
+                  AASHTO Standards <ExternalLink size={13} />
+                </a>{" "}
+                — American Association of State Highway and Transportation Officials specifications.
+              </li>
+              <li>
+                <a
+                  href="https://www.asphaltinstitute.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-violet-600 hover:text-violet-800 font-medium inline-flex items-center gap-1 hover:underline"
+                >
+                  Asphalt Institute MS-2 Guidelines <ExternalLink size={13} />
+                </a>{" "}
+                — Mix Design Methods for Asphalt Concrete.
+              </li>
+              <li>
+                <a
+                  href="https://www.astm.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-violet-600 hover:text-violet-800 font-medium inline-flex items-center gap-1 hover:underline"
+                >
+                  ASTM International <ExternalLink size={13} />
+                </a>{" "}
+                — Standard test methods for bituminous paving mixtures (ASTM D6926 / D2041).
+              </li>
+              <li>
+                <a
+                  href="https://morth.nic.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-violet-600 hover:text-violet-800 font-medium inline-flex items-center gap-1 hover:underline"
+                >
+                  MoRTH Specifications <ExternalLink size={13} />
+                </a>{" "}
+                — Ministry of Road Transport & Highways guidelines for road construction.
+              </li>
+            </ul>
+            <p>
+              Results are intended for estimation and educational purposes only and should always be verified by a qualified engineer for project-specific use.
+            </p>
+            <p>
+              Our goal is not just to provide a number. Where practical, we explain the inputs, calculation methods, units, and assumptions so users can better understand and verify the results.
             </p>
           </div>
         </div>
 
         {/* Meet the Founder */}
-        <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl p-8 mb-12 border border-slate-200 shadow-sm relative overflow-hidden">
+        <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl p-8 mb-12 border border-slate-100 shadow-sm relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-violet-100 rounded-full blur-3xl -z-10 opacity-50 translate-x-1/2 -translate-y-1/2" />
-          <h2 className="text-2xl font-bold text-slate-900 mb-8 relative z-10">Meet the Founder & Lead Developer</h2>
+          <h2 className="text-2xl font-bold text-slate-900 mb-8 relative z-10">Meet the Founder</h2>
           
           <div className="flex flex-col md:flex-row gap-8 items-center md:items-start relative z-10">
             {/* Founder Image */}
-            <div className="w-48 h-48 md:w-56 md:h-56 shrink-0 relative rounded-full p-2 bg-gradient-to-tr from-violet-300 via-teal-300 to-orange-300 shadow-lg group">
+            <div className="w-48 h-48 md:w-56 md:h-56 shrink-0 relative rounded-full p-2 bg-gradient-to-tr from-violet-200 to-orange-200 shadow-lg group">
               <div className="absolute inset-0 bg-white rounded-full m-1" />
               <div className="relative w-full h-full rounded-full overflow-hidden bg-slate-100">
                 <Image
                   src="/nabeel-awan-bitumencalcpro-founder.webp"
-                  alt="Nabeel Awan - Founder & Lead Developer of BitumenCalcPro"
+                  alt="Nabeel Awan - Founder of BitumenCalcPro"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 192px, 224px"
@@ -206,99 +223,41 @@ export default function AboutUsPage() {
             
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-1">Nabeel Awan</h3>
-              <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-4">
-                <span className="bg-violet-100 text-violet-800 text-xs font-bold px-3 py-1 rounded-full">
-                  Founder & Lead Technical Developer
-                </span>
-                <span className="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1">
-                  <MapPin size={12} className="text-teal-600" /> Islamabad, Pakistan
-                </span>
-              </div>
-
-              <div className="space-y-3.5 text-slate-600 text-sm leading-relaxed mb-6">
+              <p className="text-violet-600 font-medium text-sm mb-4">Founder & Web Developer · Islamabad, Pakistan</p>
+              <div className="space-y-4 text-slate-600 text-sm leading-relaxed mb-6">
                 <p>
-                  Nabeel Awan is the founder and lead software developer behind BitumenCalcPro. With a specialization in computational tools, software engineering, and pavement material algorithms, Nabeel focuses on creating high-precision online calculators tailored to civil engineering standards.
+                  Nabeel Awan is a web developer and the founder of BitumenCalcPro based in Islamabad, Pakistan. His work focuses on web development and building practical online tools, with a strong interest in <strong>civil engineering, asphalt, bitumen, pavement construction, and construction technology</strong>.
                 </p>
                 <p>
-                  He personally researches, programs, and audits the volumetric algorithms, unit conversion logic, and technical guides published on BitumenCalcPro to ensure compliance with global highway construction guidelines.
+                  He develops and maintains BitumenCalcPro, including its calculators, website, technical content, and ongoing improvements grounded in industry standards.
                 </p>
               </div>
-
-              <div className="flex items-center justify-center md:justify-start gap-3">
+              <div className="flex items-center justify-center md:justify-start gap-4">
                 <a
                   href="https://web.facebook.com/p/Nabeel-Awan-61592639548311/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors shadow-sm"
-                  aria-label="Nabeel Awan Facebook Profile"
+                  aria-label="Facebook Profile"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                 </a>
                 <a
                   href="https://www.instagram.com/nabeelawan78y7/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-pink-50 text-pink-600 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-colors shadow-sm"
-                  aria-label="Nabeel Awan Instagram Profile"
+                  aria-label="Instagram Profile"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                 </a>
-                <Link
-                  href="/contact-us"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-700 bg-teal-50 border border-teal-200 px-3.5 py-2 rounded-full hover:bg-teal-100 transition-colors"
-                >
-                  <Mail size={14} /> Contact Nabeel Direct
-                </Link>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Engineering Standards & Methodology (E-E-A-T Focus) */}
-        <div className="bg-slate-900 text-white rounded-3xl p-8 mb-12 shadow-md">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-300 flex items-center justify-center">
-              <BookOpenCheck size={22} />
-            </div>
-            <div>
-              <h2 className="text-xl font-bold text-white m-0">Governing Engineering Standards & Audit Process</h2>
-              <p className="text-slate-400 text-xs mt-0.5 m-0">Technical references used to code and validate BitumenCalcPro algorithms</p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs leading-relaxed text-slate-300">
-            <div className="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-5">
-              <h3 className="text-teal-400 font-bold text-sm mb-2">AASHTO Standards Alignment</h3>
-              <p className="m-0">
-                Calculations conform with <strong>AASHTO T 245</strong> (Resistance to Plastic Flow of Bituminous Mixtures using Marshall Apparatus), <strong>AASHTO T 166</strong> (Bulk Specific Gravity of Compacted Asphalt Mixtures), and <strong>AASHTO M 320</strong> (Performance Graded Asphalt Binders).
-              </p>
-            </div>
-
-            <div className="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-5">
-              <h3 className="text-teal-400 font-bold text-sm mb-2">ASTM International Testing Methods</h3>
-              <p className="m-0">
-                Volumetric formulations incorporate <strong>ASTM D6926 / D6927</strong> for Marshall compaction and stability testing, and <strong>ASTM D2041</strong> for Theoretical Maximum Specific Gravity (Rice Density) of Bituminous Paving Mixtures.
-              </p>
-            </div>
-
-            <div className="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-5">
-              <h3 className="text-teal-400 font-bold text-sm mb-2">Asphalt Institute Guidelines (MS-2)</h3>
-              <p className="m-0">
-                Material density ranges and asphalt binder content ratios are benchmarked against <strong>Asphalt Institute Manual Series No. 2 (MS-2)</strong> — <em>Asphalt Mix Design Methods</em>.
-              </p>
-            </div>
-
-            <div className="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-5">
-              <h3 className="text-teal-400 font-bold text-sm mb-2">Global & Regional Specifications</h3>
-              <p className="m-0">
-                Density formulas and conversion ratios support <strong>BS EN 12697</strong> (European Bituminous Mixtures), <strong>MoRTH Section 500</strong> (Indian Ministry of Road Transport and Highways), and <strong>IS 73 / IS 8887</strong> standards.
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* What We Focus On */}
-        <h2 className="text-xl font-bold text-slate-900 mb-6">Core Operational Commitments</h2>
+        <h2 className="text-xl font-bold text-slate-900 mb-6">What We Focus On</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
           <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6 hover:shadow-sm transition-shadow">
             <div className="flex items-start gap-4">
@@ -306,8 +265,8 @@ export default function AboutUsPage() {
                 <Info size={20} className="text-blue-600" />
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 mb-1">Transparent Calculation Logic</h3>
-                <p className="text-slate-600 text-sm leading-relaxed m-0">We display exact mathematical formulas, density multipliers, and unit breakdown steps so users can independently verify every result.</p>
+                <h3 className="font-bold text-slate-900 mb-1">Clear Calculations</h3>
+                <p className="text-slate-600 text-sm leading-relaxed m-0">We aim to show how results are calculated rather than simply presenting unexplained numbers.</p>
               </div>
             </div>
           </div>
@@ -318,8 +277,8 @@ export default function AboutUsPage() {
                 <Calculator size={20} className="text-orange-500" />
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 mb-1">Field-Relevant Paving Tools</h3>
-                <p className="text-slate-600 text-sm leading-relaxed m-0">Calculators target real-world pavement workflows: surface area coverage, hot mix asphalt tonnage, prime/tack coat rates, and bitumen emulsion volumes.</p>
+                <h3 className="font-bold text-slate-900 mb-1">Practical Tools</h3>
+                <p className="text-slate-600 text-sm leading-relaxed m-0">Our calculators focus on common estimation tasks involving pavement dimensions, asphalt mix quantities, bitumen content, density, material quantities, and related measurements.</p>
               </div>
             </div>
           </div>
@@ -330,8 +289,8 @@ export default function AboutUsPage() {
                 <CheckCircle2 size={20} className="text-teal-600" />
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 mb-1">Open & Accessible Knowledge</h3>
-                <p className="text-slate-600 text-sm leading-relaxed m-0">We provide free engineering tools and educational material without paywalls or restrictive registrations.</p>
+                <h3 className="font-bold text-slate-900 mb-1">Accessible Information</h3>
+                <p className="text-slate-600 text-sm leading-relaxed m-0">We provide free online tools and educational resources that can be accessed without specialized software.</p>
               </div>
             </div>
           </div>
@@ -342,58 +301,68 @@ export default function AboutUsPage() {
                 <TrendingUp size={20} className="text-violet-600" />
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 mb-1">Continuous Quality Auditing</h3>
-                <p className="text-slate-600 text-sm leading-relaxed m-0">Algorithms and educational guides are regularly audited against updated technical literature and industry feedback.</p>
+                <h3 className="font-bold text-slate-900 mb-1">Continuous Improvement</h3>
+                <p className="text-slate-600 text-sm leading-relaxed m-0">We regularly improve our calculators and content through testing, research, and user feedback.</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Accuracy & Professional Disclaimer */}
-        <div className="bg-orange-50 border border-orange-200/80 rounded-2xl p-7 mb-12">
-          <div className="flex items-center gap-3 mb-3">
-            <ShieldCheck size={22} className="text-orange-600 shrink-0" />
-            <h2 className="text-lg font-bold text-slate-900 m-0 text-orange-950">Accuracy & Engineering Verification Disclaimer</h2>
-          </div>
-          <p className="text-orange-900/90 text-sm leading-relaxed mb-3">
-            BitumenCalcPro calculations are generated using specified density parameters, volumetric mix proportions, and user inputs. Actual paving material quantities on field projects can vary based on job mix formulas (JMF), compaction degree, aggregate specific gravity, and ambient temperatures.
+        {/* Our Calculation Approach */}
+        <div className="bg-slate-50 border border-slate-100 rounded-2xl p-7 mb-12">
+          <h2 className="text-lg font-bold text-slate-900 mb-4">Our Calculation Approach</h2>
+          <p className="text-slate-600 text-sm leading-relaxed mb-4">
+            BitumenCalcPro uses <strong>standard engineering formulas and established calculation methods</strong> to estimate asphalt volume, hot mix asphalt weight, bitumen requirements, aggregate quantities, and related measurements.
           </p>
-          <p className="text-orange-900/90 text-sm leading-relaxed m-0">
-            Our calculators serve as <strong>estimation, planning, pre-bid budgeting, and educational tools</strong>. Project managers and contractors must verify final material orders against approved project specifications, laboratory test reports, and certified civil engineer reviews.
+          <p className="text-slate-600 text-sm leading-relaxed mb-4">
+            The calculator uses the values entered by the user, including pavement dimensions, mix density, bitumen content, units, and optional settings, to produce practical estimates.
+          </p>
+          <p className="text-slate-600 text-sm leading-relaxed m-0">
+            We aim to keep the calculation process transparent while making technical quantity estimates easier to understand and verify against official standards.
+          </p>
+        </div>
+        
+        {/* Accuracy & Important Notes */}
+        <div className="bg-orange-50 border border-orange-100 rounded-2xl p-7 mb-12">
+          <h2 className="text-lg font-bold text-slate-900 mb-4 text-orange-800">Accuracy & Important Notes</h2>
+          <p className="text-orange-900/80 text-sm leading-relaxed mb-4">
+            Calculator results depend on the information entered by the user and the material properties selected for the calculation. Actual asphalt and bitumen quantities can vary depending on the approved mix design, material characteristics, compaction requirements, project specifications, and site conditions.
+          </p>
+          <p className="text-orange-900/80 text-sm leading-relaxed m-0">
+            BitumenCalcPro is intended for <strong>estimation, planning, educational, and preliminary calculation purposes</strong>. For actual construction projects, results should be checked against <strong>project specifications, approved mix designs, material data, applicable standards, and qualified professional judgment</strong>.
           </p>
         </div>
 
         {/* Mission */}
         <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-violet-950 rounded-2xl p-8 mb-12 text-center sm:text-left">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-            <Droplets size={32} className="text-teal-400 shrink-0 mt-1" />
+            <Droplets size={32} className="text-orange-400 shrink-0 mt-1" />
             <div>
               <h2 className="text-white font-bold text-xl mb-3">Our Mission</h2>
               <p className="text-slate-300 text-sm leading-relaxed mb-4 font-medium italic">
-                &quot;To make specialized pavement and civil engineering calculations transparent, standardized, and accessible to everyone worldwide.&quot;
+                &quot;To make practical pavement and construction calculations easier to access, understand, and verify.&quot;
               </p>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                We operate from <strong>Islamabad, Pakistan</strong>, continuously refining computational tools and technical guides for professionals working with asphalt, bitumen, and pavement materials.
+                We will continue developing useful calculators, guides, and resources for people working with or learning about <strong>asphalt, bitumen, pavement, and construction</strong>.
               </p>
               <p className="text-slate-400 text-sm leading-relaxed m-0">
-                Have feedback or want to suggest a new calculation module? Reach out directly via our <Link href="/contact-us" className="text-teal-400 underline font-semibold">Contact Page</Link>.
+                If you have a suggestion, notice an issue, or have an idea for a useful calculator, we would be happy to hear from you.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Action CTAs */}
+        {/* CTA */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
           <Link
             href="/contact-us"
             className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 px-6 py-3 rounded-full font-semibold text-sm transition-all shadow-sm w-full sm:w-auto"
           >
-            <Mail size={16} className="text-teal-600" />
-            Contact Us & Feedback
+            Contact Us
           </Link>
           <Link
             href="/"
-            className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-400 hover:to-teal-500 active:scale-95 text-slate-950 px-6 py-3 rounded-full font-bold text-sm transition-all shadow-md shadow-teal-500/20 w-full sm:w-auto"
+            className="inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-500 active:scale-95 text-white px-6 py-3 rounded-full font-semibold text-sm transition-all shadow-md shadow-orange-200 w-full sm:w-auto"
           >
             <Calculator size={16} />
             Open Bitumen Calculator
@@ -403,4 +372,5 @@ export default function AboutUsPage() {
     </>
   );
 }
+
 
