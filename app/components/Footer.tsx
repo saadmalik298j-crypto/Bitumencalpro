@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { MapPin, Mail, ShieldCheck } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -19,21 +18,9 @@ export default function Footer() {
                 BitumenCalcPro
               </span>
             </Link>
-            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-              Precision civil engineering calculators, mix design algorithms, and technical paving guides built for contractors, engineers, and students worldwide.
+            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
+              Precision civil engineering calculators, mix design algorithms, and technical paving guides built for contractors, engineers, and students worldwide. Founded by Nabeel Awan in Islamabad, Pakistan.
             </p>
-            
-            {/* E-E-A-T Location & Founder Badge */}
-            <div className="flex flex-col gap-2 mb-5 text-xs text-slate-400">
-              <div className="flex items-center gap-2 text-slate-300">
-                <MapPin size={14} className="text-teal-400 shrink-0" />
-                <span>Headquarters: <strong>Islamabad, Pakistan</strong></span>
-              </div>
-              <div className="flex items-center gap-2 text-slate-300">
-                <ShieldCheck size={14} className="text-violet-400 shrink-0" />
-                <span>Publisher: <strong>Nabeel Awan</strong></span>
-              </div>
-            </div>
 
             {/* Social Icons */}
             <div className="flex items-center gap-3">
