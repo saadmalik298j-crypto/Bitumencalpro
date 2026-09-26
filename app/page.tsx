@@ -1588,12 +1588,12 @@ Bitumen Calculation Formulas & Step-by-Step Method
                   >
                     top asphalt estimation mistakes
                   </Link>{" "}
-                  and understand how binder selection and{" "}
+                  and understand how project budgeting and{" "}
                   <Link
-                    href="/blog/bitumen-grades-explained"
+                    href="/blog/bitumen-driveway-cost-worldwide"
                     className="text-orange-400 hover:text-orange-300 font-bold underline underline-offset-2 transition-colors"
                   >
-                    bitumen grades
+                    bitumen driveway cost
                   </Link>{" "}
                   drive project requirements.
                 </p>
