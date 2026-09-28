@@ -751,7 +751,7 @@ export default function HowIsBitumenTransportedPage() {
               <p className="text-white/80 leading-relaxed text-base">
                 For context on why oil sands bitumen behaves so differently from refinery-grade paving bitumen, the{" "}
                 <a
-                  href="https://www.nrcan.gc.ca/our-natural-resources/energy-sources-distribution/clean-fossil-fuels/oil-sands/18085"
+                  href="https://natural-resources.canada.ca"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
@@ -870,7 +870,7 @@ export default function HowIsBitumenTransportedPage() {
                 <p className="text-white/70 text-sm leading-relaxed">
                   <strong className="text-white">Important:</strong> Rules differ significantly by country. This article is general information, not legal advice &mdash; always check your national dangerous goods regulator and your carrier before shipping. The{" "}
                   <a
-                    href="https://www.unece.org/trans/danger/publi/adr/adr2023/23ContentsE.html"
+                    href="https://unece.org/transport/dangerous-goods"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"

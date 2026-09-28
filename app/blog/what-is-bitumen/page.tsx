@@ -512,7 +512,7 @@ export default function WhatIsBitumenPage() {
                 the Earth&apos;s surface lose their lighter compounds to evaporation and bacterial breakdown, leaving thick
                 bitumen behind. The{" "}
                 <a
-                  href="https://www.nrcan.gc.ca/our-natural-resources/energy-sources-distribution/clean-fossil-fuels/oil-sands/18085"
+                  href="https://natural-resources.canada.ca"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"

@@ -80,8 +80,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.className} bg-slate-900`}>
       <body className="min-h-screen text-slate-800 flex flex-col selection:bg-teal-500/30">
         {/* Fixed background layer — Oversized to prevent mobile address bar flickering, GPU composited */}
-<div className="fixed -inset-[100px] -z-10 bg-gradient-to-br from-teal-800 to-orange-800 pointer-events-none transform-gpu" />
-
+        <div className="fixed -inset-[100px] -z-10 bg-gradient-to-br from-teal-600 to-orange-500 pointer-events-none transform-gpu" />
         <Navbar />
         <main className="flex-grow">
           {children}

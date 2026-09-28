@@ -914,12 +914,12 @@ export default function AsphaltVsBitumenPage() {
                 <p className="text-white/80 leading-relaxed text-base mb-3">
                   The{" "}
                   <a
-                    href="https://www.asphaltpavement.org/programs/asphalt-pavement-industry-survey"
+                    href="https://www.asphaltpavement.org"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
                   >
-                    National Asphalt Pavement Association (NAPA) 2024 industry survey
+                    National Asphalt Pavement Association (NAPA) industry survey
                     <ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
                   </a>{" "}
                   — conducted in partnership with the Federal Highway Administration — reported that <strong className="text-white">101.4 million tons of reclaimed asphalt pavement</strong> went back into use in the US in 2024.
