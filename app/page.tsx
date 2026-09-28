@@ -179,6 +179,7 @@ const FAQ_DATA = [
 ];
 
 export default function Home() {
+  /* ─── Structured Data (JSON-LD) ─── */
   const webApplicationSchema = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
