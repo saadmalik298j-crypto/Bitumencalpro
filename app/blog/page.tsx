@@ -199,6 +199,34 @@ const POSTS = [
     tags: ["Driveway Cost", "Bitumen", "Asphalt", "Tarmac", "2026 Pricing"],
     featured: false,
   },
+  {
+    slug: "asphalt-vs-bitumen",
+    category: "Bitumen Fundamentals",
+    title: "Asphalt vs Bitumen: The Complete Guide to How They Differ",
+    excerpt:
+      "Binder vs finished mix — bitumen grades, forms, asphalt types, sprayed seal vs asphalt layer, failure modes, cost drivers, recycling stats, and a worked quantity example.",
+    image: "/asphalt-vs-bitumen-comparison.webp",
+    imageAlt: "Asphalt vs bitumen comparison — bitumen binder versus finished paving mix",
+    readTime: "18 min read",
+    date: "September 28, 2026",
+    dateISO: "2026-09-28",
+    tags: ["Asphalt vs Bitumen", "Bitumen Binder", "Asphalt Mix", "Road Paving", "Sprayed Seal"],
+    featured: false,
+  },
+  {
+    slug: "how-is-bitumen-transported",
+    category: "Bitumen Fundamentals",
+    title: "How Is Bitumen Transported? Methods, Temperatures, and Safety Rules",
+    excerpt:
+      "Road tankers, ships, ISO tanks, rail cars, and cold drums — how bitumen moves from refinery to site at 120–190°C, UN 3257 rules, PPE requirements, and a full delivery checklist.",
+    image: "/how-is-bitumen-transported.webp",
+    imageAlt: "How is bitumen transported — insulated heated road tanker delivering hot liquid paving bitumen",
+    readTime: "20 min read",
+    date: "September 28, 2026",
+    dateISO: "2026-09-28",
+    tags: ["Bitumen Transport", "Road Tanker", "UN 3257", "Bitumen Carrier Ship", "ISO Tank"],
+    featured: false,
+  },
 ];
 
 export default function BlogPage() {

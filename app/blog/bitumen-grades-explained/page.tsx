@@ -866,7 +866,7 @@ export default function BitumenGradesExplainedPage() {
                   Getting the grade right from the start is one of the cheapest ways to avoid
                   rutting, cracking, and early pavement failure down the line.
                 </p>
-                <p className="text-white/85 leading-relaxed text-base">
+                <p className="text-white/85 leading-relaxed mb-4 text-base">
                   Once you&apos;ve confirmed the right grade, use our{" "}
                   <Link
                     href="/"
@@ -877,6 +877,16 @@ export default function BitumenGradesExplainedPage() {
                   to estimate the exact quantity of binder needed based on road dimensions, mix
                   density, and binder percentage — saving time and reducing waste before you place
                   the order.
+                </p>
+                <p className="text-white/85 leading-relaxed text-base">
+                  Grade selection also affects delivery logistics — PMB grades have a narrower temperature window and shorter storage time than standard paving grades. Our guide on{" "}
+                  <Link
+                    href="/blog/how-is-bitumen-transported"
+                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
+                  >
+                    bitumen transport methods and delivery temperatures
+                  </Link>{" "}
+                  covers what to specify when booking a tanker and what to check on arrival at site.
                 </p>
               </div>
             </section>

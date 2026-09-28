@@ -884,7 +884,14 @@ export default function WhatIsBitumenPage() {
                 ]}
               />
               <p className="text-white/80 leading-relaxed my-6 text-base">
-                The short version: <strong className="text-white">bitumen is an ingredient</strong>, asphalt is the finished product that contains it, and tar is a related but chemically different material largely replaced by bitumen in modern construction due to environmental and durability concerns.
+                The short version: <strong className="text-white">bitumen is an ingredient</strong>, asphalt is the finished product that contains it, and tar is a related but chemically different material largely replaced by bitumen in modern construction due to environmental and durability concerns. For the complete side-by-side breakdown — including grades, mix types, cost drivers, and a quantity calculator — see our dedicated{" "}
+                <Link
+                  href="/blog/asphalt-vs-bitumen"
+                  className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-semibold"
+                >
+                  asphalt vs bitumen guide
+                </Link>
+                .
               </p>
 
               <SectionImage
@@ -1103,7 +1110,7 @@ export default function WhatIsBitumenPage() {
                   the right material, whether you&apos;re sealing a driveway, comparing paving contractors, or making sense
                   of construction terminology.
                 </p>
-                <p className="text-white/85 leading-relaxed text-base">
+                <p className="text-white/85 leading-relaxed mb-4 text-base">
                   If you&apos;re planning a paving project, estimating material quantities before construction can save time
                   and reduce waste. You can use our{" "}
                   <Link
@@ -1113,6 +1120,16 @@ export default function WhatIsBitumenPage() {
                     Bitumen Calculator
                   </Link>{" "}
                   to estimate bitumen requirements based on road dimensions, mix density, and binder percentage.
+                </p>
+                <p className="text-white/85 leading-relaxed text-base">
+                  Once you understand what bitumen is, the next practical question is how it reaches the job site safely. Our dedicated guide on{" "}
+                  <Link
+                    href="/blog/how-is-bitumen-transported"
+                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
+                  >
+                    how bitumen is transported
+                  </Link>{" "}
+                  covers tanker temperatures, UN 3257 dangerous goods rules, ISO containers, ships, and a full site delivery checklist.
                 </p>
               </div>
             </section>
