@@ -123,9 +123,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-500">
+        <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-400">
           <p>© 2026 BitumenCalcPro. All rights reserved.</p>
-          <p className="text-slate-500 text-center max-w-xl">
+          <p className="text-slate-400 text-center max-w-xl">
             BitumenCalcPro provides technical software for estimation & educational purposes. Always verify final pavement orders with a certified civil engineer.
           </p>
         </div>

@@ -211,7 +211,7 @@ function SectionImage({
         />
       </div>
       {caption && (
-        <figcaption className="mt-3 text-center text-sm text-white/45 italic">
+        <figcaption className="mt-3 text-center text-sm text-white/70 italic">
           {caption}
         </figcaption>
       )}
@@ -300,7 +300,7 @@ export default function AsphaltVsBitumenPage() {
           {/* Breadcrumb */}
           <nav
             aria-label="Breadcrumb"
-            className="flex items-center flex-wrap gap-1.5 text-sm text-white/55 mb-8"
+            className="flex items-center flex-wrap gap-1.5 text-sm text-white/75 mb-8"
           >
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight size={13} />
@@ -323,7 +323,7 @@ export default function AsphaltVsBitumenPage() {
           </h1>
 
           {/* Meta row */}
-          <div className="flex flex-wrap items-center gap-4 text-white/50 text-sm mb-10">
+          <div className="flex flex-wrap items-center gap-4 text-white/75 text-sm mb-10">
             <span className="flex items-center gap-1.5">
               <Calendar size={13} />
               <time dateTime="2026-09-28">September 28, 2026</time>
@@ -334,7 +334,7 @@ export default function AsphaltVsBitumenPage() {
               18 min read
             </span>
             <span className="w-1 h-1 rounded-full bg-white/30" />
-            <span className="text-white/50">By BitumenCalcPro</span>
+            <span className="text-white/75">By BitumenCalcPro</span>
           </div>
         </div>
       </div>
@@ -398,7 +398,7 @@ export default function AsphaltVsBitumenPage() {
                   <a
                     key={id}
                     href={`#${id}`}
-                    className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
+                    className="block text-white/75 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
                   >
                     {label}
                   </a>
