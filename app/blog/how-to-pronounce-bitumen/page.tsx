@@ -14,7 +14,6 @@ import {
   CheckCircle2,
   AlertCircle,
   ExternalLink,
-  Volume2,
   Globe,
   Mic,
 } from "lucide-react";
@@ -173,7 +172,7 @@ export default function HowToPronounceBitumenPage() {
           </nav>
           <div className="flex flex-wrap items-center gap-3 mb-5">
             <span className="inline-flex items-center gap-1.5 bg-violet-500/20 border border-violet-400/30 text-violet-300 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
-              <Volume2 size={12} />
+              <Mic size={12} />
               Bitumen Fundamentals
             </span>
           </div>
