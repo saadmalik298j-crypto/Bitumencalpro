@@ -1131,6 +1131,17 @@ export default function WhatIsBitumenPage() {
                   </Link>{" "}
                   covers tanker temperatures, UN 3257 dangerous goods rules, ISO containers, ships, and a full site delivery checklist.
                 </p>
+                <p className="text-white/85 leading-relaxed text-base">
+                  And if bitumen has ended up somewhere it shouldn&apos;t — on your hands, clothes, car, or
+                  concrete — our practical guide on{" "}
+                  <Link
+                    href="/blog/how-to-remove-bitumen"
+                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
+                  >
+                    how to remove bitumen safely
+                  </Link>{" "}
+                  covers surface-by-surface methods, what products to use, and what to avoid.
+                </p>
               </div>
             </section>
 

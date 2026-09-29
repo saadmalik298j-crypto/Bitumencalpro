@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BitumenCalcPro — Free Bitumen & Asphalt Calculator",
     description: "Free online bitumen and aggregate calculator for civil engineers and paving contractors.",
-    creator: "@bitumencalcpro",
+    creator: "BitumenCalcPro",
     images: ["/bitumen-calculator-og-image.png"],
   },
 

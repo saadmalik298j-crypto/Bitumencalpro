@@ -1568,8 +1568,15 @@ Bitumen Calculation Formulas & Step-by-Step Method
                     className="text-orange-400 hover:text-orange-300 font-bold underline underline-offset-2 transition-colors"
                   >
                     top asphalt estimation mistakes
-                  </Link>{" "}
-                  and understand how project budgeting and{" "}
+                  </Link>
+                  , manage site maintenance like{" "}
+                  <Link
+                    href="/blog/how-to-remove-bitumen"
+                    className="text-orange-400 hover:text-orange-300 font-bold underline underline-offset-2 transition-colors"
+                  >
+                    removing bitumen spills and residue
+                  </Link>
+                  , and understand how project budgeting and{" "}
                   <Link
                     href="/blog/bitumen-driveway-cost-worldwide"
                     className="text-orange-400 hover:text-orange-300 font-bold underline underline-offset-2 transition-colors"

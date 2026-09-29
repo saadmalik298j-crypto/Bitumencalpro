@@ -1159,7 +1159,14 @@ export default function BitumenDrivewayWorldwidePage() {
                 <p className="text-white/85 leading-relaxed text-base">
                   Get 3 local quotes, ask each contractor how deep the sub-base will be and
                   where the water goes, and you&apos;ll be able to compare them on the details
-                  that actually determine how long your driveway lasts. Explore more guides in
+                  that actually determine how long your driveway lasts. For long-term care and dealing with accidental drips during paving, check our guide on{" "}
+                  <Link
+                    href="/blog/how-to-remove-bitumen"
+                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
+                  >
+                    cleaning bitumen stains from driveways and tools
+                  </Link>
+                  . Explore more guides in
                   our{" "}
                   <Link
                     href="/blog"
@@ -1168,7 +1175,12 @@ export default function BitumenDrivewayWorldwidePage() {
                     bitumen and asphalt knowledge hub
                   </Link>
                   , or use our free{" "}
-                  bitumen quantity calculator{" "}
+                  <Link
+                    href="/"
+                    className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                  >
+                    bitumen quantity calculator
+                  </Link>{" "}
                   to estimate material needs before you approach contractors.
                 </p>
               </div>

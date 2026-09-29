@@ -227,6 +227,20 @@ const POSTS = [
     tags: ["Bitumen Transport", "Road Tanker", "UN 3257", "Bitumen Carrier Ship", "ISO Tank"],
     featured: false,
   },
+  {
+    slug: "how-to-remove-bitumen",
+    category: "Bitumen Fundamentals",
+    title: "How to Remove Bitumen: Safe Methods for Skin, Clothes, Cars, Concrete, Wood and More",
+    excerpt:
+      "Step-by-step bitumen removal for every surface — skin, clothes, car paint, concrete, brick, metal, wood, and parquet. Safe products, what to avoid, and a full surface comparison table.",
+    image: "/how-to-remove-bitumen-safely.webp",
+    imageAlt: "How to remove bitumen safely from skin, clothes, car paint, concrete, and wood",
+    readTime: "18 min read",
+    date: "September 29, 2026",
+    dateISO: "2026-09-29",
+    tags: ["Bitumen Removal", "Tar Remover", "Car Paint", "Concrete", "Wood Parquet"],
+    featured: false,
+  },
 ];
 
 export default function BlogPage() {
