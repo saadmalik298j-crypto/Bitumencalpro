@@ -525,7 +525,7 @@ export default function HowToPronounceBitumenPage() {
                 ].map(({ day, title, steps }) => (
                   <div key={day} className="bg-white/5 border border-white/10 rounded-xl p-5">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="text-violet-400 font-black text-sm bg-violet-400/10 px-3 py-1 rounded-full">{day}</span>
+                      <span className="text-orange-600 font-black text-sm bg-violet-400/10 px-3 py-1 rounded-full">{day}</span>
                       <h3 className="text-white font-bold text-base">{title}</h3>
                     </div>
                     <ul className="space-y-1.5">
