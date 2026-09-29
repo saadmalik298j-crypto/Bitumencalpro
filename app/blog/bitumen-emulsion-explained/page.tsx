@@ -1091,6 +1091,16 @@ export default function BitumenEmulsionExplainedPage() {
                   publishes detailed pavement engineering guidance, including emulsion specifications
                   for federal road projects.
                 </p>
+                <p className="text-white/80 leading-relaxed text-sm mt-4">
+                  Unsure how to say the binder&apos;s name in a client meeting or classroom?{" "}
+                  <Link
+                    href="/blog/how-to-pronounce-bitumen"
+                    className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors font-medium"
+                  >
+                    Our bitumen pronunciation guide
+                  </Link>{" "}
+                  breaks down the British, American, and Australian forms with full IPA symbols and a 10-minute practice routine.
+                </p>
               </div>
             </section>
 

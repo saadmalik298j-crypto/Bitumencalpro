@@ -1025,6 +1025,13 @@ export default function AsphaltVsBitumenPage() {
                 <p className="text-white/85 leading-relaxed mb-4 text-base">
                   Asphalt vs bitumen is a question of binder versus mix. Bitumen is the petroleum-derived binder; asphalt is stone and sand coated in roughly 5% of it. Use bitumen alone for thin seals, tack coats, and waterproofing. Use asphalt where a surface has to carry traffic for years. Before you compare any quote, confirm which material and which unit it means. Should accidental overspray or spills occur during handling, check our step-by-step instructions on <Link href="/blog/how-to-remove-bitumen" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">removing bitumen safely from skin, equipment, and driveways</Link>.
                 </p>
+                <p className="text-white/85 leading-relaxed text-base mt-4">
+                  If you&apos;re new to the material, you may also wonder how to say the word correctly. Our{" "}
+                  <Link href="/blog/how-to-pronounce-bitumen" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors font-medium">
+                    bitumen pronunciation guide
+                  </Link>{" "}
+                  covers British (BICH-uh-mun), American (buh-TOO-mun), and Australian accents with full IPA notation.
+                </p>
                 <p className="text-white/85 leading-relaxed mb-4 text-base">
                   Once you have the grade and mix type confirmed, check how the bitumen will arrive. Our guide on{" "}
                   <Link

@@ -888,6 +888,16 @@ export default function BitumenGradesExplainedPage() {
                   </Link>{" "}
                   covers what to specify when booking a tanker and what to check on arrival at site.
                 </p>
+                <p className="text-white/85 leading-relaxed text-base mt-4">
+                  Before you head into a site meeting, make sure you can say the material&apos;s name with confidence. Our{" "}
+                  <Link
+                    href="/blog/how-to-pronounce-bitumen"
+                    className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors font-medium"
+                  >
+                    bitumen pronunciation guide
+                  </Link>{" "}
+                  covers all major English accents — British, American, and Australian — with IPA notation and common mistakes to avoid.
+                </p>
               </div>
             </section>
 

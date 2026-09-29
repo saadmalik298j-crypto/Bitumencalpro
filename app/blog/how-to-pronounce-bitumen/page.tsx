@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     authors: ["BitumenCalcPro"],
     images: [
       {
-        url: "/how-to-pronounce-bitumen.jpg",
+        url: "/how-to-pronounce-bitumen.webp",
         width: 1200,
         height: 675,
         alt: "How to pronounce bitumen — British, American and Australian English pronunciation guide",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How to Pronounce Bitumen: British, American & Australian Guide",
     description: "BICH-uh-mun vs buh-TOO-mun — full IPA, stress patterns, and a 10-minute practice routine.",
-    images: ["/how-to-pronounce-bitumen.jpg"],
+    images: ["/how-to-pronounce-bitumen.webp"],
   },
   robots: { "max-image-preview": "large" },
 };
@@ -66,7 +66,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "How to Pronounce Bitumen: British, American and Australian English",
   description: "Learn how to pronounce bitumen in British, American, and Australian English. Includes IPA transcriptions, stress patterns, common mistakes, and a practice routine.",
-  image: "https://bitumencalcpro.com/how-to-pronounce-bitumen.jpg",
+  image: "https://bitumencalcpro.com/how-to-pronounce-bitumen.webp",
   datePublished: "2026-09-29T00:00:00.000Z",
   dateModified: "2026-09-29T00:00:00.000Z",
   author: {
@@ -192,7 +192,7 @@ export default function HowToPronounceBitumenPage() {
 
       {/* IMAGE 1: Below H1 / before Quick Answer */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionImage src="/how-to-pronounce-bitumen.jpg" alt="How to pronounce bitumen — illustrated guide showing British BICH-uh-mun and American buh-TOO-mun pronunciations with syllable stress markers" caption="British English stresses the first syllable (BICH-uh-mun); American English stresses the second (buh-TOO-mun)" priority />
+        <SectionImage src="/how-to-pronounce-bitumen.webp" alt="How to pronounce bitumen — illustrated guide showing British BICH-uh-mun and American buh-TOO-mun pronunciations with syllable stress markers" caption="British English stresses the first syllable (BICH-uh-mun); American English stresses the second (buh-TOO-mun)" priority />
       </div>
 
       {/* ARTICLE BODY */}
@@ -261,7 +261,7 @@ export default function HowToPronounceBitumenPage() {
             <section id="at-a-glance" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-violet-400 pl-4">Bitumen Pronunciation at a Glance</h2>
               {/* IMAGE 2: Before pronunciation table */}
-              <SectionImage src="/british-american-bitumen-pronunciation.jpg" alt="British versus American bitumen pronunciation comparison — BICH-uh-mun versus buh-TOO-mun side by side with IPA notation" caption="British and American English differ on both stress placement and the middle consonant sound" />
+              <SectionImage src="/british-american-bitumen-pronunciation.webp" alt="British versus American bitumen pronunciation comparison — BICH-uh-mun versus buh-TOO-mun side by side with IPA notation" caption="British and American English differ on both stress placement and the middle consonant sound" />
               <InfoTable
                 headers={["Accent", "Simple respelling", "IPA", "Stressed syllable"]}
                 rows={[
@@ -281,7 +281,7 @@ export default function HowToPronounceBitumenPage() {
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">British English: BICH-uh-mun</h2>
               <p className="text-white/80 leading-relaxed mb-5 text-base">Cambridge lists the UK pronunciation as <strong className="text-white">/\u02c8b\u026at\u0283.\u0259.m\u0259n/</strong>. It&apos;s the form most people mean when they say &ldquo;the British pronunciation.&rdquo;</p>
               {/* IMAGE 3: British English section */}
-              <SectionImage src="/british-english-bitumen-pronunciation.jpg" alt="British English bitumen pronunciation — BICH-uh-mun with first-syllable stress and IPA symbols highlighted" caption="British English: stress falls firmly on the first syllable — BICH — which rhymes with 'rich' and 'which'" />
+              <SectionImage src="/british-english-bitumen-pronunciation.webp" alt="British English bitumen pronunciation — BICH-uh-mun with first-syllable stress and IPA symbols highlighted" caption="British English: stress falls firmly on the first syllable — BICH — which rhymes with 'rich' and 'which'" />
               <h3 className="text-2xl font-black text-white mb-4 mt-8">Step-by-Step</h3>
               <div className="space-y-3 mb-6">
                 {[
@@ -304,7 +304,7 @@ export default function HowToPronounceBitumenPage() {
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">American English: buh-TOO-mun and Its Variants</h2>
               <p className="text-white/80 leading-relaxed mb-5 text-base">American sources don&apos;t agree on one form, but all share one thing: <strong className="text-white">the stress is on the second syllable</strong>.</p>
               {/* IMAGE 4: American English section */}
-              <SectionImage src="/american-english-bitumen-pronunciation.jpg" alt="American English bitumen pronunciation — buh-TOO-mun with second-syllable stress and IPA notation" caption="American English shifts stress to the second syllable — TOO — and drops the 'y' glide in most accents" />
+              <SectionImage src="/american-english-bitumen-pronunciation.webp" alt="American English bitumen pronunciation — buh-TOO-mun with second-syllable stress and IPA notation" caption="American English shifts stress to the second syllable — TOO — and drops the 'y' glide in most accents" />
               <div className="space-y-4 mb-6">
                 {[
                   { form: "bye-TOO-mun", ipa: "/ba\u026a\u02c8tu\u02d0.m\u0259n/", source: "Cambridge (US) & ELSA Speak", desc: "The first vowel is the 'eye' sound. The middle is a clear 't' followed by the long 'oo' of 'blue.' The last syllable is weak." },
@@ -351,7 +351,7 @@ export default function HowToPronounceBitumenPage() {
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">The Sounds Broken Down (IPA)</h2>
               <p className="text-white/80 leading-relaxed mb-5 text-base">The International Phonetic Alphabet gives each speech sound its own symbol, avoiding the problems of English spelling.</p>
               {/* IMAGE 5: Before IPA table */}
-              <SectionImage src="/bitumen-ipa-pronunciation-sounds.jpg" alt="Bitumen IPA pronunciation sounds breakdown — showing each phoneme for British and American English" caption="IPA symbols remove the ambiguity of English spelling — each symbol maps to exactly one sound" />
+              <SectionImage src="/bitumen-ipa-pronunciation-sounds.webp" alt="Bitumen IPA pronunciation sounds breakdown — showing each phoneme for British and American English" caption="IPA symbols remove the ambiguity of English spelling — each symbol maps to exactly one sound" />
               <InfoTable
                 headers={["Symbol", "Sounds like", "Where it appears"]}
                 rows={[
@@ -493,7 +493,7 @@ export default function HowToPronounceBitumenPage() {
             <section id="which-to-use" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">Which Pronunciation Should You Use?</h2>
               {/* IMAGE 6: Before this section */}
-              <SectionImage src="/bitumen-pronunciation-construction-jobsite.jpg" alt="Bitumen pronunciation on a construction job site — contractor and engineer discussing paving materials where either British or American pronunciation is used naturally" caption="On any international job site, both BICH-uh-mun and buh-TOO-mun are understood — consistency matters more than which form you choose" />
+              <SectionImage src="/bitumen-pronunciation-construction-jobsite.webp" alt="Bitumen pronunciation on a construction job site — contractor and engineer discussing paving materials where either British or American pronunciation is used naturally" caption="On any international job site, both BICH-uh-mun and buh-TOO-mun are understood — consistency matters more than which form you choose" />
               <p className="text-white/80 leading-relaxed mb-5 text-base">Use the form that matches the people around you.</p>
               <div className="space-y-3 mb-6">
                 {[

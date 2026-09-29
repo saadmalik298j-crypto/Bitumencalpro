@@ -1067,6 +1067,16 @@ export default function HowIsBitumenTransportedPage() {
                   </Link>{" "}
                   is the natural companion to this article.
                 </p>
+                <p className="text-white/85 leading-relaxed text-base mt-4">
+                  And when you&apos;re discussing deliveries or writing specifications, it helps to say the material&apos;s name correctly. Our{" "}
+                  <Link
+                    href="/blog/how-to-pronounce-bitumen"
+                    className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors font-medium"
+                  >
+                    guide to pronouncing bitumen
+                  </Link>{" "}
+                  covers the British (BICH-uh-mun), American (buh-TOO-mun), and Australian pronunciations so you can use the word confidently in any setting.
+                </p>
               </div>
             </section>
 
