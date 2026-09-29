@@ -196,9 +196,8 @@ export default function HowToPronounceBitumenPage() {
       </div>
 
       {/* ARTICLE BODY */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24">
-        <div className="flex flex-col xl:flex-row gap-12 items-start">
-          <article className="flex-1 min-w-0">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24">
+        <article className="min-w-0">
 
             {/* Quick Answer */}
             <div className="mb-10 bg-gradient-to-br from-violet-500/15 to-violet-600/10 border border-violet-400/25 rounded-2xl p-6 md:p-8">
@@ -599,53 +598,6 @@ export default function HowToPronounceBitumenPage() {
             </div>
             <AuthorBio />
           </article>
-
-          {/* SIDEBAR */}
-          <aside className="xl:w-80 shrink-0 space-y-6 xl:sticky xl:top-24 self-start">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-              <div className="flex items-center gap-2 mb-4"><Volume2 size={16} className="text-violet-400" /><h2 className="text-white font-black text-sm uppercase tracking-wider">Quick Reference</h2></div>
-              <div className="space-y-3">
-                {[
-                  { accent: "British", form: "BICH-uh-mun", ipa: "/\u02c8b\u026at\u0283.\u0259.m\u0259n/", stress: "1st syllable" },
-                  { accent: "British (alt)", form: "BIT-yuh-mun", ipa: "/\u02c8b\u026atj\u028am\u0259n/", stress: "1st syllable" },
-                  { accent: "American", form: "buh-TOO-mun", ipa: "/b\u0259\u02c8tju\u02d0m\u0259n/", stress: "2nd syllable" },
-                  { accent: "Australian", form: "BICH-uh-mun", ipa: "/\u02c8b\u026at\u0283.\u0259.m\u0259n/", stress: "1st syllable" },
-                ].map(({ accent, form, ipa, stress }) => (
-                  <div key={accent} className="bg-white/5 rounded-xl p-3 border border-white/5">
-                    <div className="text-white/50 text-xs mb-1">{accent}</div>
-                    <div className="text-white font-bold text-sm">{form}</div>
-                    <div className="text-violet-300 font-mono text-xs">{ipa}</div>
-                    <div className="text-white/40 text-xs mt-0.5">Stress: {stress}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-              <h2 className="text-white font-black text-sm uppercase tracking-wider mb-4">Related Articles</h2>
-              <div className="space-y-3">
-                {[
-                  { href: "/blog/what-is-bitumen", title: "What Is Bitumen?", desc: "Chemistry, uses, and properties" },
-                  { href: "/blog/asphalt-vs-bitumen", title: "Asphalt vs Bitumen", desc: "Full comparison guide" },
-                  { href: "/blog/bitumen-grades-explained", title: "Bitumen Grades Explained", desc: "60/70, VG, PG systems" },
-                  { href: "/blog/bitumen-emulsion-explained", title: "Bitumen Emulsion", desc: "Cold-applied binder types" },
-                  { href: "/blog/how-to-remove-bitumen", title: "How to Remove Bitumen", desc: "Safe removal from all surfaces" },
-                ].map(({ href, title, desc }) => (
-                  <Link key={href} href={href} className="flex items-start gap-3 group hover:bg-white/5 rounded-xl p-2 -mx-2 transition-colors">
-                    <ArrowRight size={14} className="text-violet-400 mt-0.5 shrink-0 group-hover:translate-x-0.5 transition-transform" />
-                    <div><div className="text-white/90 text-sm font-semibold group-hover:text-white transition-colors">{title}</div><div className="text-white/45 text-xs">{desc}</div></div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <div className="bg-gradient-to-br from-violet-500/20 to-teal-600/20 border border-violet-400/20 rounded-2xl p-6">
-              <h2 className="text-white font-black text-base mb-2">Plan Your Next Project</h2>
-              <p className="text-white/65 text-sm leading-relaxed mb-4">Now that you can say it confidently — estimate how much bitumen your project actually needs.</p>
-              <Link href="/" className="inline-flex items-center gap-2 bg-violet-500 hover:bg-violet-400 text-white px-4 py-2.5 rounded-full font-bold text-sm transition-all w-full justify-center">
-                Open Calculator <ArrowRight size={14} />
-              </Link>
-            </div>
-          </aside>
-        </div>
       </div>
     </>
   );

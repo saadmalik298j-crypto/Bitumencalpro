@@ -241,6 +241,20 @@ const POSTS = [
     tags: ["Bitumen Removal", "Tar Remover", "Car Paint", "Concrete", "Wood Parquet"],
     featured: false,
   },
+  {
+    slug: "how-to-pronounce-bitumen",
+    category: "Bitumen Fundamentals",
+    title: "How to Pronounce Bitumen: British, American and Australian English",
+    excerpt:
+      "Master the correct pronunciation of bitumen in British, American, and Australian English. Includes IPA symbols, syllable stress, audio respellings, common mistakes, and expert regional usage.",
+    image: "/how-to-pronounce-bitumen.webp",
+    imageAlt: "How to pronounce bitumen — British BICH-uh-mun vs American buh-TOO-mun pronunciation guide",
+    readTime: "16 min read",
+    date: "September 29, 2026",
+    dateISO: "2026-09-29",
+    tags: ["Bitumen Pronunciation", "British English", "American English", "IPA Phonetics", "Bitumen Meaning"],
+    featured: false,
+  },
 ];
 
 export default function BlogPage() {
