@@ -194,9 +194,11 @@ export default function HowToPronounceBitumenPage() {
         <SectionImage src="/how-to-pronounce-bitumen.webp" alt="How to pronounce bitumen — illustrated guide showing British BICH-uh-mun and American buh-TOO-mun pronunciations with syllable stress markers" caption="British English stresses the first syllable (BICH-uh-mun); American English stresses the second (buh-TOO-mun)" priority />
       </div>
 
-      {/* ARTICLE BODY */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24">
-        <article className="min-w-0">
+      {/* ARTICLE BODY + SIDEBAR */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24">
+        <div className="flex flex-col xl:flex-row gap-12 items-start">
+          {/* MAIN CONTENT */}
+          <article className="flex-1 min-w-0">
 
             {/* Quick Answer */}
             <div className="mb-10 bg-gradient-to-br from-violet-500/15 to-violet-600/10 border border-violet-400/25 rounded-2xl p-6 md:p-8">
@@ -597,6 +599,71 @@ export default function HowToPronounceBitumenPage() {
             </div>
             <AuthorBio />
           </article>
+
+          {/* SIDEBAR */}
+          <aside className="hidden xl:block w-72 shrink-0 sticky top-24 self-start space-y-6">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
+              <div className="text-white font-black text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+                <BookOpen size={13} className="text-violet-400" />
+                Related Articles
+              </div>
+              <nav className="space-y-3">
+                {[
+                  {
+                    href: "/blog/what-is-bitumen",
+                    label: "What Is Bitumen?",
+                    sub: "Meaning, uses & chemistry",
+                  },
+                  {
+                    href: "/blog/asphalt-vs-bitumen",
+                    label: "Asphalt vs Bitumen",
+                    sub: "How they differ",
+                  },
+                  {
+                    href: "/blog/bitumen-grades-explained",
+                    label: "Bitumen Grades Explained",
+                    sub: "Penetration, VG, PG",
+                  },
+                  {
+                    href: "/blog/bitumen-emulsion-explained",
+                    label: "Bitumen Emulsion",
+                    sub: "Cold-applied binder types",
+                  },
+                  {
+                    href: "/blog/how-to-remove-bitumen",
+                    label: "How to Remove Bitumen",
+                    sub: "Safe surface removal",
+                  },
+                ].map(({ href, label, sub }) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    className="block group p-3 rounded-xl hover:bg-white/5 transition-colors"
+                  >
+                    <span className="block text-white/80 group-hover:text-violet-400 font-semibold text-sm transition-colors leading-snug">
+                      {label}
+                    </span>
+                    <span className="block text-white/40 text-xs mt-0.5">{sub}</span>
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            <div className="bg-gradient-to-br from-violet-500/20 to-teal-600/20 border border-violet-400/20 rounded-2xl p-5 text-center">
+              <p className="text-white font-black text-sm mb-2">Need a Bitumen Estimate?</p>
+              <p className="text-white/60 text-xs mb-4 leading-relaxed">
+                Calculate bitumen quantity, mix weight, and aggregate for any paving project.
+              </p>
+              <Link
+                href="/"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500 to-violet-600 hover:from-violet-400 hover:to-violet-500 text-white px-4 py-2.5 rounded-full font-bold text-xs transition-all shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:shadow-[0_0_25px_rgba(139,92,246,0.5)]"
+              >
+                Open Calculator
+                <ArrowRight size={13} />
+              </Link>
+            </div>
+          </aside>
+        </div>
       </div>
     </>
   );
