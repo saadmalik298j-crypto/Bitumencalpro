@@ -1142,6 +1142,16 @@ export default function WhatIsBitumenPage() {
                   </Link>{" "}
                   covers surface-by-surface methods, what products to use, and what to avoid.
                 </p>
+                <p className="text-white/85 leading-relaxed text-base">
+                  To verify material performance and compliance before paving, explore our technical breakdown of{" "}
+                  <Link
+                    href="/blog/bitumen-quality-tests"
+                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
+                  >
+                    essential bitumen quality tests
+                  </Link>{" "}
+                  covering penetration index, softening point, ductility, viscosity, and flash point procedures.
+                </p>
               </div>
             </section>
 
