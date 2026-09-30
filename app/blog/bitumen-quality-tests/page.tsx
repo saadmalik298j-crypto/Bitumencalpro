@@ -1,9 +1,10 @@
-import AuthorBio from "../../components/AuthorBio";
 // app/blog/bitumen-quality-tests/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
+import AuthorBio from "../../components/AuthorBio";
+
 import {
   ChevronRight,
   Clock,

@@ -898,6 +898,16 @@ export default function BitumenGradesExplainedPage() {
                   </Link>{" "}
                   covers all major English accents — British, American, and Australian — with IPA notation and common mistakes to avoid.
                 </p>
+                <p className="text-white/85 leading-relaxed text-base mt-4">
+                  To confirm that delivered bitumen meets technical specifications, explore our comprehensive guide on{" "}
+                  <Link
+                    href="/blog/bitumen-quality-tests"
+                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                  >
+                    standard bitumen quality tests
+                  </Link>{" "}
+                  including penetration, ductility, softening point, and binder aging tests.
+                </p>
               </div>
             </section>
 
