@@ -255,6 +255,20 @@ const POSTS = [
     tags: ["Bitumen Pronunciation", "British English", "American English", "IPA Phonetics", "Bitumen Meaning"],
     featured: false,
   },
+  {
+    slug: "bitumen-quality-tests",
+    category: "Bitumen Properties & Testing",
+    title: "Bitumen Quality Tests: Viscosity, Ductility, Softening Point, Flash Point, and Every Test Explained",
+    excerpt:
+      "Penetration, viscosity, ductility, softening point, flash point, specific gravity, solubility, and extraction — every standard bitumen quality test explained with ASTM standards, test temperatures, and why each result matters on a job site.",
+    image: "/bitumen-quality-tests-laboratory.webp",
+    imageAlt: "Bitumen quality tests in a laboratory — penetration, viscosity, ductility, softening point, and extraction tests",
+    readTime: "16 min read",
+    date: "September 30, 2026",
+    dateISO: "2026-09-30",
+    tags: ["Bitumen Testing", "Penetration Test", "Ductility", "Viscosity", "ASTM Standards", "Softening Point"],
+    featured: false,
+  },
 ];
 
 export default function BlogPage() {
