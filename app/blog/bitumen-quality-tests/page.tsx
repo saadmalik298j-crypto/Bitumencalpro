@@ -747,75 +747,7 @@ export default function BitumenQualityTestsPage() {
             <AuthorBio />
           </article>
 
-          {/* ── SIDEBAR ── */}
-          <aside className="xl:w-80 shrink-0 xl:sticky xl:top-24 self-start space-y-6">
-
-            {/* Related Articles */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-              <div className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                <BookOpen size={14} className="text-teal-400" />
-                Related Articles
-              </div>
-              <div className="space-y-4">
-                {[
-                  { href: "/blog/bitumen-grades-explained", label: "Bitumen Grades Explained: Penetration, VG & PG", time: "14 min" },
-                  { href: "/blog/what-is-bitumen", label: "What Is Bitumen? Uses, Properties & Types", time: "12 min" },
-                  { href: "/blog/asphalt-vs-bitumen", label: "Asphalt vs Bitumen: Key Differences", time: "10 min" },
-                  { href: "/blog/bitumen-density-chart", label: "Bitumen Density Chart by Grade", time: "8 min" },
-                  { href: "/blog/modified-bitumen-roofing", label: "Modified Bitumen Roofing Guide", time: "15 min" },
-                  { href: "/blog/bitumen-emulsion-explained", label: "Bitumen Emulsion Explained", time: "16 min" },
-                ].map(({ href, label, time }) => (
-                  <Link key={href} href={href} className="flex items-start gap-3 group">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0 group-hover:bg-orange-400 transition-colors" />
-                    <div>
-                      <span className="text-white/75 text-sm leading-snug group-hover:text-white transition-colors block">{label}</span>
-                      <span className="text-white/35 text-xs flex items-center gap-1 mt-0.5">
-                        <Clock size={10} />{time}
-                      </span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* Calculator CTA */}
-            <div className="bg-gradient-to-br from-orange-500/20 to-orange-600/10 border border-orange-400/25 rounded-2xl p-6">
-              <h3 className="text-white font-black text-base mb-2">Free Bitumen Calculator</h3>
-              <p className="text-white/65 text-sm leading-relaxed mb-4">
-                Estimate binder content, mix weight, and aggregate for any road or driveway project.
-              </p>
-              <Link href="/"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-4 py-2.5 rounded-full font-bold text-sm w-full justify-center transition-all">
-                Calculate Now
-                <ArrowRight size={14} />
-              </Link>
-            </div>
-
-            {/* Standards Quick Ref */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-              <div className="text-white font-black text-sm uppercase tracking-wider mb-4">
-                Standards Quick Ref
-              </div>
-              <div className="space-y-2">
-                {[
-                  { std: "ASTM D5", desc: "Penetration" },
-                  { std: "ASTM D4402", desc: "Viscosity (rotational)" },
-                  { std: "ASTM D113", desc: "Ductility" },
-                  { std: "ASTM D36", desc: "Softening Point" },
-                  { std: "ASTM D92", desc: "Flash & Fire Point" },
-                  { std: "ASTM D70", desc: "Specific Gravity" },
-                  { std: "ASTM D2042", desc: "Solubility" },
-                  { std: "AASHTO T308", desc: "Extraction (ignition)" },
-                ].map(({ std, desc }) => (
-                  <div key={std} className="flex items-center justify-between gap-2 text-xs py-1 border-b border-white/5 last:border-0">
-                    <span className="font-mono text-teal-300 font-bold">{std}</span>
-                    <span className="text-white/55">{desc}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </aside>
+        
         </div>
       </div>
     </>
