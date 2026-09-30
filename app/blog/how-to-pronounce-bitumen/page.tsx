@@ -214,7 +214,7 @@ export default function HowToPronounceBitumenPage() {
             {/* Table of Contents */}
             <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
               <div className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                <BookOpen size={14} className="text-violet-400" />Table of Contents
+                <BookOpen size={14} className="text-teal-400" />Table of Contents
               </div>
               <nav className="space-y-1">
                 {[
@@ -233,7 +233,7 @@ export default function HowToPronounceBitumenPage() {
                   { id: "conclusion", label: "Conclusion" },
                   { id: "faq", label: "FAQ" },
                 ].map(({ id, label }) => (
-                  <a key={id} href={`#${id}`} className="block text-white/75 hover:text-violet-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all">{label}</a>
+                  <a key={id} href={`#${id}`} className="block text-white/75 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all">{label}</a>
                 ))}
               </nav>
             </div>
@@ -245,11 +245,11 @@ export default function HowToPronounceBitumenPage() {
               </p>
               <p className="text-white/85 leading-relaxed text-base">
                 This guide covers how to pronounce bitumen in British, American, Australian, and other English accents. You&apos;ll get respellings, IPA symbols, stress patterns, common mistakes, related technical words, and a practice routine. The forms below come from{" "}
-                <a href="https://dictionary.cambridge.org/dictionary/english/bitumen" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">
+                <a href="https://dictionary.cambridge.org/dictionary/english/bitumen" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-violet-300 underline underline-offset-2 transition-colors">
                   Cambridge Dictionary <ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
                 </a>{" "}
                 and{" "}
-                <a href="https://www.merriam-webster.com/dictionary/bitumen" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:text-violet-300 underline underline-offset-2 transition-colors">
+                <a href="https://www.merriam-webster.com/dictionary/bitumen" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-violet-300 underline underline-offset-2 transition-colors">
                   Merriam-Webster <ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
                 </a>
                 . For a deep dive into what bitumen actually is, see our{" "}
@@ -291,7 +291,7 @@ export default function HowToPronounceBitumenPage() {
                   { step: "04", title: "Join them without gaps", desc: "BICH-uh-mun. The first syllable takes the beat. The other two are quick and quiet." },
                 ].map(({ step, title, desc }) => (
                   <div key={step} className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4">
-                    <span className="text-violet-400 font-black text-lg shrink-0 w-8">{step}</span>
+                    <span className="text-teal-400 font-black text-lg shrink-0 w-8">{step}</span>
                     <div><strong className="text-white text-base">{title}</strong><p className="text-white/65 text-sm mt-0.5">{desc}</p></div>
                   </div>
                 ))}
@@ -405,7 +405,7 @@ export default function HowToPronounceBitumenPage() {
                   { n: "03", title: "Vowel reduction", desc: "When a syllable loses stress, its vowel weakens. That's why the first vowel in the American form appears as 'buh,' 'bih,' or 'bye' depending on the dictionary." },
                 ].map(({ n, title, desc }) => (
                   <div key={n} className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4">
-                    <span className="text-orange-400 font-black text-lg shrink-0 w-8">{n}</span>
+                    <span className="text-teal-400 font-black text-lg shrink-0 w-8">{n}</span>
                     <div><strong className="text-white text-base">{title}</strong><p className="text-white/65 text-sm mt-0.5">{desc}</p></div>
                   </div>
                 ))}
@@ -427,7 +427,7 @@ export default function HowToPronounceBitumenPage() {
                   { n: "7", title: "Misspelling it", desc: "The spelling is b-i-t-u-m-e-n. Learners sometimes write 'bitumin.' Remember the 'e' before the final 'n.'" },
                 ].map(({ n, title, desc }) => (
                   <div key={n} className="flex items-start gap-4 bg-white/5 border border-orange-400/20 rounded-xl p-4 border-l-4 border-l-orange-400">
-                    <span className="text-orange-400 font-black text-base shrink-0 w-6">{n}.</span>
+                    <span className="text-teal-400 font-black text-base shrink-0 w-6">{n}.</span>
                     <div><strong className="text-white text-base">{title}</strong><p className="text-white/65 text-sm mt-0.5">{desc}</p></div>
                   </div>
                 ))}
@@ -525,11 +525,11 @@ export default function HowToPronounceBitumenPage() {
                 ].map(({ day, title, steps }) => (
                   <div key={day} className="bg-white/5 border border-white/10 rounded-xl p-5">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="text-orange-600 font-black text-sm bg-violet-400/10 px-3 py-1 rounded-full">{day}</span>
+                      <span className="text-teal-400 font-black text-sm bg-violet-400/10 px-3 py-1 rounded-full">{day}</span>
                       <h3 className="text-white font-bold text-base">{title}</h3>
                     </div>
                     <ul className="space-y-1.5">
-                      {steps.map((s, i) => <li key={i} className="flex items-start gap-2 text-white/70 text-sm"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-violet-400 shrink-0" />{s}</li>)}
+                      {steps.map((s, i) => <li key={i} className="flex items-start gap-2 text-white/70 text-sm"><span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 shrink-0" />{s}</li>)}
                     </ul>
                   </div>
                 ))}
@@ -557,7 +557,7 @@ export default function HowToPronounceBitumenPage() {
                   Once you can say it confidently, the next step is understanding what it does in construction. Our{" "}
                   <Link href="/blog/bitumen-emulsion-explained" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">bitumen emulsion guide</Link>{" "}
                   explains how the binder is turned into a cold-applied water-based form. You can also use the{" "}
-                  <Link href="/" className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">free bitumen quantity calculator</Link>{" "}
+                  <Link href="/" className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">free bitumen quantity calculator</Link>{" "}
                   to see just how much of the material a typical road project actually needs.
                 </p>
               </div>
@@ -604,7 +604,7 @@ export default function HowToPronounceBitumenPage() {
           <aside className="hidden xl:block w-72 shrink-0 sticky top-24 self-start space-y-6">
             <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
               <div className="text-white font-black text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
-                <BookOpen size={13} className="text-violet-400" />
+                <BookOpen size={13} className="text-teal-400" />
                 Related Articles
               </div>
               <nav className="space-y-3">
@@ -640,7 +640,7 @@ export default function HowToPronounceBitumenPage() {
                     href={href}
                     className="block group p-3 rounded-xl hover:bg-white/5 transition-colors"
                   >
-                    <span className="block text-white/80 group-hover:text-violet-400 font-semibold text-sm transition-colors leading-snug">
+                    <span className="block text-white/80 group-hover:text-teal-400 font-semibold text-sm transition-colors leading-snug">
                       {label}
                     </span>
                     <span className="block text-white/40 text-xs mt-0.5">{sub}</span>

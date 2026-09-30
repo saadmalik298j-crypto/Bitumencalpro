@@ -165,11 +165,11 @@ const FAQ_DATA = [
     a: "The exact percentage must come from a lab-approved mix design for your specific project. However, for early estimating, wearing courses typically use 5–6.5%, binder courses 4.5–5.5%, and base courses 4–5%.",
   },
   {
-    q: "What density should be used in a Bitumen Calculator?",
+    q: "What density should be used in a Bitumen Calculator Tool?",
     a: "Use the HMA mix density, not pure bitumen density. Asphalt mix density is typically around 2,200–2,450 kg/m³ depending on the project mix design.",
   },
   {
-    q: "Can a Bitumen Calculator calculate aggregate quantity?",
+    q: "Can this tool calculate aggregate quantity?",
     a: "Yes, it calculates aggregate quantity by subtracting the bitumen weight from the total asphalt mix weight. Formula: Aggregate Quantity = Total Mix Weight − Bitumen Quantity",
   },
   {
@@ -1562,21 +1562,10 @@ Bitumen Calculation Formulas & Step-by-Step Method
                 </h2>
                 <p className="text-white/80 text-base leading-relaxed mb-6 text-center">
                   BitumenCalcPro gives pavement professionals a transparent, formula-driven estimate
-                  — helping contractors and engineers avoid{" "}
-                  <Link
-                    href="/blog/asphalt-estimation-mistakes"
-                    className="text-orange-400 hover:text-orange-300 font-bold underline underline-offset-2 transition-colors"
-                  >
-                    top asphalt estimation mistakes
-                  </Link>
-                  , manage site maintenance like{" "}
-                  <Link
-                    href="/blog/how-to-remove-bitumen"
-                    className="text-orange-400 hover:text-orange-300 font-bold underline underline-offset-2 transition-colors"
-                  >
-                    removing bitumen spills and residue
-                  </Link>
-                  , and understand how project budgeting and{" "}
+                  — helping contractors and engineers avoid asphalt estimation mistakes
+                  
+                  , manage site maintenance 
+                   and understand how project budgeting and{" "}
                   <Link
                     href="/blog/bitumen-driveway-cost-worldwide"
                     className="text-orange-400 hover:text-orange-300 font-bold underline underline-offset-2 transition-colors"

@@ -493,7 +493,7 @@ export default function BlogPage() {
           <p className="text-white/70 text-lg mb-8 leading-relaxed">
             Use our free{" "}
             <Link href="/" className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">
-               Bitumen Quantity Calculator
+               Online Bitumen Calculator
             </Link>{" "}
             to instantly estimate bitumen quantity, asphalt mix weight, and aggregate requirements for any road or paving project.
           </p>

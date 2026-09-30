@@ -926,7 +926,7 @@ export default function HowToRemoveBitumenPage() {
                 Bitumen paint is a thinned, ready-to-use coating that hasn&apos;t fully cured into a
                 hardened film in most cases — making it easier to remove than solid bitumen. The{" "}
                 <a
-                  href="https://www.asphaltinstitute.org/engineering/pavement-design/"
+                  href="https://www.asphaltinstitute.org/resource_topics/pavement-design-rehab-preservation-management/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
@@ -1040,7 +1040,7 @@ export default function HowToRemoveBitumenPage() {
                   is. Our{" "}
                   <Link
                     href="/blog/what-is-bitumen"
-                    className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                    className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
                     complete bitumen guide
                   </Link>{" "}
@@ -1059,7 +1059,7 @@ export default function HowToRemoveBitumenPage() {
                   free{" "}
                   <Link
                     href="/"
-                    className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                    className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
                     Bitumen Calculator
                   </Link>{" "}
@@ -1132,7 +1132,7 @@ export default function HowToRemoveBitumenPage() {
                 href="/"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-[0_0_20px_rgba(249,115,22,0.35)] hover:shadow-[0_0_30px_rgba(249,115,22,0.55)]"
               >
-                Try the Bitumen Calculator
+                Try the Bitumen Calculator free
                 <ArrowRight size={15} />
               </Link>
             </div>
@@ -1141,73 +1141,7 @@ export default function HowToRemoveBitumenPage() {
           </article>
 
           {/* ── SIDEBAR ── */}
-          <aside className="hidden xl:block w-72 shrink-0 sticky top-24 self-start space-y-6">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-5">
-              <div className="text-white font-black text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
-                <BookOpen size={13} className="text-orange-400" />
-                Related Articles
-              </div>
-              <nav className="space-y-3">
-                {[
-                  {
-                    href: "/blog/what-is-bitumen",
-                    label: "What Is Bitumen?",
-                    sub: "Meaning, uses & chemistry",
-                  },
-                  {
-                    href: "/blog/asphalt-vs-bitumen",
-                    label: "Asphalt vs Bitumen",
-                    sub: "How they differ",
-                  },
-                  {
-                    href: "/blog/bitumen-driveway-cost-worldwide",
-                    label: "Bitumen Driveway Cost",
-                    sub: "Worldwide 2026 prices",
-                  },
-                  {
-                    href: "/blog/modified-bitumen-roofing",
-                    label: "Modified Bitumen Roofing",
-                    sub: "Complete flat roof guide",
-                  },
-                  {
-                    href: "/blog/cold-mix-bitumen",
-                    label: "Cold Mix Bitumen",
-                    sub: "Uses & limitations",
-                  },
-                  {
-                    href: "/blog/bitumen-grades-explained",
-                    label: "Bitumen Grades Explained",
-                    sub: "Penetration, VG, PG",
-                  },
-                ].map(({ href, label, sub }) => (
-                  <Link
-                    key={href}
-                    href={href}
-                    className="block group p-3 rounded-xl hover:bg-white/5 transition-colors"
-                  >
-                    <span className="block text-white/80 group-hover:text-teal-400 font-semibold text-sm transition-colors leading-snug">
-                      {label}
-                    </span>
-                    <span className="block text-white/40 text-xs mt-0.5">{sub}</span>
-                  </Link>
-                ))}
-              </nav>
-            </div>
-
-            <div className="bg-gradient-to-br from-orange-500/20 to-orange-600/10 border border-orange-400/20 rounded-2xl p-5 text-center">
-              <p className="text-white font-black text-sm mb-2">Need a Bitumen Estimate?</p>
-              <p className="text-white/60 text-xs mb-4 leading-relaxed">
-                Calculate bitumen quantity, mix weight, and aggregate for any paving project.
-              </p>
-              <Link
-                href="/"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-4 py-2.5 rounded-full font-bold text-xs transition-all"
-              >
-                Open Calculator
-                <ArrowRight size={13} />
-              </Link>
-            </div>
-          </aside>
+          
         </div>
       </div>
     </>
