@@ -356,7 +356,7 @@ export default function AsphaltVsConcretePage() {
             {/* Table of Contents */}
             <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
               <div className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                <BookOpen size={14} className="text-orange-400" />
+                <BookOpen size={14} className="text-teal-400" />
                 Table of Contents
               </div>
               <nav className="space-y-1">
@@ -376,7 +376,7 @@ export default function AsphaltVsConcretePage() {
                   <a
                     key={id}
                     href={`#${id}`}
-                    className="block text-white/55 hover:text-orange-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
+                    className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all"
                   >
                     {label}
                   </a>
@@ -398,7 +398,7 @@ export default function AsphaltVsConcretePage() {
                 you&apos;re budgeting a{" "}
                 <Link
                   href="/blog/bitumen-driveway-cost-worldwide"
-                  className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                 >
                   bitumen driveway project
                 </Link>{" "}
@@ -429,7 +429,7 @@ export default function AsphaltVsConcretePage() {
                 rollers before it cools into a solid, flexible surface. Understanding the role of{" "}
                 <Link
                   href="/blog/asphalt-vs-bitumen"
-                  className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                 >
                   bitumen as an asphalt binder
                 </Link>{" "}
@@ -500,7 +500,7 @@ export default function AsphaltVsConcretePage() {
                 freeze-thaw cycles. This same structural reasoning informs decisions about{" "}
                 <Link
                   href="/blog/asphalt-thickness"
-                  className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                 >
                   asphalt pavement thickness and layer design
                 </Link>
@@ -624,7 +624,7 @@ export default function AsphaltVsConcretePage() {
                 repair scope is also one of the most common{" "}
                 <Link
                   href="/blog/asphalt-estimation-mistakes"
-                  className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                 >
                   asphalt and paving estimation mistakes
                 </Link>{" "}
@@ -684,7 +684,7 @@ export default function AsphaltVsConcretePage() {
                 some of the same considerations that influence decisions around{" "}
                 <Link
                   href="/blog/cold-mix-bitumen"
-                  className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                 >
                   cold mix versus hot mix asphalt for road maintenance
                 </Link>
