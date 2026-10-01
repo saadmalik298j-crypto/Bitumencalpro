@@ -402,12 +402,12 @@ export default function AsphaltVsConcretePage() {
                 >
                   bitumen driveway project
                 </Link>{" "}
-                or planning quantities for any paving job, our free{" "}
+                or planning quantities for any paving job, our {" "}
                 <Link
                   href="/"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
                 >
-                  Bitumen Calculator
+                  free Bitumen Calculator
                 </Link>{" "}
                 can help you estimate material quantities and costs before committing to a quote.
               </p>

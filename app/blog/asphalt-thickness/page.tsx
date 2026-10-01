@@ -576,6 +576,9 @@ export default function AsphaltThicknessPage() {
                 full-depth residential driveway built for maximum longevity,
                 particularly in regions with harsh freeze-thaw cycles.
               </p>
+              <p className="text-white/80 leading-relaxed mb-5 text-base">
+                When deciding on driveway materials, initial thickness specs are only half the equation. Compare long-term maintenance, installation timelines, and material costs in our detailed analysis of <Link href="/blog/asphalt-vs-concrete" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">asphalt vs concrete driveway performance</Link>.
+              </p>
             </section>
 
             {/* ── SECTION: Roads ── */}

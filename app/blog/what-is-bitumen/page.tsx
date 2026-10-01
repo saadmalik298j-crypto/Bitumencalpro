@@ -910,6 +910,9 @@ export default function WhatIsBitumenPage() {
                   ["Repair", "Easier to mill and patch", "Harder to patch seamlessly"],
                 ]}
               />
+              <p className="text-white/80 leading-relaxed my-5 text-base">
+                While bitumen serves as the flexible binder for asphalt pavements, rigid concrete relies on Portland cement. For a complete lifecycle cost, climate durability, and load-bearing performance comparison between flexible blacktop and rigid concrete surfaces, read our detailed guide on <Link href="/blog/asphalt-vs-concrete" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-semibold">asphalt vs concrete pavement selection</Link>.
+              </p>
 
               <h3 className="text-2xl font-black text-white mb-4 mt-8">Asphalt Binder & Bituminous Concrete</h3>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
