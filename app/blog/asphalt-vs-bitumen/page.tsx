@@ -1042,6 +1042,9 @@ export default function AsphaltVsBitumenPage() {
                   </Link>{" "}
                   — tanker temperatures, UN 3257 classification, and the site delivery checklist — is the natural next step.
                 </p>
+                <p className="text-white/85 leading-relaxed mb-4 text-base">
+                  When choosing between flexible paving and rigid alternatives, compare the upfront installation costs, lifespan, and maintenance needs. See our comprehensive guide on <Link href="/blog/asphalt-vs-concrete" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium">asphalt vs concrete pavement differences</Link> for cost, durability, and climate suitability comparisons.
+                </p>
                 <p className="text-white/85 leading-relaxed text-base">
                   Use the{" "}
                   <Link
