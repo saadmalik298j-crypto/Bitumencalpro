@@ -42,7 +42,7 @@ const articleSchema = {
   datePublished: "2026-08-10T00:00:00.000Z",
   dateModified: "2026-08-10T00:00:00.000Z",
   author: { "@type": "Organization", name: "BitumenCalcPro", url: "https://bitumencalcpro.com" },
-  publisher: { "@type": "Organization", name: "BitumenCalcPro", url: "https://bitumencalcpro.com", logo: { "@type": "ImageObject", url: "https://bitumencalcpro.com/favicon.ico" } },
+  publisher: { "@type": "Organization", name: "BitumenCalcPro", url: "https://bitumencalcpro.com", logo: { "@type": "ImageObject", url: "https://bitumencalcpro.com/logo.png" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://bitumencalcpro.com/blog/modified-bitumen-roof-repair" },
   keywords: "modified bitumen roof repair, mod bit roof repair, bitumen roof blister repair, seam failure, flat roof repair, ponding water",
   articleSection: "Roofing & Waterproofing",

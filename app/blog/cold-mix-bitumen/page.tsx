@@ -47,7 +47,7 @@ const articleSchema = {
   image: "https://bitumencalcpro.com/cold-mix-bitumen-guide-featured.webp",
   datePublished: "2026-08-03T00:00:00.000Z", dateModified: "2026-08-03T00:00:00.000Z",
   author: { "@type": "Person", name: "Nabeel Awan", url: "https://bitumencalcpro.com/about-us", image: "https://bitumencalcpro.com/nabeel-awan-bitumencalcpro-founder.webp" },
-  publisher: { "@type": "Organization", name: "BitumenCalcPro", url: "https://bitumencalcpro.com", logo: { "@type": "ImageObject", url: "https://bitumencalcpro.com/favicon.ico" } },
+  publisher: { "@type": "Organization", name: "BitumenCalcPro", url: "https://bitumencalcpro.com", logo: { "@type": "ImageObject", url: "https://bitumencalcpro.com/logo.png" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://bitumencalcpro.com/blog/cold-mix-bitumen" },
   keywords: "cold mix bitumen, cold mix asphalt, cold patch, pothole repair, cold mix vs hot mix, bitumen emulsion, cold in-place recycling",
   articleSection: "Asphalt & Paving Materials",

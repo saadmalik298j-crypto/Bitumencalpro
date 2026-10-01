@@ -89,7 +89,7 @@ const articleSchema = {
     url: "https://bitumencalcpro.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://bitumencalcpro.com/favicon.ico",
+      url: "https://bitumencalcpro.com/logo.png",
     },
   },
   mainEntityOfPage: {

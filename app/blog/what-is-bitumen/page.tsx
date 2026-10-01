@@ -78,7 +78,7 @@ const articleSchema = {
     "@type": "Organization",
     name: "BitumenCalcPro",
     url: "https://bitumencalcpro.com",
-    logo: { "@type": "ImageObject", url: "https://bitumencalcpro.com/favicon.ico" },
+    logo: { "@type": "ImageObject", url: "https://bitumencalcpro.com/logo.png" },
   },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://bitumencalcpro.com/blog/what-is-bitumen" },
   keywords:
