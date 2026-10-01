@@ -642,12 +642,12 @@ export default function AsphaltVsConcretePage() {
                 paving projects, since old asphalt can be milled up and reprocessed. This cuts down on
                 both landfill waste and the need for fresh raw material. The{" "}
                 <a
-                  href="https://www.napa.org/asphalt-pavement/designing-building/recycling/"
+                  href="https://www.fhwa.dot.gov/Pavement/recycling/rap/index.cfm"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
                 >
-                  National Asphalt Pavement Association reports asphalt is North America&apos;s most
+                  Federal Highway Administration reports asphalt is North America&apos;s most
                   recycled material by tonnage
                   <ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
                 </a>
@@ -778,7 +778,7 @@ export default function AsphaltVsConcretePage() {
                     href="/"
                     className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
-                    Bitumen Calculator
+                    Bitumen Calculator Online
                   </Link>{" "}
                   to estimate mix weight, binder content, and aggregate requirements accurately — before
                   you commit to a contractor quote.
