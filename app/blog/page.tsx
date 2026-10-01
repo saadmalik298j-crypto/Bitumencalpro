@@ -283,6 +283,34 @@ const POSTS = [
     tags: ["Asphalt vs Concrete", "Driveway Paving", "Concrete Cost", "Paving Materials", "Road Construction"],
     featured: false,
   },
+  {
+    slug: "asphalt-driveway-sealcoating",
+    category: "Asphalt & Paving Materials",
+    title: "Asphalt Driveway Sealcoating: Cost, Frequency, and How to Do It Yourself",
+    excerpt:
+      "Professional sealcoating costs $0.15–$0.65/sq ft. DIY runs $0.08–$0.35/sq ft. Seal every 2–3 years starting 3–6 months after paving. Full cost breakdown, DIY steps, and parking lot guide.",
+    image: "/asphalt-driveway-sealcoating-guide.webp",
+    imageAlt: "Asphalt driveway sealcoating — fresh sealcoat applied on residential driveway for UV and water protection",
+    readTime: "12 min read",
+    date: "October 1, 2026",
+    dateISO: "2026-10-01",
+    tags: ["Sealcoating", "Driveway Maintenance", "Asphalt Sealer", "DIY Paving", "Parking Lot"],
+    featured: false,
+  },
+  {
+    slug: "how-to-remove-oil-stains-asphalt-driveway",
+    category: "Asphalt & Paving Materials",
+    title: "How to Remove Oil Stains from an Asphalt Driveway",
+    excerpt:
+      "To remove oil stains from asphalt, start with absorbents like cat litter or baking soda for fresh spills, then scrub with dish soap. For older stains, use a dedicated asphalt-safe degreaser.",
+    image: "/how-to-remove-oil-stains-asphalt-driveway.webp",
+    imageAlt: "How to remove oil stains from an asphalt driveway - professional cleaning guide",
+    readTime: "7 min read",
+    date: "October 1, 2026",
+    dateISO: "2026-10-01",
+    tags: ["Driveway Maintenance", "Oil Stain Removal", "Asphalt Cleaning", "DIY Care", "Degreaser"],
+    featured: false,
+  },
 ];
 
 export default function BlogPage() {

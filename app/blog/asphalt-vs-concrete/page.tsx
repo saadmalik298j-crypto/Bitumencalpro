@@ -585,8 +585,21 @@ export default function AsphaltVsConcretePage() {
                 Maintenance Requirements
               </h2>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
-                Asphalt needs more frequent, smaller maintenance tasks. Sealcoating every 2 to 5 years
-                protects the surface from UV exposure, oil, and water penetration. Small cracks need
+                Asphalt needs more frequent, smaller maintenance tasks.{" "}
+                <Link
+                  href="/blog/asphalt-driveway-sealcoating"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                >
+                  Sealcoating every 2 to 3 years
+                </Link>{" "}
+                protects the surface from UV exposure, motor oil degradation (learn how to{" "}
+                <Link
+                  href="/blog/how-to-remove-oil-stains-asphalt-driveway"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                >
+                  clean oil spills off asphalt
+                </Link>
+                ), and water penetration. Small cracks need
                 filling before they widen and let water into the base layer. Skipping this schedule
                 shortens asphalt&apos;s lifespan noticeably.
               </p>

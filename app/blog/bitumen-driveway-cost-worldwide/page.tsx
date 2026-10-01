@@ -846,8 +846,15 @@ export default function BitumenDrivewayWorldwidePage() {
                 Climate plays a real role here. Bitumen handles freeze-thaw cycles reasonably
                 well, which is part of why it&apos;s popular in the UK and Ireland, but
                 extreme heat in parts of Australia and the southern US can soften the surface
-                and make it more prone to rutting under heavy or stationary vehicles. Regular
-                sealing helps offset this in hot climates.
+                and make it more prone to rutting under heavy or stationary vehicles.{" "}
+                <Link
+                  href="/blog/asphalt-driveway-sealcoating"
+                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
+                >
+                  Regular sealcoating every 2 to 3 years
+                </Link>{" "}
+                helps offset this in hot climates and is one of the most cost-effective ways to
+                extend a driveway&apos;s working life regardless of where you are.
               </p>
               <p className="text-white/80 leading-relaxed text-base">
                 Installation quality still matters more than climate. A shallow or poorly
