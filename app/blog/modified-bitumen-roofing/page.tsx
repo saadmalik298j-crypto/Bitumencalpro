@@ -576,7 +576,7 @@ export default function ModifiedBitumenRoofingPage() {
                   { title: "Reflective coating", desc: "adding a reflective cap sheet or coating adds roughly $1–$2 per square foot but can lower cooling costs." },
                 ].map(({ title, desc }) => (
                   <li key={title} className="flex items-start gap-3 text-white/80 text-sm">
-                    <CheckCircle2 size={16} className="text-orange-400 mt-0.5 shrink-0" />
+                    <CheckCircle2 size={16} className="text-teal-400 mt-0.5 shrink-0" />
                     <span><strong className="text-white">{title}</strong> — {desc}</span>
                   </li>
                 ))}
@@ -720,7 +720,7 @@ export default function ModifiedBitumenRoofingPage() {
               
               <div className="bg-gradient-to-br from-teal-500/10 to-blue-600/5 border border-teal-400/20 rounded-2xl p-5 mb-6 not-prose">
                 <p className="text-white/85 text-sm leading-relaxed mb-0">
-                  <strong className="text-teal-300">Need to fix a leak?</strong> Read our comprehensive step-by-step guide on <Link href="/blog/modified-bitumen-roof-repair" className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">Modified Bitumen Roof Repair</Link> for detailed instructions on fixing blisters, seam failures, and ponding water.
+                  <strong className="text-teal-300">Need to fix a leak?</strong> Read our comprehensive step-by-step guide on <Link href="/blog/modified-bitumen-roof-repair" className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">Modified Bitumen Roof Repair</Link> for detailed instructions on fixing blisters, seam failures, and ponding water.
                 </p>
               </div>
               <ul className="space-y-3 mb-6 bg-white/5 p-6 rounded-2xl border border-white/10">

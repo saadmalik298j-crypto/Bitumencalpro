@@ -887,7 +887,7 @@ export default function WhatIsBitumenPage() {
                 The short version: <strong className="text-white">bitumen is an ingredient</strong>, asphalt is the finished product that contains it, and tar is a related but chemically different material largely replaced by bitumen in modern construction due to environmental and durability concerns. For the complete side-by-side breakdown — including grades, mix types, cost drivers, and a quantity calculator — see our dedicated{" "}
                 <Link
                   href="/blog/asphalt-vs-bitumen"
-                  className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-semibold"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-semibold"
                 >
                   asphalt vs bitumen guide
                 </Link>
@@ -959,7 +959,7 @@ export default function WhatIsBitumenPage() {
                   { step: "05", title: "Cooling and setting", desc: "The bitumen hardens as it cools into a solid, weatherproof surface" },
                 ].map(({ step, title, desc }) => (
                   <div key={step} className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4">
-                    <span className="text-orange-400 font-black text-lg shrink-0 w-8">{step}</span>
+                    <span className="text-teal-400 font-black text-lg shrink-0 w-8">{step}</span>
                     <div>
                       <strong className="text-white text-base">{title}</strong>
                       <p className="text-white/65 text-sm mt-0.5">{desc}</p>
@@ -985,7 +985,7 @@ export default function WhatIsBitumenPage() {
                   { prob: "Bleeding", cause: "Excess bitumen rises to the surface in hot weather, making the road slick" },
                 ].map(({ prob, cause }) => (
                   <div key={prob} className="flex items-start gap-3 text-white/75 text-sm">
-                    <AlertCircle size={15} className="text-orange-400 mt-0.5 shrink-0" />
+                    <AlertCircle size={15} className="text-teal-400 mt-0.5 shrink-0" />
                     <span><strong className="text-white">{prob}</strong> — {cause}</span>
                   </div>
                 ))}
@@ -1118,7 +1118,7 @@ export default function WhatIsBitumenPage() {
                   and reduce waste. You can use our{" "}
                   <Link
                     href="/"
-                    className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                    className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
                     Bitumen Calculator
                   </Link>{" "}

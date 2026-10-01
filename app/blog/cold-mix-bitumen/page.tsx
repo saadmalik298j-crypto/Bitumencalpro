@@ -274,7 +274,7 @@ export default function ColdMixBitumenPage() {
                   { label: "Cold Central Plant Recycling (CCPR)", desc: "A similar process, except the milled RAP gets hauled to a plant, mixed with a cold binder there, and trucked back for laying.", iconType: "wrench" },
                 ].map(({ label, desc, iconType }) => (
                   <div key={label} className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-5">
-                    {iconType === "recycle" ? <Recycle size={16} className="text-teal-400 shrink-0 mt-0.5" /> : <Wrench size={16} className="text-orange-400 shrink-0 mt-0.5" />}
+                    {iconType === "recycle" ? <Recycle size={16} className="text-teal-400 shrink-0 mt-0.5" /> : <Wrench size={16} className="text-teal-400 shrink-0 mt-0.5" />}
                     <div>
                       <strong className="text-white text-sm block mb-1">{label}</strong>
                       <p className="text-white/65 text-sm leading-relaxed">{desc}</p>
@@ -417,7 +417,7 @@ export default function ColdMixBitumenPage() {
                 ].map(({ title, desc }) => (
                   <div key={title} className="bg-orange-500/10 border border-orange-400/20 rounded-xl p-4">
                     <div className="flex items-start gap-2.5">
-                      <AlertCircle size={15} className="text-orange-400 mt-0.5 shrink-0" />
+                      <AlertCircle size={15} className="text-teal-400 mt-0.5 shrink-0" />
                       <div>
                         <strong className="text-white text-sm block mb-1">{title}</strong>
                         <p className="text-white/65 text-xs leading-relaxed">{desc}</p>
@@ -442,7 +442,7 @@ export default function ColdMixBitumenPage() {
                   { step: "06", title: "Allow traffic gradually", desc: "Light traffic is often fine within an hour or two, but the patch keeps gaining strength over the following days and weeks" },
                 ].map(({ step, title, desc }) => (
                   <div key={step} className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4">
-                    <span className="text-orange-400 font-black text-lg shrink-0 w-8">{step}</span>
+                    <span className="text-teal-400 font-black text-lg shrink-0 w-8">{step}</span>
                     <div>
                       <strong className="text-white text-base">{title}</strong>
                       <p className="text-white/65 text-sm mt-0.5">{desc}</p>
@@ -468,7 +468,7 @@ export default function ColdMixBitumenPage() {
                   { cause: "Using an expired or dried-out product", fix: "Cold mix stored improperly or past its shelf life will not compact or bond like fresh material" },
                 ].map(({ cause, fix }) => (
                   <div key={cause} className="flex items-start gap-3 text-white/75 text-sm bg-white/5 border border-white/10 rounded-xl p-4">
-                    <AlertCircle size={15} className="text-orange-400 mt-0.5 shrink-0" />
+                    <AlertCircle size={15} className="text-teal-400 mt-0.5 shrink-0" />
                     <span><strong className="text-white">{cause}</strong> — {fix}</span>
                   </div>
                 ))}
@@ -491,7 +491,7 @@ export default function ColdMixBitumenPage() {
                 ]}
               />
               <p className="text-white/75 leading-relaxed text-sm mt-4">
-                For small repairs, cold mix is almost always cheaper overall than hiring a hot mix crew once labor and equipment costs are factored in. If you are budgeting a larger paving project, our <Link href="/" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium">free Bitumen Calculator</Link> can help you estimate quantities and material costs instantly.
+                For small repairs, cold mix is almost always cheaper overall than hiring a hot mix crew once labor and equipment costs are factored in. If you are budgeting a larger paving project, our <Link href="/" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium">free Bitumen Calculator</Link> can help you estimate quantities and material costs instantly.
               </p>
             </section>
 
@@ -529,7 +529,7 @@ export default function ColdMixBitumenPage() {
               <div className="bg-gradient-to-br from-teal-500/15 via-blue-600/10 to-purple-600/10 border border-white/15 rounded-2xl p-6 md:p-8">
                 <p className="text-white/85 leading-relaxed mb-4 text-base">Cold mix bitumen trades some strength and lifespan for speed, convenience, and year-round usability. Built from emulsified or cutback bitumen, it never needs heating, which makes it the practical choice for potholes, cracks, and emergency repairs — especially in cold weather or locations far from a hot mix plant.</p>
                 <p className="text-white/85 leading-relaxed mb-4 text-base">Beyond simple patching, engineered cold mix also plays a real role in pavement recycling through techniques like cold in-place and cold central plant recycling, offering a lower-energy alternative for rehabilitating old roads. For anything beyond a repair or recycling project — new roads, driveways, or high-traffic pavement — hot mix asphalt remains the stronger, longer-lasting option.</p>
-                <p className="text-white/85 leading-relaxed text-base">Want to go deeper on the binder itself? Our guide on <Link href="/blog/what-is-bitumen" className="text-teal-400 hover:text-teal-300 font-semibold underline underline-offset-2 transition-colors">what bitumen is and how it is made</Link> covers everything from grades and properties to the full range of bitumen types. If you are planning a project, the <Link href="/" className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">free Bitumen Calculator</Link> on our homepage estimates quantities and costs instantly.</p>
+                <p className="text-white/85 leading-relaxed text-base">Want to go deeper on the binder itself? Our guide on <Link href="/blog/what-is-bitumen" className="text-teal-400 hover:text-teal-300 font-semibold underline underline-offset-2 transition-colors">what bitumen is and how it is made</Link> covers everything from grades and properties to the full range of bitumen types. If you are planning a project, the <Link href="/" className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">free Bitumen Calculator</Link> on our homepage estimates quantities and costs instantly.</p>
               </div>
             </section>
 

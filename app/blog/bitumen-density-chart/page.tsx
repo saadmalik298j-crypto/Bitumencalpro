@@ -511,7 +511,7 @@ export default function BitumenDensityChartPage() {
 
               <div className="bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-400/20 rounded-2xl p-6 not-prose">
                 <div className="flex items-start gap-3">
-                  <Thermometer size={20} className="text-orange-400 shrink-0 mt-0.5" />
+                  <Thermometer size={20} className="text-teal-400 shrink-0 mt-0.5" />
                   <p className="text-white/80 text-sm leading-relaxed">
                     <strong className="text-white">Why this matters for hot mix:</strong> A reading taken at 25°C
                     isn&apos;t directly comparable to one taken at 135°C, the typical mixing temperature for hot
@@ -601,7 +601,7 @@ export default function BitumenDensityChartPage() {
                 For accurate project estimates, our{" "}
                 <Link
                   href="/"
-                  className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                  className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                 >
                   Bitumen Calculator
                 </Link>{" "}
@@ -800,7 +800,7 @@ export default function BitumenDensityChartPage() {
                   our{" "}
                   <Link
                     href="/"
-                    className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                    className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
                     free Bitumen Calculator
                   </Link>{" "}
@@ -837,7 +837,7 @@ export default function BitumenDensityChartPage() {
                   typical ranges shown here. If you&apos;re estimating asphalt material quantities, our{" "}
                   <Link
                     href="/"
-                    className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                    className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
                     Bitumen Calculator
                   </Link>{" "}

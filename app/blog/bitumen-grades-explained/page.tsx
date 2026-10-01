@@ -567,7 +567,7 @@ export default function BitumenGradesExplainedPage() {
                 systems. Once you have confirmed the right VG grade, our free{" "}
                 <Link
                   href="/"
-                  className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                 >
                   Bitumen Calculator
                 </Link>{" "}
@@ -764,7 +764,7 @@ export default function BitumenGradesExplainedPage() {
                     key={num}
                     className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4"
                   >
-                    <span className="text-orange-400 font-black text-lg shrink-0 w-8">{num}</span>
+                    <span className="text-teal-400 font-black text-lg shrink-0 w-8">{num}</span>
                     <div>
                       <strong className="text-white text-base">{title}</strong>
                       <p className="text-white/65 text-sm mt-0.5 leading-relaxed">{desc}</p>
@@ -783,7 +783,7 @@ export default function BitumenGradesExplainedPage() {
                   expensive repairs later. Pair your grade selection with our{" "}
                   <Link
                     href="/blog/bitumen-density-chart"
-                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors"
+                    className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors"
                   >
                     bitumen density reference chart
                   </Link>{" "}
@@ -870,7 +870,7 @@ export default function BitumenGradesExplainedPage() {
                   Once you&apos;ve confirmed the right grade, use our{" "}
                   <Link
                     href="/"
-                    className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                    className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
                     free Bitumen Calculator
                   </Link>{" "}
@@ -902,7 +902,7 @@ export default function BitumenGradesExplainedPage() {
                   To confirm that delivered bitumen meets technical specifications, explore our comprehensive guide on{" "}
                   <Link
                     href="/blog/bitumen-quality-tests"
-                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                    className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                   >
                     standard bitumen quality tests
                   </Link>{" "}

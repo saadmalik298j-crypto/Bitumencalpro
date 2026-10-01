@@ -988,7 +988,7 @@ export default function BitumenDrivewayWorldwidePage() {
                     key={title}
                     className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-white/[0.07] transition-colors"
                   >
-                    <span className="text-orange-400 font-black text-base shrink-0 mt-0.5">▸</span>
+                    <span className="text-teal-400 font-black text-base shrink-0 mt-0.5">▸</span>
                     <div>
                       <p className="text-white font-bold text-sm mb-1">{title}</p>
                       <p className="text-white/75 text-sm leading-relaxed">{body}</p>
@@ -1177,7 +1177,7 @@ export default function BitumenDrivewayWorldwidePage() {
                   , or use our free{" "}
                   <Link
                     href="/"
-                    className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                    className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
                     bitumen quantity calculator
                   </Link>{" "}

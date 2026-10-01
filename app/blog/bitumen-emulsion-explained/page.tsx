@@ -648,7 +648,7 @@ export default function BitumenEmulsionExplainedPage() {
                       <span
                         className={`font-black text-lg shrink-0 w-10 text-center ${
                           color === "orange"
-                            ? "text-orange-400"
+                            ? "text-teal-400"
                             : color === "teal"
                             ? "text-teal-400"
                             : color === "violet"
@@ -926,7 +926,7 @@ export default function BitumenEmulsionExplainedPage() {
                 material quantities upfront avoids over-ordering and site delays. Our free{" "}
                 <Link
                   href="/"
-                  className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                 >
                   Fast Bitumen Calculator
                 </Link>{" "}
@@ -1024,7 +1024,7 @@ export default function BitumenEmulsionExplainedPage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                 {[
                   {
-                    icon: <Zap size={20} className="text-orange-400" />,
+                    icon: <Zap size={20} className="text-teal-400" />,
                     title: "Typical Shelf Life",
                     desc: "Around 12 months when stored correctly in sealed containers at recommended temperatures.",
                     color: "orange",

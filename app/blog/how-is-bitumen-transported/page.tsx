@@ -496,7 +496,7 @@ export default function HowIsBitumenTransportedPage() {
                   <strong className="text-white">Terminology note:</strong> In North America, road bitumen is often called <em>asphalt</em> or <em>asphalt cement</em>. This article uses &ldquo;bitumen&rdquo; throughout. For a full breakdown of what separates the binder from the finished pavement mix, see our{" "}
                   <Link
                     href="/blog/asphalt-vs-bitumen"
-                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                    className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                   >
                     asphalt vs bitumen complete guide
                   </Link>
@@ -588,7 +588,7 @@ export default function HowIsBitumenTransportedPage() {
                     key={step}
                     className="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4"
                   >
-                    <span className="text-orange-400 font-black text-lg shrink-0 w-8">
+                    <span className="text-teal-400 font-black text-lg shrink-0 w-8">
                       {step}
                     </span>
                     <div>
@@ -790,7 +790,7 @@ export default function HowIsBitumenTransportedPage() {
                 </div>
                 <div className="bg-white/5 border border-white/10 rounded-xl p-5 border-l-4 border-l-orange-400">
                   <h3 className="text-white font-bold mb-2 text-base flex items-center gap-2">
-                    <AlertCircle size={15} className="text-orange-400" />
+                    <AlertCircle size={15} className="text-teal-400" />
                     Handling precautions
                   </h3>
                   <p className="text-white/65 text-sm leading-relaxed">
@@ -971,7 +971,7 @@ export default function HowIsBitumenTransportedPage() {
                 For pavement projects where you need to estimate total binder quantity before booking a delivery, the{" "}
                 <Link
                   href="/"
-                  className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                  className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                 >
                   BitumenCalcPro calculator
                 </Link>{" "}
@@ -1029,7 +1029,7 @@ export default function HowIsBitumenTransportedPage() {
                   To turn a pavement area and thickness into a binder quantity, use the{" "}
                   <Link
                     href="/"
-                    className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                    className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
                     bitumen quantity calculator
                   </Link>
@@ -1061,7 +1061,7 @@ export default function HowIsBitumenTransportedPage() {
                   For background on the material itself &mdash; what it is, where it comes from, and how its properties drive every transport decision &mdash; our{" "}
                   <Link
                     href="/blog/what-is-bitumen"
-                    className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+                    className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
                     what is bitumen guide
                   </Link>{" "}

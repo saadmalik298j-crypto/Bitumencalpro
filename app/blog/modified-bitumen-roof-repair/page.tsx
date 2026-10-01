@@ -181,7 +181,7 @@ export default function ModifiedBitumenRoofRepairPage() {
       {/* Table of Contents */}
             <div className="mb-10 bg-white/5 border border-white/10 rounded-2xl p-6">
                 <div className="text-white font-black text-sm uppercase tracking-wider mb-5 flex items-center gap-2">
-                  <BookOpen size={14} className="text-orange-400" />
+                  <BookOpen size={14} className="text-teal-400" />
                   Table of Contents
                 </div>
                 <nav className="space-y-1">
@@ -203,7 +203,7 @@ export default function ModifiedBitumenRoofRepairPage() {
                     { id: "summary", label: "Summary" },
                     { id: "faq", label: "FAQ" },
                   ].map(({ id, label }) => (
-                    <a key={id} href={`#${id}`} className="block text-white/55 hover:text-orange-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all">
+                    <a key={id} href={`#${id}`} className="block text-white/55 hover:text-teal-400 text-xs leading-relaxed py-1 px-2 rounded-lg hover:bg-white/5 transition-all">
                       {label}
                     </a>
                   ))}
@@ -226,7 +226,7 @@ export default function ModifiedBitumenRoofRepairPage() {
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">What Is Modified Bitumen Roofing?</h2>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 Modified bitumen is bitumen blended with polymers — usually <strong className="text-white">SBS rubber or APP plastic</strong> — to make it more flexible and durable than plain bitumen. The membrane comes in rolls that get installed in overlapping sheets, either heat-welded (torch-down), self-adhered, or set in hot or cold adhesive, depending on the system. For a full breakdown of the material and installation types, see our guide on{" "}
-                <Link href="/blog/modified-bitumen-roofing" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-semibold">Modified Bitumen Roofing</Link>.
+                <Link href="/blog/modified-bitumen-roofing" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-semibold">Modified Bitumen Roofing</Link>.
               </p>
               <p className="text-white/80 leading-relaxed text-base">
                 This repair guide assumes you already have a modified bitumen roof and something has gone wrong — a leak, a bubble, a crack, or standing water that will not drain. If you are trying to figure out what type of roofing to install in the first place, the roofing guide above is the better starting point.
@@ -287,7 +287,7 @@ export default function ModifiedBitumenRoofRepairPage() {
                   { sign: "Soft or spongy spots underfoot, which can indicate a saturated substrate beneath the membrane", color: "red" },
                 ].map(({ sign, color }, i) => (
                   <div key={i} className={`flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-4 border-l-4 ${color === "red" ? "border-l-red-400" : color === "orange" ? "border-l-orange-400" : color === "blue" ? "border-l-blue-400" : color === "yellow" ? "border-l-yellow-400" : "border-l-teal-400"}`}>
-                    <AlertTriangle size={16} className={`shrink-0 mt-0.5 ${color === "red" ? "text-red-400" : color === "orange" ? "text-orange-400" : color === "blue" ? "text-blue-400" : color === "yellow" ? "text-yellow-400" : "text-teal-400"}`} />
+                    <AlertTriangle size={16} className={`shrink-0 mt-0.5 ${color === "red" ? "text-red-400" : color === "orange" ? "text-teal-400" : color === "blue" ? "text-blue-400" : color === "yellow" ? "text-yellow-400" : "text-teal-400"}`} />
                     <p className="text-white/75 text-sm leading-relaxed">{sign}</p>
                   </div>
                 ))}
@@ -358,7 +358,7 @@ export default function ModifiedBitumenRoofRepairPage() {
               />
               <div className="bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-400/20 rounded-2xl p-6 not-prose mt-6">
                 <div className="flex items-start gap-3">
-                  <ShieldCheck size={20} className="text-orange-400 shrink-0 mt-0.5" />
+                  <ShieldCheck size={20} className="text-teal-400 shrink-0 mt-0.5" />
                   <p className="text-white/80 text-sm leading-relaxed"><strong className="text-white">A repair that keeps failing in the same location</strong> is the clearest signal that the visible symptom is not the actual problem. Trapped moisture underneath the membrane, a structural drainage issue, or a much larger area of deteriorated material is usually the real cause — and patching the surface repeatedly will not fix it.</p>
                 </div>
               </div>
@@ -426,7 +426,7 @@ export default function ModifiedBitumenRoofRepairPage() {
               <p className="text-white/80 leading-relaxed mb-5 text-base">A well-executed repair on an otherwise sound roof can last for years, effectively matching the remaining service life of the membrane around it. A well-maintained modified bitumen roof overall typically lasts <strong className="text-white">15 to 20 years</strong>, though skipped maintenance and unaddressed minor damage can shorten that closer to 10.</p>
               <p className="text-white/80 leading-relaxed text-base">
                 Repairs done on a roof already near the end of that range tend to be shorter-term fixes, since the surrounding membrane is aging at the same rate as the repaired section. At that stage, a full cost-benefit assessment of repair vs. replacement is usually more financially sensible than continued patching. Our {" "}
-                <Link href="/" className="text-orange-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-semibold">Free Bitumen Calculator</Link>{" "}
+                <Link href="/" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-semibold">Free Bitumen Calculator</Link>{" "}
                 can help estimate material quantities if a larger resurfacing or replacement is on the table.
               </p>
               <div className="mt-6 bg-gradient-to-br from-teal-500/15 to-blue-600/10 border border-teal-400/25 rounded-2xl p-6 not-prose">
