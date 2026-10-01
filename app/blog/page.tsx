@@ -269,6 +269,20 @@ const POSTS = [
     tags: ["Bitumen Testing", "Penetration Test", "Ductility", "Viscosity", "ASTM Standards", "Softening Point"],
     featured: false,
   },
+  {
+    slug: "asphalt-vs-concrete",
+    category: "Asphalt & Paving Materials",
+    title: "Asphalt vs Concrete: Cost, Lifespan, Climate Fit, and Which One to Choose",
+    excerpt:
+      "Asphalt costs less upfront and installs faster, but lasts 15–20 years. Concrete costs more, lasts 25–40 years, and needs far less maintenance. Full comparison of cost, durability, climate performance, and how to choose.",
+    image: "/asphalt-vs-concrete-comparison..webp",
+    imageAlt: "Asphalt vs concrete paving comparison — cost, lifespan, and climate performance",
+    readTime: "15 min read",
+    date: "October 1, 2026",
+    dateISO: "2026-10-01",
+    tags: ["Asphalt vs Concrete", "Driveway Paving", "Concrete Cost", "Paving Materials", "Road Construction"],
+    featured: false,
+  },
 ];
 
 export default function BlogPage() {

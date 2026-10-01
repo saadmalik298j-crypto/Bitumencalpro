@@ -746,8 +746,6 @@ export default function BitumenQualityTestsPage() {
 
             <AuthorBio />
           </article>
-
-        
         </div>
       </div>
     </>
