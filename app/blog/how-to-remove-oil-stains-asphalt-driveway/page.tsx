@@ -695,7 +695,7 @@ export default function HowToRemoveOilStainsAsphaltPage() {
                     href="/"
                     className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                   >
-                    Bitumen &amp; Asphalt Calculator
+                    Bitumen Quantity Calculator
                   </Link>.
                 </p>
               </div>
