@@ -57,7 +57,7 @@ const POSTS = [
     date: "August 19, 2026",
     dateISO: "2026-08-19",
     tags: ["Bitumen Emulsion", "Cationic", "Anionic", "Tack Coat", "Cold Application"],
-    featured: true,
+    featured: false,
   },
   {
     slug: "asphalt-estimation-mistakes",
@@ -323,7 +323,7 @@ const POSTS = [
     date: "October 4, 2026",
     dateISO: "2026-10-04",
     tags: ["Bitumen Paint", "Waterproofing", "Bituminous Coating", "Foundation", "Roofing"],
-    featured: false,
+    featured: true,
   },
 ];
 

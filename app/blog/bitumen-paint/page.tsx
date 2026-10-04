@@ -554,7 +554,7 @@ export default function BitumenPaintPage() {
                 <p className="text-white/80 leading-relaxed text-base">
                   Ferrous metal — meaning iron and steel — benefits most directly, though bitumen paint also works on non-ferrous metals like aluminium, zinc, and lead. For heavily rusted steel, a rust-inhibiting primer applied first gives the bitumen coating a stable surface to bond to, rather than coating over active corrosion. To understand the broader material science behind why bitumen bonds so effectively to metal surfaces, the{" "}
                   <a
-                    href="https://www.bba.star.org.uk"
+                    href="https://www.bbacerts.co.uk/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
@@ -770,15 +770,15 @@ export default function BitumenPaintPage() {
               <p className="text-white/80 leading-relaxed text-base">
                 Different solvent-based bitumen coatings can cure at meaningfully different rates, so checking the specific product&apos;s technical data sheet is worth the extra few minutes rather than assuming a fixed timeline. The{" "}
                 <a
-                  href="https://www.paintresearch.com"
+                  href="https://coatings.org.uk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
                 >
-                  Paint Research Association
+                  British Coatings Federation (BCF)
                   <ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
                 </a>{" "}
-                publishes detailed guidance on solvent-based coating performance and cure conditions.
+                publishes guidance and technical standards on protective solvent-based coating performance and cure conditions.
               </p>
             </section>
 
