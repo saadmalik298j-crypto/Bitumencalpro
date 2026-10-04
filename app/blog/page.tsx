@@ -311,6 +311,20 @@ const POSTS = [
     tags: ["Driveway Maintenance", "Oil Stain Removal", "Asphalt Cleaning", "DIY Care", "Degreaser"],
     featured: false,
   },
+  {
+    slug: "bitumen-paint",
+    category: "Roofing & Waterproofing",
+    title: "Bitumen Paint: Uses, Benefits, Application, and Everything You Need to Know",
+    excerpt:
+      "What is bitumen paint used for? See how it waterproofs wood, concrete, steel & foundations, how long it takes to dry, and if you can paint over it.",
+    image: "/bitumen-paint-waterproofing-coating.webp",
+    imageAlt: "Bitumen paint waterproofing coating — black bituminous paint applied to concrete, steel and wood surfaces",
+    readTime: "14 min read",
+    date: "October 4, 2026",
+    dateISO: "2026-10-04",
+    tags: ["Bitumen Paint", "Waterproofing", "Bituminous Coating", "Foundation", "Roofing"],
+    featured: false,
+  },
 ];
 
 export default function BlogPage() {

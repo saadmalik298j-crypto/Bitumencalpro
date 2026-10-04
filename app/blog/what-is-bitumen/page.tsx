@@ -759,7 +759,7 @@ export default function WhatIsBitumenPage() {
                   },
                   {
                     title: "Protective coatings",
-                    desc: "Bitumen paint and bituminous coating products protect metal and concrete surfaces from corrosion and moisture — common in tanks, pipes, and exposed structural steel.",
+                    desc: <><Link href="/blog/bitumen-paint" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">Bitumen paint</Link> and bituminous coating products protect metal and concrete surfaces from corrosion and moisture — common in tanks, pipes, exposed structural steel, and foundation walls.</>,
                     color: "blue",
                   },
                 ].map(({ title, desc, color, link }) => (

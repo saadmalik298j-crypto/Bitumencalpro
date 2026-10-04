@@ -446,7 +446,9 @@ export default function ModifiedBitumenRoofRepairPage() {
               <div className="bg-gradient-to-br from-orange-500/15 via-teal-600/10 to-blue-600/10 border border-white/15 rounded-2xl p-6 md:p-8">
                 <p className="text-white/85 leading-relaxed mb-4 text-base">Most modified bitumen roof problems trace back to a handful of causes — failed seams, trapped moisture under blisters, ponding water, punctures, or UV-driven cracking — and most have a straightforward repair once correctly diagnosed. Small, isolated issues are reasonable DIY fixes; recurring failures, widespread seam problems, or persistent ponding are signs it is time to bring in a professional.</p>
                 <p className="text-white/85 leading-relaxed text-base">
-                  Regular inspection and prompt small repairs remain the cheapest way to avoid bigger ones later. For industry standards and best practices on modified bitumen systems, the{" "}
+                  Regular inspection and prompt small repairs remain the cheapest way to avoid bigger ones later. For liquid-applied protection on exposed metal flashings, gutters, and penetrations around your roof,{" "}
+                  <Link href="/blog/bitumen-paint" className="text-teal-400 hover:text-teal-300 underline underline-offset-2">bituminous paint</Link>{" "}
+                  is a practical complement to membrane repairs. For industry standards and best practices on modified bitumen systems, the{" "}
                   <a href="https://www.nrca.net" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300 underline underline-offset-2">
                     National Roofing Contractors Association (NRCA)<ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
                   </a>{" "}
