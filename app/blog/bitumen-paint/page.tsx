@@ -514,7 +514,7 @@ export default function BitumenPaintPage() {
               </div>
             </section>
 
-            {/* ── SECTION: Concrete / Wood / Steel ── */}
+            {/* ── SECTION: Concrete ── */}
             <section id="bitumen-paint-for-concrete" className="mb-12 scroll-mt-24">
               <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
                 Bitumen Paint for Concrete
@@ -531,40 +531,42 @@ export default function BitumenPaintPage() {
                 alt="Bitumen paint protection for concrete, wood, and steel — black waterproofing coating applied to multiple building materials showing corrosion and moisture barrier"
                 caption="Bitumen paint protects porous concrete, rot-prone wood, and corrosion-susceptible steel with the same cold-applied waterproofing formula"
               />
+            </section>
 
-              <section id="bitumen-paint-for-wood" className="mb-10 scroll-mt-24">
-                <h3 className="text-2xl font-black text-white mb-4 mt-8">
-                  Bitumen Paint for Wood
-                </h3>
-                <p className="text-white/80 leading-relaxed mb-4 text-base">
-                  Wood rots when it stays wet, and bitumen paint for wood works by sealing the surface so water can&apos;t get in and start that process. It&apos;s a common choice for fences, garden sheds, wooden poles, and any exterior timber that sits exposed to rain and ground moisture.
-                </p>
-                <p className="text-white/80 leading-relaxed mb-4 text-base">
-                  A few rules matter more for wood than for other surfaces. Always apply bitumen paint to <strong className="text-white">clean, dry wood</strong>. Painting over damp timber traps that moisture underneath the coating instead of keeping it out, which can speed up rot rather than prevent it. If the wood will sit in standing water or buried ground contact, bitumen paint is a reasonable choice specifically because it holds up well to prolonged water exposure — more so than many standard exterior wood finishes.
-                </p>
-              </section>
+            {/* ── SECTION: Wood ── */}
+            <section id="bitumen-paint-for-wood" className="mb-12 scroll-mt-24">
+              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-teal-400 pl-4">
+                Bitumen Paint for Wood
+              </h2>
+              <p className="text-white/80 leading-relaxed mb-5 text-base">
+                Wood rots when it stays wet, and bitumen paint for wood works by sealing the surface so water can&apos;t get in and start that process. It&apos;s a common choice for fences, garden sheds, wooden poles, and any exterior timber that sits exposed to rain and ground moisture.
+              </p>
+              <p className="text-white/80 leading-relaxed mb-5 text-base">
+                A few rules matter more for wood than for other surfaces. Always apply bitumen paint to <strong className="text-white">clean, dry wood</strong>. Painting over damp timber traps that moisture underneath the coating instead of keeping it out, which can speed up rot rather than prevent it. If the wood will sit in standing water or buried ground contact, bitumen paint is a reasonable choice specifically because it holds up well to prolonged water exposure — more so than many standard exterior wood finishes.
+              </p>
+            </section>
 
-              <section id="bitumen-paint-for-steel" className="mb-0 scroll-mt-24">
-                <h3 className="text-2xl font-black text-white mb-4">
-                  Bitumen Paint for Steel
-                </h3>
-                <p className="text-white/80 leading-relaxed mb-4 text-base">
-                  Steel corrodes when exposed to moisture and oxygen over time, and bitumen paint protects it by forming a barrier that keeps both away from the metal surface. It&apos;s used across shipbuilding, pipelines, storage tanks, and general structural steelwork exposed to the weather.
-                </p>
-                <p className="text-white/80 leading-relaxed text-base">
-                  Ferrous metal — meaning iron and steel — benefits most directly, though bitumen paint also works on non-ferrous metals like aluminium, zinc, and lead. For heavily rusted steel, a rust-inhibiting primer applied first gives the bitumen coating a stable surface to bond to, rather than coating over active corrosion. To understand the broader material science behind why bitumen bonds so effectively to metal surfaces, the{" "}
-                  <a
-                    href="https://www.bbacerts.co.uk/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
-                  >
-                    British Board of Agrément (BBA)
-                    <ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
-                  </a>{" "}
-                  publishes approval certificates for waterproofing coatings used on structural materials in the UK.
-                </p>
-              </section>
+            {/* ── SECTION: Steel ── */}
+            <section id="bitumen-paint-for-steel" className="mb-12 scroll-mt-24">
+              <h2 className="text-3xl font-black text-white mb-5 border-l-4 border-orange-400 pl-4">
+                Bitumen Paint for Steel
+              </h2>
+              <p className="text-white/80 leading-relaxed mb-5 text-base">
+                Steel corrodes when exposed to moisture and oxygen over time, and bitumen paint protects it by forming a barrier that keeps both away from the metal surface. It&apos;s used across shipbuilding, pipelines, storage tanks, and general structural steelwork exposed to the weather.
+              </p>
+              <p className="text-white/80 leading-relaxed text-base">
+                Ferrous metal — meaning iron and steel — benefits most directly, though bitumen paint also works on non-ferrous metals like aluminium, zinc, and lead. For heavily rusted steel, a rust-inhibiting primer applied first gives the bitumen coating a stable surface to bond to, rather than coating over active corrosion. To understand the broader material science behind why bitumen bonds so effectively to metal surfaces, the{" "}
+                <a
+                  href="https://www.bbacerts.co.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
+                >
+                  British Board of Agrément (BBA)
+                  <ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
+                </a>{" "}
+                publishes approval certificates for waterproofing coatings used on structural materials in the UK.
+              </p>
             </section>
 
             {/* ── SECTION: Foundations ── */}
