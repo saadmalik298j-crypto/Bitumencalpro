@@ -782,7 +782,7 @@ Bitumen Calculation Formulas & Step-by-Step Method
                 <AlertTriangle size={28} />
               </div>
               <h3 className="text-3xl font-black text-white mb-6 leading-tight">
-                Mix Density vs. Bitumen (Binder) Density
+                Mix Density vs Bitumen (Binder) Density
               </h3>
               <p className="text-white/80 text-lg leading-relaxed mb-6 font-medium">
                 This is one of the most common sources of ordering errors, because both numbers look
@@ -839,7 +839,7 @@ Bitumen Calculation Formulas & Step-by-Step Method
                   <Layers size={28} />
                 </div>
                 <h3 className="text-3xl font-black text-white mb-6 leading-tight">
-                  Loose Volume vs. Compacted Volume
+                  Loose Volume vs Compacted Volume
                 </h3>
                 <p className="text-white/80 text-lg leading-relaxed mb-6">
                   Asphalt volume isn&apos;t fixed ,it changes depending on whether the material is{" "}
@@ -1022,7 +1022,7 @@ Bitumen Calculation Formulas & Step-by-Step Method
                 <Zap size={28} />
               </div>
               <h3 className="font-black text-white text-2xl mb-4 leading-tight">
-                Bitumen Calculator vs. Spray Application Calculator
+                Bitumen Calculator vs Spray Application Calculator
               </h3>
               <p className="text-white/80 text-base mb-6 leading-relaxed">
                 These two calculations are often confused because both involve &quot;how much bitumen,&quot;
@@ -1118,7 +1118,7 @@ Bitumen Calculation Formulas & Step-by-Step Method
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col items-center text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-black text-white mb-6 drop-shadow-lg leading-tight">
-              Bitumen vs. Asphalt vs. Tar vs. Tarmac
+              Bitumen vs Asphalt vs Tar vs Tarmac
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
               These four terms get used interchangeably in everyday speech, but in civil
@@ -1244,7 +1244,7 @@ Bitumen Calculation Formulas & Step-by-Step Method
                 bullets: [
                   "Multi-lane carriageway paving with separate layer calculations",
                   "SMA and PMB mixes for high-speed, high-traffic surfaces",
-                  "Pavement rehabilitation: milling depth vs. overlay tonnage",
+                  "Pavement rehabilitation: milling depth vs overlay tonnage",
                 ],
               },
               {
