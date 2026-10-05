@@ -166,15 +166,15 @@ const FAQ_DATA = [
   },
   {
     q: "Why should I add a wastage factor to my bitumen calculation?",
-    a: "Standard civil engineering practice adds 2%–5% wastage to account for site losses, uneven subgrade, edge trimming, and transport loss. For example: 22.62 t net × 1.05 = 23.75 t order quantity.",
+    a: "Allowances of 2–5% are commonly used to account for site losses, uneven subgrade, edge trimming, and transport loss. For example: 22.62 t net × 1.05 = 23.75 t order quantity.",
   },
   {
     q: "What is the compaction factor for Hot Mix Asphalt (HMA)?",
-    a: "The compaction factor is the ratio of loose mix volume to compacted in-place volume. For dense-graded HMA it ranges from 1.15 to 1.25 (average 1.20). Loose volume = Compacted volume × Compaction factor. Confirm the exact value with your supplier.",
+    a: "The compaction factor is the ratio of loose mix volume to compacted in-place volume. Commonly used planning values are about 1.15-1.25; it varies by mix and site. Loose volume = Compacted volume × Compaction factor.",
   },
   {
     q: "How do I convert bitumen weight to litres and drums?",
-    a: "Divide bitumen kg by the pure binder density (typically 1.03 kg/L). Example: 4,428 kg ÷ 1.03 = 4,299 litres. To find drums: Litres ÷ 200 for 200 L drums, or Litres ÷ 20 for 20 L drums.",
+    a: "Divide bitumen kg by the pure binder density (typically 1.03 kg/L). Example: 22,620 kg ÷ 1.03 ≈ 21,961 L. To find drums: Litres ÷ 200 for 200 L drums, or Litres ÷ 20 for 20 L drums.",
   },
 ];
 
@@ -715,7 +715,7 @@ export default function Home() {
                   <span className="text-white/50 text-xs block mb-1">
                     Bitumen Required: 22.62 tonnes | Price: $500/tonne
                   </span>
-                  22.62 × 500 = $11,309.38
+                  22.62 × 500 = $11,310
                 </div>
               </div>
             </div>
@@ -901,9 +901,12 @@ export default function Home() {
               </p>
               <div className="font-mono text-sm space-y-2 text-white/80 bg-black/30 p-5 rounded-2xl border border-white/5">
                 <p>Mix Weight: 1,000 m² × 0.050 × 2,350 = <span className="text-teal-300 font-bold">117.5 tonnes</span></p>
-                <p>Net Bitumen: 117,500 kg × 0.055 = <span className="text-orange-300 font-bold">6.46 tonnes</span></p>
+                <p>Net Bitumen: 117,500 kg × 0.055 = <span className="text-orange-300 font-bold">6.46 tonnes</span> (6,462.5 kg)</p>
                 <p>Order (+3% Wastage): 6.46 × 1.03 = <span className="text-orange-300 font-bold">6.66 tonnes</span></p>
-                <p>Loose Volume: 50 m³ × 1.20 = <span className="text-teal-300 font-bold">60 m³</span> (≈ 31 × 200 L drums)</p>
+                <p>Loose Volume: 50 m³ × 1.20 = <span className="text-teal-300 font-bold">60 m³</span></p>
+                <p className="text-white/50 text-xs pt-1">
+                  Litres: 6,462 kg ÷ 1.03 ≈ <span className="text-teal-300 font-bold">6,274 L</span> (≈ 31 × 200 L drums)
+                </p>
               </div>
             </div>
 
@@ -918,10 +921,10 @@ export default function Home() {
               </p>
               <div className="font-mono text-sm space-y-2 text-white/80 bg-black/30 p-5 rounded-2xl border border-white/5">
                 <p>Volume: 5,280 × 12 × (2 ÷ 12) = <span className="text-teal-300 font-bold">10,560 ft³</span></p>
-                <p>Mix Weight: 10,560 × 145 = <span className="text-teal-300 font-bold">765.6 short tons</span> (1,531,200 lb)</p>
+                <p>Mix Weight: 10,560 × 145 = <span className="text-teal-300 font-bold">1,531,200 lb</span> (765.6 short tons)</p>
                 <p>Bitumen: 765.6 × 0.05 = <span className="text-orange-300 font-bold">38.28 short tons</span></p>
                 <p className="text-white/50 text-xs pt-2">
-                  Metric Conversion: 38.28 × 907.185 kg = 34,715 kg ≈ <span className="text-orange-300 font-bold">34.7 tonnes</span>
+                  Metric Conversion: 38.28 × 907.185 kg ≈ <span className="text-orange-300 font-bold">34,727 kg ≈ 34.7 tonnes</span>
                 </p>
               </div>
             </div>
@@ -935,7 +938,7 @@ export default function Home() {
               <h3 className="text-2xl md:text-3xl font-black text-white">Multi-Layer Highway</h3>
             </div>
             <p className="text-white/80 text-base leading-relaxed mb-6">
-              Most highway pavements consist of three distinct courses (base course, binder course, wearing course), each with a specific thickness and binder content. Calculating them separately gives the exact procurement requirement.
+              Most highway pavements consist of three distinct courses (base course, binder course, wearing course), each with a specific thickness and binder content. Calculating them separately gives a more accurate estimate.
             </p>
 
             <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden text-base shadow-2xl w-full text-left">
@@ -1366,7 +1369,7 @@ export default function Home() {
               <div className="bg-black/30 p-5 rounded-2xl border border-white/5">
                 <strong className="text-emerald-400 block mb-2 text-base">Order Volume &amp; Delivery</strong>
                 <p className="text-white/70 text-sm leading-relaxed">
-                  Bulk liquid tanker deliveries offer much lower per-tonne pricing compared to heated intermediate bulk containers or small drummed supplies.
+                  Bulk liquid tanker deliveries offer typically lower per-tonne pricing compared to heated intermediate bulk containers or small drummed supplies.
                 </p>
               </div>
             </div>
@@ -1732,52 +1735,67 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 code: "Asphalt Institute MS-2",
-                title: "Mix Design Methods",
+                title: "Mix Design Methods for Asphalt",
                 body: "Asphalt Institute",
                 color: "violet",
-                href: "https://asphaltinstitute.org/",
-                desc: "Provides authoritative guidance for Marshall and Superpave mix design procedures, establishing optimum binder percentages (OBC) and volumetric targets essential for reliable material estimations.",
+                related: "Bitumen Content (%)",
+                href: "https://www.asphaltinstitute.org/",
+                desc: "Provides guidance for Marshall and Superpave mix design procedures, establishing optimum binder content ranges.",
               },
               {
                 code: "AASHTO M323",
                 title: "Superpave Volumetric Mix Design",
                 body: "AASHTO",
                 color: "teal",
+                related: "Bitumen Content (%)",
                 href: "https://www.transportation.org/",
-                desc: "Specifies mandatory volumetric criteria—including VMA, VFA, and air void ratios—used by pavement engineers across North America to verify hot-mix asphalt binder requirements.",
+                desc: "Sets volumetric criteria for Superpave mix designs, including VMA, VFA, and air void parameters.",
               },
               {
                 code: "AASHTO T166",
-                title: "Bulk Specific Gravity of Compacted Asphalt",
+                title: "Bulk Specific Gravity of Compacted Mix",
                 body: "AASHTO",
                 color: "blue",
+                related: "Mix Density (kg/m³)",
                 href: "https://www.transportation.org/",
-                desc: "The standard laboratory test protocol for measuring the bulk density of compacted asphalt specimens, providing the exact unit weights used to convert pavement volumes into total tonnage.",
+                desc: "Standard laboratory test method measuring the bulk density of compacted asphalt specimens for tonnage calculations.",
               },
               {
-                code: "FHWA Pavement Guidance",
-                title: "Pavement Design Guidance",
-                body: "FHWA",
+                code: "ASTM D70 / AASHTO T228",
+                title: "Specific Gravity of Liquid Bitumen",
+                body: "ASTM / AASHTO",
                 color: "orange",
-                href: "https://www.fhwa.dot.gov/",
-                desc: "Technical directives from the Federal Highway Administration outlining layer thickness standards, compaction factors, and material selection criteria for flexible pavement infrastructure.",
+                related: "Binder Density (kg/L)",
+                href: "https://www.astm.org/",
+                desc: "Standard test method for determining the specific gravity and liquid density of bitumen binders used for litres conversion.",
               },
-            ].map(({ code, title, body, color, href, desc }) => {
+              {
+                code: "NHA General Specifications",
+                title: "Item 305 & 306 Asphalt Concrete",
+                body: "NHA Pakistan",
+                color: "emerald",
+                related: "Mix Density & Bitumen Content",
+                href: "https://nha.gov.pk/",
+                desc: "Governs bituminous base and wearing course specifications, target mix densities, and compaction criteria for highway projects in Pakistan.",
+              },
+            ].map(({ code, title, body, color, related, href, desc }) => {
               const badgeColors: Record<string, string> = {
                 teal: "bg-teal-500/20 text-teal-300 border-teal-500/30",
                 violet: "bg-violet-500/20 text-violet-300 border-violet-500/30",
                 blue: "bg-blue-500/20 text-blue-300 border-blue-500/30",
                 orange: "bg-orange-500/20 text-orange-300 border-orange-500/30",
+                emerald: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
               };
               const cardBorder: Record<string, string> = {
                 teal: "border-teal-500/20 hover:border-teal-500/50",
                 violet: "border-violet-500/20 hover:border-violet-500/50",
                 blue: "border-blue-500/20 hover:border-blue-500/50",
                 orange: "border-orange-500/20 hover:border-orange-500/50",
+                emerald: "border-emerald-500/20 hover:border-emerald-500/50",
               };
               return (
                 <a
@@ -1785,21 +1803,28 @@ export default function Home() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`bg-gradient-to-b from-white/10 to-transparent ${cardBorder[color]} border rounded-[2rem] p-7 transition-all duration-300 hover:-translate-y-1 shadow-xl flex flex-col gap-4 group`}
+                  className={`bg-gradient-to-b from-white/10 to-transparent ${cardBorder[color]} border rounded-[2rem] p-7 transition-all duration-300 hover:-translate-y-1 shadow-xl flex flex-col justify-between group`}
                 >
-                  <div className="flex items-start justify-between gap-2">
-                    <span
-                      className={`text-xs font-black px-3 py-1.5 rounded-full border ${badgeColors[color]} uppercase tracking-wider shrink-0`}
-                    >
-                      {body}
-                    </span>
-                    <ExternalLink size={14} className="text-white/30 group-hover:text-white/80 transition-colors shrink-0" />
-                  </div>
                   <div>
-                    <div className="text-base font-black text-white group-hover:text-teal-300 transition-colors mb-1 leading-tight">{code}</div>
-                    <p className="text-white/50 text-xs font-semibold">{title}</p>
+                    <div className="flex items-start justify-between gap-2 mb-4">
+                      <span
+                        className={`text-xs font-black px-3 py-1 rounded-full border ${badgeColors[color]} uppercase tracking-wider shrink-0`}
+                      >
+                        {body}
+                      </span>
+                      <ExternalLink size={14} className="text-white/30 group-hover:text-white/80 transition-colors shrink-0 mt-1" />
+                    </div>
+                    <div className="text-base font-black text-white group-hover:text-teal-300 transition-colors mb-1 leading-tight">
+                      {code}
+                    </div>
+                    <p className="text-white/50 text-xs font-semibold mb-4">{title}</p>
+                    <p className="text-white/65 text-sm leading-relaxed mb-6">{desc}</p>
                   </div>
-                  <p className="text-white/65 text-sm leading-relaxed flex-1">{desc}</p>
+                  <div className="pt-3 border-t border-white/5">
+                    <span className="text-[11px] font-medium text-amber-300/90 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-lg inline-block">
+                      {related}
+                    </span>
+                  </div>
                 </a>
               );
             })}

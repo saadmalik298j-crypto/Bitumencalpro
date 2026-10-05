@@ -332,7 +332,7 @@ export default function Calculator() {
                 </select>
                 <ChevronDown size={14} className="absolute right-2 text-slate-400 pointer-events-none" />
               </div>
-              <input id="price" type="number" min={0} step="any" placeholder={`e.g. 500 per ${outWeightUnit}`}
+              <input id="price" type="number" min={0} step="any" placeholder={`e.g. 500 per ${outWeightUnit === "tonnes" ? "tonne" : outWeightUnit === "tons" ? "ton" : outWeightUnit === "lbs" ? "lb" : "kg"}`}
                 value={price} onChange={(e) => setPrice(e.target.value)} onKeyDown={handleEnter}
                 className="flex-1 bg-transparent text-slate-900 px-4 py-3 outline-none w-full font-medium placeholder:text-slate-300" />
             </div>
