@@ -353,9 +353,9 @@ export default function Home() {
                   fill
                   loading="eager"
                   fetchPriority="high"
-                  quality={65}
+                  quality={50}
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 85vw, 750px"
+                  sizes="(max-width: 640px) 92vw, (max-width: 1024px) 70vw, 650px"
                 />
               </div>
             </div>
