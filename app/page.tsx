@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
-import dynamic from "next/dynamic";
+import Calculator from "./components/Calculator";
 import {
   Info,
   Calculator as CalcIcon,
@@ -38,8 +38,6 @@ import {
   FlaskConical,
 } from "lucide-react";
 import type { Metadata } from "next";
-
-import Calculator from "./components/Calculator";
 
 export const metadata: Metadata = {
   title: "Free Bitumen Calculator | Estimate Bitumen & Asphalt Mix",
@@ -347,11 +345,9 @@ export default function Home() {
                   src="/civil-engineer-using-bitumen-calculator.webp"
                   alt="Civil engineer using bitumen calculator for pavement estimation"
                   fill
-                  loading="eager"
-                  fetchPriority="high"
-                  quality={50}
+                  priority
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 640px) 92vw, (max-width: 1024px) 70vw, 650px"
+                  sizes="(max-width: 768px) 100vw, 900px"
                 />
               </div>
             </div>

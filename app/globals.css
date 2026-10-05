@@ -75,12 +75,12 @@
   }
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  appearance: none;
-  margin: 0;
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
-input[type=number] { appearance: textfield; }
+input[type=number] { -moz-appearance: textfield; }
 
 /* ── Global image responsiveness safety net ── */
 /* Prevents any Next.js image from overflowing its container on small screens */
@@ -115,7 +115,20 @@ figure img {
 header {
   will-change: transform;
   transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 3. Decorative blur orbs (all hero orbs are pointer-events-none + absolute):
+      Promote every such element to its own GPU compositor layer.
+      This is the main scroll-blink culprit on all pages. */
+.pointer-events-none {
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* 5. Article layout containment — tells the browser these sections
