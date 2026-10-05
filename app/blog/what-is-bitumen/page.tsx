@@ -348,7 +348,8 @@ export default function WhatIsBitumenPage() {
           src="/what-is-bitumen.webp"
           alt="What is bitumen — thick black petroleum-based road paving binder material"
           caption="Bitumen: the petroleum-derived binder that holds asphalt together"
-          priority
+                    loading="eager"
+                  fetchPriority="high"
         />
       </div>
 
