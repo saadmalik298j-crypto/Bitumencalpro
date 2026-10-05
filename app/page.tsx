@@ -351,8 +351,9 @@ export default function Home() {
                   src="/civil-engineer-using-bitumen-calculator.webp"
                   alt="Civil engineer using bitumen calculator for pavement estimation"
                   fill
-                  priority
+                  loading="eager"
                   fetchPriority="high"
+                  quality={65}
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 85vw, 750px"
                 />
