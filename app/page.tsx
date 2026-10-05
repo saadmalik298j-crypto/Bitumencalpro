@@ -283,8 +283,8 @@ export default function Home() {
 
         <div id="calculator" className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <h1 className="text-center text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight drop-shadow-2xl">
-            <span className="bg-gradient-to-r from-orange-400 to-yellow-300 bg-clip-text text-transparent">
+          <h1 className="hero-heading text-center text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight drop-shadow-2xl">
+            <span className="text-orange-400">
               Bitumen
             </span>{" "}
             <span className="text-white">Calculator</span>
