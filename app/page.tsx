@@ -154,7 +154,7 @@ const FAQ_DATA = [
   },
   {
     q: "How do I know what bitumen percentage to use?",
-    a: "The exact percentage must come from a lab-approved mix design for your project. As planning estimates: wearing courses typically use 5–6.5%, binder courses 4.5–5.5%, and base courses 4–5%. Always confirm with your supplier before final ordering.",
+    a: "The exact percentage must come from a lab-approved mix design for your project. As planning estimates: dense-graded wearing courses typically use 5.0%–6.0% (up to 6.0%–7.0% for SMA/PMB), binder courses 4.5%–5.5%, and base courses 4.0%–5.0%. Always confirm with your supplier before final ordering.",
   },
   {
     q: "What density should I use in a bitumen calculator?",
@@ -1744,8 +1744,8 @@ export default function Home() {
               </strong>
               <ul className="text-white/60 text-sm space-y-2 list-disc list-inside">
                 <li>
-                  <strong className="text-white/80">Traffic loading</strong> — heavier traffic
-                  often calls for stiffer, lower-binder mixes to resist rutting.
+                  <strong className="text-white/80">Traffic loading &amp; mix design</strong> — heavy traffic
+                  requires stiffer binder grades or specialized stone-matrix mixes (SMA) with polymer modification to prevent rutting and permanent deformation.
                 </li>
                 <li>
                   <strong className="text-white/80">Climate</strong> — hotter regions may need
