@@ -1740,7 +1740,7 @@ export default function Home() {
                 body: "Asphalt Institute",
                 color: "violet",
                 href: "https://asphaltinstitute.org/",
-                desc: "Industry-standard methodology for asphalt mix design and the binder content ranges used throughout our calculations.",
+                desc: "Provides authoritative guidance for Marshall and Superpave mix design procedures, establishing optimum binder percentages (OBC) and volumetric targets essential for reliable material estimations.",
               },
               {
                 code: "AASHTO M323",
@@ -1748,7 +1748,7 @@ export default function Home() {
                 body: "AASHTO",
                 color: "teal",
                 href: "https://www.transportation.org/",
-                desc: "Standard specification defining volumetric mix design requirements adopted across U.S. and international pavement projects.",
+                desc: "Specifies mandatory volumetric criteria—including VMA, VFA, and air void ratios—used by pavement engineers across North America to verify hot-mix asphalt binder requirements.",
               },
               {
                 code: "AASHTO T166",
@@ -1756,7 +1756,7 @@ export default function Home() {
                 body: "AASHTO",
                 color: "blue",
                 href: "https://www.transportation.org/",
-                desc: "Reference test method for determining the compacted mix density values used in our quantity estimates.",
+                desc: "The standard laboratory test protocol for measuring the bulk density of compacted asphalt specimens, providing the exact unit weights used to convert pavement volumes into total tonnage.",
               },
               {
                 code: "FHWA Pavement Guidance",
@@ -1764,7 +1764,7 @@ export default function Home() {
                 body: "FHWA",
                 color: "orange",
                 href: "https://www.fhwa.dot.gov/",
-                desc: "Federal Highway Administration guidance informing general pavement design and material estimation practices.",
+                desc: "Technical directives from the Federal Highway Administration outlining layer thickness standards, compaction factors, and material selection criteria for flexible pavement infrastructure.",
               },
             ].map(({ code, title, body, color, href, desc }) => {
               const badgeColors: Record<string, string> = {
