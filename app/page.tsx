@@ -3,12 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 import dynamic from "next/dynamic";
-
-const Calculator = dynamic(() => import("./components/Calculator"), {
-  loading: () => (
-    <div className="animate-pulse rounded-3xl bg-white/10 border border-white/10 h-[560px] w-full" />
-  ),
-});
 import {
   Info,
   Calculator as CalcIcon,
@@ -44,6 +38,12 @@ import {
   FlaskConical,
 } from "lucide-react";
 import type { Metadata } from "next";
+
+const Calculator = dynamic(() => import("./components/Calculator"), {
+  loading: () => (
+    <div className="animate-pulse rounded-3xl bg-white/10 border border-white/10 h-[560px] w-full" />
+  ),
+});
 
 export const metadata: Metadata = {
   title: "Free Bitumen Calculator | Estimate Bitumen & Asphalt Mix",

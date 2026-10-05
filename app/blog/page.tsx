@@ -359,7 +359,7 @@ export default function BlogPage() {
     ],
   };
 
-  const featuredPost = POSTS[20];
+  const featuredPost = POSTS.find((p) => p.featured) ?? POSTS[POSTS.length - 1];
 
   return (
     <>
