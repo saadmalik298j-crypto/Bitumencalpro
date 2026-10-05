@@ -1735,54 +1735,41 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
                 code: "Asphalt Institute MS-2",
                 title: "Mix Design Methods for Asphalt",
                 body: "Asphalt Institute",
                 color: "violet",
-                related: "Bitumen Content (%)",
                 href: "https://www.asphaltinstitute.org/",
                 desc: "Provides guidance for Marshall and Superpave mix design procedures, establishing optimum binder content ranges.",
-              },
-              {
-                code: "AASHTO M323",
-                title: "Superpave Volumetric Mix Design",
-                body: "AASHTO",
-                color: "teal",
-                related: "Bitumen Content (%)",
-                href: "https://www.transportation.org/",
-                desc: "Sets volumetric criteria for Superpave mix designs, including VMA, VFA, and air void parameters.",
               },
               {
                 code: "AASHTO T166",
                 title: "Bulk Specific Gravity of Compacted Mix",
                 body: "AASHTO",
-                color: "blue",
-                related: "Mix Density (kg/m³)",
+                color: "teal",
                 href: "https://www.transportation.org/",
                 desc: "Standard laboratory test method measuring the bulk density of compacted asphalt specimens for tonnage calculations.",
               },
               {
-                code: "ASTM D70 / AASHTO T228",
+                code: "ASTM D70",
                 title: "Specific Gravity of Liquid Bitumen",
-                body: "ASTM / AASHTO",
+                body: "ASTM International",
                 color: "orange",
-                related: "Binder Density (kg/L)",
                 href: "https://www.astm.org/",
                 desc: "Standard test method for determining the specific gravity and liquid density of bitumen binders used for litres conversion.",
               },
               {
-                code: "NHA General Specifications",
-                title: "Item 305 & 306 Asphalt Concrete",
-                body: "NHA Pakistan",
+                code: "NAPA Pavement Guidelines",
+                title: "HMA Production & Paving Standards",
+                body: "NAPA USA",
                 color: "emerald",
-                related: "Mix Density & Bitumen Content",
-                href: "https://nha.gov.pk/",
-                desc: "Governs bituminous base and wearing course specifications, target mix densities, and compaction criteria for highway projects in Pakistan.",
+                href: "https://www.asphaltpavement.org/",
+                desc: "National Asphalt Pavement Association technical guidelines for hot-mix asphalt plant production, job-mix formulas, and US site paving practices.",
               },
-            ].map(({ code, title, body, color, related, href, desc }) => {
+            ].map(({ code, title, body, color, href, desc }) => {
               const badgeColors: Record<string, string> = {
                 teal: "bg-teal-500/20 text-teal-300 border-teal-500/30",
                 violet: "bg-violet-500/20 text-violet-300 border-violet-500/30",
@@ -1818,12 +1805,7 @@ export default function Home() {
                       {code}
                     </div>
                     <p className="text-white/50 text-xs font-semibold mb-4">{title}</p>
-                    <p className="text-white/65 text-sm leading-relaxed mb-6">{desc}</p>
-                  </div>
-                  <div className="pt-3 border-t border-white/5">
-                    <span className="text-[11px] font-medium text-amber-300/90 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-lg inline-block">
-                      {related}
-                    </span>
+                    <p className="text-white/65 text-sm leading-relaxed">{desc}</p>
                   </div>
                 </a>
               );
