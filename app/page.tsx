@@ -145,16 +145,36 @@ const STEPS = [
 
 const FAQ_DATA = [
   {
+    q: "What is the formula for calculating bitumen quantity?",
+    a: "To find the bitumen quantity, first calculate the total asphalt volume (Length × Width × Thickness in metres), then convert to weight using the mix density, then apply the bitumen content percentage. The single combined formula is: Bitumen (kg) = L × W × T × Density × (B% ÷ 100).",
+  },
+  {
+    q: "What inputs do I need to estimate asphalt materials?",
+    a: "You'll need: pavement dimensions (length, width, thickness), the compacted HMA mix density (typically 2,200–2,450 kg/m³), and the target bitumen content percentage from your mix design (usually 4–6.5%). For ordering, also add a 2–5% wastage allowance.",
+  },
+  {
+    q: "How do I know what bitumen percentage to use?",
+    a: "The exact percentage must come from a lab-approved mix design for your project. As planning estimates: wearing courses typically use 5–6.5%, binder courses 4.5–5.5%, and base courses 4–5%. Always confirm with your supplier before final ordering.",
+  },
+  {
+    q: "What density should I use in a bitumen calculator?",
+    a: "Use the compacted HMA mix density, not the pure bitumen binder density. Dense-graded asphalt mixes typically range from 2,200 to 2,450 kg/m³. Pure bitumen density (≈1.03 kg/L or ≈1,030 kg/m³) is only used when converting bitumen weight to litres.",
+  },
+  {
+    q: "How do I convert my pavement volume into tonnes?",
+    a: "Multiply total pavement volume (m³) by the compacted mix density (kg/m³), then divide by 1,000 to get tonnes. Example: 175 m³ × 2,350 kg/m³ = 411,250 kg = 411.25 t.",
+  },
+  {
     q: "Why should I add a wastage factor to my bitumen calculation?",
-    a: "Standard civil engineering practice adds 2%–5% wastage allowance to account for site losses, uneven subgrade surfaces, edge compaction trimming, and plant-to-site transportation loss. For example, if your net bitumen requirement is 22.62 tonnes and you apply a 5% wastage factor, your order quantity becomes 22.62 × 1.05 = 23.75 tonnes.",
+    a: "Standard civil engineering practice adds 2%–5% wastage to account for site losses, uneven subgrade, edge trimming, and transport loss. For example: 22.62 t net × 1.05 = 23.75 t order quantity.",
   },
   {
     q: "What is the compaction factor for Hot Mix Asphalt (HMA)?",
-    a: "The compaction factor represents the ratio of loose mix volume to compacted in-place volume. For typical dense-graded HMA, the ratio ranges from 1.15 to 1.25 (an average factor of 1.20). This means you need 20% more loose material than the final compacted volume requires. Typical planning values are around 1.15 to 1.25; confirm with your supplier.",
+    a: "The compaction factor is the ratio of loose mix volume to compacted in-place volume. For dense-graded HMA it ranges from 1.15 to 1.25 (average 1.20). Loose volume = Compacted volume × Compaction factor. Confirm the exact value with your supplier.",
   },
   {
-    q: "How do I convert bitumen weight in tonnes to litres?",
-    a: "Divide the bitumen weight in kilograms by the pure binder density (typically 1.03 kg/L). For example, 4,428 kg ÷ 1.03 kg/L = 4,299 litres. To find the number of 200-litre drums, divide total litres by 200; for 20-litre drums divide by 20.",
+    q: "How do I convert bitumen weight to litres and drums?",
+    a: "Divide bitumen kg by the pure binder density (typically 1.03 kg/L). Example: 4,428 kg ÷ 1.03 = 4,299 litres. To find drums: Litres ÷ 200 for 200 L drums, or Litres ÷ 20 for 20 L drums.",
   },
 ];
 
@@ -663,87 +683,123 @@ Bitumen Calculation Formulas & Step-by-Step Method
           </div>
 
           {/* ── ALL BITUMEN FORMULAS ── */}
-          <div className="mt-10 space-y-8">
+          <div id="bitumen-formulas" className="mt-10 space-y-8">
 
-            {/* Formula Reference Table */}
-            <div className="bg-gradient-to-br from-white/8 to-white/3 border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-violet-500/20 border border-violet-400/30">
-                  <FileText size={20} className="text-violet-400" />
+            {/* Section heading */}
+            <div className="flex flex-col items-start gap-1 mb-2">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/20 to-transparent border-l-4 border-violet-400 text-white px-4 py-2 rounded-r-lg text-sm font-bold">
+                <FileText size={15} className="text-violet-400" />
+                Formula Reference
+              </div>
+              <h3 className="text-3xl font-black text-white mt-3">All Bitumen Formulas at a Glance</h3>
+              <p className="text-white/55 text-base">Every equation used in bitumen estimation—grouped by category for quick reference.</p>
+            </div>
+
+            {/* Formula Cards Grid — 3 categories */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+              {/* Category 1: Core Quantities */}
+              <div className="bg-gradient-to-br from-violet-500/10 to-violet-500/5 border border-violet-400/20 rounded-2xl p-6">
+                <div className="flex items-center gap-2 mb-5">
+                  <div className="w-8 h-8 rounded-lg bg-violet-500/20 border border-violet-400/30 flex items-center justify-center">
+                    <CalcIcon size={16} className="text-violet-400" />
+                  </div>
+                  <span className="text-violet-300 font-black text-xs uppercase tracking-widest">Core Quantities</span>
                 </div>
-                <h3 className="text-2xl font-black text-white">All Bitumen Formulas</h3>
-              </div>
-              <p className="text-white/60 text-sm mb-6">Complete reference — every formula used in bitumen quantity estimation, from volume to drums.</p>
-              <div className="overflow-x-auto rounded-2xl border border-white/10">
-                <table className="w-full text-sm min-w-[560px]">
-                  <thead>
-                    <tr className="bg-white/10 border-b border-white/10">
-                      <th className="text-left px-5 py-3 text-white/60 font-black uppercase tracking-widest text-xs w-[38%]">Formula</th>
-                      <th className="text-left px-5 py-3 text-white/60 font-black uppercase tracking-widest text-xs">Equation</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-white/5">
-                    {[
-                      { label: "Master formula", eq: "Bitumen (kg) = L × W × T × density × (B% ÷ 100)" },
-                      { label: "Bitumen %", eq: "B% = (bitumen weight ÷ total mix weight) × 100" },
-                      { label: "Aggregate weight", eq: "Total mix × ((100 − B%) ÷ 100)" },
-                      { label: "Bitumen per m²", eq: "kg/m² = T (m) × density × (B% ÷ 100)" },
-                      { label: "Order quantity", eq: "Net bitumen × (1 + wastage% ÷ 100)" },
-                      { label: "Loose volume", eq: "Compacted volume × compaction factor" },
-                      { label: "Litres", eq: "Bitumen kg ÷ binder density (kg/L)" },
-                      { label: "Drums", eq: "Litres ÷ 200 (or ÷ 20 for small drums)" },
-                      { label: "Cost", eq: "Bitumen tonnes × price per tonne" },
-                    ].map(({ label, eq }) => (
-                      <tr key={label} className="hover:bg-white/5 transition-colors">
-                        <td className="px-5 py-3.5 text-orange-300 font-semibold">{label}</td>
-                        <td className="px-5 py-3.5 text-white/80 font-mono text-xs md:text-sm">{eq}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
-              {/* Unit Conversions */}
-              <div className="mt-6 bg-blue-900/20 border border-blue-500/20 rounded-2xl p-5">
-                <div className="text-xs text-blue-300/70 uppercase tracking-widest font-black mb-3">Unit Conversions</div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 font-mono text-sm">
+                <div className="space-y-4">
                   {[
-                    "mm ÷ 1000 = m",
-                    "ft × 0.3048 = m",
-                    "in × 25.4 = mm",
-                    "lb/ft³ × 16.0185 = kg/m³",
-                    "lb/yd³ × 0.5933 = kg/m³",
-                    "1 short ton = 907.185 kg",
-                  ].map((c) => (
-                    <div key={c} className="text-white/70 bg-white/5 rounded-lg px-3 py-1.5">{c}</div>
+                    { name: "Bitumen (kg)", eq: "L × W × T × ρ × (B% ÷ 100)" },
+                    { name: "Bitumen %", eq: "(bitumen wt ÷ mix wt) × 100" },
+                    { name: "Aggregate wt", eq: "Mix wt × ((100 − B%) ÷ 100)" },
+                    { name: "Bitumen / m²", eq: "T (m) × ρ × (B% ÷ 100)" },
+                  ].map(({ name, eq }) => (
+                    <div key={name} className="bg-black/30 rounded-xl p-3 border border-white/5">
+                      <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">{name}</div>
+                      <div className="text-white font-mono text-xs md:text-sm font-semibold">{eq}</div>
+                    </div>
                   ))}
                 </div>
               </div>
 
-              {/* Compaction note */}
-              <p className="mt-4 text-orange-200/70 text-sm bg-orange-500/10 border border-orange-500/20 rounded-xl px-4 py-3">
-                ⚠️ Typical compaction factor planning values are around 1.15 to 1.25; confirm with your supplier.
-              </p>
+              {/* Category 2: Ordering & Volume */}
+              <div className="bg-gradient-to-br from-orange-500/10 to-orange-500/5 border border-orange-400/20 rounded-2xl p-6">
+                <div className="flex items-center gap-2 mb-5">
+                  <div className="w-8 h-8 rounded-lg bg-orange-500/20 border border-orange-400/30 flex items-center justify-center">
+                    <ShoppingCart size={16} className="text-orange-400" />
+                  </div>
+                  <span className="text-orange-300 font-black text-xs uppercase tracking-widest">Ordering &amp; Volume</span>
+                </div>
+                <div className="space-y-4">
+                  {[
+                    { name: "Order quantity", eq: "Net bitumen × (1 + wastage% ÷ 100)" },
+                    { name: "Loose volume", eq: "Compacted vol × compaction factor" },
+                    { name: "Litres", eq: "Bitumen kg ÷ binder density (kg/L)" },
+                    { name: "Drums (200 L)", eq: "Litres ÷ 200" },
+                  ].map(({ name, eq }) => (
+                    <div key={name} className="bg-black/30 rounded-xl p-3 border border-white/5">
+                      <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">{name}</div>
+                      <div className="text-orange-200 font-mono text-xs md:text-sm font-semibold">{eq}</div>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-4 text-orange-200/60 text-xs bg-orange-500/10 border border-orange-500/20 rounded-lg px-3 py-2">
+                  ⚠️ Compaction factor: 1.15–1.25 typical. Confirm with your supplier.
+                </p>
+              </div>
+
+              {/* Category 3: Cost + Unit Conversions */}
+              <div className="bg-gradient-to-br from-teal-500/10 to-teal-500/5 border border-teal-400/20 rounded-2xl p-6">
+                <div className="flex items-center gap-2 mb-5">
+                  <div className="w-8 h-8 rounded-lg bg-teal-500/20 border border-teal-400/30 flex items-center justify-center">
+                    <DollarSign size={16} className="text-teal-400" />
+                  </div>
+                  <span className="text-teal-300 font-black text-xs uppercase tracking-widest">Cost &amp; Conversions</span>
+                </div>
+                <div className="space-y-4 mb-4">
+                  <div className="bg-black/30 rounded-xl p-3 border border-white/5">
+                    <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">Cost</div>
+                    <div className="text-teal-200 font-mono text-xs md:text-sm font-semibold">Bitumen t × price/tonne</div>
+                  </div>
+                </div>
+                <div className="bg-blue-900/20 border border-blue-500/15 rounded-xl p-4">
+                  <div className="text-blue-300/70 text-[10px] uppercase tracking-widest font-black mb-3">Unit Conversions</div>
+                  <div className="space-y-1.5 font-mono text-xs text-white/70">
+                    {[
+                      "mm ÷ 1000 = m",
+                      "ft × 0.3048 = m",
+                      "in × 25.4 = mm",
+                      "lb/ft³ × 16.0185 = kg/m³",
+                      "lb/yd³ × 0.5933 = kg/m³",
+                      "1 short ton = 907.185 kg",
+                    ].map((c) => (
+                      <div key={c} className="bg-white/5 rounded px-2 py-1">{c}</div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
             </div>
 
             {/* Quick Lookup Table */}
             <div className="bg-gradient-to-br from-white/8 to-white/3 border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-teal-500/20 border border-teal-400/30">
-                  <BarChart size={20} className="text-teal-400" />
+              <div className="flex flex-col sm:flex-row sm:items-end gap-3 mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-teal-500/20 border border-teal-400/30">
+                    <BarChart size={20} className="text-teal-400" />
+                  </div>
+                  <h3 className="text-2xl font-black text-white">Quick Bitumen Lookup Table</h3>
                 </div>
-                <h3 className="text-2xl font-black text-white">Quick Lookup Table</h3>
+                <p className="text-white/45 text-sm sm:ml-auto italic">1 km × 3.5 m road — density 2,350 kg/m³. Adjust density for your mix.</p>
               </div>
-              <p className="text-white/55 text-sm mb-1">Road: 1 km × 3.5 m, mix density 2,350 kg/m³. Values shown are <strong className="text-white/80">tonnes of bitumen</strong>.</p>
-              <p className="text-white/40 text-xs mb-6 italic">Change density to match your mix design.</p>
+              <p className="text-white/50 text-sm mb-5">Values below are <span className="text-orange-300 font-bold">tonnes of bitumen binder</span> for a 1 km × 3.5 m road at each thickness and bitumen content combination.</p>
               <div className="overflow-x-auto rounded-2xl border border-white/10">
                 <table className="w-full text-sm min-w-[480px]">
                   <thead>
                     <tr className="bg-white/10 border-b border-white/10">
                       <th className="text-left px-5 py-3 text-white/60 font-black uppercase tracking-widest text-xs">Thickness</th>
-                      <th className="text-right px-5 py-3 text-white/60 font-black uppercase tracking-widest text-xs">Mix (t)</th>
-                      <th className="text-right px-5 py-3 text-orange-300/80 font-black uppercase tracking-widest text-xs">4.5%</th>
-                      <th className="text-right px-5 py-3 text-orange-300/80 font-black uppercase tracking-widest text-xs">5.0%</th>
+                      <th className="text-right px-5 py-3 text-white/50 font-black uppercase tracking-widest text-xs">Mix (t)</th>
+                      <th className="text-right px-5 py-3 text-teal-300/80 font-black uppercase tracking-widest text-xs">4.5%</th>
+                      <th className="text-right px-5 py-3 text-teal-300/80 font-black uppercase tracking-widest text-xs">5.0%</th>
                       <th className="text-right px-5 py-3 text-orange-300/80 font-black uppercase tracking-widest text-xs">5.5%</th>
                       <th className="text-right px-5 py-3 text-orange-300/80 font-black uppercase tracking-widest text-xs">6.0%</th>
                     </tr>
@@ -758,7 +814,7 @@ Bitumen Calculation Formulas & Step-by-Step Method
                     ].map((row) => (
                       <tr key={row.t} className="hover:bg-white/5 transition-colors">
                         <td className="px-5 py-3.5 text-white font-semibold">{row.t}</td>
-                        <td className="px-5 py-3.5 text-white/60 text-right font-mono">{row.mix}</td>
+                        <td className="px-5 py-3.5 text-white/50 text-right font-mono">{row.mix}</td>
                         <td className="px-5 py-3.5 text-teal-300 text-right font-mono font-bold">{row.v45}</td>
                         <td className="px-5 py-3.5 text-teal-300 text-right font-mono font-bold">{row.v50}</td>
                         <td className="px-5 py-3.5 text-orange-300 text-right font-mono font-bold">{row.v55}</td>
@@ -770,125 +826,103 @@ Bitumen Calculation Formulas & Step-by-Step Method
               </div>
             </div>
 
-            {/* Bitumen per tonne */}
-            <div className="bg-gradient-to-br from-white/8 to-white/3 border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-orange-500/20 border border-orange-400/30">
-                  <Scale size={20} className="text-orange-400" />
+            {/* Bitumen per tonne + Worked Examples side by side */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+              {/* Bitumen per tonne of mix */}
+              <div className="bg-gradient-to-br from-white/8 to-white/3 border border-white/10 rounded-3xl p-7 shadow-2xl">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-9 h-9 rounded-xl flex items-center justify-center bg-orange-500/20 border border-orange-400/30">
+                    <Scale size={18} className="text-orange-400" />
+                  </div>
+                  <h3 className="text-xl font-black text-white">Bitumen per Tonne of Asphalt</h3>
                 </div>
-                <h3 className="text-2xl font-black text-white">Bitumen per Tonne of Asphalt</h3>
-              </div>
-              <div className="overflow-x-auto rounded-2xl border border-white/10">
-                <table className="w-full text-sm min-w-[360px]">
-                  <thead>
-                    <tr className="bg-white/10 border-b border-white/10">
-                      <th className="text-left px-5 py-3 text-white/60 font-black uppercase tracking-widest text-xs">Bitumen %</th>
-                      <th className="text-right px-5 py-3 text-orange-300/80 font-black uppercase tracking-widest text-xs">Bitumen</th>
-                      <th className="text-right px-5 py-3 text-white/60 font-black uppercase tracking-widest text-xs">Aggregate</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-white/5">
-                    {[
-                      { pct: "4.5%", bit: "45 kg", agg: "955 kg" },
-                      { pct: "5.0%", bit: "50 kg", agg: "950 kg" },
-                      { pct: "5.5%", bit: "55 kg", agg: "945 kg" },
-                      { pct: "6.0%", bit: "60 kg", agg: "940 kg" },
-                      { pct: "6.5%", bit: "65 kg", agg: "935 kg" },
-                    ].map((row) => (
-                      <tr key={row.pct} className="hover:bg-white/5 transition-colors">
-                        <td className="px-5 py-3.5 text-white font-semibold">{row.pct}</td>
-                        <td className="px-5 py-3.5 text-orange-300 text-right font-mono font-bold">{row.bit}</td>
-                        <td className="px-5 py-3.5 text-white/60 text-right font-mono">{row.agg}</td>
+                <p className="text-white/50 text-sm mb-4">Per 1 tonne of total asphalt mix at each bitumen content.</p>
+                <div className="overflow-x-auto rounded-xl border border-white/10">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-white/10 border-b border-white/10">
+                        <th className="text-left px-4 py-2.5 text-white/60 font-black uppercase tracking-widest text-xs">B%</th>
+                        <th className="text-right px-4 py-2.5 text-orange-300/80 font-black uppercase tracking-widest text-xs">Bitumen</th>
+                        <th className="text-right px-4 py-2.5 text-white/60 font-black uppercase tracking-widest text-xs">Aggregate</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody className="divide-y divide-white/5">
+                      {[
+                        { pct: "4.5%", bit: "45 kg", agg: "955 kg" },
+                        { pct: "5.0%", bit: "50 kg", agg: "950 kg" },
+                        { pct: "5.5%", bit: "55 kg", agg: "945 kg" },
+                        { pct: "6.0%", bit: "60 kg", agg: "940 kg" },
+                        { pct: "6.5%", bit: "65 kg", agg: "935 kg" },
+                      ].map((row) => (
+                        <tr key={row.pct} className="hover:bg-white/5 transition-colors">
+                          <td className="px-4 py-3 text-white font-semibold">{row.pct}</td>
+                          <td className="px-4 py-3 text-orange-300 text-right font-mono font-bold">{row.bit}</td>
+                          <td className="px-4 py-3 text-white/55 text-right font-mono">{row.agg}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div>
 
-            {/* Real-World Examples */}
-            <div className="bg-gradient-to-br from-white/8 to-white/3 border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-green-500/20 border border-green-400/30">
-                  <CheckCircle2 size={20} className="text-green-400" />
+              {/* Real-world examples */}
+              <div className="bg-gradient-to-br from-white/8 to-white/3 border border-white/10 rounded-3xl p-7 shadow-2xl">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-9 h-9 rounded-xl flex items-center justify-center bg-green-500/20 border border-green-400/30">
+                    <CheckCircle2 size={18} className="text-green-400" />
+                  </div>
+                  <h3 className="text-xl font-black text-white">Worked Examples</h3>
                 </div>
-                <h3 className="text-2xl font-black text-white">Real-World Worked Examples</h3>
+                <div className="space-y-4">
+
+                  {/* Example A: Driveway */}
+                  <div className="rounded-2xl border border-white/8 overflow-hidden">
+                    <div className="flex items-center gap-2 bg-orange-500/15 border-b border-white/8 px-4 py-2.5">
+                      <span className="w-6 h-6 rounded-full bg-orange-500 text-white text-[10px] font-black flex items-center justify-center shrink-0">A</span>
+                      <span className="text-white font-bold text-sm">Residential Driveway</span>
+                      <span className="ml-auto text-white/35 text-[10px] font-mono">15×4×40 mm · 5.5%</span>
+                    </div>
+                    <div className="px-4 py-3 font-mono text-xs space-y-1 text-white/70 bg-black/20">
+                      <p>Vol: 15×4×0.040 = <span className="text-teal-300 font-bold">2.4 m³</span></p>
+                      <p>Mix: 2.4×2,350 = <span className="text-teal-300 font-bold">5,640 kg</span></p>
+                      <p>Bitumen: 5,640×0.055 = <span className="text-orange-300 font-bold">310.2 kg</span></p>
+                      <p className="text-white/40 text-[10px] pt-1">≈ 301 L binder · ~15 × 20 L drums</p>
+                    </div>
+                  </div>
+
+                  {/* Example B: Car Park */}
+                  <div className="rounded-2xl border border-white/8 overflow-hidden">
+                    <div className="flex items-center gap-2 bg-blue-500/15 border-b border-white/8 px-4 py-2.5">
+                      <span className="w-6 h-6 rounded-full bg-blue-500 text-white text-[10px] font-black flex items-center justify-center shrink-0">B</span>
+                      <span className="text-white font-bold text-sm">Car Park</span>
+                      <span className="ml-auto text-white/35 text-[10px] font-mono">40×25×50 mm · 3% waste · CF 1.20</span>
+                    </div>
+                    <div className="px-4 py-3 font-mono text-xs space-y-1 text-white/70 bg-black/20">
+                      <p>Mix: 1,000 m² × 0.050 × 2,350 = <span className="text-teal-300 font-bold">117.5 t</span></p>
+                      <p>Net bitumen: 117,500×0.055 = <span className="text-orange-300 font-bold">6.46 t</span></p>
+                      <p>Order (+3%): 6.46×1.03 = <span className="text-orange-300 font-bold">6.66 t</span></p>
+                      <p>Loose vol: 50×1.20 = <span className="text-teal-300 font-bold">60 m³</span> · ≈31 × 200 L drums</p>
+                    </div>
+                  </div>
+
+                  {/* Example C: Imperial */}
+                  <div className="rounded-2xl border border-white/8 overflow-hidden">
+                    <div className="flex items-center gap-2 bg-yellow-500/15 border-b border-white/8 px-4 py-2.5">
+                      <span className="w-6 h-6 rounded-full bg-yellow-500 text-white text-[10px] font-black flex items-center justify-center shrink-0">C</span>
+                      <span className="text-white font-bold text-sm">Imperial Units</span>
+                      <span className="ml-auto text-white/35 text-[10px] font-mono">1 mi × 12 ft × 2 in · 145 lb/ft³ · 5%</span>
+                    </div>
+                    <div className="px-4 py-3 font-mono text-xs space-y-1 text-white/70 bg-black/20">
+                      <p>Vol: 5,280×12×(2÷12) = <span className="text-teal-300 font-bold">10,560 ft³</span></p>
+                      <p>Mix: 10,560×145 = <span className="text-teal-300 font-bold">765.6 short tons</span></p>
+                      <p>Bitumen: 765.6×0.05 = <span className="text-orange-300 font-bold">38.28 short tons ≈34.7 t</span></p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
-              <div className="space-y-5">
 
-                {/* Example A */}
-                <div className="bg-black/30 border border-white/8 rounded-2xl p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="w-7 h-7 rounded-full bg-orange-500 text-white text-xs font-black flex items-center justify-center">A</span>
-                    <h4 className="text-white font-bold">Residential Driveway</h4>
-                    <span className="ml-auto text-white/40 text-xs font-mono">15 m × 4 m × 40 mm — 2,350 kg/m³ — 5.5%</span>
-                  </div>
-                  <div className="font-mono text-sm space-y-1 text-white/75">
-                    <p>Volume: 15 × 4 × 0.040 = <span className="text-teal-300 font-bold">2.4 m³</span></p>
-                    <p>Mix weight: 2.4 × 2,350 = <span className="text-teal-300 font-bold">5,640 kg</span></p>
-                    <p>Bitumen: 5,640 × 0.055 = <span className="text-orange-300 font-bold">310.2 kg</span></p>
-                    <p className="text-white/50 text-xs mt-2">Litres at 1.03 kg/L: ≈ 301 L — about 1.5 × 200 L drums, or ~15 × 20 L drums</p>
-                  </div>
-                </div>
-
-                {/* Example B */}
-                <div className="bg-black/30 border border-white/8 rounded-2xl p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="w-7 h-7 rounded-full bg-blue-500 text-white text-xs font-black flex items-center justify-center">B</span>
-                    <h4 className="text-white font-bold">Car Park</h4>
-                    <span className="ml-auto text-white/40 text-xs font-mono">40 m × 25 m × 50 mm — 3% wastage — CF 1.20</span>
-                  </div>
-                  <div className="font-mono text-sm space-y-1 text-white/75">
-                    <p>Area: 1,000 m² · Volume: 50 m³ · Mix: <span className="text-teal-300 font-bold">117.5 t</span></p>
-                    <p>Net bitumen: 117,500 × 0.055 = <span className="text-orange-300 font-bold">6,462.5 kg (6.46 t)</span></p>
-                    <p>Order qty (+3%): 6.46 × 1.03 = <span className="text-orange-300 font-bold">6.66 t</span></p>
-                    <p>Loose volume: 50 × 1.20 = <span className="text-teal-300 font-bold">60 m³</span></p>
-                    <p className="text-white/50 text-xs mt-2">Litres: 6,462.5 ÷ 1.03 ≈ 6,274 L — about 31 × 200 L drums</p>
-                  </div>
-                </div>
-
-                {/* Example C */}
-                <div className="bg-black/30 border border-white/8 rounded-2xl p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="w-7 h-7 rounded-full bg-violet-500 text-white text-xs font-black flex items-center justify-center">C</span>
-                    <h4 className="text-white font-bold">Highway — 3 Layers</h4>
-                  </div>
-                  <div className="font-mono text-sm space-y-1 text-white/75">
-                    <p>Net bitumen from quick-lookup table: <span className="text-orange-300 font-bold">61.3 t</span></p>
-                    <p>With 5% wastage: 61.3 × 1.05 = <span className="text-orange-300 font-bold">64.4 t order quantity</span></p>
-                  </div>
-                </div>
-
-                {/* Example D */}
-                <div className="bg-black/30 border border-white/8 rounded-2xl p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="w-7 h-7 rounded-full bg-teal-500 text-white text-xs font-black flex items-center justify-center">D</span>
-                    <h4 className="text-white font-bold">Main Example with Wastage &amp; Loose Volume</h4>
-                    <span className="ml-auto text-white/40 text-xs font-mono">1 km × 3.5 m × 50 mm — 5.5%</span>
-                  </div>
-                  <div className="font-mono text-sm space-y-1 text-white/75">
-                    <p>Net bitumen (from calculator): <span className="text-orange-300 font-bold">22.62 t</span></p>
-                    <p>Order qty (+5%): 22.62 × 1.05 = <span className="text-orange-300 font-bold">23.75 t</span></p>
-                    <p>Loose volume (CF 1.20): 175 × 1.20 = <span className="text-teal-300 font-bold">210 m³</span></p>
-                  </div>
-                </div>
-
-                {/* Example E */}
-                <div className="bg-black/30 border border-white/8 rounded-2xl p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="w-7 h-7 rounded-full bg-yellow-500 text-white text-xs font-black flex items-center justify-center">E</span>
-                    <h4 className="text-white font-bold">Imperial Units</h4>
-                    <span className="ml-auto text-white/40 text-xs font-mono">1 mile × 12 ft × 2 in — 145 lb/ft³ — 5%</span>
-                  </div>
-                  <div className="font-mono text-sm space-y-1 text-white/75">
-                    <p>Volume: 5,280 × 12 × (2/12) = <span className="text-teal-300 font-bold">10,560 ft³</span></p>
-                    <p>Mix weight: 10,560 × 145 = <span className="text-teal-300 font-bold">1,531,200 lb (765.6 short tons)</span></p>
-                    <p>Bitumen: 765.6 × 0.05 = <span className="text-orange-300 font-bold">38.28 short tons</span></p>
-                    <p className="text-white/50 text-xs mt-2">Convert: 38.28 short tons × 907.185 = 34,715 kg ≈ 34.7 tonnes</p>
-                  </div>
-                </div>
-
-              </div>
             </div>
 
           </div>
@@ -1169,6 +1203,11 @@ Bitumen Calculation Formulas & Step-by-Step Method
               Noticeably different from calculating a single average layer, and closer to what a
               real procurement order needs.
             </p>
+            <div className="mt-6 bg-orange-500/10 border border-orange-500/20 rounded-2xl px-6 py-4">
+              <p className="text-orange-200/80 text-sm font-medium">
+                <span className="text-orange-300 font-black">With 5% wastage:</span> 61.3 t × 1.05 = <span className="text-orange-300 font-black">64.4 t order quantity.</span> Always add a wastage allowance (2–5%) before placing your procurement order.
+              </p>
+            </div>
 
             {/* Enhanced Image Container */}
             <div className="w-full mt-12">
