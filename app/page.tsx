@@ -2,7 +2,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
-import Calculator from "./components/Calculator";
+import dynamic from "next/dynamic";
+
+const Calculator = dynamic(() => import("./components/Calculator"), {
+  ssr: false,
+  loading: () => (
+    <div className="animate-pulse rounded-3xl bg-white/10 border border-white/10 h-[560px] w-full" />
+  ),
+});
 import {
   Info,
   Calculator as CalcIcon,
@@ -346,8 +353,9 @@ export default function Home() {
                   alt="Civil engineer using bitumen calculator for pavement estimation"
                   fill
                   priority
+                  fetchPriority="high"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 900px"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 85vw, 750px"
                 />
               </div>
             </div>
