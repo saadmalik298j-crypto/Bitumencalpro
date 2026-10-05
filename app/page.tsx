@@ -42,7 +42,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Free Bitumen Calculator | Estimate Bitumen & Asphalt Mix",
   description:
-    "Estimate bitumen quantity, asphalt mix weight, aggregate weight, and project cost in seconds. Fast, accurate, and free for engineers and contractors.",
+    "Free bitumen calculator to estimate bitumen, asphalt mix weight and aggregate for any road project. Includes wastage, loose volume and litres.",
   keywords: [
     "bitumen calculator",
     "asphalt quantity calculator",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free Bitumen Calculator | Estimate Bitumen & Asphalt Mix",
     description:
-      "Estimate bitumen quantity, asphalt mix weight, aggregate weight, and project cost in seconds. Fast, accurate, and free for engineers and contractors.",
+      "Free bitumen calculator to estimate bitumen, asphalt mix weight and aggregate for any road project. Includes wastage, loose volume and litres.",
     url: "https://bitumencalcpro.com",
     siteName: "BitumenCalcPro",
     type: "website",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Free Bitumen Calculator | Estimate Bitumen & Asphalt Mix",
     description:
-      "Estimate bitumen quantity, asphalt mix weight, aggregate weight, and project cost in seconds. Fast, accurate, and free for engineers and contractors.",
+      "Free bitumen calculator to estimate bitumen, asphalt mix weight and aggregate for any road project. Includes wastage, loose volume and litres.",
     images: ["/bitumen-calculator-og-image.png"],
   },
 };
@@ -450,8 +450,13 @@ export default function Home() {
                 fine for early-stage estimating.
               </p>
               <div className="text-white/70 text-sm leading-relaxed border-t border-white/10 pt-4 mt-2">
-                <strong className="text-white block mb-1">Optional: Cost &amp; Advanced Settings</strong>
-                Enter a price per unit for a budgeting cost figure. You can also configure advanced options like wastage allowances, compaction factors, and custom binder density.
+                <strong className="text-white block mb-2">Optional: Cost &amp; Advanced Settings</strong>
+                <p className="mb-2">Enter a price per unit for a budget figure. Advanced options are optional:</p>
+                <ul className="space-y-1.5 list-disc list-inside text-white/80">
+                  <li><strong className="text-white">Wastage allowance:</strong> adds 2-5% for site losses (order quantity).</li>
+                  <li><strong className="text-white">Compaction factor:</strong> converts compacted volume to loose volume. Enter 1.00 to skip.</li>
+                  <li><strong className="text-white">Binder density:</strong> converts bitumen kg to litres (default 1.03 kg/L).</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -543,7 +548,9 @@ export default function Home() {
                     <td className="p-5 md:p-6 font-bold text-amber-300 group-hover:text-amber-200 flex items-center gap-2">
                       <ShoppingCart size={16} /> Wastage Allowance
                     </td>
-                    <td className="p-5 md:p-6 text-white/80">Extra percentage to add to the order quantity</td>
+                    <td className="p-5 md:p-6 text-white/80">
+                      Extra % added to order quantity (typical 2-5%, default 0)
+                    </td>
                     <td className="p-5 md:p-6 font-mono text-sm text-white/60 bg-black/20 rounded-md m-2 inline-block">
                       %
                     </td>
@@ -552,16 +559,20 @@ export default function Home() {
                     <td className="p-5 md:p-6 font-bold text-sky-300 group-hover:text-sky-200 flex items-center gap-2">
                       <Layers size={16} /> Compaction Factor
                     </td>
-                    <td className="p-5 md:p-6 text-white/80">Ratio to convert compacted volume to loose volume</td>
+                    <td className="p-5 md:p-6 text-white/80">
+                      Loose volume ÷ compacted volume (1.00 = skip)
+                    </td>
                     <td className="p-5 md:p-6 font-mono text-sm text-white/60 bg-black/20 rounded-md m-2 inline-block">
-                      ratio (e.g. 1.00)
+                      ratio
                     </td>
                   </tr>
                   <tr className="hover:bg-white/5 transition-colors group">
                     <td className="p-5 md:p-6 font-bold text-teal-300 group-hover:text-teal-200 flex items-center gap-2">
                       <FlaskConical size={16} /> Binder Density
                     </td>
-                    <td className="p-5 md:p-6 text-white/80">Density of pure bitumen for litres conversion</td>
+                    <td className="p-5 md:p-6 text-white/80">
+                      Pure bitumen density for litres (typical 1.02-1.04, default 1.03)
+                    </td>
                     <td className="p-5 md:p-6 font-mono text-sm text-white/60 bg-black/20 rounded-md m-2 inline-block">
                       kg/L
                     </td>
