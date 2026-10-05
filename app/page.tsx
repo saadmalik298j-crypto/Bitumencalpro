@@ -346,7 +346,8 @@ export default function Home() {
                   alt="Civil engineer using bitumen calculator for pavement estimation"
                   fill
                   loading="lazy"
-                  
+                  preload={true} 
+
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 900px"
                 />
