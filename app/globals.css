@@ -26,12 +26,14 @@
 @layer base {
   /* Smooth scrolling */
   html {
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
     overflow-x: hidden;
   }
 
   body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }

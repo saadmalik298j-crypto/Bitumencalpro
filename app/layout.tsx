@@ -6,7 +6,13 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+  adjustFontFallback: true,
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: {
@@ -77,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.className} bg-slate-900`}>
+    <html lang="en" className={`${inter.variable} ${inter.className} bg-slate-900`}>
       <body className="min-h-screen text-slate-800 flex flex-col selection:bg-teal-500/30">
         {/* Fixed background layer — Oversized to prevent mobile address bar flickering, GPU composited */}
         <div className="fixed -inset-[100px] -z-10 bg-gradient-to-br from-teal-600 to-orange-500 pointer-events-none transform-gpu" />
