@@ -44,11 +44,13 @@
   .hero-heading {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
       Arial, sans-serif;
-    font-display: optional;
+    /* note: font-display only works in @font-face, not here */
   }
 
-  /* Prevent long words/URLs from overflowing on mobile */
-  p, li, h1, h2, h3, h4, h5, h6, span, td, th, div {
+  /* Prevent long words/URLs from overflowing on mobile.
+     Excludes div — applying overflow-wrap to all divs can break
+     flex/grid container sizing.                                */
+  p, li, h1, h2, h3, h4, h5, h6, span, td, th {
     overflow-wrap: anywhere;
     word-break: break-word;
   }
@@ -131,15 +133,21 @@ header {
   -webkit-backface-visibility: hidden;
 }
 
-/* 3. Decorative blur orbs (all hero orbs are pointer-events-none + absolute):
-      Promote every such element to its own GPU compositor layer.
-      This is the main scroll-blink culprit on all pages. */
-.pointer-events-none {
+/* 3. Decorative blur orbs — GPU-promote only the specific orb elements,
+      not every pointer-events-none element (too broad = wasted GPU memory).
+      Target: fixed background + large blur divs in hero sections.          */
+.blur-orb {
   will-change: transform;
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+}
+
+/* Fixed background layer always benefits from GPU compositing */
+[class*="-inset-"][class*="fixed"] {
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 /* 5. Article layout containment — tells the browser these sections
