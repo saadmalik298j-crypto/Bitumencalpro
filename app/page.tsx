@@ -1035,15 +1035,20 @@ export default function Home() {
               </div>
 
               <div className="overflow-x-auto rounded-2xl border border-white/10">
-                <table className="w-full text-sm min-w-[480px]">
+                <table className="w-full text-sm min-w-[520px]">
                   <thead>
                     <tr className="bg-white/10 border-b border-white/10">
-                      <th className="text-left px-5 py-3.5 text-white/60 font-black uppercase tracking-widest text-xs">Thickness</th>
-                      <th className="text-right px-5 py-3.5 text-white/50 font-black uppercase tracking-widest text-xs">Mix (t)</th>
-                      <th className="text-right px-5 py-3.5 text-teal-300/80 font-black uppercase tracking-widest text-xs">4.5%</th>
-                      <th className="text-right px-5 py-3.5 text-teal-300/80 font-black uppercase tracking-widest text-xs">5.0%</th>
-                      <th className="text-right px-5 py-3.5 text-orange-300/80 font-black uppercase tracking-widest text-xs">5.5%</th>
-                      <th className="text-right px-5 py-3.5 text-orange-300/80 font-black uppercase tracking-widest text-xs">6.0%</th>
+                      <th rowSpan={2} className="text-left px-5 py-3.5 text-white/80 font-black uppercase tracking-widest text-xs border-r border-white/10">Thickness</th>
+                      <th rowSpan={2} className="text-right px-5 py-3.5 text-white/70 font-black uppercase tracking-widest text-xs border-r border-white/10">Mix (t)</th>
+                      <th colSpan={4} className="text-center px-5 py-2 text-orange-300 font-black uppercase tracking-widest text-xs border-b border-white/10 bg-orange-500/10">
+                        Bitumen Content (% &amp; Tonnes Required)
+                      </th>
+                    </tr>
+                    <tr className="bg-white/10 border-b border-white/10">
+                      <th className="text-right px-5 py-2.5 text-teal-300 font-black tracking-wider text-xs">4.5%</th>
+                      <th className="text-right px-5 py-2.5 text-teal-300 font-black tracking-wider text-xs">5.0%</th>
+                      <th className="text-right px-5 py-2.5 text-orange-300 font-black tracking-wider text-xs">5.5%</th>
+                      <th className="text-right px-5 py-2.5 text-orange-300 font-black tracking-wider text-xs">6.0%</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-white/5">
@@ -1055,8 +1060,8 @@ export default function Home() {
                       { t: "100 mm", mix: "822.50", v45: "37.01", v50: "41.13", v55: "45.24", v60: "49.35" },
                     ].map((row) => (
                       <tr key={row.t} className="hover:bg-white/5 transition-colors">
-                        <td className="px-5 py-4 text-white font-semibold">{row.t}</td>
-                        <td className="px-5 py-4 text-white/50 text-right font-mono">{row.mix}</td>
+                        <td className="px-5 py-4 text-white font-semibold border-r border-white/5">{row.t}</td>
+                        <td className="px-5 py-4 text-white/50 text-right font-mono border-r border-white/5">{row.mix}</td>
                         <td className="px-5 py-4 text-teal-300 text-right font-mono font-bold">{row.v45}</td>
                         <td className="px-5 py-4 text-teal-300 text-right font-mono font-bold">{row.v50}</td>
                         <td className="px-5 py-4 text-orange-300 text-right font-mono font-bold">{row.v55}</td>
