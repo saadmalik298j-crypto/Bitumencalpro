@@ -72,7 +72,17 @@ const breadcrumbSchema = {
   ],
 };
 
-function SectionImage({ src, alt, caption, priority }: { src: string; alt: string; caption?: string; priority?: boolean }) {
+function SectionImage({
+  src,
+  alt,
+  caption,
+  priority,
+}: {
+  src: string;
+  alt: string;
+  caption?: string;
+  priority?: boolean;
+}) {
   return (
     <figure className="my-8 sm:my-10 w-[calc(100vw-32px)] max-w-full lg:w-full overflow-hidden not-prose">
       <div className="relative w-full max-w-full rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 shadow-xl sm:shadow-2xl bg-black/20">
