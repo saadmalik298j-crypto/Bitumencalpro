@@ -1730,36 +1730,36 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
+                code: "Asphalt Institute MS-2",
+                title: "Mix Design Methods",
+                body: "Asphalt Institute",
+                color: "violet",
+                href: "https://asphaltinstitute.org/",
+                desc: "Industry-standard methodology for asphalt mix design and the binder content ranges used throughout our calculations.",
+              },
+              {
                 code: "AASHTO M323",
                 title: "Superpave Volumetric Mix Design",
                 body: "AASHTO",
                 color: "teal",
                 href: "https://www.transportation.org/",
-                desc: "Defines the volumetric criteria (VMA, VFA, Gmm) used to specify and verify Superpave mix designs for North American highway projects.",
+                desc: "Standard specification defining volumetric mix design requirements adopted across U.S. and international pavement projects.",
               },
               {
-                code: "Asphalt Institute MS-2",
-                title: "Mix Design Methods for Asphalt",
-                body: "Asphalt Institute",
-                color: "violet",
-                href: "https://www.asphaltinstitute.org/",
-                desc: "The industry reference manual for Marshall and Superpave mix design. Defines OBC determination, compaction criteria, and stability/flow testing.",
-              },
-              {
-                code: "BS EN 13108",
-                title: "Asphalt Mixture Specifications",
-                body: "CEN",
+                code: "AASHTO T166",
+                title: "Bulk Specific Gravity of Compacted Asphalt",
+                body: "AASHTO",
                 color: "blue",
-                href: "https://www.bsigroup.com/",
-                desc: "The suite of European asphalt mixture product standards covering HMA, SMA, BBTM, and porous asphalt — specifying binder content ranges and volumetric limits.",
+                href: "https://www.transportation.org/",
+                desc: "Reference test method for determining the compacted mix density values used in our quantity estimates.",
               },
               {
-                code: "MoRTH Section 500",
-                title: "Flexible Pavement Construction",
-                body: "MoRTH",
+                code: "FHWA Pavement Guidance",
+                title: "Pavement Design Guidance",
+                body: "FHWA",
                 color: "orange",
-                href: "https://morth.nic.in/",
-                desc: "India's Ministry of Road Transport & Highways specifications for bituminous surface and base courses — governs DBM, BC, and BM mix design in Indian road projects.",
+                href: "https://www.fhwa.dot.gov/",
+                desc: "Federal Highway Administration guidance informing general pavement design and material estimation practices.",
               },
             ].map(({ code, title, body, color, href, desc }) => {
               const badgeColors: Record<string, string> = {
@@ -1775,9 +1775,12 @@ export default function Home() {
                 orange: "border-orange-500/20 hover:border-orange-500/50",
               };
               return (
-                <div
+                <a
                   key={code}
-                  className={`bg-gradient-to-b from-white/10 to-transparent ${cardBorder[color]} border rounded-[2rem] p-7 transition-all duration-300 hover:-translate-y-1 shadow-xl flex flex-col gap-4`}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`bg-gradient-to-b from-white/10 to-transparent ${cardBorder[color]} border rounded-[2rem] p-7 transition-all duration-300 hover:-translate-y-1 shadow-xl flex flex-col gap-4 group`}
                 >
                   <div className="flex items-start justify-between gap-2">
                     <span
@@ -1785,23 +1788,14 @@ export default function Home() {
                     >
                       {body}
                     </span>
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white/30 hover:text-white/70 transition-colors shrink-0"
-                      aria-label={`External link for ${code}`}
-                    >
-                      <ExternalLink size={14} />
-                    </a>
+                    <ExternalLink size={14} className="text-white/30 group-hover:text-white/80 transition-colors shrink-0" />
                   </div>
                   <div>
-                    {/* Bold name div, no H3 */}
-                    <div className="text-base font-black text-white mb-1 leading-tight">{code}</div>
+                    <div className="text-base font-black text-white group-hover:text-teal-300 transition-colors mb-1 leading-tight">{code}</div>
                     <p className="text-white/50 text-xs font-semibold">{title}</p>
                   </div>
                   <p className="text-white/65 text-sm leading-relaxed flex-1">{desc}</p>
-                </div>
+                </a>
               );
             })}
           </div>
