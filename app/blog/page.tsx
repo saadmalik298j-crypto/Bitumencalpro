@@ -430,6 +430,8 @@ export default function BlogPage() {
                   src={featuredPost.image}
                   alt={featuredPost.imageAlt}
                   fill
+                  loading="eager"
+                  fetchPriority="high"
                   priority
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 1024px) 100vw, 50vw"

@@ -224,9 +224,10 @@ function SectionImage({
           alt={alt}
           width={1200}
           height={675}
-          className="w-full max-w-full h-auto object-contain sm:object-cover"
-          style={{ maxWidth: "100%", height: "auto", display: "block" }}
+          className="w-full max-w-full h-auto object-contain sm:object-cover" style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 900px"
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : undefined}
           priority={priority}
         />
       </div>
