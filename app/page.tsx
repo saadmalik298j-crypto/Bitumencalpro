@@ -5,7 +5,6 @@ import Script from "next/script";
 import dynamic from "next/dynamic";
 
 const Calculator = dynamic(() => import("./components/Calculator"), {
-  ssr: false,
   loading: () => (
     <div className="animate-pulse rounded-3xl bg-white/10 border border-white/10 h-[560px] w-full" />
   ),
