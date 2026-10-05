@@ -1675,7 +1675,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="flex flex-col items-center text-center w-full">
             <h2 className="text-3xl sm:text-5xl font-black text-white mb-6 drop-shadow-lg leading-tight">
-              Optimum Bitumen Content &amp; Mix Design Standards
+              Optimum Bitumen Content &amp; Mix Design Methods
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8 max-w-3xl">
               A reference table gives a starting range, but the actual percentage used on a
