@@ -203,7 +203,7 @@ function SectionImage({
           height={675}
           className="w-full max-w-full h-auto object-contain sm:object-cover" style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 75vw, 900px"
-          priority={priority}
+          preload={priority}
         />
       </div>
       {caption && (
@@ -348,8 +348,7 @@ export default function WhatIsBitumenPage() {
           src="/what-is-bitumen.webp"
           alt="What is bitumen — thick black petroleum-based road paving binder material"
           caption="Bitumen: the petroleum-derived binder that holds asphalt together"
-                    loading="eager"
-                  fetchPriority="high"
+          priority
         />
       </div>
 
