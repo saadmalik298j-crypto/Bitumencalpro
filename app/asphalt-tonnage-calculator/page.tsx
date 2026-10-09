@@ -17,8 +17,8 @@ import {
   Lightbulb,
   ShieldAlert,
   Zap,
-  ArrowRight,
   BookOpen,
+  ExternalLink,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -182,10 +182,10 @@ export default function AsphaltTonnagePage() {
           <div className="space-y-5 bg-slate-800/60 border border-white/15 p-6 sm:p-8 rounded-3xl shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl pointer-events-none" />
             <p>
-              Order 10% too little asphalt and the crew leaves a strip of the driveway unpaved. Order 10% too much and you pay for tons nobody can use, because hot mix can't be stored for next week.
+              Order 10% too little asphalt and the crew leaves a strip of the driveway unpaved. Order 10% too much and you pay for tons nobody can use, because hot mix can&apos;t be stored for next week.
             </p>
             <p>
-              This asphalt tonnage calculator gives you the weight of asphalt a job needs from its area, thickness, and density. It works in feet, yards or metres and returns US tons or metric tonnes. Below the tool you'll find the formulas, worked examples, ready-made charts and the mistakes behind most ordering errors.
+              This asphalt tonnage calculator gives you the weight of asphalt a job needs from its area, thickness, and density. It works in feet, yards or metres and returns US tons or metric tonnes. Below the tool you&apos;ll find the formulas, worked examples, ready-made charts and the mistakes behind most ordering errors.
             </p>
             <div className="flex items-center gap-3 bg-teal-500/15 border-l-4 border-teal-400 p-4 rounded-r-xl text-teal-200 font-semibold text-sm sm:text-base">
               <CheckCircle2 size={20} className="text-teal-400 flex-shrink-0" />
@@ -544,17 +544,31 @@ export default function AsphaltTonnagePage() {
             <div className="space-y-5">
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
                 <p>
-                  <strong className="text-orange-300">Thickness.</strong> Weight rises in direct proportion to thickness. Doubling the thickness doubles the tonnage. Small errors add up: a 2-inch layer that averages 2.25 inches uses 12.5% more asphalt than planned. Residential driveways commonly get 2 to 3 inches over a compacted base. Parking lots and roads often need more. Your contractor or local specification sets the real figure, and our{" "}
-                  <Link href="/blog" className="text-teal-300 underline font-semibold">
-                    asphalt layer thickness guide
-                  </Link>{" "}
-                  lists typical depths.
+                  <strong className="text-orange-300">Thickness.</strong> Weight rises in direct proportion to thickness. Doubling the thickness doubles the tonnage. Small errors add up: a 2-inch layer that averages 2.25 inches uses 12.5% more asphalt than planned. Residential driveways commonly get 2 to 3 inches over a compacted base. Parking lots and roads often need more according to{" "}
+                  <a
+                    href="https://highways.dot.gov/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-300 underline font-semibold inline-flex items-center gap-1 hover:text-white"
+                  >
+                    FHWA Pavement Design Guidelines <ExternalLink size={13} />
+                  </a>
+                  .
                 </p>
               </div>
 
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
                 <p>
-                  <strong className="text-orange-300">Density.</strong> Compacted hot mix commonly falls between 140 and 150 lb/ft³ (about 2,240 to 2,400 kg/m³). Heavier stone gives a heavier mix. Open-graded mixes have more air voids and weigh less. At 140 lb/ft³ the 7.25-ton driveway from Example 1 drops to 7.0 tons. At 150 lb/ft³ it rises to 7.5 tons.
+                  <strong className="text-orange-300">Density.</strong> Compacted hot mix commonly falls between 140 and 150 lb/ft³ (about 2,240 to 2,400 kg/m³). Specifications from the{" "}
+                  <a
+                    href="https://www.asphaltpavement.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-300 underline font-semibold inline-flex items-center gap-1 hover:text-white"
+                  >
+                    National Asphalt Pavement Association (NAPA) <ExternalLink size={13} />
+                  </a>{" "}
+                  note that aggregate type and air void target directly shift final compacted density. At 140 lb/ft³ the 7.25-ton driveway from Example 1 drops to 7.0 tons. At 150 lb/ft³ it rises to 7.5 tons.
                 </p>
               </div>
 
@@ -566,7 +580,16 @@ export default function AsphaltTonnagePage() {
 
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
                 <p>
-                  <strong className="text-orange-300">Compaction.</strong> Asphalt is placed loose and rolled down. Compaction shrinks the volume of the mix, and the weight stays the same. This calculator uses compacted thickness, so the result is the weight needed for the finished layer. Thin layers also have practical limits. A commonly cited guideline is a thickness of at least 2 to 3 times the largest stone size in the mix. Your supplier can confirm the right mix for the depth you plan.
+                  <strong className="text-orange-300">Compaction.</strong> Asphalt is placed loose and rolled down. Compaction shrinks the volume of the mix, and the weight stays the same. This calculator uses compacted thickness, so the result is the weight needed for the finished layer. Thin layers also have practical limits. Guidelines in the{" "}
+                  <a
+                    href="https://www.asphaltinstitute.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-300 underline font-semibold inline-flex items-center gap-1 hover:text-white"
+                  >
+                    Asphalt Institute MS-2 Mix Design Manual <ExternalLink size={13} />
+                  </a>{" "}
+                  recommend a lift thickness of at least 3 times the nominal maximum aggregate size (NMAS) in the mix.
                 </p>
               </div>
 

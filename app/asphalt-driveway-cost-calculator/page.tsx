@@ -16,6 +16,7 @@ import {
   ShieldAlert,
   Zap,
   BookOpen,
+  ExternalLink,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -478,13 +479,31 @@ export default function DrivewayCostPage() {
             <div className="space-y-4">
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
                 <p>
-                  <strong className="text-teal-300">Size and thickness.</strong> These two numbers set the tonnage. Area is fixed by your site. Thickness is the number you and your contractor decide.
+                  <strong className="text-teal-300">Size and thickness.</strong> These two numbers set the tonnage. Area is fixed by your site. Thickness is the number you and your contractor decide according to{" "}
+                  <a
+                    href="https://www.driveasphalt.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-300 underline font-semibold inline-flex items-center gap-1 hover:text-white"
+                  >
+                    Asphalt Pavement Alliance (APA) Driveway Guidelines <ExternalLink size={13} />
+                  </a>
+                  .
                 </p>
               </div>
 
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
                 <p>
-                  <strong className="text-teal-300">Price of the mix.</strong> It moves with binder, fuel and aggregate costs, and with the distance from the plant to your site. Our{" "}
+                  <strong className="text-teal-300">Price of the mix.</strong> It moves with binder, fuel and aggregate costs indexed by the{" "}
+                  <a
+                    href="https://www.bls.gov/ppi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-300 underline font-semibold inline-flex items-center gap-1 hover:text-white"
+                  >
+                    U.S. Bureau of Labor Statistics (BLS) Highway Materials Index <ExternalLink size={13} />
+                  </a>
+                  , and with the distance from the plant to your site. Our{" "}
                   <Link href="/" className="text-teal-300 underline font-semibold">
                     bitumen calculator
                   </Link>{" "}
@@ -518,7 +537,16 @@ export default function DrivewayCostPage() {
 
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
                 <p>
-                  <strong className="text-teal-300">Edging and finishing.</strong> Curbs, aprons and tie-ins to the street add area and labor. Many contractors suggest sealing a new surface later, so ask when and what it costs.
+                  <strong className="text-teal-300">Edging and finishing.</strong> Curbs, aprons and tie-ins to the street add area and labor. Guidelines from the{" "}
+                  <a
+                    href="https://www.asphaltpavement.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-300 underline font-semibold inline-flex items-center gap-1 hover:text-white"
+                  >
+                    National Asphalt Pavement Association (NAPA) <ExternalLink size={13} />
+                  </a>{" "}
+                  suggest sealing a new surface after curing, so ask when and what it costs.
                 </p>
               </div>
             </div>

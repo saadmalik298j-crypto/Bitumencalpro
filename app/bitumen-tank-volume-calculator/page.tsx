@@ -21,6 +21,7 @@ import {
   Info,
   Calendar,
   Thermometer,
+  ExternalLink,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -517,7 +518,16 @@ export default function TankVolumePage() {
               </h2>
             </div>
             <p>
-              Bitumen expands when heated, so each cubic metre holds less mass at 160°C than at 15°C. ASTM D4311 sets the base temperature for asphalt volume at 15°C and uses an expansion coefficient of 0.00063 per °C for asphalts denser than 966 kg/m³ at that temperature. Lighter grades use 0.00072.
+              Bitumen expands when heated, so each cubic metre holds less mass at 160°C than at 15°C.{" "}
+              <a
+                href="https://www.astm.org/d4311_d4311m-15r21.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 underline font-semibold inline-flex items-center gap-1 hover:text-white"
+              >
+                ASTM D4311 Standard Practice <ExternalLink size={13} />
+              </a>{" "}
+              sets the base temperature for asphalt volume at 15°C and uses an expansion coefficient of 0.00063 per °C for asphalts denser than 966 kg/m³ at that temperature. Lighter grades use 0.00072.
             </p>
 
             <div className="bg-slate-900/90 p-5 rounded-2xl border border-blue-500/30 font-mono text-sm sm:text-base text-blue-300">
@@ -589,7 +599,25 @@ export default function TankVolumePage() {
               The calculator returns geometric capacity. Usable capacity is smaller.
             </p>
             <p>
-              Heating coils must stay under the bitumen. Eurobitume storage guidance tells operators to consider coil position against bitumen level, because exposed coils overheat the product. The draw-off point sits above the tank bottom, so some bitumen stays unavailable. Industry fact sheets built on Refined Bitumen Association guidance subtract that unavailable volume, then take another 10% off to reach a safe working capacity. Your site procedure or tank maker sets the real limits.
+              Heating coils must stay under the bitumen.{" "}
+              <a
+                href="https://www.eurobitume.eu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 underline font-semibold inline-flex items-center gap-1 hover:text-white"
+              >
+                Eurobitume Storage &amp; Handling Guidance <ExternalLink size={13} />
+              </a>{" "}
+              tells operators to consider coil position against bitumen level, because exposed coils overheat the product. The draw-off point sits above the tank bottom, so some bitumen stays unavailable. Industry fact sheets built on{" "}
+              <a
+                href="https://www.bitumenuk.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 underline font-semibold inline-flex items-center gap-1 hover:text-white"
+              >
+                Refined Bitumen Association (RBA) Guidance <ExternalLink size={13} />
+              </a>{" "}
+              subtract that unavailable volume, then take another 10% off to reach a safe working capacity. Your site procedure or tank maker sets the real limits.
             </p>
           </section>
 
