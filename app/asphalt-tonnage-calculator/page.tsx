@@ -160,7 +160,7 @@ export default function AsphaltTonnagePage() {
             {["Imperial & Metric", "Pocket-Calculator Verified", "Instant Calculation", "100% Free Tool"].map((b) => (
               <span
                 key={b}
-                className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-md border border-white/15 text-white/90 text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-sm"
+                className="inline-flex items-center gap-1.5 bg-white/10 border border-white/15 text-white/90 text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-sm"
               >
                 <CheckCircle2 size={13} className="text-teal-400" />
                 {b}
