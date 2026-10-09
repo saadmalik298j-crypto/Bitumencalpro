@@ -113,12 +113,16 @@ export default function AsphaltTonnagePage() {
 
   return (
     <>
-      <script
+      <Script
         id="schema-tonnage-app"
+        type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <script
+      <Script
         id="schema-tonnage-faq"
+        type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
