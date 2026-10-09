@@ -3,7 +3,23 @@ import Script from "next/script";
 import Link from "next/link";
 import type { Metadata } from "next";
 import AsphaltTonnageCalculator from "./AsphaltTonnageCalculator";
-import { ChevronRight } from "lucide-react";
+import {
+  Calculator,
+  ChevronRight,
+  CheckCircle2,
+  HelpCircle,
+  BarChart3,
+  Layers,
+  Scale,
+  Ruler,
+  TrendingUp,
+  FileText,
+  Lightbulb,
+  ShieldAlert,
+  Zap,
+  ArrowRight,
+  BookOpen,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Asphalt Tonnage Calculator | Sq Ft or Sq M to Tons",
@@ -108,11 +124,11 @@ export default function AsphaltTonnagePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* HERO SECTION WITH CALCULATOR WIDGET */}
-      <div className="relative pt-20 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-teal-600/10 pointer-events-none" />
-        <div className="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-orange-500/10 blur-[100px] pointer-events-none" />
-        <div className="absolute -bottom-32 -right-32 w-[480px] h-[480px] rounded-full bg-teal-500/20 blur-[100px] pointer-events-none" />
+      {/* HERO SECTION WITH ENHANCED UI */}
+      <div className="relative pt-16 pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 via-slate-900/40 to-teal-600/10 pointer-events-none" />
+        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-orange-500/15 blur-[120px] pointer-events-none" />
+        <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full bg-teal-500/20 blur-[120px] pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-white/50 text-sm mb-6">
@@ -123,75 +139,124 @@ export default function AsphaltTonnagePage() {
             <span className="text-white/80">Asphalt Tonnage Calculator</span>
           </nav>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
-            Asphalt Tonnage Calculator
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500/25 to-yellow-500/15 border border-orange-500/40 text-orange-200 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-5 shadow-[0_0_20px_rgba(249,115,22,0.25)]">
+            <Calculator size={16} className="text-orange-400" />
+            Precision Quantity Estimator
+          </div>
+
+          <h1 className="hero-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-4 leading-tight">
+            <span className="bg-gradient-to-r from-orange-400 via-yellow-300 to-amber-200 bg-clip-text text-transparent">
+              Asphalt Tonnage
+            </span>{" "}
+            <span className="text-white">Calculator</span>
           </h1>
 
+          {/* CATCHY 1-2 SENTENCE SUBTITLE */}
+          <p className="text-white/90 text-lg md:text-xl font-medium max-w-3xl mb-8 leading-relaxed drop-shadow">
+            Calculate exact hot-mix asphalt weight for driveways, parking lots, and highways in seconds. Prevent costly site shortages and over-ordering with precision imperial & metric tonnage math.
+          </p>
+
+          <div className="flex flex-wrap gap-2.5 mb-10">
+            {["Imperial & Metric", "Pocket-Calculator Verified", "Instant Calculation", "100% Free Tool"].map((b) => (
+              <span
+                key={b}
+                className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-md border border-white/15 text-white/90 text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-sm"
+              >
+                <CheckCircle2 size={13} className="text-teal-400" />
+                {b}
+              </span>
+            ))}
+          </div>
+
           {/* CALCULATOR WIDGET AT TOP */}
-          <AsphaltTonnageCalculator />
+          <div className="bg-slate-900/60 backdrop-blur-xl border border-white/15 rounded-3xl p-2 sm:p-4 shadow-2xl shadow-orange-950/20">
+            <AsphaltTonnageCalculator />
+          </div>
         </div>
       </div>
 
-      {/* BELOW CONTENT SECTION (EXACT TEXT) */}
+      {/* BELOW CONTENT SECTION WITH ENHANCED STYLING & EXACT TEXT */}
       <article className="py-16 text-white/90 leading-relaxed">
-        <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 space-y-12 text-base sm:text-lg">
+        <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 space-y-14 text-base sm:text-lg">
           {/* INTRO PARAGRAPHS */}
-          <div className="space-y-5 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 p-6 md:p-8 rounded-3xl shadow-xl">
+          <div className="space-y-5 bg-gradient-to-br from-white/10 via-white/5 to-transparent border border-white/15 p-6 sm:p-8 rounded-3xl shadow-2xl backdrop-blur-md relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl pointer-events-none" />
             <p>
               Order 10% too little asphalt and the crew leaves a strip of the driveway unpaved. Order 10% too much and you pay for tons nobody can use, because hot mix can't be stored for next week.
             </p>
             <p>
               This asphalt tonnage calculator gives you the weight of asphalt a job needs from its area, thickness, and density. It works in feet, yards or metres and returns US tons or metric tonnes. Below the tool you'll find the formulas, worked examples, ready-made charts and the mistakes behind most ordering errors.
             </p>
-            <p className="font-semibold text-teal-300 border-l-4 border-teal-400 pl-4 py-1">
-              Every number on this page can be checked with a pocket calculator.
-            </p>
+            <div className="flex items-center gap-3 bg-teal-500/15 border-l-4 border-teal-400 p-4 rounded-r-xl text-teal-200 font-semibold text-sm sm:text-base">
+              <CheckCircle2 size={20} className="text-teal-400 flex-shrink-0" />
+              <span>Every number on this page can be checked with a pocket calculator.</span>
+            </div>
           </div>
 
           {/* HOW TO USE */}
           <section className="space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              How to Use the Asphalt Tonnage Calculator
-            </h2>
-            <ul className="space-y-4 list-disc pl-6 text-white/80">
-              <li>
-                Enter the length and width of the paved area. If you already know the area, type it in directly.
-              </li>
-              <li>
-                Enter the thickness of the finished, compacted layer, in whatever unit you measured.
-              </li>
-              <li>
-                Check the density. The default is 145 lb/ft³ (about 2,320 kg/m³), a common planning value for compacted hot mix asphalt. Replace it with your supplier's number if you have one.
-              </li>
-              <li>
-                Pick tons or tonnes and read the total weight.
-              </li>
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+              <div className="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 font-bold">
+                <Lightbulb size={20} />
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-white">
+                How to Use the Asphalt Tonnage Calculator
+              </h2>
+            </div>
+            <ul className="space-y-3.5 list-none pl-0">
+              {[
+                "Enter the length and width of the paved area. If you already know the area, type it in directly.",
+                "Enter the thickness of the finished, compacted layer, in whatever unit you measured.",
+                "Check the density. The default is 145 lb/ft³ (about 2,320 kg/m³), a common planning value for compacted hot mix asphalt. Replace it with your supplier's number if you have one.",
+                "Pick tons or tonnes and read the total weight.",
+              ].map((step, idx) => (
+                <li key={idx} className="flex items-start gap-3 bg-white/5 border border-white/10 p-4 rounded-xl">
+                  <span className="w-7 h-7 rounded-lg bg-orange-500/20 text-orange-300 font-black text-xs flex items-center justify-center flex-shrink-0 mt-0.5">
+                    {idx + 1}
+                  </span>
+                  <span className="text-white/80">{step}</span>
+                </li>
+              ))}
             </ul>
-            <p className="text-sm bg-black/40 p-4 rounded-xl border border-white/10 text-white/70">
-              Working on more than one layer? Run the tool once per layer and add the results. Layers often have different thicknesses and sometimes different densities.
-            </p>
+            <div className="bg-slate-900/80 border border-white/10 p-5 rounded-2xl text-sm text-white/70 flex items-start gap-3 shadow-inner">
+              <Zap size={18} className="text-teal-400 flex-shrink-0 mt-0.5" />
+              <p>
+                Working on more than one layer? Run the tool once per layer and add the results. Layers often have different thicknesses and sometimes different densities.
+              </p>
+            </div>
           </section>
 
           {/* THE FORMULA */}
           <section className="space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              The Asphalt Tonnage Formula
-            </h2>
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+              <div className="w-10 h-10 rounded-xl bg-teal-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 font-bold">
+                <BarChart3 size={20} />
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-white">
+                The Asphalt Tonnage Formula
+              </h2>
+            </div>
             <p>
               The calculation has three steps: find the volume, convert it to weight, then convert the weight to tons or tonnes.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
-              <div className="bg-black/40 p-6 rounded-2xl border border-orange-500/30">
-                <h3 className="text-lg font-bold text-orange-300 mb-2">US units</h3>
-                <p className="font-mono text-sm sm:text-base text-white">
+              <div className="bg-slate-900/90 p-6 rounded-2xl border border-orange-500/30 shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-orange-500/10 rounded-full blur-xl pointer-events-none" />
+                <h3 className="text-lg font-bold text-orange-300 mb-2 flex items-center gap-2">
+                  <span className="px-2 py-0.5 text-xs bg-orange-500/20 rounded font-mono">US</span> US units
+                </h3>
+                <p className="font-mono text-sm sm:text-base text-white bg-black/50 p-4 rounded-xl border border-white/10">
                   Tons = Area (ft²) × Thickness (ft) × Density (lb/ft³) ÷ 2,000
                 </p>
               </div>
 
-              <div className="bg-black/40 p-6 rounded-2xl border border-teal-500/30">
-                <h3 className="text-lg font-bold text-teal-300 mb-2">Metric units</h3>
-                <p className="font-mono text-sm sm:text-base text-white">
+              <div className="bg-slate-900/90 p-6 rounded-2xl border border-teal-500/30 shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-teal-500/10 rounded-full blur-xl pointer-events-none" />
+                <h3 className="text-lg font-bold text-teal-300 mb-2 flex items-center gap-2">
+                  <span className="px-2 py-0.5 text-xs bg-teal-500/20 rounded font-mono">SI</span> Metric units
+                </h3>
+                <p className="font-mono text-sm sm:text-base text-white bg-black/50 p-4 rounded-xl border border-white/10">
                   Tonnes = Area (m²) × Thickness (m) × Density (kg/m³) ÷ 1,000
                 </p>
               </div>
@@ -203,34 +268,34 @@ export default function AsphaltTonnagePage() {
 
             <div className="space-y-4">
               <p className="font-semibold text-white">At 145 lb/ft³, a few constants save time on site:</p>
-              <div className="overflow-x-auto bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl">
+              <div className="overflow-x-auto bg-slate-900/80 border border-white/15 rounded-2xl shadow-xl">
                 <table className="w-full text-left text-sm sm:text-base">
                   <thead className="bg-white/10 text-white">
                     <tr>
-                      <th className="p-4 font-bold border-b border-white/10">Quantity</th>
-                      <th className="p-4 font-bold border-b border-white/10">Value</th>
+                      <th className="p-4 font-bold border-b border-white/10 uppercase tracking-wider text-xs text-white/60">Quantity</th>
+                      <th className="p-4 font-bold border-b border-white/10 uppercase tracking-wider text-xs text-white/60">Value</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-white/10 text-white/80">
-                    <tr>
+                    <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4">1 inch of asphalt, per ft²</td>
-                      <td className="p-4 font-mono text-orange-300">12.08 lb</td>
+                      <td className="p-4 font-mono text-orange-300 font-semibold">12.08 lb</td>
                     </tr>
-                    <tr>
+                    <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4">1 inch of asphalt, per yd²</td>
-                      <td className="p-4 font-mono text-orange-300">108.75 lb (most estimators round to 110)</td>
+                      <td className="p-4 font-mono text-orange-300 font-semibold">108.75 lb (most estimators round to 110)</td>
                     </tr>
-                    <tr>
+                    <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4">2 inches of asphalt, per ft²</td>
-                      <td className="p-4 font-mono text-orange-300">24.2 lb</td>
+                      <td className="p-4 font-mono text-orange-300 font-semibold">24.2 lb</td>
                     </tr>
-                    <tr>
+                    <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4">1 yd³ of compacted asphalt</td>
-                      <td className="p-4 font-mono text-orange-300">about 1.96 tons</td>
+                      <td className="p-4 font-mono text-orange-300 font-semibold">about 1.96 tons</td>
                     </tr>
-                    <tr>
+                    <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4">1 m² at 50 mm (2,350 kg/m³)</td>
-                      <td className="p-4 font-mono text-teal-300">117.5 kg</td>
+                      <td className="p-4 font-mono text-teal-300 font-semibold">117.5 kg</td>
                     </tr>
                   </tbody>
                 </table>
@@ -240,16 +305,22 @@ export default function AsphaltTonnagePage() {
 
           {/* WORKED EXAMPLES */}
           <section className="space-y-8">
-            <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              Worked Examples
-            </h2>
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+              <div className="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 font-bold">
+                <FileText size={20} />
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-white">
+                Worked Examples
+              </h2>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* EXAMPLE 1 */}
-              <div className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-3">
-                <h3 className="text-xl font-bold text-orange-300">Example 1: Driveway, 2 inches</h3>
+              <div className="bg-slate-900/60 border border-white/15 p-6 rounded-2xl space-y-3 hover:border-orange-500/40 transition-all shadow-xl">
+                <span className="text-xs font-mono bg-orange-500/20 text-orange-300 px-2.5 py-1 rounded-md font-bold">Example 1</span>
+                <h3 className="text-xl font-bold text-white">Driveway, 2 inches</h3>
                 <p className="text-sm text-white/80">A driveway is 12 ft × 50 ft, 2 in thick, at 145 lb/ft³.</p>
-                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/40 p-4 rounded-xl border border-white/5">
+                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/50 p-4 rounded-xl border border-white/5">
                   <p>Area: 12 × 50 = 600 ft²</p>
                   <p>Volume: 600 × (2 ÷ 12) = 100 ft³</p>
                   <p>Weight: 100 × 145 = 14,500 lb</p>
@@ -259,10 +330,11 @@ export default function AsphaltTonnagePage() {
               </div>
 
               {/* EXAMPLE 2 */}
-              <div className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-3">
-                <h3 className="text-xl font-bold text-orange-300">Example 2: Driveway with a turnaround, 3 inches</h3>
+              <div className="bg-slate-900/60 border border-white/15 p-6 rounded-2xl space-y-3 hover:border-orange-500/40 transition-all shadow-xl">
+                <span className="text-xs font-mono bg-orange-500/20 text-orange-300 px-2.5 py-1 rounded-md font-bold">Example 2</span>
+                <h3 className="text-xl font-bold text-white">Driveway with a turnaround, 3 inches</h3>
                 <p className="text-sm text-white/80">A strip measures 10 ft × 40 ft. A turnaround pad measures 20 ft × 20 ft.</p>
-                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/40 p-4 rounded-xl border border-white/5">
+                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/50 p-4 rounded-xl border border-white/5">
                   <p>Area: 400 + 400 = 800 ft²</p>
                   <p>Volume: 800 × 0.25 = 200 ft³</p>
                   <p>Weight: 200 × 145 = 29,000 lb</p>
@@ -271,10 +343,11 @@ export default function AsphaltTonnagePage() {
               </div>
 
               {/* EXAMPLE 3 */}
-              <div className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-3">
-                <h3 className="text-xl font-bold text-orange-300">Example 3: Parking lot, 3 inches</h3>
+              <div className="bg-slate-900/60 border border-white/15 p-6 rounded-2xl space-y-3 hover:border-orange-500/40 transition-all shadow-xl">
+                <span className="text-xs font-mono bg-orange-500/20 text-orange-300 px-2.5 py-1 rounded-md font-bold">Example 3</span>
+                <h3 className="text-xl font-bold text-white">Parking lot, 3 inches</h3>
                 <p className="text-sm text-white/80">The lot is 60 ft × 120 ft.</p>
-                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/40 p-4 rounded-xl border border-white/5">
+                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/50 p-4 rounded-xl border border-white/5">
                   <p>Area: 7,200 ft²</p>
                   <p>Volume: 7,200 × 0.25 = 1,800 ft³</p>
                   <p>Weight: 1,800 × 145 = 261,000 lb</p>
@@ -284,10 +357,11 @@ export default function AsphaltTonnagePage() {
               </div>
 
               {/* EXAMPLE 4 */}
-              <div className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-3">
-                <h3 className="text-xl font-bold text-teal-300">Example 4: Metric car park, 50 mm</h3>
+              <div className="bg-slate-900/60 border border-white/15 p-6 rounded-2xl space-y-3 hover:border-teal-500/40 transition-all shadow-xl">
+                <span className="text-xs font-mono bg-teal-500/20 text-teal-300 px-2.5 py-1 rounded-md font-bold">Example 4</span>
+                <h3 className="text-xl font-bold text-white">Metric car park, 50 mm</h3>
                 <p className="text-sm text-white/80">The area is 200 m² and density is 2,350 kg/m³.</p>
-                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/40 p-4 rounded-xl border border-white/5">
+                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/50 p-4 rounded-xl border border-white/5">
                   <p>Volume: 200 × 0.05 = 10 m³</p>
                   <p>Weight: 10 × 2,350 = 23,500 kg</p>
                   <p className="text-teal-300 font-bold">Result: 23.5 tonnes, about 25.9 US tons</p>
@@ -295,10 +369,11 @@ export default function AsphaltTonnagePage() {
               </div>
 
               {/* EXAMPLE 5 */}
-              <div className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-3">
-                <h3 className="text-xl font-bold text-orange-300">Example 5: Square yards</h3>
+              <div className="bg-slate-900/60 border border-white/15 p-6 rounded-2xl space-y-3 hover:border-orange-500/40 transition-all shadow-xl">
+                <span className="text-xs font-mono bg-orange-500/20 text-orange-300 px-2.5 py-1 rounded-md font-bold">Example 5</span>
+                <h3 className="text-xl font-bold text-white">Square yards</h3>
                 <p className="text-sm text-white/80">An area is 100 yd² at 3 in thick.</p>
-                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/40 p-4 rounded-xl border border-white/5">
+                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/50 p-4 rounded-xl border border-white/5">
                   <p>100 × 3 × 110 lb = 33,000 lb</p>
                   <p className="text-orange-300 font-bold">Result: about 16.5 tons</p>
                 </div>
@@ -306,10 +381,11 @@ export default function AsphaltTonnagePage() {
               </div>
 
               {/* EXAMPLE 6 */}
-              <div className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-3">
-                <h3 className="text-xl font-bold text-orange-300">Example 6: Two layers</h3>
+              <div className="bg-slate-900/60 border border-white/15 p-6 rounded-2xl space-y-3 hover:border-orange-500/40 transition-all shadow-xl">
+                <span className="text-xs font-mono bg-orange-500/20 text-orange-300 px-2.5 py-1 rounded-md font-bold">Example 6</span>
+                <h3 className="text-xl font-bold text-white">Two layers</h3>
                 <p className="text-sm text-white/80">A 10,000 ft² road section gets a 3 in binder course and a 1.5 in surface course.</p>
-                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/40 p-4 rounded-xl border border-white/5">
+                <div className="font-mono text-xs sm:text-sm text-white/70 space-y-1 bg-black/50 p-4 rounded-xl border border-white/5">
                   <p>Binder: 10,000 × 0.25 × 145 ÷ 2,000 = 181.25 tons</p>
                   <p>Surface: 10,000 × 0.125 × 145 ÷ 2,000 = 90.63 tons</p>
                   <p className="text-orange-300 font-bold">Total: about 271.9 tons</p>
@@ -320,16 +396,21 @@ export default function AsphaltTonnagePage() {
 
           {/* HOW TO MEASURE ODD-SHAPED AREAS */}
           <section className="space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              How to Measure Odd-Shaped Areas
-            </h2>
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+              <div className="w-10 h-10 rounded-xl bg-teal-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 font-bold">
+                <Ruler size={20} />
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-white">
+                How to Measure Odd-Shaped Areas
+              </h2>
+            </div>
             <p>Split the surface into simple shapes, find each area, and add them.</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-mono">
-              <div className="bg-black/40 p-4 rounded-xl border border-white/10">Rectangle: length × width</div>
-              <div className="bg-black/40 p-4 rounded-xl border border-white/10">Triangle: ½ × base × height</div>
-              <div className="bg-black/40 p-4 rounded-xl border border-white/10">Circle: π × radius² (use 3.1416)</div>
-              <div className="bg-black/40 p-4 rounded-xl border border-white/10">Trapezoid: ½ × (side a + side b) × height</div>
+              <div className="bg-slate-900/80 p-4 rounded-xl border border-white/10 text-orange-300">Rectangle: length × width</div>
+              <div className="bg-slate-900/80 p-4 rounded-xl border border-white/10 text-orange-300">Triangle: ½ × base × height</div>
+              <div className="bg-slate-900/80 p-4 rounded-xl border border-white/10 text-teal-300">Circle: π × radius² (use 3.1416)</div>
+              <div className="bg-slate-900/80 p-4 rounded-xl border border-white/10 text-teal-300">Trapezoid: ½ × (side a + side b) × height</div>
             </div>
 
             <p>
@@ -343,53 +424,58 @@ export default function AsphaltTonnagePage() {
 
           {/* ASPHALT TONNAGE CHARTS */}
           <section className="space-y-8">
-            <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              Asphalt Tonnage Charts
-            </h2>
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+              <div className="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 font-bold">
+                <Layers size={20} />
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-white">
+                Asphalt Tonnage Charts
+              </h2>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* US CHART */}
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-orange-300">US units (145 lb/ft³)</h3>
-                <div className="overflow-x-auto bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl">
+                <div className="overflow-x-auto bg-slate-900/80 border border-white/15 rounded-2xl shadow-xl">
                   <table className="w-full text-left text-sm">
                     <thead className="bg-white/10 text-white">
                       <tr>
-                        <th className="p-3 border-b border-white/10">Thickness</th>
-                        <th className="p-3 border-b border-white/10">Tons per 1,000 ft²</th>
-                        <th className="p-3 border-b border-white/10">Area covered by 1 ton</th>
+                        <th className="p-3.5 border-b border-white/10">Thickness</th>
+                        <th className="p-3.5 border-b border-white/10">Tons per 1,000 ft²</th>
+                        <th className="p-3.5 border-b border-white/10">Area covered by 1 ton</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-white/10 text-white/80 font-mono">
-                      <tr>
-                        <td className="p-3">1.5 in</td>
-                        <td className="p-3">9.06</td>
-                        <td className="p-3">about 110 ft²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">1.5 in</td>
+                        <td className="p-3.5 text-orange-300">9.06</td>
+                        <td className="p-3.5">about 110 ft²</td>
                       </tr>
-                      <tr>
-                        <td className="p-3">2 in</td>
-                        <td className="p-3">12.08</td>
-                        <td className="p-3">about 83 ft²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">2 in</td>
+                        <td className="p-3.5 text-orange-300">12.08</td>
+                        <td className="p-3.5">about 83 ft²</td>
                       </tr>
-                      <tr>
-                        <td className="p-3">2.5 in</td>
-                        <td className="p-3">15.10</td>
-                        <td className="p-3">about 66 ft²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">2.5 in</td>
+                        <td className="p-3.5 text-orange-300">15.10</td>
+                        <td className="p-3.5">about 66 ft²</td>
                       </tr>
-                      <tr>
-                        <td className="p-3">3 in</td>
-                        <td className="p-3">18.13</td>
-                        <td className="p-3">about 55 ft²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">3 in</td>
+                        <td className="p-3.5 text-orange-300">18.13</td>
+                        <td className="p-3.5">about 55 ft²</td>
                       </tr>
-                      <tr>
-                        <td className="p-3">4 in</td>
-                        <td className="p-3">24.17</td>
-                        <td className="p-3">about 41 ft²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">4 in</td>
+                        <td className="p-3.5 text-orange-300">24.17</td>
+                        <td className="p-3.5">about 41 ft²</td>
                       </tr>
-                      <tr>
-                        <td className="p-3">6 in</td>
-                        <td className="p-3">36.25</td>
-                        <td className="p-3">about 28 ft²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">6 in</td>
+                        <td className="p-3.5 text-orange-300">36.25</td>
+                        <td className="p-3.5">about 28 ft²</td>
                       </tr>
                     </tbody>
                   </table>
@@ -399,40 +485,40 @@ export default function AsphaltTonnagePage() {
               {/* METRIC CHART */}
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-teal-300">Metric units (2,350 kg/m³)</h3>
-                <div className="overflow-x-auto bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl">
+                <div className="overflow-x-auto bg-slate-900/80 border border-white/15 rounded-2xl shadow-xl">
                   <table className="w-full text-left text-sm">
                     <thead className="bg-white/10 text-white">
                       <tr>
-                        <th className="p-3 border-b border-white/10">Thickness</th>
-                        <th className="p-3 border-b border-white/10">Tonnes per 100 m²</th>
-                        <th className="p-3 border-b border-white/10">Area covered by 1 tonne</th>
+                        <th className="p-3.5 border-b border-white/10">Thickness</th>
+                        <th className="p-3.5 border-b border-white/10">Tonnes per 100 m²</th>
+                        <th className="p-3.5 border-b border-white/10">Area covered by 1 tonne</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-white/10 text-white/80 font-mono">
-                      <tr>
-                        <td className="p-3">30 mm</td>
-                        <td className="p-3">7.05</td>
-                        <td className="p-3">about 14.2 m²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">30 mm</td>
+                        <td className="p-3.5 text-teal-300">7.05</td>
+                        <td className="p-3.5">about 14.2 m²</td>
                       </tr>
-                      <tr>
-                        <td className="p-3">40 mm</td>
-                        <td className="p-3">9.40</td>
-                        <td className="p-3">about 10.6 m²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">40 mm</td>
+                        <td className="p-3.5 text-teal-300">9.40</td>
+                        <td className="p-3.5">about 10.6 m²</td>
                       </tr>
-                      <tr>
-                        <td className="p-3">50 mm</td>
-                        <td className="p-3">11.75</td>
-                        <td className="p-3">about 8.5 m²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">50 mm</td>
+                        <td className="p-3.5 text-teal-300">11.75</td>
+                        <td className="p-3.5">about 8.5 m²</td>
                       </tr>
-                      <tr>
-                        <td className="p-3">75 mm</td>
-                        <td className="p-3">17.63</td>
-                        <td className="p-3">about 5.7 m²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">75 mm</td>
+                        <td className="p-3.5 text-teal-300">17.63</td>
+                        <td className="p-3.5">about 5.7 m²</td>
                       </tr>
-                      <tr>
-                        <td className="p-3">100 mm</td>
-                        <td className="p-3">23.50</td>
-                        <td className="p-3">about 4.3 m²</td>
+                      <tr className="hover:bg-white/5 transition-colors">
+                        <td className="p-3.5 text-white font-bold">100 mm</td>
+                        <td className="p-3.5 text-teal-300">23.50</td>
+                        <td className="p-3.5">about 4.3 m²</td>
                       </tr>
                     </tbody>
                   </table>
@@ -447,29 +533,48 @@ export default function AsphaltTonnagePage() {
 
           {/* WHAT CHANGES THE TONNAGE */}
           <section className="space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              What Changes the Tonnage
-            </h2>
-            <div className="space-y-4">
-              <p>
-                <strong>Thickness.</strong> Weight rises in direct proportion to thickness. Doubling the thickness doubles the tonnage. Small errors add up: a 2-inch layer that averages 2.25 inches uses 12.5% more asphalt than planned. Residential driveways commonly get 2 to 3 inches over a compacted base. Parking lots and roads often need more. Your contractor or local specification sets the real figure, and our{" "}
-                <Link href="/blog" className="text-teal-300 underline font-semibold">
-                  asphalt layer thickness guide
-                </Link>{" "}
-                lists typical depths.
-              </p>
-              <p>
-                <strong>Density.</strong> Compacted hot mix commonly falls between 140 and 150 lb/ft³ (about 2,240 to 2,400 kg/m³). Heavier stone gives a heavier mix. Open-graded mixes have more air voids and weigh less. At 140 lb/ft³ the 7.25-ton driveway from Example 1 drops to 7.0 tons. At 150 lb/ft³ it rises to 7.5 tons.
-              </p>
-              <p>
-                <strong>Base condition.</strong> A dipped, rutted or patchy base takes extra material to reach the planned thickness. Crowns and drainage slopes can shift the quantity a little compared with a flat calculation.
-              </p>
-              <p>
-                <strong>Compaction.</strong> Asphalt is placed loose and rolled down. Compaction shrinks the volume of the mix, and the weight stays the same. This calculator uses compacted thickness, so the result is the weight needed for the finished layer. Thin layers also have practical limits. A commonly cited guideline is a thickness of at least 2 to 3 times the largest stone size in the mix. Your supplier can confirm the right mix for the depth you plan.
-              </p>
-              <p>
-                <strong>Edges and transitions.</strong> Thickened edges, aprons and tie-ins to existing pavement add area and depth. Include them in your measurements.
-              </p>
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+              <div className="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 font-bold">
+                <TrendingUp size={20} />
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-white">
+                What Changes the Tonnage
+              </h2>
+            </div>
+            <div className="space-y-5">
+              <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
+                <p>
+                  <strong className="text-orange-300">Thickness.</strong> Weight rises in direct proportion to thickness. Doubling the thickness doubles the tonnage. Small errors add up: a 2-inch layer that averages 2.25 inches uses 12.5% more asphalt than planned. Residential driveways commonly get 2 to 3 inches over a compacted base. Parking lots and roads often need more. Your contractor or local specification sets the real figure, and our{" "}
+                  <Link href="/blog" className="text-teal-300 underline font-semibold">
+                    asphalt layer thickness guide
+                  </Link>{" "}
+                  lists typical depths.
+                </p>
+              </div>
+
+              <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
+                <p>
+                  <strong className="text-orange-300">Density.</strong> Compacted hot mix commonly falls between 140 and 150 lb/ft³ (about 2,240 to 2,400 kg/m³). Heavier stone gives a heavier mix. Open-graded mixes have more air voids and weigh less. At 140 lb/ft³ the 7.25-ton driveway from Example 1 drops to 7.0 tons. At 150 lb/ft³ it rises to 7.5 tons.
+                </p>
+              </div>
+
+              <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
+                <p>
+                  <strong className="text-orange-300">Base condition.</strong> A dipped, rutted or patchy base takes extra material to reach the planned thickness. Crowns and drainage slopes can shift the quantity a little compared with a flat calculation.
+                </p>
+              </div>
+
+              <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
+                <p>
+                  <strong className="text-orange-300">Compaction.</strong> Asphalt is placed loose and rolled down. Compaction shrinks the volume of the mix, and the weight stays the same. This calculator uses compacted thickness, so the result is the weight needed for the finished layer. Thin layers also have practical limits. A commonly cited guideline is a thickness of at least 2 to 3 times the largest stone size in the mix. Your supplier can confirm the right mix for the depth you plan.
+                </p>
+              </div>
+
+              <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
+                <p>
+                  <strong className="text-orange-300">Edges and transitions.</strong> Thickened edges, aprons and tie-ins to existing pavement add area and depth. Include them in your measurements.
+                </p>
+              </div>
             </div>
           </section>
 
@@ -488,19 +593,29 @@ export default function AsphaltTonnagePage() {
 
           {/* TONS VS TONNES */}
           <section className="space-y-4">
-            <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              Tons vs Tonnes
-            </h2>
-            <p>
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+              <div className="w-10 h-10 rounded-xl bg-teal-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 font-bold">
+                <Scale size={20} />
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-white">
+                Tons vs Tonnes
+              </h2>
+            </div>
+            <p className="bg-slate-900/80 p-5 rounded-2xl border border-white/10">
               A US ton is 2,000 lb, about 907 kg. A metric tonne is 1,000 kg. One tonne equals 1.1023 US tons, so 100 tonnes is about 110.2 tons, a 10% gap. Confirm which unit your quote uses before you order. A quote in tonnes read as tons leaves you 10% short.
             </p>
           </section>
 
           {/* FROM TONNAGE TO BITUMEN, TACK COAT AND COST */}
-          <section className="space-y-4">
-            <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              From Tonnage to Bitumen, Tack Coat and Cost
-            </h2>
+          <section className="space-y-6">
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+              <div className="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400 font-bold">
+                <Zap size={20} />
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-white">
+                From Tonnage to Bitumen, Tack Coat and Cost
+              </h2>
+            </div>
             <p>
               Asphalt mix is aggregate plus bitumen binder. At 5.5% binder, the 12.08 tons per 1,000 ft² at 2 inches contains about 0.66 tons of bitumen.
             </p>
@@ -526,42 +641,51 @@ export default function AsphaltTonnagePage() {
           </section>
 
           {/* COMMON MISTAKES */}
-          <section className="space-y-4">
-            <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              Common Mistakes
-            </h2>
-            <ul className="space-y-3 list-disc pl-6 text-white/80">
-              <li>
-                <strong>Skipping the thickness conversion.</strong> Inches must become feet, and millimetres must become metres.
-              </li>
-              <li>
-                <strong>Using binder density instead of mix density.</strong> Bitumen is about 1,030 kg/m³ and mix is about 2,350 kg/m³. The wrong choice returns less than half the true weight.
-              </li>
-              <li>
-                <strong>Rounding thickness down.</strong> Using 2 inches instead of 2.5 inches takes 20% off the order.
-              </li>
-              <li>
-                <strong>Counting unpaved areas.</strong> Curbs, beds and gaps add tons you never lay.
-              </li>
-              <li>
-                <strong>Mixing units mid-formula.</strong> Feet for length with inches for thickness gives nonsense unless you convert.
-              </li>
-              <li>
-                <strong>Reading tonnes as tons.</strong> The 10% difference becomes a shortage on site.
-              </li>
+          <section className="space-y-6">
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+              <div className="w-10 h-10 rounded-xl bg-red-500/20 border border-red-500/30 flex items-center justify-center text-red-400 font-bold">
+                <ShieldAlert size={20} />
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-white">
+                Common Mistakes
+              </h2>
+            </div>
+            <ul className="space-y-3.5 list-none pl-0">
+              {[
+                { title: "Skipping the thickness conversion.", text: "Inches must become feet, and millimetres must become metres." },
+                { title: "Using binder density instead of mix density.", text: "Bitumen is about 1,030 kg/m³ and mix is about 2,350 kg/m³. The wrong choice returns less than half the true weight." },
+                { title: "Rounding thickness down.", text: "Using 2 inches instead of 2.5 inches takes 20% off the order." },
+                { title: "Counting unpaved areas.", text: "Curbs, beds and gaps add tons you never lay." },
+                { title: "Mixing units mid-formula.", text: "Feet for length with inches for thickness gives nonsense unless you convert." },
+                { title: "Reading tonnes as tons.", text: "The 10% difference becomes a shortage on site." },
+              ].map((m, idx) => (
+                <li key={idx} className="bg-red-500/10 border border-red-500/20 p-4 rounded-xl flex items-start gap-3">
+                  <span className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">✕</span>
+                  <p className="text-sm sm:text-base">
+                    <strong className="text-white">{m.title}</strong> {m.text}
+                  </p>
+                </li>
+              ))}
             </ul>
           </section>
 
           {/* FAQS */}
           <section className="space-y-6">
-            <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              FAQs
-            </h2>
+            <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+              <div className="w-10 h-10 rounded-xl bg-violet-500/20 border border-violet-500/30 flex items-center justify-center text-violet-400 font-bold">
+                <HelpCircle size={20} />
+              </div>
+              <h2 className="text-2xl sm:text-4xl font-black text-white">
+                FAQs
+              </h2>
+            </div>
             <div className="space-y-4">
               {FAQ_DATA.map((faq, i) => (
-                <div key={i} className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-2">
-                  <h3 className="font-bold text-white text-lg">{faq.q}</h3>
-                  <p className="text-white/70 text-sm leading-relaxed">{faq.a}</p>
+                <div key={i} className="bg-slate-900/80 border border-white/15 p-6 rounded-2xl space-y-2 hover:border-white/30 transition-colors">
+                  <h3 className="font-bold text-white text-lg flex items-center gap-2">
+                    <span className="text-orange-400 font-mono">Q:</span> {faq.q}
+                  </h3>
+                  <p className="text-white/70 text-sm leading-relaxed pl-6">{faq.a}</p>
                 </div>
               ))}
             </div>
@@ -573,7 +697,7 @@ export default function AsphaltTonnagePage() {
             <p>
               An asphalt tonnage calculator gives you a planning number in seconds. Measure the paved area carefully, use the compacted thickness, confirm the density with your supplier and add a small allowance. Then check whether the quote is in tons or tonnes before you place the order.
             </p>
-            <p className="text-sm italic text-white/60 bg-black/40 p-4 rounded-xl border border-white/10">
+            <p className="text-sm italic text-white/60 bg-black/50 p-4 rounded-xl border border-white/10">
               Results are estimates for planning only. Confirm quantities with a qualified contractor or supplier before ordering.
             </p>
           </section>
