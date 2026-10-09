@@ -20,6 +20,7 @@ import {
   ArrowRight,
   Info,
   Calendar,
+  ExternalLink,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -282,7 +283,16 @@ export default function TackCoatPage() {
                   <p>1:1 diluted: about 3.0 to 3.3 × residual rate</p>
                 </div>
                 <p className="text-sm text-white/70">
-                  One federal specification sets these multipliers at 1.5 and 3.0. They match an emulsion near 67% residue, so the calculator uses your actual residue.
+                  One{" "}
+                  <a
+                    href="https://highways.dot.gov/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-300 underline inline-flex items-center gap-1 hover:text-white"
+                  >
+                    Federal Highway Administration (FHWA) specification <ExternalLink size={13} />
+                  </a>{" "}
+                  sets these multipliers at 1.5 and 3.0. They match an emulsion near 67% residue, so the calculator uses your actual residue.
                 </p>
               </div>
 
@@ -327,7 +337,7 @@ export default function TackCoatPage() {
                 <Ruler size={20} />
               </div>
               <h2 className="text-2xl sm:text-4xl font-black text-white">
-                Typical Tack Coat Rates
+                Typical Tack Coat Rates (Official References)
               </h2>
             </div>
             <p className="text-white/70">
@@ -336,28 +346,68 @@ export default function TackCoatPage() {
 
             <div className="space-y-4">
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
-                <h3 className="text-lg font-bold text-teal-300 mb-1">US Spray Rates</h3>
+                <h3 className="text-lg font-bold text-teal-300 mb-1 flex items-center gap-2">
+                  US Spray Rates &mdash;{" "}
+                  <a
+                    href="https://dot.ca.gov/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white underline text-sm inline-flex items-center gap-1 hover:text-teal-300"
+                  >
+                    Caltrans Construction Manual <ExternalLink size={13} />
+                  </a>
+                </h3>
                 <p className="text-white/80">
                   California guidance says emulsion tack, diluted or undiluted, is typically sprayed at <strong>0.05 to 0.15 gal/yd²</strong>. It says rates near 0.10 gal/yd² give more uniform coverage.
                 </p>
               </div>
 
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
-                <h3 className="text-lg font-bold text-teal-300 mb-1">US Residual Rates</h3>
+                <h3 className="text-lg font-bold text-teal-300 mb-1 flex items-center gap-2">
+                  US Residual Rates &mdash;{" "}
+                  <a
+                    href="https://www.dot.state.mn.us/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white underline text-sm inline-flex items-center gap-1 hover:text-teal-300"
+                  >
+                    Minnesota DOT Pavement Manual <ExternalLink size={13} />
+                  </a>
+                </h3>
                 <p className="text-white/80">
                   Minnesota guidance puts residual bitumen at about <strong>0.04 to 0.06 gal/yd²</strong> on smooth, non-milled surfaces and up to <strong>0.08 gal/yd²</strong> on milled or very rough ones. Federal and state specifications use values in this neighborhood.
                 </p>
               </div>
 
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
-                <h3 className="text-lg font-bold text-teal-300 mb-1">Example Spec in Litres</h3>
+                <h3 className="text-lg font-bold text-teal-300 mb-1 flex items-center gap-2">
+                  Example Spec in Litres &mdash;{" "}
+                  <a
+                    href="https://oklahoma.gov/odot.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white underline text-sm inline-flex items-center gap-1 hover:text-teal-300"
+                  >
+                    Oklahoma DOT Specs <ExternalLink size={13} />
+                  </a>
+                </h3>
                 <p className="text-white/80">
                   Oklahoma specifies <strong>0.08 gal/yd² (0.36 L/m²)</strong> of original emulsion for its trackless tack products, adjusted for surface texture.
                 </p>
               </div>
 
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
-                <h3 className="text-lg font-bold text-teal-300 mb-1">Indian Practice (MoRTH Section 500)</h3>
+                <h3 className="text-lg font-bold text-teal-300 mb-1 flex items-center gap-2">
+                  Indian Practice &mdash;{" "}
+                  <a
+                    href="https://morth.nic.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white underline text-sm inline-flex items-center gap-1 hover:text-teal-300"
+                  >
+                    MoRTH Section 500 Specifications <ExternalLink size={13} />
+                  </a>
+                </h3>
                 <p className="text-white/80">
                   The tack coat table lists <strong>0.20 to 0.30 kg/m²</strong> on bituminous surfaces. Tender documents commonly quote 0.20 or 0.25 kg/m² on bituminous surfaces, 0.25 to 0.30 kg/m² on primed granular surfaces and a higher figure on cement concrete.
                 </p>
@@ -372,10 +422,19 @@ export default function TackCoatPage() {
           {/* EMULSION RESIDUE */}
           <section className="space-y-4">
             <h2 className="text-2xl sm:text-4xl font-black text-white border-b border-white/10 pb-3">
-              Emulsion Residue
+              Emulsion Residue (ASTM Standards)
             </h2>
             <p>
-              Residue is the share of the emulsion that is bitumen. Standard slow-setting grades such as SS-1h and CSS-1h require at least 57% residue in standard specifications. Test certificates often show a little more, around 60%. Some agencies list SS-1 at 55% minimum, and trackless products can be lower. One state allows 50% minimum for a trackless grade.
+              Residue is the share of the emulsion that is bitumen. Standard slow-setting grades such as SS-1h and CSS-1h require at least 57% residue under{" "}
+              <a
+                href="https://www.astm.org/d0977-19e1.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal-300 underline inline-flex items-center gap-1 hover:text-white"
+              >
+                ASTM D977 and ASTM D2397 standards <ExternalLink size={13} />
+              </a>
+              . Test certificates often show a little more, around 60%. Some agencies list SS-1 at 55% minimum, and trackless products can be lower. One state allows 50% minimum for a trackless grade.
             </p>
             <p>
               Residue changes the answer. A 57% emulsion leaves 5% less bitumen than a 60% emulsion at the same spray rate. Use the number on your supplier&apos;s data sheet.
@@ -447,7 +506,12 @@ export default function TackCoatPage() {
                   <p>Emulsion: 175.4 gal | Water: 43.9 gal</p>
                   <p className="text-teal-300 font-bold">Check: 175.4 × 0.57 = 100 gal residue</p>
                 </div>
-                <p className="text-xs text-white/70">California construction manual uses this exact formula and inputs (0.11 gal/yd²).</p>
+                <p className="text-xs text-white/70">
+                  <a href="https://dot.ca.gov/" target="_blank" rel="noopener noreferrer" className="underline text-teal-300">
+                    California construction manual
+                  </a>{" "}
+                  uses this exact formula and inputs (0.11 gal/yd²).
+                </p>
               </div>
 
               {/* EXAMPLE 5 */}
