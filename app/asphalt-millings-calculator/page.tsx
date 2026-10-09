@@ -24,9 +24,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Asphalt Millings Calculator | RAP Tons and Cubic Yards",
+  title: "Asphalt Millings Calculator – Estimate Tons Needed",
   description:
-    "Free asphalt millings calculator. Enter area, depth and density to get tons and cubic yards of RAP for driveways, parking areas, bases and shoulders.",
+    "Calculate asphalt millings (RAP) volume, weight, and tonnage for your driveway or paving project in seconds.",
   keywords: [
     "asphalt millings calculator",
     "RAP tons calculator",
@@ -38,18 +38,18 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://bitumencalcpro.com/asphalt-millings-calculator" },
   openGraph: {
-    title: "Asphalt Millings Calculator | RAP Tons and Cubic Yards",
+    title: "Asphalt Millings Calculator – Estimate Tons Needed",
     description:
-      "Free asphalt millings calculator. Enter area, depth and density to get tons and cubic yards of RAP for driveways, parking areas, bases and shoulders.",
+      "Calculate asphalt millings (RAP) volume, weight, and tonnage for your driveway or paving project in seconds.",
     url: "https://bitumencalcpro.com/asphalt-millings-calculator",
     siteName: "BitumenCalcPro",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Asphalt Millings Calculator | RAP Tons and Cubic Yards",
+    title: "Asphalt Millings Calculator – Estimate Tons Needed",
     description:
-      "Free asphalt millings calculator. Enter area, depth and density to get tons and cubic yards of RAP for driveways, parking areas, bases and shoulders.",
+      "Calculate asphalt millings (RAP) volume, weight, and tonnage for your driveway or paving project in seconds.",
   },
 };
 
@@ -95,7 +95,7 @@ export default function MillingsPage() {
     name: "Asphalt Millings Calculator",
     url: "https://bitumencalcpro.com/asphalt-millings-calculator",
     description:
-      "Free asphalt millings calculator. Enter area, depth and density to get tons and cubic yards of RAP for driveways, parking areas, bases and shoulders.",
+      "Calculate asphalt millings (RAP) volume, weight, and tonnage for your driveway or paving project in seconds.",
     applicationCategory: "BusinessApplication",
     isAccessibleForFree: true,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

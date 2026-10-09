@@ -25,9 +25,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bitumen Tank Volume Calculator | Horizontal Cylinder Capacity",
+  title: "Bitumen Tank Volume Calculator – Calculate Capacity",
   description:
-    "Free bitumen tank volume calculator. Calculate capacity in litres and m³, bitumen weight in tonnes, partial fill from dip depth, and temperature expansion.",
+    "Calculate bitumen tank volume and capacity using tank dimensions. Estimate storage capacity quickly for cylindrical and other tank shapes.",
   keywords: [
     "bitumen tank volume calculator",
     "bitumen storage tank capacity",
@@ -38,18 +38,18 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://bitumencalcpro.com/bitumen-tank-volume-calculator" },
   openGraph: {
-    title: "Bitumen Tank Volume Calculator | Horizontal Cylinder Capacity",
+    title: "Bitumen Tank Volume Calculator – Calculate Capacity",
     description:
-      "Free bitumen tank volume calculator. Calculate capacity in litres and m³, bitumen weight in tonnes, partial fill from dip depth, and temperature expansion.",
+      "Calculate bitumen tank volume and capacity using tank dimensions. Estimate storage capacity quickly for cylindrical and other tank shapes.",
     url: "https://bitumencalcpro.com/bitumen-tank-volume-calculator",
     siteName: "BitumenCalcPro",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bitumen Tank Volume Calculator | Horizontal Cylinder Capacity",
+    title: "Bitumen Tank Volume Calculator – Calculate Capacity",
     description:
-      "Free bitumen tank volume calculator. Calculate capacity in litres and m³, bitumen weight in tonnes, partial fill from dip depth, and temperature expansion.",
+      "Calculate bitumen tank volume and capacity using tank dimensions. Estimate storage capacity quickly for cylindrical and other tank shapes.",
   },
 };
 
@@ -95,7 +95,7 @@ export default function TankVolumePage() {
     name: "Bitumen Tank Volume Calculator",
     url: "https://bitumencalcpro.com/bitumen-tank-volume-calculator",
     description:
-      "Free bitumen tank volume calculator. Calculate capacity in litres and m³, bitumen weight in tonnes, partial fill from dip depth, and temperature expansion.",
+      "Calculate bitumen tank volume and capacity using tank dimensions. Estimate storage capacity quickly for cylindrical and other tank shapes.",
     applicationCategory: "BusinessApplication",
     isAccessibleForFree: true,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

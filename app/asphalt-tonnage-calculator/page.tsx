@@ -22,9 +22,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Asphalt Tonnage Calculator | Sq Ft or Sq M to Tons",
+  title: "Asphalt Tonnage Calculator – Estimate Tons Fast",
   description:
-    "Calculate how many tons of asphalt you need from area and thickness. Free tool for driveways, parking lots and roads, in US tons or metric tonnes.",
+    "Calculate asphalt tonnage from length, width, and thickness. Estimate the tons of asphalt needed for your paving project in seconds.",
   keywords: [
     "asphalt tonnage calculator",
     "sq ft to tons of asphalt",
@@ -37,18 +37,18 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://bitumencalcpro.com/asphalt-tonnage-calculator" },
   openGraph: {
-    title: "Asphalt Tonnage Calculator | Sq Ft or Sq M to Tons",
+    title: "Asphalt Tonnage Calculator – Estimate Tons Fast",
     description:
-      "Calculate how many tons of asphalt you need from area and thickness. Free tool for driveways, parking lots and roads, in US tons or metric tonnes.",
+      "Calculate asphalt tonnage from length, width, and thickness. Estimate the tons of asphalt needed for your paving project in seconds.",
     url: "https://bitumencalcpro.com/asphalt-tonnage-calculator",
     siteName: "BitumenCalcPro",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Asphalt Tonnage Calculator | Sq Ft or Sq M to Tons",
+    title: "Asphalt Tonnage Calculator – Estimate Tons Fast",
     description:
-      "Calculate how many tons of asphalt you need from area and thickness. Free tool for driveways, parking lots and roads, in US tons or metric tonnes.",
+      "Calculate asphalt tonnage from length, width, and thickness. Estimate the tons of asphalt needed for your paving project in seconds.",
   },
 };
 
@@ -94,7 +94,7 @@ export default function AsphaltTonnagePage() {
     name: "Asphalt Tonnage Calculator",
     url: "https://bitumencalcpro.com/asphalt-tonnage-calculator",
     description:
-      "Calculate how many tons of asphalt you need from area and thickness. Free tool for driveways, parking lots and roads, in US tons or metric tonnes.",
+      "Calculate asphalt tonnage from length, width, and thickness. Estimate the tons of asphalt needed for your paving project in seconds.",
     applicationCategory: "BusinessApplication",
     isAccessibleForFree: true,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

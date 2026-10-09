@@ -24,9 +24,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tack Coat Calculator | Emulsion, Water and Residual Bitumen",
+  title: "Tack Coat Calculator – Estimate Coverage & Quantity",
   description:
-    "Free tack coat calculator. Enter area, residual rate, emulsion residue and dilution to get emulsion, water, residual bitumen and drums needed.",
+    "Calculate tack coat quantity and coverage for asphalt paving. Estimate the amount needed for your project quickly and easily.",
   keywords: [
     "tack coat calculator",
     "emulsion calculator",
@@ -39,18 +39,18 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://bitumencalcpro.com/tack-coat-calculator" },
   openGraph: {
-    title: "Tack Coat Calculator | Emulsion, Water and Residual Bitumen",
+    title: "Tack Coat Calculator – Estimate Coverage & Quantity",
     description:
-      "Free tack coat calculator. Enter area, residual rate, emulsion residue and dilution to get emulsion, water, residual bitumen and drums needed.",
+      "Calculate tack coat quantity and coverage for asphalt paving. Estimate the amount needed for your project quickly and easily.",
     url: "https://bitumencalcpro.com/tack-coat-calculator",
     siteName: "BitumenCalcPro",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tack Coat Calculator | Emulsion, Water and Residual Bitumen",
+    title: "Tack Coat Calculator – Estimate Coverage & Quantity",
     description:
-      "Free tack coat calculator. Enter area, residual rate, emulsion residue and dilution to get emulsion, water, residual bitumen and drums needed.",
+      "Calculate tack coat quantity and coverage for asphalt paving. Estimate the amount needed for your project quickly and easily.",
   },
 };
 
@@ -96,7 +96,7 @@ export default function TackCoatPage() {
     name: "Tack Coat Calculator",
     url: "https://bitumencalcpro.com/tack-coat-calculator",
     description:
-      "Free tack coat calculator. Enter area, residual rate, emulsion residue and dilution to get emulsion, water, residual bitumen and drums needed.",
+      "Calculate tack coat quantity and coverage for asphalt paving. Estimate the amount needed for your project quickly and easily.",
     applicationCategory: "BusinessApplication",
     isAccessibleForFree: true,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

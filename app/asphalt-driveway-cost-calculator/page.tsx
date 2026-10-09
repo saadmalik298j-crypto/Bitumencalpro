@@ -20,9 +20,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Asphalt Driveway Cost Calculator | Estimate Tons and Total Cost",
+  title: "Asphalt Driveway Cost Calculator – Estimate Cost",
   description:
-    "Free asphalt driveway cost calculator. Enter size, thickness and your price per ton to get tons needed, material cost, extras and cost per square foot.",
+    "Estimate asphalt driveway costs based on size, thickness, and price per ton. Get a quick paving cost estimate for your project.",
   keywords: [
     "asphalt driveway cost calculator",
     "driveway cost estimator",
@@ -34,18 +34,18 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://bitumencalcpro.com/asphalt-driveway-cost-calculator" },
   openGraph: {
-    title: "Asphalt Driveway Cost Calculator | Estimate Tons and Total Cost",
+    title: "Asphalt Driveway Cost Calculator – Estimate Cost",
     description:
-      "Free asphalt driveway cost calculator. Enter size, thickness and your price per ton to get tons needed, material cost, extras and cost per square foot.",
+      "Estimate asphalt driveway costs based on size, thickness, and price per ton. Get a quick paving cost estimate for your project.",
     url: "https://bitumencalcpro.com/asphalt-driveway-cost-calculator",
     siteName: "BitumenCalcPro",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Asphalt Driveway Cost Calculator | Estimate Tons and Total Cost",
+    title: "Asphalt Driveway Cost Calculator – Estimate Cost",
     description:
-      "Free asphalt driveway cost calculator. Enter size, thickness and your price per ton to get tons needed, material cost, extras and cost per square foot.",
+      "Estimate asphalt driveway costs based on size, thickness, and price per ton. Get a quick paving cost estimate for your project.",
   },
 };
 
@@ -87,7 +87,7 @@ export default function DrivewayCostPage() {
     name: "Asphalt Driveway Cost Calculator",
     url: "https://bitumencalcpro.com/asphalt-driveway-cost-calculator",
     description:
-      "Free asphalt driveway cost calculator. Enter size, thickness and your price per ton to get tons needed, material cost, extras and cost per square foot.",
+      "Estimate asphalt driveway costs based on size, thickness, and price per ton. Get a quick paving cost estimate for your project.",
     applicationCategory: "BusinessApplication",
     isAccessibleForFree: true,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
