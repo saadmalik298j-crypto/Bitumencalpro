@@ -188,9 +188,7 @@ export default function TackCoatPage() {
           {/* INTRO PARAGRAPHS */}
           <div className="space-y-5 bg-slate-800/60 border border-white/15 p-6 sm:p-8 rounded-3xl shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-teal-500/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="flex items-center gap-2 text-xs font-semibold text-teal-300 uppercase tracking-wider mb-1">
-              <Calendar size={14} /> Last updated: October 2026
-            </div>
+            
             <p>
               A tack coat spec that reads &quot;0.05 gal/yd²&quot; can mean three different amounts of bitumen. Read as spray volume, it leaves about 0.03 gal/yd² of bitumen with an undiluted 60% emulsion, and about 0.015 gal/yd² with a 1:1 dilution. Read as residual bitumen, it needs 0.083 gal/yd² of undiluted emulsion or 0.167 gal/yd² of 1:1 diluted emulsion.
             </p>
