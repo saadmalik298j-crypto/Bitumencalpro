@@ -70,7 +70,31 @@ export default function Footer() {
                     Bitumen Calculator
                   </Link>
                 </li>
-                
+                <li>
+                  <Link href="/asphalt-tonnage-calculator/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                    Asphalt Tonnage Calculator
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/asphalt-driveway-cost-calculator/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                    Driveway Cost Calculator
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/tack-coat-calculator/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                    Tack Coat Calculator
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/asphalt-millings-calculator/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                    Asphalt Millings Calculator
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/bitumen-tank-volume-calculator/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                    Bitumen Tank Volume Calculator
+                  </Link>
+                </li>
                 <li>
                   <Link href="/blog" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
                     Engineering Learning Hub
