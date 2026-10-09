@@ -187,9 +187,7 @@ export default function MillingsPage() {
           {/* INTRO PARAGRAPHS */}
           <div className="space-y-5 bg-slate-800/60 border border-white/15 p-6 sm:p-8 rounded-3xl shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-violet-500/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="flex items-center gap-2 text-xs font-semibold text-violet-300 uppercase tracking-wider mb-1">
-              <Calendar size={14} /> Last updated: October 2026
-            </div>
+          
             <p>
               A 4-inch layer of millings on a 600 ft² driveway weighs about 11.2 tons. Order 8 and the surface is thin in places. Order 14 and 3 tons sit in the yard.
             </p>
