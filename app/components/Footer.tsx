@@ -95,17 +95,17 @@ export default function Footer() {
                     Bitumen Tank Volume Calculator
                   </Link>
                 </li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-teal-400 font-bold text-xs uppercase tracking-wider mb-4">Resources & Company</p>
+              <ul className="space-y-2.5">
                 <li>
                   <Link href="/blog" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
                     Engineering Learning Hub
                   </Link>
                 </li>
-              </ul>
-            </div>
-
-            <div>
-              <p className="text-teal-400 font-bold text-xs uppercase tracking-wider mb-4">Company & Entity</p>
-              <ul className="space-y-2.5">
                 <li>
                   <Link href="/about-us" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
                     About BitumenCalcPro

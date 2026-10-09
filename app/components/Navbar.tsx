@@ -16,6 +16,11 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Bitumen Calc", href: "/" },
+    { name: "Tonnage", href: "/asphalt-tonnage-calculator/" },
+    { name: "Driveway Cost", href: "/asphalt-driveway-cost-calculator/" },
+    { name: "Tack Coat", href: "/tack-coat-calculator/" },
+    { name: "Millings", href: "/asphalt-millings-calculator/" },
+    { name: "Tank Volume", href: "/bitumen-tank-volume-calculator/" },
     { name: "Blog", href: "/blog" },
   ];
 
