@@ -15,10 +15,13 @@ export default function Navbar() {
   }, [pathname]);
 
   const navLinks = [
-    { name: "Calculator", href: "/" },
+    { name: "Bitumen Calc", href: "/" },
+    { name: "Tonnage", href: "/asphalt-tonnage-calculator/" },
+    { name: "Driveway Cost", href: "/asphalt-driveway-cost-calculator/" },
+    { name: "Tack Coat", href: "/tack-coat-calculator/" },
+    { name: "Millings", href: "/asphalt-millings-calculator/" },
+    { name: "Tank Volume", href: "/bitumen-tank-volume-calculator/" },
     { name: "Blog", href: "/blog" },
-    { name: "About", href: "/about-us" },
-    { name: "Privacy", href: "/privacy-policy" },
   ];
 
   return (
