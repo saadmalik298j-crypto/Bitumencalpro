@@ -204,9 +204,7 @@ export default function TankVolumePage() {
           {/* INTRO STORY PARAGRAPHS */}
           <div className="space-y-5 bg-slate-800/60 border border-white/15 p-6 sm:p-8 rounded-3xl shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="flex items-center gap-2 text-xs font-semibold text-blue-300 uppercase tracking-wider mb-1">
-              <Calendar size={14} /> Last updated: October 2026
-            </div>
+          
             <p className="text-lg font-semibold text-blue-200">
               A tanker arrives with 25 tonnes of bitumen at 160°C. Your tank is 3 m × 6 m and already 40% full. Does the load fit? It doesn’t. The delivery needs 26.5 m³ and the tank has 25.4 m³ free.
             </p>

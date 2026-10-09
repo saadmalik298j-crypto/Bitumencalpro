@@ -290,7 +290,7 @@ export default function TankVolumeCalculator() {
           onClick={calculate}
           className="flex-1 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-blue-500/30 active:scale-[0.99]"
         >
-          <Calculator size={18} /> Calculate Tank Volume & Weight
+          <Calculator size={18} /> Calculate
         </button>
         <button
           id="tvc-reset"
