@@ -427,7 +427,7 @@ export default function TackCoatPage() {
             <p>
               Residue is the share of the emulsion that is bitumen. Standard slow-setting grades such as SS-1h and CSS-1h require at least 57% residue under{" "}
               <a
-                href="https://www.astm.org/d0977-19e1.html"
+                href="https://www.astm.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-teal-300 underline inline-flex items-center gap-1 hover:text-white"
