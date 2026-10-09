@@ -169,7 +169,7 @@ export default function AsphaltTonnagePage() {
           </div>
 
           {/* CALCULATOR WIDGET AT TOP */}
-          <div className="bg-slate-900/60 backdrop-blur-xl border border-white/15 rounded-3xl p-2 sm:p-4 shadow-2xl shadow-orange-950/20">
+          <div className="bg-slate-900 border border-white/15 rounded-3xl p-2 sm:p-4 shadow-2xl shadow-orange-950/20">
             <AsphaltTonnageCalculator />
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function AsphaltTonnagePage() {
       <article className="py-16 text-white/90 leading-relaxed">
         <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 space-y-14 text-base sm:text-lg">
           {/* INTRO PARAGRAPHS */}
-          <div className="space-y-5 bg-gradient-to-br from-white/10 via-white/5 to-transparent border border-white/15 p-6 sm:p-8 rounded-3xl shadow-2xl backdrop-blur-md relative overflow-hidden">
+          <div className="space-y-5 bg-slate-800/60 border border-white/15 p-6 sm:p-8 rounded-3xl shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl pointer-events-none" />
             <p>
               Order 10% too little asphalt and the crew leaves a strip of the driveway unpaved. Order 10% too much and you pay for tons nobody can use, because hot mix can't be stored for next week.
