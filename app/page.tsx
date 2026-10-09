@@ -481,7 +481,7 @@ export default function Home() {
                       Description
                     </th>
                     <th className="p-5 md:p-6 font-bold uppercase tracking-wider text-sm border-b border-white/10 text-white/50">
-                      Unit
+                     Supported Units
                     </th>
                   </tr>
                 </thead>
@@ -773,7 +773,7 @@ export default function Home() {
                 </div>
                 <div className="space-y-4">
                   <div className="bg-black/30 rounded-xl p-4 border border-white/5">
-                    <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">
+                    <div className="text-white/50 text-[12px] uppercase tracking-widest font-black mb-1">
                       Bitumen Weight (W<sub>b</sub> in kg)
                     </div>
                     <div className="text-white font-mono text-xs md:text-sm font-semibold">
@@ -781,7 +781,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="bg-black/30 rounded-xl p-4 border border-white/5">
-                    <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">
+                    <div className="text-white/50 text-[12px] uppercase tracking-widest font-black mb-1">
                       Bitumen Content Percentage (B%)
                     </div>
                     <div className="text-white font-mono text-xs md:text-sm font-semibold">
@@ -789,7 +789,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="bg-black/30 rounded-xl p-4 border border-white/5">
-                    <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">
+                    <div className="text-white/50 text-[12px] uppercase tracking-widest font-black mb-1">
                       Aggregate Weight (W<sub>agg</sub> in kg)
                     </div>
                     <div className="text-white font-mono text-xs md:text-sm font-semibold">
@@ -797,7 +797,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="bg-black/30 rounded-xl p-4 border border-white/5">
-                    <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">
+                    <div className="text-white/50 text-[12px] uppercase tracking-widest font-black mb-1">
                       Bitumen Coverage per m² (kg/m²)
                     </div>
                     <div className="text-white font-mono text-xs md:text-sm font-semibold">
@@ -831,7 +831,7 @@ export default function Home() {
                 </div>
                 <div className="space-y-4">
                   <div className="bg-black/30 rounded-xl p-4 border border-white/5">
-                    <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">
+                    <div className="text-white/50 text-[12px] uppercase tracking-widest font-black mb-1">
                       Order Quantity with Wastage
                     </div>
                     <div className="text-orange-200 font-mono text-xs md:text-sm font-semibold">
@@ -839,7 +839,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="bg-black/30 rounded-xl p-4 border border-white/5">
-                    <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">
+                    <div className="text-white/50 text-[12px] uppercase tracking-widest font-black mb-1">
                       Loose Delivery Volume (m³)
                     </div>
                     <div className="text-orange-200 font-mono text-xs md:text-sm font-semibold">
@@ -847,7 +847,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="bg-black/30 rounded-xl p-4 border border-white/5">
-                    <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">
+                    <div className="text-white/50 text-[12px] uppercase tracking-widest font-black mb-1">
                       Volume in Litres (L)
                     </div>
                     <div className="text-orange-200 font-mono text-xs md:text-sm font-semibold">
@@ -855,7 +855,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="bg-black/30 rounded-xl p-4 border border-white/5">
-                    <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">
+                    <div className="text-white/50 text-[12px] uppercase tracking-widest font-black mb-1">
                       Standard 200L Steel Drums Required
                     </div>
                     <div className="text-orange-200 font-mono text-xs md:text-sm font-semibold">
@@ -883,7 +883,7 @@ export default function Home() {
                 </div>
 
                 <div className="bg-black/30 rounded-xl p-4 border border-white/5 mb-4">
-                  <div className="text-white/50 text-[10px] uppercase tracking-widest font-black mb-1">
+                  <div className="text-white/50 text-[12px] uppercase tracking-widest font-black mb-1">
                     Total Material Cost
                   </div>
                   <div className="text-teal-200 font-mono text-xs md:text-sm font-semibold">
@@ -892,7 +892,7 @@ export default function Home() {
                 </div>
 
                 <div className="bg-blue-900/20 border border-blue-500/20 rounded-2xl p-4">
-                  <div className="text-blue-300/80 text-[10px] uppercase tracking-widest font-black mb-3">
+                  <div className="text-blue-300/80 text-[12px] uppercase tracking-widest font-black mb-3">
                     Unit Conversion Reference
                   </div>
                   <div className="space-y-2 font-mono text-xs text-white/80">
@@ -1520,14 +1520,7 @@ export default function Home() {
                     cold mix bitumen
                   </Link>{" "}
                   is often used for quick repairs without heating equipment. Pavement depth varies
-                  widely by application — see our{" "}
-                  <Link
-                    href="/blog/asphalt-thickness"
-                    className="text-orange-400 hover:text-orange-300 underline underline-offset-2"
-                  >
-                    asphalt thickness guide
-                  </Link>{" "}
-                  for driveways, roads, and heavy-duty surfaces.
+                  widely by application.
                 </p>
               </div>
 

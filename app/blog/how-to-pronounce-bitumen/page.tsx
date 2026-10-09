@@ -264,7 +264,7 @@ export default function HowToPronounceBitumenPage() {
                 You see the word on road signs, roofing labels, and oil news. Then someone asks you to say it out loud, and you&apos;re not sure which syllable to hit. Dictionaries list more than one pronunciation, and each one is right for its own accent.
               </p>
               <p className="text-white/85 leading-relaxed text-base">
-                This guide covers how to pronounce bitumen in British, American, Australian, and other English accents. You&apos;ll get respellings, IPA symbols, stress patterns, common mistakes, related technical words, and a practice routine. The forms below come from{" "}
+                This guide covers how to pronounce <Link href='/blog/what-is-bitumen' className="text-teal-300">bitumen</Link> in British, American, Australian, and other English accents. You&apos;ll get respellings, IPA symbols, stress patterns, common mistakes, related technical words, and a practice routine. The forms below come from{" "}
                 <a href="https://dictionary.cambridge.org/dictionary/english/bitumen" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-violet-300 underline underline-offset-2 transition-colors">
                   Cambridge Dictionary <ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
                 </a>{" "}
@@ -272,8 +272,7 @@ export default function HowToPronounceBitumenPage() {
                 <a href="https://www.merriam-webster.com/dictionary/bitumen" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-violet-300 underline underline-offset-2 transition-colors">
                   Merriam-Webster <ExternalLink size={12} className="inline ml-0.5 mb-0.5" />
                 </a>
-                . For a deep dive into what bitumen actually is, see our{" "}
-                <Link href="/blog/what-is-bitumen" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">complete guide to bitumen</Link>.
+                . 
               </p>
             </section>
 

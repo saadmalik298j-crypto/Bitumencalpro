@@ -70,6 +70,7 @@ export default function Footer() {
                     Bitumen Calculator
                   </Link>
                 </li>
+                
                 <li>
                   <Link href="/blog" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
                     Engineering Learning Hub
@@ -126,7 +127,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-400">
           <p>© 2026 BitumenCalcPro. All rights reserved.</p>
           <p className="text-slate-400 text-center max-w-xl">
-            BitumenCalcPro provides technical software for estimation & educational purposes. Always verify final pavement orders with a certified civil engineer.
+            BitumenCalcPro provides technical Calculators for estimation & educational purposes. Always verify final pavement orders with a certified civil engineer.
           </p>
         </div>
 
