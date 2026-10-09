@@ -368,7 +368,7 @@ export default function TackCoatCalculator() {
           onClick={calculate}
           className="flex-1 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-400 hover:to-cyan-400 text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-teal-500/30 active:scale-[0.99]"
         >
-          <Calculator size={18} /> Calculate Tack Coat Quantities
+          <Calculator size={18} /> Calculate 
         </button>
         <button
           id="tcc-reset"
