@@ -529,10 +529,10 @@ export default function AsphaltEstimationMistakesPage() {
                 expensive reorder mid-project, and a surplus means paying for
                 asphalt that gets dumped. Running your numbers through a{" "}
                 <Link
-                  href="/"
+                  href="/asphalt-tonnage-calculator"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
                 >
-                  dedicated bitumen and asphalt calculator
+                  Asphalt Tonnage Calculator
                 </Link>{" "}
                 before ordering eliminates several of these risk points at once.
               </p>

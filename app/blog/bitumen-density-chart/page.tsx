@@ -515,11 +515,19 @@ export default function BitumenDensityChartPage() {
                 <div className="flex items-start gap-3">
                   <Thermometer size={20} className="text-teal-400 shrink-0 mt-0.5" />
                   <p className="text-white/80 text-sm leading-relaxed">
-                    <strong className="text-white">Why this matters for hot mix:</strong> A reading taken at 25°C
-                    isn&apos;t directly comparable to one taken at 135°C, the typical mixing temperature for hot
-                    mix asphalt. If you&apos;re converting weight to volume for a hot mix batch, use a density
-                    value measured close to your actual application temperature, not the standard 25°C reference
-                    figure, or your quantity estimate will be off.
+                    <strong className="text-white">Why this matters for hot mix & storage tanks:</strong> A reading taken at 25°C
+                    isn&apos;t directly comparable to one taken at 135°C–160°C.
+                    When storing hot bitumen, use our{" "}
+                    <Link href="/bitumen-tank-volume-calculator" className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">
+                      Bitumen Tank Volume Calculator
+                    </Link>{" "}
+                    for thermal expansion math, or run paving project weights through our{" "}
+                    <Link href="/asphalt-tonnage-calculator" className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">
+                      Asphalt Tonnage Calculator
+                    </Link>{" "}
+                    for accurate field estimates.
+
+
                   </p>
                 </div>
               </div>

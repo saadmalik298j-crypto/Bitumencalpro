@@ -971,10 +971,10 @@ export default function HowIsBitumenTransportedPage() {
               <p className="text-white/80 leading-relaxed mt-6 text-base">
                 For pavement projects where you need to estimate total binder quantity before booking a delivery, the{" "}
                 <Link
-                  href="/"
+                  href="/bitumen-tank-volume-calculator"
                   className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
                 >
-                  BitumenCalcPro calculator
+                  Bitumen Tank Volume Calculator
                 </Link>{" "}
                 gives fast, accurate estimates based on road dimensions, mix density, and binder percentage.
               </p>

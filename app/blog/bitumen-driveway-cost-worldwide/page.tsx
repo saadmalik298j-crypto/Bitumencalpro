@@ -785,10 +785,10 @@ export default function BitumenDrivewayWorldwidePage() {
                 to 30% higher than average for anything under 25m², and 10% to 20% lower
                 than average for anything over 75m². For precise quantity calculations, our{" "}
                 <Link
-                  href="/"
+                  href="/asphalt-driveway-cost-calculator"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
                 >
-                  bitumen calculator
+                  Asphalt Driveway Cost Calculator
                 </Link>{" "}
                 can help you work out material volumes before you approach a contractor.
               </p>

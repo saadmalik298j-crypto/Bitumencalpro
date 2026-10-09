@@ -926,10 +926,10 @@ export default function BitumenEmulsionExplainedPage() {
                 For projects involving cold mix or emulsion-based surface treatments, estimating
                 material quantities upfront avoids over-ordering and site delays. Our free{" "}
                 <Link
-                  href="/"
+                  href="/tack-coat-calculator"
                   className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
                 >
-                  Fast Bitumen Calculator
+                  Tack Coat Calculator
                 </Link>{" "}
                 can help you estimate binder quantities for tack coat, prime coat, and emulsion-based
                 projects quickly.
