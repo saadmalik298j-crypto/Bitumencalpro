@@ -36,12 +36,12 @@ export const metadata: Metadata = {
     "bitumen thermal expansion",
     "ASTM D4311 density calculator",
   ],
-  alternates: { canonical: "https://bitumencalcpro.com/bitumen-tank-volume-calculator/" },
+  alternates: { canonical: "https://bitumencalcpro.com/bitumen-tank-volume-calculator" },
   openGraph: {
     title: "Bitumen Tank Volume Calculator | Horizontal Cylinder Capacity",
     description:
       "Free bitumen tank volume calculator. Calculate capacity in litres and m³, bitumen weight in tonnes, partial fill from dip depth, and temperature expansion.",
-    url: "https://bitumencalcpro.com/bitumen-tank-volume-calculator/",
+    url: "https://bitumencalcpro.com/bitumen-tank-volume-calculator",
     siteName: "BitumenCalcPro",
     type: "website",
   },
@@ -93,7 +93,7 @@ export default function TankVolumePage() {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: "Bitumen Tank Volume Calculator",
-    url: "https://bitumencalcpro.com/bitumen-tank-volume-calculator/",
+    url: "https://bitumencalcpro.com/bitumen-tank-volume-calculator",
     description:
       "Free bitumen tank volume calculator. Calculate capacity in litres and m³, bitumen weight in tonnes, partial fill from dip depth, and temperature expansion.",
     applicationCategory: "BusinessApplication",
@@ -112,6 +112,15 @@ export default function TankVolumePage() {
     })),
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://bitumencalcpro.com" },
+      { "@type": "ListItem", position: 2, name: "Bitumen Tank Volume Calculator", item: "https://bitumencalcpro.com/bitumen-tank-volume-calculator" },
+    ],
+  };
+
   return (
     <>
       <Script
@@ -125,6 +134,12 @@ export default function TankVolumePage() {
         type="application/ld+json"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="schema-tank-breadcrumb"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* HERO SECTION */}

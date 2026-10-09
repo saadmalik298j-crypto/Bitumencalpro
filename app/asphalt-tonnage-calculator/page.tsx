@@ -35,12 +35,12 @@ export const metadata: Metadata = {
     "HMA tonnage formula",
     "pavement tons calculator",
   ],
-  alternates: { canonical: "https://bitumencalcpro.com/asphalt-tonnage-calculator/" },
+  alternates: { canonical: "https://bitumencalcpro.com/asphalt-tonnage-calculator" },
   openGraph: {
     title: "Asphalt Tonnage Calculator | Sq Ft or Sq M to Tons",
     description:
       "Calculate how many tons of asphalt you need from area and thickness. Free tool for driveways, parking lots and roads, in US tons or metric tonnes.",
-    url: "https://bitumencalcpro.com/asphalt-tonnage-calculator/",
+    url: "https://bitumencalcpro.com/asphalt-tonnage-calculator",
     siteName: "BitumenCalcPro",
     type: "website",
   },
@@ -92,7 +92,7 @@ export default function AsphaltTonnagePage() {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: "Asphalt Tonnage Calculator",
-    url: "https://bitumencalcpro.com/asphalt-tonnage-calculator/",
+    url: "https://bitumencalcpro.com/asphalt-tonnage-calculator",
     description:
       "Calculate how many tons of asphalt you need from area and thickness. Free tool for driveways, parking lots and roads, in US tons or metric tonnes.",
     applicationCategory: "BusinessApplication",
@@ -111,6 +111,15 @@ export default function AsphaltTonnagePage() {
     })),
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://bitumencalcpro.com" },
+      { "@type": "ListItem", position: 2, name: "Asphalt Tonnage Calculator", item: "https://bitumencalcpro.com/asphalt-tonnage-calculator" },
+    ],
+  };
+
   return (
     <>
       <Script
@@ -124,6 +133,12 @@ export default function AsphaltTonnagePage() {
         type="application/ld+json"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="schema-tonnage-breadcrumb"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* HERO SECTION WITH ENHANCED UI */}

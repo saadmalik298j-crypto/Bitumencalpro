@@ -36,12 +36,12 @@ export const metadata: Metadata = {
     "RAP density calculator",
     "crushed asphalt calculator",
   ],
-  alternates: { canonical: "https://bitumencalcpro.com/asphalt-millings-calculator/" },
+  alternates: { canonical: "https://bitumencalcpro.com/asphalt-millings-calculator" },
   openGraph: {
     title: "Asphalt Millings Calculator | RAP Tons and Cubic Yards",
     description:
       "Free asphalt millings calculator. Enter area, depth and density to get tons and cubic yards of RAP for driveways, parking areas, bases and shoulders.",
-    url: "https://bitumencalcpro.com/asphalt-millings-calculator/",
+    url: "https://bitumencalcpro.com/asphalt-millings-calculator",
     siteName: "BitumenCalcPro",
     type: "website",
   },
@@ -93,7 +93,7 @@ export default function MillingsPage() {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: "Asphalt Millings Calculator",
-    url: "https://bitumencalcpro.com/asphalt-millings-calculator/",
+    url: "https://bitumencalcpro.com/asphalt-millings-calculator",
     description:
       "Free asphalt millings calculator. Enter area, depth and density to get tons and cubic yards of RAP for driveways, parking areas, bases and shoulders.",
     applicationCategory: "BusinessApplication",
@@ -112,6 +112,15 @@ export default function MillingsPage() {
     })),
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://bitumencalcpro.com" },
+      { "@type": "ListItem", position: 2, name: "Asphalt Millings Calculator", item: "https://bitumencalcpro.com/asphalt-millings-calculator" },
+    ],
+  };
+
   return (
     <>
       <Script
@@ -125,6 +134,12 @@ export default function MillingsPage() {
         type="application/ld+json"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="schema-millings-breadcrumb"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* HERO SECTION */}

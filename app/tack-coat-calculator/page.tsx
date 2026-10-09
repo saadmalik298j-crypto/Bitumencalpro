@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     "bitumen emulsion calculator",
     "tack coat spray rate",
   ],
-  alternates: { canonical: "https://bitumencalcpro.com/tack-coat-calculator/" },
+  alternates: { canonical: "https://bitumencalcpro.com/tack-coat-calculator" },
   openGraph: {
     title: "Tack Coat Calculator | Emulsion, Water and Residual Bitumen",
     description:
       "Free tack coat calculator. Enter area, residual rate, emulsion residue and dilution to get emulsion, water, residual bitumen and drums needed.",
-    url: "https://bitumencalcpro.com/tack-coat-calculator/",
+    url: "https://bitumencalcpro.com/tack-coat-calculator",
     siteName: "BitumenCalcPro",
     type: "website",
   },
@@ -94,7 +94,7 @@ export default function TackCoatPage() {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: "Tack Coat Calculator",
-    url: "https://bitumencalcpro.com/tack-coat-calculator/",
+    url: "https://bitumencalcpro.com/tack-coat-calculator",
     description:
       "Free tack coat calculator. Enter area, residual rate, emulsion residue and dilution to get emulsion, water, residual bitumen and drums needed.",
     applicationCategory: "BusinessApplication",
@@ -113,6 +113,15 @@ export default function TackCoatPage() {
     })),
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://bitumencalcpro.com" },
+      { "@type": "ListItem", position: 2, name: "Tack Coat Calculator", item: "https://bitumencalcpro.com/tack-coat-calculator" },
+    ],
+  };
+
   return (
     <>
       <Script
@@ -126,6 +135,12 @@ export default function TackCoatPage() {
         type="application/ld+json"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="schema-tack-breadcrumb"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* HERO SECTION */}

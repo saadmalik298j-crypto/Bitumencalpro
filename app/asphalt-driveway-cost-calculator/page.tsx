@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     "paving cost estimator",
     "driveway asphalt tonnage and cost",
   ],
-  alternates: { canonical: "https://bitumencalcpro.com/asphalt-driveway-cost-calculator/" },
+  alternates: { canonical: "https://bitumencalcpro.com/asphalt-driveway-cost-calculator" },
   openGraph: {
     title: "Asphalt Driveway Cost Calculator | Estimate Tons and Total Cost",
     description:
       "Free asphalt driveway cost calculator. Enter size, thickness and your price per ton to get tons needed, material cost, extras and cost per square foot.",
-    url: "https://bitumencalcpro.com/asphalt-driveway-cost-calculator/",
+    url: "https://bitumencalcpro.com/asphalt-driveway-cost-calculator",
     siteName: "BitumenCalcPro",
     type: "website",
   },
@@ -85,7 +85,7 @@ export default function DrivewayCostPage() {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: "Asphalt Driveway Cost Calculator",
-    url: "https://bitumencalcpro.com/asphalt-driveway-cost-calculator/",
+    url: "https://bitumencalcpro.com/asphalt-driveway-cost-calculator",
     description:
       "Free asphalt driveway cost calculator. Enter size, thickness and your price per ton to get tons needed, material cost, extras and cost per square foot.",
     applicationCategory: "BusinessApplication",
@@ -104,6 +104,15 @@ export default function DrivewayCostPage() {
     })),
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://bitumencalcpro.com" },
+      { "@type": "ListItem", position: 2, name: "Asphalt Driveway Cost Calculator", item: "https://bitumencalcpro.com/asphalt-driveway-cost-calculator" },
+    ],
+  };
+
   return (
     <>
       <Script
@@ -117,6 +126,12 @@ export default function DrivewayCostPage() {
         type="application/ld+json"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="schema-driveway-breadcrumb"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* HERO SECTION WITH ENHANCED UI */}
