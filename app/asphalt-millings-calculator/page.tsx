@@ -117,11 +117,13 @@ export default function MillingsPage() {
       <Script
         id="schema-millings-app"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Script
         id="schema-millings-faq"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 

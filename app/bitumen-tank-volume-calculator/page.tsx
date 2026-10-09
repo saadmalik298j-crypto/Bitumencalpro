@@ -117,11 +117,13 @@ export default function TankVolumePage() {
       <Script
         id="schema-tank-app"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Script
         id="schema-tank-faq"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 

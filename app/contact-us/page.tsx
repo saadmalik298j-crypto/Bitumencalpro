@@ -46,7 +46,7 @@ export default function ContactUsPage() {
       <Script
         id="schema-contact-page"
         type="application/ld+json"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
       />
       {/* Hero */}

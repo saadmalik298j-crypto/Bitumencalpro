@@ -118,11 +118,13 @@ export default function TackCoatPage() {
       <Script
         id="schema-tack-app"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Script
         id="schema-tack-faq"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 

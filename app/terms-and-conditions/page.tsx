@@ -85,7 +85,7 @@ export default function TermsPage() {
       <Script
         id="schema-terms-page"
         type="application/ld+json"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <LegalLayout

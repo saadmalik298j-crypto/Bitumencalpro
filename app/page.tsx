@@ -253,21 +253,25 @@ export default function Home() {
     <>
       {/* ─── JSON-LD Structured Data ─── */}
       <Script
+       strategy="beforeInteractive"
         id="schema-web-application"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationSchema) }}
       />
       <Script
+       strategy="beforeInteractive"
         id="schema-website"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
       />
       <Script
+        strategy="beforeInteractive"
         id="schema-organization"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
       <Script
+        strategy="beforeInteractive"
         id="schema-faq"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

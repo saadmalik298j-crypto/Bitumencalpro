@@ -197,7 +197,7 @@ export default function PrivacyPolicyPage() {
       <Script
         id="schema-privacy-page"
         type="application/ld+json"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <LegalLayout

@@ -109,11 +109,13 @@ export default function DrivewayCostPage() {
       <Script
         id="schema-driveway-app"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Script
         id="schema-driveway-faq"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
