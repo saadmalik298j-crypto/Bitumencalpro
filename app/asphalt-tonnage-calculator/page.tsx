@@ -662,7 +662,7 @@ export default function AsphaltTonnagePage() {
             <p>
               Use our{" "}
               <Link href="/" className="text-teal-300 underline font-semibold">
-                bitumen calculator
+                bitumen calculator Free
               </Link>{" "}
               to get binder weight, litres, and order quantity for a mix design. The{" "}
               <Link href="/tack-coat-calculator/" className="text-teal-300 underline font-semibold">

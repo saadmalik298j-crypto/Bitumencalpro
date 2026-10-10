@@ -684,7 +684,7 @@ export default function MillingsPage() {
             <p>
               The old binder in RAP is not counted as new binder in a mix design. To work out binder in new asphalt, use the{" "}
               <Link href="/" className="text-teal-300 underline font-semibold">
-                bitumen calculator
+                Online bitumen calculator
               </Link>
               . If you want to bond a new layer over milled pavement, the{" "}
               <Link href="/tack-coat-calculator" className="text-teal-300 underline font-semibold">

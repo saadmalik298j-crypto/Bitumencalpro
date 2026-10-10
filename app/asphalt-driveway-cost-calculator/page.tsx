@@ -522,7 +522,7 @@ export default function DrivewayCostPage() {
                   </a>
                   , and with the distance from the plant to your site. Our{" "}
                   <Link href="/" className="text-teal-300 underline font-semibold">
-                    bitumen calculator
+                    bitumen Quantity calculator
                   </Link>{" "}
                   shows how much of each ton is binder.
                 </p>
