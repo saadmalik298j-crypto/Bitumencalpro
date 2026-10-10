@@ -330,7 +330,14 @@ export default function Home() {
               content, and the calculator instantly estimates the total asphalt volume, mix
               weight, bitumen quantity, aggregate weight, and an optional material cost estimate.
               These calculations support project planning, material estimation, and budgeting.
-              To learn more about material properties and classification grades, read our overview on{" "}
+              If you only need to calculate total hot mix weight from area and depth, try our{" "}
+              <Link
+                href="/asphalt-tonnage-calculator"
+                className="text-orange-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors"
+              >
+                Asphalt Tonnage Calculator
+              </Link>
+              . To learn more about material properties and classification grades, read our overview on{" "}
               <Link
                 href="/blog/what-is-bitumen"
                 className="text-teal-400 hover:text-teal-300 font-semibold underline underline-offset-2 transition-colors"
@@ -1347,7 +1354,13 @@ export default function Home() {
               <p className="text-white/80 text-base mb-6 leading-relaxed">
                 Bitumen is often specified by weight (tonnes) in mix design but purchased or
                 transported by volume (litres or drums), so this conversion comes up constantly in
-                procurement.
+                procurement. To calculate horizontal cylinder tank capacity, partial dip depth, or thermal volume expansion at working temperatures, use our dedicated{" "}
+                <Link
+                  href="/bitumen-tank-volume-calculator"
+                  className="text-cyan-400 hover:text-cyan-300 font-semibold underline underline-offset-2 transition-colors"
+                >
+                  Bitumen Tank Volume Calculator
+                </Link>.
               </p>
               <div className="bg-black/40 p-4 rounded-xl border border-white/5 mb-6 text-center">
                 <span className="text-cyan-300 font-mono font-bold text-sm md:text-base">
@@ -1408,7 +1421,14 @@ export default function Home() {
               </div>
               <div className="bg-yellow-900/20 p-4 rounded-xl border border-yellow-500/20 text-sm text-yellow-100/90 italic">
                 If your project involves both — an HMA layer plus a tack coat beneath it — the two
-                quantities need to be calculated and ordered separately.
+                quantities need to be calculated and ordered separately. Use our specialized{" "}
+                <Link
+                  href="/tack-coat-calculator"
+                  className="text-yellow-300 hover:text-yellow-200 font-semibold underline underline-offset-2 not-italic transition-colors"
+                >
+                  Tack Coat Calculator
+                </Link>{" "}
+                to estimate emulsion volume, water dilution, and residual binder requirements.
               </div>
             </div>
 
@@ -1603,7 +1623,7 @@ export default function Home() {
                 bullets: [
                   "Multi-lane carriageway paving with separate layer calculations",
                   "SMA and PMB mixes for high-speed, high-traffic surfaces",
-                  "Pavement rehabilitation: milling depth vs overlay tonnage",
+                  "Pavement rehabilitation & RAP estimation (calculate millings with our Asphalt Millings Calculator)",
                 ],
               },
               {
@@ -1633,7 +1653,7 @@ export default function Home() {
                 bullets: [
                   "Residential driveway surface and base course quantities",
                   "Private estate roads with varying layer configurations",
-                  "Homeowner supply estimates: tonnes of asphalt per square metre",
+                  "Complete paving budget estimates (use our Asphalt Driveway Cost Calculator)",
                 ],
               },
               {
@@ -1692,6 +1712,126 @@ export default function Home() {
                 </div>
               );
             })}
+          </div>
+
+          {/* ═══════════════════════════════
+              SPECIALIZED PAVEMENT & BITUMEN CALCULATORS
+              ═══════════════════════════════ */}
+          <div className="mt-20 pt-16 border-t border-white/10">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500/20 to-teal-500/20 border border-orange-500/30 text-white px-5 py-2 rounded-full text-sm font-bold mb-4 shadow-[0_0_15px_rgba(249,115,22,0.2)]">
+                <CalcIcon size={16} className="text-orange-400" />
+                Specialized Paving Tools
+              </div>
+              <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 drop-shadow-xl">
+                Specialized Pavement &amp; Bitumen Calculators
+              </h3>
+              <p className="text-white/70 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
+                Need a specific calculation for your paving project? Use our suite of dedicated construction estimators below.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Link
+                href="/asphalt-tonnage-calculator"
+                className="bg-gradient-to-br from-white/10 to-transparent border border-white/10 hover:border-orange-500/50 rounded-3xl p-6 transition-all duration-300 hover:-translate-y-1 shadow-xl group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-orange-500/20 border border-orange-500/30 text-orange-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Scale size={24} />
+                  </div>
+                  <h4 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors mb-2">
+                    Asphalt Tonnage Calculator
+                  </h4>
+                  <p className="text-white/70 text-sm leading-relaxed mb-4">
+                    Calculate required hot mix asphalt tonnage from length, width, and thickness in US tons or metric tonnes.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 text-orange-400 text-sm font-bold group-hover:translate-x-1 transition-transform">
+                  Calculate Tonnage <ArrowRight size={16} />
+                </div>
+              </Link>
+
+              <Link
+                href="/asphalt-driveway-cost-calculator"
+                className="bg-gradient-to-br from-white/10 to-transparent border border-white/10 hover:border-emerald-500/50 rounded-3xl p-6 transition-all duration-300 hover:-translate-y-1 shadow-xl group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <DollarSign size={24} />
+                  </div>
+                  <h4 className="text-xl font-bold text-white group-hover:text-emerald-300 transition-colors mb-2">
+                    Asphalt Driveway Cost Calculator
+                  </h4>
+                  <p className="text-white/70 text-sm leading-relaxed mb-4">
+                    Estimate total paving cost, material tonnage, extras, and price per square foot for residential &amp; commercial driveways.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 text-emerald-400 text-sm font-bold group-hover:translate-x-1 transition-transform">
+                  Estimate Driveway Cost <ArrowRight size={16} />
+                </div>
+              </Link>
+
+              <Link
+                href="/tack-coat-calculator"
+                className="bg-gradient-to-br from-white/10 to-transparent border border-white/10 hover:border-yellow-500/50 rounded-3xl p-6 transition-all duration-300 hover:-translate-y-1 shadow-xl group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-yellow-500/20 border border-yellow-500/30 text-yellow-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Droplets size={24} />
+                  </div>
+                  <h4 className="text-xl font-bold text-white group-hover:text-yellow-300 transition-colors mb-2">
+                    Tack Coat Calculator
+                  </h4>
+                  <p className="text-white/70 text-sm leading-relaxed mb-4">
+                    Calculate bitumen emulsion spray rate, water dilution, residual binder, and 200L drums for layer bonding.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 text-yellow-400 text-sm font-bold group-hover:translate-x-1 transition-transform">
+                  Calculate Tack Coat <ArrowRight size={16} />
+                </div>
+              </Link>
+
+              <Link
+                href="/asphalt-millings-calculator"
+                className="bg-gradient-to-br from-white/10 to-transparent border border-white/10 hover:border-teal-500/50 rounded-3xl p-6 transition-all duration-300 hover:-translate-y-1 shadow-xl group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-teal-500/20 border border-teal-500/30 text-teal-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Layers size={24} />
+                  </div>
+                  <h4 className="text-xl font-bold text-white group-hover:text-teal-300 transition-colors mb-2">
+                    Asphalt Millings Calculator
+                  </h4>
+                  <p className="text-white/70 text-sm leading-relaxed mb-4">
+                    Determine recycled asphalt pavement (RAP) volume, weight in tons, and coverage for driveways and road bases.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 text-teal-400 text-sm font-bold group-hover:translate-x-1 transition-transform">
+                  Calculate RAP Millings <ArrowRight size={16} />
+                </div>
+              </Link>
+
+              <Link
+                href="/bitumen-tank-volume-calculator"
+                className="bg-gradient-to-br from-white/10 to-transparent border border-white/10 hover:border-cyan-500/50 rounded-3xl p-6 transition-all duration-300 hover:-translate-y-1 shadow-xl group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-cyan-500/20 border border-cyan-500/30 text-cyan-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <FlaskConical size={24} />
+                  </div>
+                  <h4 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors mb-2">
+                    Bitumen Tank Volume Calculator
+                  </h4>
+                  <p className="text-white/70 text-sm leading-relaxed mb-4">
+                    Calculate horizontal cylinder capacity in m³ and litres, partial dip fill, weight in tonnes, and thermal expansion at 160°C.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 text-cyan-400 text-sm font-bold group-hover:translate-x-1 transition-transform">
+                  Calculate Tank Volume <ArrowRight size={16} />
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
