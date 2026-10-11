@@ -390,6 +390,14 @@ export default function AsphaltDrivewaySeacoatingPage() {
                 and it&apos;s one most homeowners either do too rarely or skip entirely until cracks and fading make the problem obvious.
               </p>
               <p className="text-white/85 leading-relaxed mb-4 text-base">
+                One important rule: always{" "}
+                <Link
+                  href="/blog/repair-asphalt-driveway"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                >
+                  fix asphalt cracks and potholes
+                </Link>{" "}
+                before you apply any sealer — sealing over open damage traps moisture and speeds up deterioration from the inside.
                 This guide covers how often to seal, what it costs, whether it&apos;s worth doing, and the steps to do it yourself.
                 If you&apos;re also planning a new asphalt surface, understanding{" "}
                 <Link

@@ -667,7 +667,14 @@ export default function HowToRemoveOilStainsAsphaltPage() {
                   <strong className="text-white">Keep an oil-absorbent mat or a sheet of cardboard</strong> under a known leak until you fix the vehicle issue.
                 </p>
                 <p>
-                  <strong className="text-white">Reseal the driveway every 2 to 3 years.</strong> A properly sealed surface resists oil penetration far better than bare, unsealed asphalt. Regular maintenance keeps long-term replacement costs down as outlined in our{" "}
+                  <strong className="text-white">Reseal the driveway every 2 to 3 years.</strong> Before resealing, take a few minutes to{" "}
+                  <Link
+                    href="/blog/repair-asphalt-driveway"
+                    className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                  >
+                    patch any surface cracks or potholes
+                  </Link>{" "}
+                  you find \u2014 sealing over unrepaired damage traps water and shortens the surface life. A properly sealed surface resists oil penetration far better than bare, unsealed asphalt. Regular maintenance keeps long-term replacement costs down as outlined in our{" "}
                   <Link
                     href="/blog/bitumen-driveway-cost-worldwide"
                     className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"

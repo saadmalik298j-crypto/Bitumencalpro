@@ -46,6 +46,20 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: "repair-asphalt-driveway",
+    category: "Asphalt & Paving Materials",
+    title: "How to Repair Asphalt Driveway Cracks and Potholes (DIY Guide)",
+    excerpt:
+      "Fix asphalt driveway cracks and potholes yourself. Step-by-step instructions for cold-pour filler, backer rod, and cold patch — plus the warning signs that need a pro.",
+    image: "/repair-asphalt-driveway-cracks-potholes.webp",
+    imageAlt: "DIY asphalt driveway crack and pothole repair — cold patch and filler applied to damaged driveway surface",
+    readTime: "14 min read",
+    date: "October 11, 2026",
+    dateISO: "2026-10-11",
+    tags: ["Asphalt Repair", "Pothole Repair", "Crack Filler", "DIY Driveway", "Cold Patch"],
+    featured: true,
+  },
+  {
     slug: "bitumen-emulsion-explained",
     category: "Bitumen Fundamentals",
     title: "Bitumen Emulsion Explained: Types, Density, Production & How It Differs from Bitumen",

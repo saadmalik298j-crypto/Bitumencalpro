@@ -224,7 +224,14 @@ export default function ColdMixBitumenPage() {
                 Cold mix bitumen fills more potholes than any other asphalt product — and is also one of the most misapplied. Chosen for the right job in the right conditions, it's fast, practical, and cost-effective. Used as a shortcut for repairs it wasn't designed to handle, it fails within months and leaves a bigger problem than the one it covered.
               </p>
               <p className="text-white/85 leading-relaxed mb-4 text-base">
-                This guide explains how cold mix is made, when it's the right call, and how to apply it so repairs actually last — not just look fixed for a few weeks.
+                This guide explains how cold mix is made, when it's the right call, and how to apply it so repairs actually last — not just look fixed for a few weeks. If you're tackling a residential driveway, our step-by-step{" "}
+                <Link
+                  href="/blog/repair-asphalt-driveway"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                >
+                  asphalt driveway crack and pothole repair guide
+                </Link>{" "}
+                pairs directly with this article for hands-on product selection and technique.
               </p>
             </section>
 
