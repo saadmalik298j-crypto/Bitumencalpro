@@ -504,7 +504,9 @@ export default function HowToPronounceBitumenPage() {
               <p className="text-white/80 leading-relaxed text-base">
                 Tar and bitumen look alike but behave differently. In the US, the binder is often called &ldquo;asphalt cement,&rdquo; which is why Americans say &ldquo;asphalt&rdquo; where others say &ldquo;bitumen.&rdquo; Our{" "}
                 <Link href="/blog/asphalt-vs-bitumen" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">asphalt vs bitumen comparison guide</Link>{" "}
-                breaks down exactly when each term applies and where the regional terminology diverges.
+                breaks down exactly when each term applies and where the regional terminology diverges. If you also work with blacktop paving across the US, UK, or Canada, see our guide on{" "}
+                <Link href="/blog/how-to-pronounce-asphalt" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">how to pronounce asphalt</Link>{" "}
+                for regional phonetic differences and spelling tricks.
               </p>
             </section>
 
@@ -628,6 +630,11 @@ export default function HowToPronounceBitumenPage() {
               </div>
               <nav className="space-y-3">
                 {[
+                  {
+                    href: "/blog/how-to-pronounce-asphalt",
+                    label: "How to Pronounce Asphalt",
+                    sub: "US, UK & Canadian pronunciation",
+                  },
                   {
                     href: "/blog/what-is-bitumen",
                     label: "What Is Bitumen?",

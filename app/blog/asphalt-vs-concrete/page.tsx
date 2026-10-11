@@ -445,7 +445,13 @@ export default function AsphaltVsConcretePage() {
               </p>
               <p className="text-white/80 leading-relaxed text-base">
                 The core difference starts here. Asphalt stays somewhat flexible after it sets. Concrete
-                becomes rigid. That single property drives most of the performance differences covered below.
+                becomes rigid. That single property drives most of the performance differences covered below. To ensure your team communicates accurately when specifying paving materials, check out our guide on{" "}
+                <Link
+                  href="/blog/how-to-pronounce-asphalt"
+                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
+                >
+                  how to pronounce asphalt
+                </Link>.
               </p>
             </section>
 

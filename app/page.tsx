@@ -343,6 +343,13 @@ export default function Home() {
                 className="text-teal-400 hover:text-teal-300 font-semibold underline underline-offset-2 transition-colors"
               >
                 what bitumen is
+              </Link>{" "}
+              or learn the regional phonetic rules in our guide on{" "}
+              <Link
+                href="/blog/how-to-pronounce-asphalt"
+                className="text-amber-400 hover:text-amber-300 font-semibold underline underline-offset-2 transition-colors"
+              >
+                how to pronounce asphalt
               </Link>.
             </p>
           </div>

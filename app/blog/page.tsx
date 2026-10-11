@@ -46,6 +46,20 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: "how-to-pronounce-asphalt",
+    category: "Pavement Terminology",
+    title: "How to Pronounce Asphalt: Say It Right, Spell It Right",
+    excerpt:
+      "Say AS-fawlt, ASH-falt, or AS-falt? Master syllable stress, regional accents in US, Canada, and UK, spelling rules for 'ph', and road construction vocabulary.",
+    image: "/how-to-pronounce-asphalt.webp",
+    imageAlt: "How to pronounce asphalt — guide illustrating AS-fawlt syllable breakdown with phonetic sound wave and speaker icon",
+    readTime: "11 min read",
+    date: "October 11, 2026",
+    dateISO: "2026-10-11",
+    tags: ["Asphalt Pronunciation", "Civil Engineering Terms", "Spelling Asphalt", "Road Vocabulary"],
+    featured: true,
+  },
+  {
     slug: "repair-asphalt-driveway",
     category: "Asphalt & Paving Materials",
     title: "How to Repair Asphalt Driveway Cracks and Potholes (DIY Guide)",

@@ -733,7 +733,14 @@ export default function AsphaltVsBitumenPage() {
                 Why the Two Words Get Mixed Up
               </h2>
               <p className="text-white/80 leading-relaxed mb-5 text-base">
-                The confusion is regional. In American English, &ldquo;asphalt&rdquo; means the binder that British English calls bitumen. Americans also shorten &ldquo;asphalt concrete&rdquo; to &ldquo;asphalt,&rdquo; and that finished mix is what British and Australian English call asphalt or tarmac.
+                The confusion is regional. In American English, &ldquo;asphalt&rdquo; means the binder that British English calls bitumen. Americans also shorten &ldquo;asphalt concrete&rdquo; to &ldquo;asphalt,&rdquo; and that finished mix is what British and Australian English call asphalt or tarmac. The word itself also carries different accents and regional spellings — see our detailed guide on{" "}
+                <Link
+                  href="/blog/how-to-pronounce-asphalt"
+                  className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium"
+                >
+                  how to pronounce asphalt
+                </Link>{" "}
+                to master the phonetic rules and syllable stress across the US, UK, and Canada.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                 <div className="bg-white/5 border border-white/10 rounded-xl p-5 border-l-4 border-l-teal-400">
