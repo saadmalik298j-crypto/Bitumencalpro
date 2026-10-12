@@ -10,10 +10,15 @@ export default function Footer() {
 
           {/* Brand, Location & Entity Information */}
           <div className="text-left max-w-sm">
-            <Link href="/" className="text-2xl font-black text-white flex items-center gap-2.5 mb-3 group">
-              <span className="w-9 h-9 rounded-xl bg-gradient-to-br from-teal-400 to-teal-600 text-slate-950 flex items-center justify-center text-sm font-black shadow-md shadow-teal-500/20 group-hover:scale-105 transition-transform">
-                B
-              </span>
+            <Link
+              href="/"
+              className="text-2xl font-black text-white flex items-center gap-2.5 mb-3 group"
+              aria-label="BitumenCalcPro"
+            >
+              <span
+                aria-hidden="true"
+                className="brand-logo-icon w-9 h-9 rounded-xl bg-gradient-to-br from-teal-400 to-teal-600 text-slate-950 flex items-center justify-center text-sm font-black shadow-md shadow-teal-500/20 group-hover:scale-105 transition-transform select-none"
+              />
               <span className="bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent">
                 BitumenCalcPro
               </span>

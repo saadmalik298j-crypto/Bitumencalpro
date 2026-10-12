@@ -28,10 +28,12 @@ export default function Navbar() {
         <Link
           href="/"
           className="text-xl md:text-2xl font-black text-white flex items-center gap-2.5 tracking-tight hover:opacity-90 transition-opacity"
+          aria-label="BitumenCalcPro"
         >
-          <div className="w-8 h-8 md:w-9 md:h-9 rounded-xl bg-white text-teal-700 flex items-center justify-center text-base shadow-md font-black">
-            B
-          </div>
+          <span
+            aria-hidden="true"
+            className="brand-logo-icon w-8 h-8 md:w-9 md:h-9 rounded-xl bg-white text-teal-700 flex items-center justify-center text-base shadow-md font-black select-none"
+          />
           <span>BitumenCalcPro</span>
         </Link>
 

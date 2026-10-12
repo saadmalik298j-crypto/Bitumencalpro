@@ -155,3 +155,11 @@ header {
 article section {
   contain: layout style;
 }
+
+/* 6. Decorative Brand Logo Icon — renders 'B' via CSS content so search engines,
+      crawlers, and scrapers only see the text brand name 'BitumenCalcPro' without a leading 'B' */
+.brand-logo-icon::before {
+  content: "B";
+  display: block;
+  line-height: 1;
+}
