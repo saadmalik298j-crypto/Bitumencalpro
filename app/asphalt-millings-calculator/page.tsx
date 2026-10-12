@@ -688,11 +688,11 @@ export default function MillingsPage() {
               </Link>
               . If you want to bond a new layer over milled pavement, the{" "}
               <Link href="/tack-coat-calculator" className="text-teal-300 underline font-semibold">
-                tack coat calculator
+                Online tack coat calculator
               </Link>{" "}
               gives the emulsion quantity. For budgets, see the{" "}
               <Link href="/asphalt-driveway-cost-calculator" className="text-teal-300 underline font-semibold">
-                asphalt driveway cost calculator
+asphalt driveway calculator cost
               </Link>
               .
             </p>

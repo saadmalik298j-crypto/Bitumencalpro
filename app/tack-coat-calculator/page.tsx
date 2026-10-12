@@ -761,7 +761,7 @@ export default function TackCoatPage() {
               </Link>
               . For a residential budget, see the{" "}
               <Link href="/asphalt-driveway-cost-calculator" className="text-teal-300 underline font-semibold">
-                asphalt driveway cost calculator
+asphalt driveway calculator cost
               </Link>
               .
             </p>

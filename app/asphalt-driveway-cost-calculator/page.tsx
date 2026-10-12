@@ -666,7 +666,7 @@ export default function DrivewayCostPage() {
               </Link>
               . If you plan to use recycled material, see the{" "}
               <Link href="/asphalt-millings-calculator/" className="text-teal-300 underline font-semibold">
-                asphalt millings calculator
+                Free asphalt millings calculator
               </Link>
               .
             </p>

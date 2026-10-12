@@ -670,11 +670,11 @@ export default function AsphaltTonnagePage() {
               </Link>{" "}
               covers the sprayed layer under each lift. The{" "}
               <Link href="/asphalt-driveway-cost-calculator/" className="text-teal-300 underline font-semibold">
-                asphalt driveway cost calculator
+cost of asphalt driveway calculator
               </Link>{" "}
               turns tonnage into a budget. The{" "}
               <Link href="/asphalt-millings-calculator/" className="text-teal-300 underline font-semibold">
-                asphalt millings calculator
+                asphalt milling calculator
               </Link>{" "}
               does the same weight math for recycled material.
             </p>
