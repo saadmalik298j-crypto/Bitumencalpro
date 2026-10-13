@@ -337,20 +337,7 @@ export default function Home() {
               >
                 Asphalt Tonnage Calculator
               </Link>
-              . To learn more about material properties and classification grades, read our overview on{" "}
-              <Link
-                href="/blog/what-is-bitumen"
-                className="text-teal-400 hover:text-teal-300 font-semibold underline underline-offset-2 transition-colors"
-              >
-                what bitumen is
-              </Link>{" "}
-              or learn the regional phonetic rules in our guide on{" "}
-              <Link
-                href="/blog/how-to-pronounce-asphalt"
-                className="text-amber-400 hover:text-amber-300 font-semibold underline underline-offset-2 transition-colors"
-              >
-                how to pronounce asphalt
-              </Link>.
+              
             </p>
           </div>
 
