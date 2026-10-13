@@ -14,7 +14,7 @@ export default function TankVolumeCalculator() {
   const [tempC, setTempC] = useState("160");
   const [baseDensity, setBaseDensity] = useState("1030"); // density at 15°C
 
-  // Fill Inputs
+
   const [fillMode, setFillMode] = useState<FillMode>("full");
   const [fillPercent, setFillPercent] = useState("100");
   const [dipDepth, setDipDepth] = useState("");
