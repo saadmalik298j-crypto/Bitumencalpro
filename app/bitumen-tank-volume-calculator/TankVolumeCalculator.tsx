@@ -64,7 +64,6 @@ export default function TankVolumeCalculator() {
       // 2:1 Elliptical heads = 2 * (π * D³ / 24) = π * D³ / 12
       headVolM3 = (Math.PI * Math.pow(d, 3)) / 12;
     } else if (headType === "hemispherical") {
-      // Hemispherical heads = 2 * (π * D³ / 12) = π * D³ / 6
       headVolM3 = (Math.PI * Math.pow(d, 3)) / 6;
     }
 
