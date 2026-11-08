@@ -107,7 +107,6 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Fixed background layer */}
         <div className="fixed -inset-[100px] -z-10 bg-gradient-to-br from-teal-600 to-orange-700 pointer-events-none transform-gpu" />
 
         <Navbar />
