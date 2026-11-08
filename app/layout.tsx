@@ -1,10 +1,13 @@
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+const GA_MEASUREMENT_ID = "G-ZS7DEBW50D";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -69,12 +72,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "BitumenCalcPro — Free Bitumen & Asphalt Calculator",
-    description: "Free online bitumen and aggregate calculator for civil engineers and paving contractors.",
+    description:
+      "Free online bitumen and aggregate calculator for civil engineers and paving contractors.",
     creator: "BitumenCalcPro",
     images: ["/bitumen-calculator-og-image.png"],
   },
-
-
 };
 
 export default function RootLayout({
@@ -83,28 +85,55 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${inter.className} bg-slate-900`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${inter.className} bg-slate-900`}
+    >
       <body className="min-h-screen text-slate-800 flex flex-col selection:bg-teal-500/30">
-        {/* Fixed background layer — Oversized to prevent mobile address bar flickering, GPU composited */}
+
+        {/* Google Analytics 4 */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+
+        {/* Fixed background layer */}
         <div className="fixed -inset-[100px] -z-10 bg-gradient-to-br from-teal-600 to-orange-700 pointer-events-none transform-gpu" />
+
         <Navbar />
+
         <main className="flex-grow">
           {children}
           <SpeedInsights />
-
         </main>
+
         <Footer />
+
+        {/* Microsoft Clarity */}
         <Script
           id="microsoft-clarity"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `(function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xykb693xn9");`,
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;
+              t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];
+              y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "xykb693xn9");`,
           }}
         />
+
       </body>
     </html>
   );
