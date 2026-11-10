@@ -46,6 +46,34 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: "asphalt-cracking-types",
+    category: "Asphalt & Paving Materials",
+    title: "Asphalt Cracking Types and Causes: How to Identify Each Crack",
+    excerpt:
+      "All 7 asphalt crack types explained — alligator, block, transverse, longitudinal, edge, slippage, and reflective. Field identification checklist and causes.",
+    image: "/asphalt-cracking-types-and-causes.webp",
+    imageAlt: "Asphalt cracking types and causes — alligator, block, transverse, and reflective cracks on road pavement",
+    readTime: "15 min read",
+    date: "November 10, 2026",
+    dateISO: "2026-11-10",
+    tags: ["Asphalt Cracking", "Alligator Cracking", "Pavement Distress", "Road Maintenance"],
+    featured: true,
+  },
+  {
+    slug: "prime-coat-vs-tack-coat",
+    category: "Asphalt & Paving Materials",
+    title: "Prime Coat vs Tack Coat: Differences, Application Rates, and When to Use Each",
+    excerpt:
+      "Prime coat goes on a granular base and soaks in. Tack coat goes between asphalt layers and stays on top. Full breakdown of binders, rates, cure times, and bond failure causes.",
+    image: "/prime-coat-vs-tack-coat-comparison.webp",
+    imageAlt: "Prime coat vs tack coat — bituminous distributor truck spraying emulsion on granular base and asphalt overlay comparison",
+    readTime: "14 min read",
+    date: "November 10, 2026",
+    dateISO: "2026-11-10",
+    tags: ["Prime Coat", "Tack Coat", "Asphalt Layers", "Bitumen Emulsion", "Paving"],
+    featured: true,
+  },
+  {
     slug: "how-to-pronounce-asphalt",
     category: "Pavement Terminology",
     title: "How to Pronounce Asphalt: Say It Right, Spell It Right",

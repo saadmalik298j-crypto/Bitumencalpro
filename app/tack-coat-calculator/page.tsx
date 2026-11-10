@@ -661,7 +661,7 @@ export default function TackCoatPage() {
               </h2>
             </div>
             <p>
-              A tack coat bonds a new asphalt layer to an existing asphalt or concrete surface. A prime coat goes on an unbound granular base before paving, and it penetrates the base. Prime coats use more binder. Indian tenders commonly list 0.6 to 1.2 kg/m² for prime coat, against 0.20 to 0.30 kg/m² for tack on bituminous surfaces.
+              A tack coat bonds a new asphalt layer to an existing asphalt or concrete surface. A prime coat goes on an unbound granular base before paving, and it penetrates the base. Prime coats use more binder. Indian tenders commonly list 0.6 to 1.2 kg/m² for prime coat, against 0.20 to 0.30 kg/m² for tack on bituminous surfaces. For a full side-by-side comparison of binder grades, cure times, and when each coat is — or is not — required, see our complete guide on <Link href="/blog/prime-coat-vs-tack-coat" className="text-teal-300 underline font-semibold">prime coat vs tack coat differences and application rates</Link>.
             </p>
             <p>
               Calculate them separately. Our{" "}

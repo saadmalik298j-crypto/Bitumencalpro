@@ -932,7 +932,16 @@ export default function BitumenEmulsionExplainedPage() {
                   Tack Coat Calculator
                 </Link>{" "}
                 can help you estimate binder quantities for tack coat, prime coat, and emulsion-based
-                projects quickly.
+                projects quickly. For a full breakdown of when each coat applies, which binder grades
+                to select, and the application rates that separate a good bond from a failure, see
+                our guide on{" "}
+                <Link
+                  href="/blog/prime-coat-vs-tack-coat"
+                  className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"
+                >
+                  prime coat vs tack coat — differences, rates, and common failures
+                </Link>
+                .
               </p>
             </section>
 

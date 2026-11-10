@@ -447,7 +447,7 @@ export default function AsphaltThicknessPage() {
                 When asphalt is too thin for the load it carries, it flexes
                 repeatedly under traffic. That repeated flexing creates small
                 fatigue cracks, often in a web pattern that looks like alligator
-                skin. Once cracks form, water gets into the base layer, and
+                skin (learn to diagnose this in our guide to <Link href="/blog/asphalt-cracking-types" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium">asphalt cracking types and causes</Link>). Once cracks form, water gets into the base layer, and
                 freeze-thaw cycles or continued traffic turn those cracks into
                 potholes. Getting the thickness right from the start is far
                 cheaper than repairing the damage that undersized asphalt

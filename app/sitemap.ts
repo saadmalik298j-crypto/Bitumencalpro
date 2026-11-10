@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://bitumencalcpro.com";
-  const lastMod = "2026-10-09T00:00:00.000Z";
+  const lastMod = "2026-11-10T00:00:00.000Z";
 
   const routes = [
     "",
@@ -33,6 +33,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/how-to-remove-oil-stains-asphalt-driveway",
     "/blog/repair-asphalt-driveway",
     "/blog/how-to-pronounce-asphalt",
+    "/blog/asphalt-cracking-types",
+    "/blog/prime-coat-vs-tack-coat",
     "/blog/asphalt-driveway-sealcoating",
     "/about-us",
     "/contact-us",

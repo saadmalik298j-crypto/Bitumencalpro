@@ -474,7 +474,7 @@ export default function RepairAsphaltDrivewayPage() {
                   ["Medium crack", "1/8 to 1/2 inch wide", "Cold-pour or rubberized filler"],
                   ["Wide crack", "Over 1/2 inch wide or deep", "Backer rod plus filler, or cold patch"],
                   ["Pothole", "A bowl-shaped hole where asphalt has broken away", "Cold patch in compacted layers"],
-                  ["Alligator cracking", "A web of interlocking cracks in one area", "Professional cut-out repair"],
+                  ["Alligator cracking", "A web of interlocking cracks in one area — see our guide to identifying all asphalt cracking types", "Professional cut-out repair"],
                   ["Sunken or spongy area", "Dips or soft spots underfoot", "Base repair, usually a pro job"],
                 ]}
               />
@@ -487,7 +487,7 @@ export default function RepairAsphaltDrivewayPage() {
               />
 
               <p className="text-white/80 leading-relaxed text-base">
-                Filler and sealer do different jobs. Filler fills the void inside a crack and stays flexible as the pavement moves. A sealer or sealcoat covers the surface and suits hairline cracking and spiderweb patterns. Cracks wider than roughly 1/8 inch need filler, not sealer alone. Understanding how{" "}
+                Before choosing a fix, it helps to accurately diagnose the pattern — our guide on <Link href="/blog/asphalt-cracking-types" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium">identifying asphalt cracking types and causes</Link> walks through the differences between surface cracks and deep structural failures. Filler and sealer do different jobs. Filler fills the void inside a crack and stays flexible as the pavement moves. A sealer or sealcoat covers the surface and suits hairline cracking and spiderweb patterns. Cracks wider than roughly 1/8 inch need filler, not sealer alone. Understanding how{" "}
                 <Link
                   href="/blog/cold-mix-bitumen"
                   className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium"

@@ -800,7 +800,7 @@ export default function AsphaltEstimationMistakesPage() {
               />
               <p className="text-white/80 leading-relaxed mb-5 text-base">
                 An estimate that only accounts for the asphalt itself misses
-                real costs. Tack coat between layers, edge gravel, base
+                real costs. Tack coat between layers — understanding the{ }<Link href="/blog/prime-coat-vs-tack-coat" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium">correct tack coat application rates</Link>{ }— edge gravel, base
                 stabilization material, and similar secondary items are easy to
                 forget when the estimating focus stays narrowly on the main
                 asphalt tonnage.
