@@ -642,7 +642,7 @@ export default function AsphaltTonnagePage() {
               </h2>
             </div>
             <p className="bg-slate-900/80 p-5 rounded-2xl border border-white/10">
-              A US ton is 2,000 lb, about 907 kg. A metric tonne is 1,000 kg. One tonne equals 1.1023 US tons, so 100 tonnes is about 110.2 tons, a 10% gap. Confirm which unit your quote uses before you order. A quote in tonnes read as tons leaves you 10% short.
+              A US ton is 2,000 lb, about 907 kg. A metric tonne is 1,000 kg. One tonne equals 1.1023 US tons, so 100 tonnes is about 110.2 tons, a 10% gap. Confirm which unit your quote uses before you order. A quote in tonnes read as tons leaves you 10% short. For a full breakdown of how tonnage ties to spread rate and field verification, see our guide on <Link href="/blog/asphalt-yield" className="text-teal-300 underline font-semibold">how to calculate asphalt yield using the 110 factor</Link>.
             </p>
           </section>
 

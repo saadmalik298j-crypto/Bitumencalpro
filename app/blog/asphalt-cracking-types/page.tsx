@@ -898,7 +898,7 @@ export default function AsphaltCrackingTypesPage() {
               <p className="text-white/80 leading-relaxed text-base">
                 Once you know the repair area, calculate the asphalt tonnage
                 and tack coat quantity from area, thickness, and compacted
-                density. Our{" "}
+                density. Our guide on <Link href="/blog/asphalt-yield" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium">how to calculate asphalt yield per square yard</Link> shows the exact formulas and field verification steps. Our{" "}
                 <Link
                   href="/tack-coat-calculator"
                   className="text-teal-400 hover:text-orange-400 underline underline-offset-2 transition-colors font-medium"

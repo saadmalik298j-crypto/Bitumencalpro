@@ -46,6 +46,34 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: "asphalt-air-voids",
+    category: "Asphalt & Paving Materials",
+    title: "How to Calculate Air Voids in Asphalt (Formula, Steps, and Worked Examples)",
+    excerpt:
+      "Calculate air voids using Va = 100 × (1 − Gmb ÷ Gmm). Covers Gmb and Gmm test methods, two worked examples, VMA/VFA relationships, target ranges, and common mistakes.",
+    image: "/how-to-calculate-air-voids-in-asphalt.webp",
+    imageAlt: "How to calculate air voids in asphalt — Gmb and Gmm specific gravity measurements for Va formula",
+    readTime: "16 min read",
+    date: "November 11, 2026",
+    dateISO: "2026-11-11",
+    tags: ["Air Voids", "Mix Design", "Gmb", "Gmm", "Superpave"],
+    featured: true,
+  },
+  {
+    slug: "asphalt-yield",
+    category: "Asphalt & Paving Materials",
+    title: "How to Calculate Asphalt Yield (Formulas, Examples, and a Field Check)",
+    excerpt:
+      "Calculate asphalt yield using the 110 lb/yd² factor. Includes 4 worked examples, a coverage-per-ton chart, field verification method, and ordering waste allowance.",
+    image: "/how-to-calculate-asphalt-yield.webp",
+    imageAlt: "How to calculate asphalt yield — asphalt paving crew with yield formula showing pounds per square yard per inch",
+    readTime: "14 min read",
+    date: "November 11, 2026",
+    dateISO: "2026-11-11",
+    tags: ["Asphalt Yield", "Asphalt Tonnage", "Coverage Per Ton", "Paving Calculations"],
+    featured: true,
+  },
+  {
     slug: "asphalt-cracking-types",
     category: "Asphalt & Paving Materials",
     title: "Asphalt Cracking Types and Causes: How to Identify Each Crack",

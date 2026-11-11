@@ -672,7 +672,7 @@ export default function AsphaltEstimationMistakesPage() {
                 color="orange"
               />
               <p className="text-white/80 leading-relaxed mb-5 text-base">
-                Loose asphalt takes up more space than compacted asphalt. As it
+                Understanding the relationship between loose volume and compacted weight is the foundation of <Link href="/blog/asphalt-yield" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium">accurate asphalt yield calculations</Link>. Loose asphalt takes up more space than compacted asphalt. As it
                 gets rolled and compacted during installation, it typically loses
                 somewhere around{" "}
                 <strong className="text-white">10% of its volume</strong>. An
