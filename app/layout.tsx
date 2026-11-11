@@ -89,7 +89,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${inter.className} bg-slate-900`}
     >
-      <body className="min-h-screen text-slate-800 flex flex-col selection:bg-teal-500/30">
+      <body className="min-h-screen bg-slate-900 text-slate-100 flex flex-col selection:bg-teal-500/30">
 
         {/* Google Analytics 4 */}
         <Script
@@ -107,7 +107,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        <div className="fixed -inset-[100px] -z-10 bg-gradient-to-br from-teal-600 to-orange-700 pointer-events-none transform-gpu" />
+        <div className="fixed -inset-[100px] -z-10 bg-slate-900 pointer-events-none transform-gpu" />
 
         <Navbar />
 
