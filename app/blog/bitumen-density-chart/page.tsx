@@ -548,7 +548,7 @@ export default function BitumenDensityChartPage() {
                 In practice: if bitumen density is 1020 kg/m³ and water density is 1000 kg/m³ at the same
                 temperature, the specific gravity is 1.02. Since water&apos;s density is so close to 1.00 g/cm³, the
                 two figures end up numerically almost identical, which is why they&apos;re often used interchangeably
-                in the field even though they measure slightly different things.
+                in the field even though they measure slightly different things. In mix volumetrics, specific gravity values like Gmb and Gmm are fundamental to <Link href="/blog/asphalt-air-voids" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">determining asphalt air voids</Link> and ensuring durability.
               </p>
             </section>
 

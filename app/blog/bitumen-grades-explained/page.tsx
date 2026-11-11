@@ -789,7 +789,7 @@ export default function BitumenGradesExplainedPage() {
                   >
                     bitumen density reference chart
                   </Link>{" "}
-                  to verify grade-specific properties during quantity estimation.
+                  to verify grade-specific properties during quantity estimation, or learn <Link href="/blog/asphalt-air-voids" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors">how to calculate air voids in asphalt</Link> to ensure volumetric targets like VFA and VMA are met during mix verification.
                 </p>
               </div>
             </section>

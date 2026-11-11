@@ -596,7 +596,7 @@ export default function AsphaltYieldPage() {
                   <strong className="text-teal-300">Mix-specific formula:</strong>{" "}
                   lb/yd² per inch = 46.8 × bulk specific gravity of the
                   compacted mix. A bulk specific gravity of 2.35 gives exactly
-                  110. The mix design and field cores supply the real value.
+                  110. The mix design and field cores supply the real value, which is also used to <Link href="/blog/asphalt-air-voids" className="text-amber-400 hover:text-amber-300 underline underline-offset-2 transition-colors">calculate air voids in asphalt</Link> for volumetric compliance.
                 </p>
                 <p className="text-white/80 text-sm leading-relaxed">
                   Several state transportation agencies use 110 as their

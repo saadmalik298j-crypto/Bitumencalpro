@@ -622,7 +622,7 @@ export default function AsphaltCrackingTypesPage() {
                 </ul>
                 <p className="text-white/80 leading-relaxed text-base">
                   Block cracking is not load-related, which separates it from
-                  alligator cracking. The two can look similar in early stages,
+                  alligator cracking. High in-place voids accelerate binder oxidation and cracking, making it vital to <Link href="/blog/asphalt-air-voids" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">calculate air voids in asphalt</Link> during post-compaction quality checks. The two can look similar in early stages,
                   so check the block size and whether the cracking follows the
                   wheel paths. Light cases respond to crack sealing or a surface
                   treatment. Widespread, severe cases usually need milling and
