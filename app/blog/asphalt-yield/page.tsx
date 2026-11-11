@@ -360,6 +360,16 @@ export default function AsphaltYieldPage() {
         </div>
       </div>
 
+      {/* ── FEATURED IMAGE ── */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionImage
+          src="/how-to-calculate-asphalt-yield.webp"
+          alt="How to calculate asphalt yield — asphalt paving crew spreading hot mix with yield formula showing pounds per square yard per inch"
+          caption="Yield ties the scale ticket to the mat — target yield tells you what to place, and actual yield tells you whether you hit it"
+          priority
+        />
+      </div>
+
       {/* ── ARTICLE BODY ── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24">
         <div className="flex flex-col xl:flex-row gap-12 items-start">
@@ -438,13 +448,7 @@ export default function AsphaltYieldPage() {
               </p>
             </section>
 
-            {/* Image 1: Below introduction */}
-            <SectionImage
-              src="/how-to-calculate-asphalt-yield.webp"
-              alt="How to calculate asphalt yield — asphalt paving crew spreading hot mix with yield formula showing pounds per square yard per inch"
-              caption="Yield ties the scale ticket to the mat — target yield tells you what to place, and actual yield tells you whether you hit it"
-              priority
-            />
+
 
             {/* What Yield Means */}
             <section id="what-yield-means" className="mb-12 scroll-mt-24">
@@ -1144,27 +1148,6 @@ export default function AsphaltYieldPage() {
                 ))}
               </div>
             </section>
-
-            {/* Navigation */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10">
-              <Link
-                href="/blog"
-                className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold text-sm transition-colors group"
-              >
-                <ArrowLeft
-                  size={16}
-                  className="group-hover:-translate-x-1 transition-transform"
-                />
-                Back to Blog
-              </Link>
-              <Link
-                href="/asphalt-tonnage-calculator"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-400 hover:to-teal-500 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-[0_0_20px_rgba(20,184,166,0.35)] hover:shadow-[0_0_30px_rgba(20,184,166,0.55)]"
-              >
-                Calculate Asphalt Tonnage Free
-                <ArrowRight size={15} />
-              </Link>
-            </div>
 
             <AuthorBio />
           </article>

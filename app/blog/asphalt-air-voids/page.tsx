@@ -1055,24 +1055,6 @@ export default function AirVoidsPage() {
                 </div>
               </section>
 
-              {/* ── Bottom Nav ── */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-700">
-                <Link
-                  href="/blog"
-                  className="flex items-center gap-2 text-slate-400 hover:text-teal-400 transition-colors text-sm"
-                >
-                  <ArrowLeft className="w-4 h-4" />
-                  Back to Blog
-                </Link>
-                <Link
-                  href="/asphalt-tonnage-calculator"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-400 hover:to-teal-500 text-white font-semibold px-6 py-3 rounded-full transition-all shadow-lg shadow-teal-500/20 text-sm"
-                >
-                  Asphalt Tonnage Calculator
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-
               {/* Author Bio */}
               <div className="mt-10">
                 <AuthorBio />

@@ -1134,27 +1134,6 @@ export default function HowIsBitumenTransportedPage() {
               </div>
             </section>
 
-            {/* ── Navigation ── */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10">
-              <Link
-                href="/blog"
-                className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold text-sm transition-colors group"
-              >
-                <ArrowLeft
-                  size={16}
-                  className="group-hover:-translate-x-1 transition-transform"
-                />
-                Back to Blog
-              </Link>
-              <Link
-                href="/"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 rounded-full font-bold text-sm transition-all shadow-[0_0_20px_rgba(249,115,22,0.35)] hover:shadow-[0_0_30px_rgba(249,115,22,0.55)]"
-              >
-                Try the Bitumen Calculator
-                <ArrowRight size={15} />
-              </Link>
-            </div>
-
             <AuthorBio />
           </article>
         </div>

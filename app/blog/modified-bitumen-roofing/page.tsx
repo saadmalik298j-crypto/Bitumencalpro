@@ -810,25 +810,6 @@ export default function ModifiedBitumenRoofingPage() {
     ))}
               </div>
             </section>
-
-            {/* ── Navigation ── */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10">
-              <Link
-                href="/blog"
-                className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold text-sm transition-colors group"
-              >
-                <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
-                Back to Blog
-              </Link>
-              <a
-                href="https://www.nrca.net/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold text-sm transition-colors group"
-              >
-                National Roofing Contractors Assoc. (NRCA) <ExternalLink size={14} className="group-hover:translate-x-1 transition-transform" />
-              </a>
-            </div>
           
           <AuthorBio />
         </article>
