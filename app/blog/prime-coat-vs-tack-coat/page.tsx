@@ -937,7 +937,7 @@ export default function PrimeCoatVsTackCoatPage() {
                   bitumen binder grades and performance specifications
                 </Link>{" "}
                 helps in selecting the right emulsion for the temperature and
-                traffic conditions on a given project.
+                traffic conditions on a given project. Rain washes tack coat away before it can break, which is one reason the guide to <Link href="/blog/pave-asphalt-in-rain" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium">paving asphalt in the rain</Link> lists wet tack coat as a primary failure risk.
               </p>
             </section>
 

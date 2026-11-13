@@ -642,7 +642,7 @@ export default function AirVoidsPage() {
                 </h2>
                 <p className="text-slate-300 leading-relaxed mb-6">
                   Field cores check compaction quality. The lab gives you the Gmm from the same day&apos;s production. The
-                  core gives you the field Gmb. The difference tells you how well the paving crew compacted the mat.
+                  core gives you the field Gmb. The difference tells you how well the paving crew compacted the mat using proper <Link href="/blog/how-to-compact-asphalt" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">asphalt roller passes and temperature windows</Link>.
                 </p>
 
                 <InfoTable

@@ -563,7 +563,7 @@ export default function AsphaltCrackingTypesPage() {
                     "Repeated traffic loads above what the pavement was designed to carry",
                     "A pavement layer that is too thin, or a structural design that was inadequate from the start",
                     "A weak or wet base and subgrade",
-                    "Poor compaction during construction",
+                    "Poor compaction during construction — including when paving crews push on in rain",
                     "Heavier traffic than planned, such as a new bus route on an older street",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-white/75 text-sm leading-relaxed">
@@ -795,7 +795,7 @@ export default function AsphaltCrackingTypesPage() {
                     tack coat application and common bond failures
                   </Link>{" "}
                   covers the rates, cure times, and mistakes that lead to
-                  exactly this distress type. If the cause is deflection or
+                  exactly this distress type. Water trapped under the mat from rain during paving is another trigger — the guide on{" "}<Link href="/blog/pave-asphalt-in-rain" className="text-teal-400 hover:text-orange-400 underline underline-offset-2 transition-colors font-medium">paving in wet weather conditions</Link>{" "}explains why a wet base causes slippage and bond failure. If the cause is deflection or
                   fatigue below, a deeper repair is needed.
                 </p>
               </div>

@@ -748,7 +748,7 @@ export default function AsphaltThicknessPage() {
                 </a>{" "}
                 publishes detailed thickness design guidance for heavy-duty
                 industrial applications that engineers can reference for
-                site-specific specifications.
+                site-specific specifications. To ensure each lift achieves full density without stone bridging, see our field guide on <Link href="/blog/how-to-compact-asphalt" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">how to compact asphalt with proper roller sequences</Link>.
               </p>
             </section>
 

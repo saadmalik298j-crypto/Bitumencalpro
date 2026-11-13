@@ -936,7 +936,7 @@ export default function AsphaltYieldPage() {
               <div className="bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/20 rounded-xl p-5">
                 <p className="text-white/85 text-sm leading-relaxed">
                   <strong className="text-orange-300">Use compacted density with compacted thickness.</strong>{" "}
-                  If you calculate from loose volume, you need a loose density — mixing the two overstates the order.
+                  If you calculate from loose volume, you need a loose density — mixing the two overstates the order. Learn <Link href="/blog/how-to-compact-asphalt" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">how to compact asphalt to reach target in-place density</Link> to ensure your loose placement achieves the planned design thickness.
                 </p>
               </div>
             </section>

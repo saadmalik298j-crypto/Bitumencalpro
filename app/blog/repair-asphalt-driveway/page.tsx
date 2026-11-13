@@ -921,7 +921,7 @@ export default function RepairAsphaltDrivewayPage() {
               </h2>
               <div className="bg-gradient-to-br from-teal-500/15 via-blue-600/10 to-purple-600/10 border border-white/15 rounded-2xl p-6 md:p-8">
                 <p className="text-white/85 leading-relaxed mb-4 text-base">
-                  Most asphalt driveway damage is a straightforward DIY job when you match the product to the problem. Pourable filler handles cracks up to about 1/2 inch; backer rod and filler handle wider ones; and cold patch in compacted 2-inch layers handles potholes. Clean and dry surfaces, square edges, and thorough compaction decide how long a repair lasts.
+                  Most asphalt driveway damage is a straightforward DIY job when you match the product to the problem. Pourable filler handles cracks up to about 1/2 inch; backer rod and filler handle wider ones; and cold patch in compacted 2-inch layers handles potholes. Clean and dry surfaces, square edges, and thorough compaction decide how long a repair lasts. If a new paving job was laid in wet conditions, the resulting under-compaction is often the root cause — the guide on <Link href="/blog/pave-asphalt-in-rain" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors">paving asphalt in the rain</Link> explains what goes wrong when weather disrupts the paving window.
                 </p>
                 <p className="text-white/85 leading-relaxed mb-4 text-base">
                   Alligator cracking, spongy ground, and potholes that return mean the base has failed — and that needs a contractor. Once the repairs cure,{" "}

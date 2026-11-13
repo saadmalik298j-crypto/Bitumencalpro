@@ -824,7 +824,7 @@ export default function AsphaltDrivewaySeacoatingPage() {
                   >
                     Bitumen Calculator
                   </Link>{" "}
-                  to estimate material quantities and costs accurately — from initial paving through to long-term upkeep planning.
+                  to estimate material quantities and costs accurately — from initial paving through to long-term upkeep planning. If your asphalt was originally laid in damp or wet conditions, review our guide on <Link href="/blog/pave-asphalt-in-rain" className="text-teal-400 hover:text-orange-300 font-semibold underline underline-offset-2 transition-colors">paving asphalt in the rain</Link> to ensure the underlying mat is structurally sound before sealing.
                 </p>
                 <p className="text-white/85 leading-relaxed text-base">
                   For the broader technical context of how asphalt behaves over its lifetime — including how the bitumen binder degrades

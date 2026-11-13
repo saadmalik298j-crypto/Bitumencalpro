@@ -46,6 +46,34 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: "how-to-compact-asphalt",
+    category: "Paving Operations",
+    title: "How to Compact Asphalt: Temperature, Rollers, and Passes That Reach Target Density",
+    excerpt:
+      "To compact asphalt properly, roll the mix between 300°F and 175°F. Full breakdown of vibratory, pneumatic, and static rollers, rolling patterns, and density checks.",
+    image: "/how-to-compact-asphalt.webp",
+    imageAlt: "How to compact asphalt — heavy vibratory steel roller compacting fresh hot mix asphalt pavement behind the paver",
+    readTime: "15 min read",
+    date: "November 13, 2026",
+    dateISO: "2026-11-13",
+    tags: ["Asphalt Compaction", "Rollers", "Temperature", "Density", "Paving"],
+    featured: true,
+  },
+  {
+    slug: "pave-asphalt-in-rain",
+    category: "Asphalt & Paving Practice",
+    title: "Can You Pave Asphalt in the Rain? What Happens and What to Do",
+    excerpt:
+      "Rain cools hot mix before compaction, creates steam under the mat, and breaks tack coat bond. Learn when to stop, when to continue, and how long to wait after rain.",
+    image: "/can-you-pave-asphalt-in-the-rain.webp",
+    imageAlt: "Can you pave asphalt in the rain — paving crew stopping work on wet road surface during rainfall",
+    readTime: "12 min read",
+    date: "November 12, 2026",
+    dateISO: "2026-11-12",
+    tags: ["Asphalt Paving", "Rain", "Weather", "Compaction", "Hot Mix"],
+    featured: true,
+  },
+  {
     slug: "asphalt-air-voids",
     category: "Asphalt & Paving Materials",
     title: "How to Calculate Air Voids in Asphalt (Formula, Steps, and Worked Examples)",
