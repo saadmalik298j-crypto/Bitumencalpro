@@ -340,7 +340,7 @@ export default function AsphaltDrivewaySlopePage() {
             </span>
             <span className="flex items-center gap-1.5">
               <BookOpen className="w-4 h-4 text-teal-400" />
-              By Nabeel Awan
+              By BitumenCalcPro
             </span>
           </div>
         </div>
