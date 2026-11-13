@@ -319,7 +319,6 @@ export default function AsphaltPavingTemperaturePage() {
             <span className="text-slate-300 truncate">Asphalt Paving Temperature Chart</span>
           </nav>
 
-          {/* Category Badge */}
           <div className="mb-4">
             <span className="inline-flex items-center gap-1.5 bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">
               <Thermometer className="w-3 h-3" />
