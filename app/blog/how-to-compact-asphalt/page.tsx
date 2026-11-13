@@ -553,7 +553,7 @@ export default function HowToCompactAsphaltPage() {
               <p className="text-slate-300 leading-relaxed">
                 Every project should establish a cessation temperature — the lower boundary below which rolling no longer adds
                 density. Continuing to run heavy vibratory rollers on cold asphalt will fracture aggregate stones, break the
-                binder bond, and cause hairline surface cracks. Weather plays a major role here; see our guide on{" "}
+                binder bond, and cause hairline surface cracks. Check our <Link href="/blog/asphalt-paving-temperature" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">asphalt paving temperature chart</Link> for complete plant, road delivery, and breakdown rolling ranges. Weather plays a major role here; see our guide on{" "}
                 <Link
                   href="/blog/pave-asphalt-in-rain"
                   className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"

@@ -46,6 +46,34 @@ export const metadata: Metadata = {
 
 const POSTS = [
   {
+    slug: "asphalt-driveway-slope",
+    category: "Driveway Construction",
+    title: "Asphalt Driveway Slope for Drainage: Minimum, Maximum, and Best Practice",
+    excerpt:
+      "A good asphalt driveway slope for drainage is 2% (1/4 in/ft). Covers crown vs cross-slope design, garage trench drains, apron transitions, and fixing flat driveways.",
+    image: "/asphalt-driveway-slope-for-drainage.webp",
+    imageAlt: "Asphalt driveway slope for drainage — residential asphalt driveway sloping away from house toward street gutter",
+    readTime: "13 min read",
+    date: "November 13, 2026",
+    dateISO: "2026-11-13",
+    tags: ["Driveway Slope", "Drainage", "Asphalt Driveway", "Grading", "Paving"],
+    featured: true,
+  },
+  {
+    slug: "asphalt-paving-temperature",
+    category: "Paving Operations",
+    title: "Asphalt Paving Temperature Chart: Mix, Air, Surface, and Compaction Temperatures",
+    excerpt:
+      "Working temperature ranges for asphalt paving from plant to road: plant discharge, delivery, breakdown rolling, cessation limits (175°F), and lift thickness minimums.",
+    image: "/asphalt-paving-temperature-guide.webp",
+    imageAlt: "Asphalt paving temperature chart guide — asphalt paver laying hot mix asphalt on highway with roller following closely behind",
+    readTime: "13 min read",
+    date: "November 13, 2026",
+    dateISO: "2026-11-13",
+    tags: ["Asphalt Temperature", "Paving Temperature", "Compaction", "Hot Mix", "Weather"],
+    featured: true,
+  },
+  {
     slug: "how-to-compact-asphalt",
     category: "Paving Operations",
     title: "How to Compact Asphalt: Temperature, Rollers, and Passes That Reach Target Density",

@@ -692,7 +692,7 @@ export default function RepairAsphaltDrivewayPage() {
 
               <div className="mt-6 bg-gradient-to-br from-teal-500/15 to-teal-600/10 border border-teal-400/25 rounded-2xl p-6">
                 <p className="text-white/85 leading-relaxed text-base">
-                  <strong className="text-teal-300">Key takeaway:</strong> Cold patch cures through compaction and time under traffic. A patch that was tamped well can hold for months to a few years, depending on traffic, drainage, and weather.
+                  <strong className="text-teal-300">Key takeaway:</strong> Cold patch cures through compaction and time under traffic. A patch that was tamped well can hold for months to a few years, depending on traffic, drainage, and weather. If water consistently ponds on your surface, inspect whether your <Link href="/blog/asphalt-driveway-slope" className="text-teal-400 hover:text-orange-300 underline underline-offset-2 transition-colors font-medium">asphalt driveway slope and drainage gradient</Link> meet the minimum 2% standard.
                 </p>
               </div>
             </section>

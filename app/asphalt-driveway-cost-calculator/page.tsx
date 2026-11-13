@@ -542,7 +542,7 @@ export default function DrivewayCostPage() {
 
               <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
                 <p>
-                  <strong className="text-teal-300">Access, slope and drainage.</strong> Tight access limits equipment. Steep grades and water control add work.
+                  <strong className="text-teal-300">Access, slope and drainage.</strong> Tight access limits equipment. Steep grades and water control add work — calculating the proper <Link href="/blog/asphalt-driveway-slope" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">asphalt driveway slope for drainage</Link> ensures you do not face standing water or erosion issues down the road.
                 </p>
               </div>
 

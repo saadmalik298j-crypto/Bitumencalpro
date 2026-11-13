@@ -33,6 +33,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/how-to-remove-oil-stains-asphalt-driveway",
     "/blog/repair-asphalt-driveway",
     "/blog/how-to-pronounce-asphalt",
+    "/blog/asphalt-driveway-slope",
+    "/blog/asphalt-paving-temperature",
     "/blog/how-to-compact-asphalt",
     "/blog/asphalt-air-voids",
     "/blog/asphalt-yield",

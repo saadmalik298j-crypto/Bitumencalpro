@@ -713,7 +713,7 @@ export default function PaveAsphaltInRainPage() {
               <p className="text-slate-300 leading-relaxed mb-4">
                 Most hot mix specifications call for a minimum air temperature of about 50°F and rising. Some agencies allow
                 paving down to 40°F with warm mix asphalt or polymer-modified mixes — always check the specification and the
-                supplier.
+                supplier. Review our <Link href="/blog/asphalt-paving-temperature" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors">asphalt paving temperature chart and lift thickness table</Link> for ambient thresholds by layer depth.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
                 Cool, wet weather is the worst combination because the mat loses heat from both the air and the surface

@@ -459,7 +459,7 @@ export default function AsphaltThicknessPage() {
                   asphalt quantity calculator
                 </Link>{" "}
                 to estimate exact material requirements for your project before
-                breaking ground.
+                breaking ground, while verifying that your subbase grading adheres to the recommended <Link href="/blog/asphalt-driveway-slope" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">asphalt driveway slope for drainage</Link> to prevent subgrade saturation.
               </p>
 
               {/* Image 2 — After "Why Asphalt Thickness Matters" */}
@@ -677,7 +677,7 @@ export default function AsphaltThicknessPage() {
                   bitumen grade for your climate
                 </Link>{" "}
                 is equally important — the binder grade affects how the asphalt
-                performs across temperature extremes.
+                performs across temperature extremes. During installation, layer depth directly dictates the allowable paving window; consult our <Link href="/blog/asphalt-paving-temperature" className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-medium">asphalt paving temperature chart</Link> to check minimum air and surface cutoffs by lift thickness.
               </p>
             </section>
 
