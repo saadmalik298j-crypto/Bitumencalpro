@@ -953,7 +953,47 @@ export default function PaveAsphaltInRainPage() {
               </div>
             </section>
 
-            {/* ── SECTION 15: FAQ ── */}
+         
+
+            {/* Conclusion */}
+            <section className="mb-12">
+              <div className="bg-gradient-to-r from-slate-800 to-slate-800/60 border border-slate-700 rounded-xl p-6">
+                <h2 className="text-xl font-bold text-white mb-4">Sum Upy</h2>
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  You cannot pave hot mix in the rain without risking the pavement. Rain cools the mix before it is
+                  compacted, makes steam when it meets a wet base, and keeps tack coat from bonding. If a storm starts
+                  mid-job, stop, roll what is down, and build a clean transverse joint.
+                </p>
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  Wait at least 24 hours after rain for the base to dry, and protect the new mat for 24 hours or more after
+                  paving. Planning around the forecast costs a few days at most and protects a pavement that should last
+                  years. For{" "}
+                  <Link
+                    href="/blog/repair-asphalt-driveway"
+                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
+                  >
+                    fixing asphalt driveway damage
+                  </Link>{" "}
+                  caused by poor compaction or premature rain exposure, early intervention prevents minor raveling from
+                  becoming a full-depth failure.
+                </p>
+                <p className="text-slate-300 leading-relaxed">
+                  The{" "}
+                  <a
+                    href="https://www.fhwa.dot.gov/pavement/asphalt/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 inline-flex items-center gap-1 transition-colors"
+                  >
+                    FHWA Asphalt Pavement resources
+                    <ExternalLink className="w-3 h-3" />
+                  </a>{" "}
+                  provide free agency-level guidance on compaction temperature windows, weather limitations, and quality
+                  assurance testing for hot mix paving operations.
+                </p>
+              </div>
+            </section>
+   {/* ── SECTION 15: FAQ ── */}
             <section id="faq" className="scroll-mt-24 mb-12">
               <h2 className="text-2xl font-bold text-white mb-6 pl-4 border-l-4 border-orange-400">
                 Frequently Asked Questions
@@ -1000,46 +1040,6 @@ export default function PaveAsphaltInRainPage() {
                 ))}
               </div>
             </section>
-
-            {/* Conclusion */}
-            <section className="mb-12">
-              <div className="bg-gradient-to-r from-slate-800 to-slate-800/60 border border-slate-700 rounded-xl p-6">
-                <h2 className="text-xl font-bold text-white mb-4">Summary</h2>
-                <p className="text-slate-300 leading-relaxed mb-4">
-                  You cannot pave hot mix in the rain without risking the pavement. Rain cools the mix before it is
-                  compacted, makes steam when it meets a wet base, and keeps tack coat from bonding. If a storm starts
-                  mid-job, stop, roll what is down, and build a clean transverse joint.
-                </p>
-                <p className="text-slate-300 leading-relaxed mb-4">
-                  Wait at least 24 hours after rain for the base to dry, and protect the new mat for 24 hours or more after
-                  paving. Planning around the forecast costs a few days at most and protects a pavement that should last
-                  years. For{" "}
-                  <Link
-                    href="/blog/repair-asphalt-driveway"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors"
-                  >
-                    fixing asphalt driveway damage
-                  </Link>{" "}
-                  caused by poor compaction or premature rain exposure, early intervention prevents minor raveling from
-                  becoming a full-depth failure.
-                </p>
-                <p className="text-slate-300 leading-relaxed">
-                  The{" "}
-                  <a
-                    href="https://www.fhwa.dot.gov/pavement/asphalt/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 inline-flex items-center gap-1 transition-colors"
-                  >
-                    FHWA Asphalt Pavement resources
-                    <ExternalLink className="w-3 h-3" />
-                  </a>{" "}
-                  provide free agency-level guidance on compaction temperature windows, weather limitations, and quality
-                  assurance testing for hot mix paving operations.
-                </p>
-              </div>
-            </section>
-
             {/* Author Bio */}
             <div className="mt-10">
               <AuthorBio />
