@@ -985,6 +985,35 @@ export default function HowToCompactAsphaltPage() {
               </div>
             </section>
 
+
+            {/* Conclusion */}
+            <section className="mb-12">
+              <div className="bg-gradient-to-r from-slate-800 to-slate-800/60 border border-slate-700 rounded-xl p-6">
+                <h2 className="text-xl font-bold text-white mb-4">Conclusion</h2>
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  Achieving proper asphalt compaction comes down to heat, timing, and pattern consistency. Roll early while the
+                  mat is hot, match the roller type to the compaction phase, maintain a steady walking speed, and adhere to a
+                  pattern verified by a pre-job test strip.
+                </p>
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  Check results against Gmm, pay rigorous attention to longitudinal and transverse joints, and adjust techniques
+                  for tender mixes and windy weather. Do those things consistently, and the pavement will achieve the in-place
+                  density it needs to last decades.
+                </p>
+                <p className="text-slate-300 leading-relaxed">
+                  Before heading out to the field, use the free{" "}
+                  <Link
+                    href="/"
+                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-semibold"
+                  >
+                    Bitumen Calculator at BitumenCalcPro
+                  </Link>{" "}
+                  to accurately size your asphalt tonnage, aggregate blends, and tack coat requirements based on your design
+                  thickness and roll-down factors.
+                </p>
+              </div>
+            </section>
+
             {/* ── SECTION 12: FAQ ── */}
             <section id="faq" className="scroll-mt-24 mb-12">
               <h2 className="text-2xl font-bold text-white mb-6 pl-4 border-l-4 border-teal-400">
@@ -1024,35 +1053,6 @@ export default function HowToCompactAsphaltPage() {
                 ))}
               </div>
             </section>
-
-            {/* Conclusion */}
-            <section className="mb-12">
-              <div className="bg-gradient-to-r from-slate-800 to-slate-800/60 border border-slate-700 rounded-xl p-6">
-                <h2 className="text-xl font-bold text-white mb-4">Summary</h2>
-                <p className="text-slate-300 leading-relaxed mb-4">
-                  Achieving proper asphalt compaction comes down to heat, timing, and pattern consistency. Roll early while the
-                  mat is hot, match the roller type to the compaction phase, maintain a steady walking speed, and adhere to a
-                  pattern verified by a pre-job test strip.
-                </p>
-                <p className="text-slate-300 leading-relaxed mb-4">
-                  Check results against Gmm, pay rigorous attention to longitudinal and transverse joints, and adjust techniques
-                  for tender mixes and windy weather. Do those things consistently, and the pavement will achieve the in-place
-                  density it needs to last decades.
-                </p>
-                <p className="text-slate-300 leading-relaxed">
-                  Before heading out to the field, use the free{" "}
-                  <Link
-                    href="/"
-                    className="text-teal-400 hover:text-teal-300 underline underline-offset-2 transition-colors font-semibold"
-                  >
-                    Bitumen Calculator at BitumenCalcPro
-                  </Link>{" "}
-                  to accurately size your asphalt tonnage, aggregate blends, and tack coat requirements based on your design
-                  thickness and roll-down factors.
-                </p>
-              </div>
-            </section>
-
             {/* Author Bio */}
             <div className="mt-10">
               <AuthorBio />
