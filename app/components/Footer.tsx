@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10 mb-12">
 
           {/* First Column: Brand, Entity, Author, Location & Social Profiles */}
-          <div className="text-left max-w-sm">
+          <div className="text-left w-full lg:max-w-sm">
             <Link
               href="/"
               className="text-2xl font-black text-white flex items-center gap-2.5 mb-3 group"
@@ -120,38 +120,38 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation Links Grid: 3 Clean, Accessible Columns */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12 text-sm flex-1">
+          {/* Navigation Links Grid: 1 clear column on mobile, 3 columns on tablet/desktop */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10 text-sm flex-1 w-full">
             <div>
-              <p className="text-teal-400 font-bold text-xs uppercase tracking-wider mb-4">Calculators & Tools</p>
+              <p className="text-teal-400 font-bold text-xs uppercase tracking-wider mb-3">Calculators</p>
               <ul className="space-y-2.5">
                 <li>
-                  <Link href="/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                  <Link href="/" className="text-slate-300 hover:text-white transition-colors text-sm">
                     Bitumen Calculator
                   </Link>
                 </li>
                 <li>
-                  <Link href="/asphalt-tonnage-calculator/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                  <Link href="/asphalt-tonnage-calculator" className="text-slate-300 hover:text-white transition-colors text-sm">
                     Asphalt Tonnage Calculator
                   </Link>
                 </li>
                 <li>
-                  <Link href="/asphalt-driveway-cost-calculator/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                  <Link href="/asphalt-driveway-cost-calculator" className="text-slate-300 hover:text-white transition-colors text-sm">
                     Driveway Cost Calculator
                   </Link>
                 </li>
                 <li>
-                  <Link href="/tack-coat-calculator/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                  <Link href="/tack-coat-calculator" className="text-slate-300 hover:text-white transition-colors text-sm">
                     Tack Coat Calculator
                   </Link>
                 </li>
                 <li>
-                  <Link href="/asphalt-millings-calculator/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                  <Link href="/asphalt-millings-calculator" className="text-slate-300 hover:text-white transition-colors text-sm">
                     Asphalt Millings Calculator
                   </Link>
                 </li>
                 <li>
-                  <Link href="/bitumen-tank-volume-calculator/" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                  <Link href="/bitumen-tank-volume-calculator" className="text-slate-300 hover:text-white transition-colors text-sm">
                     Bitumen Tank Volume Calculator
                   </Link>
                 </li>
@@ -159,54 +159,46 @@ export default function Footer() {
             </div>
 
             <div>
-              <p className="text-teal-400 font-bold text-xs uppercase tracking-wider mb-4">Resources & Company</p>
+              <p className="text-teal-400 font-bold text-xs uppercase tracking-wider mb-3">Company</p>
               <ul className="space-y-2.5">
                 <li>
-                  <Link href="/blog" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
-                    Engineering Learning Hub
+                  <Link href="/blog" className="text-slate-300 hover:text-white transition-colors text-sm">
+                    Engineering Hub
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about-us" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
-                    About BitumenCalcPro
+                  <Link href="/about-us" className="text-slate-300 hover:text-white transition-colors text-sm">
+                    About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact-us" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
-                    Contact & Support
+                  <Link href="/contact-us" className="text-slate-300 hover:text-white transition-colors text-sm">
+                    Contact Us
                   </Link>
-                </li>
-                <li>
-                  <a
-                    href="mailto:contact@bitumencalcpro.com"
-                    className="text-teal-400 hover:text-teal-300 transition-colors text-xs sm:text-sm underline font-medium"
-                  >
-                    contact@bitumencalcpro.com
-                  </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <p className="text-teal-400 font-bold text-xs uppercase tracking-wider mb-4">Legal & Compliance</p>
+              <p className="text-teal-400 font-bold text-xs uppercase tracking-wider mb-3">Legal</p>
               <ul className="space-y-2.5">
                 <li>
-                  <Link href="/privacy-policy" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                  <Link href="/privacy-policy" className="text-slate-300 hover:text-white transition-colors text-sm">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="/terms-and-conditions" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                  <Link href="/terms-and-conditions" className="text-slate-300 hover:text-white transition-colors text-sm">
                     Terms & Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link href="/disclaimer" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                  <Link href="/disclaimer" className="text-slate-300 hover:text-white transition-colors text-sm">
                     Disclaimer
                   </Link>
                 </li>
                 <li>
-                  <Link href="/dmca" className="text-slate-300 hover:text-white transition-colors text-xs sm:text-sm">
+                  <Link href="/dmca" className="text-slate-300 hover:text-white transition-colors text-sm">
                     DMCA Policy
                   </Link>
                 </li>
