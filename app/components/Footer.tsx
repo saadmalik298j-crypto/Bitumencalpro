@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MapPin, User, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10 mb-12">
 
-          {/* Brand, Location & Entity Information */}
+          {/* First Column: Brand, Entity, Author, Location & Social Profiles */}
           <div className="text-left max-w-sm">
             <Link
               href="/"
@@ -23,20 +24,43 @@ export default function Footer() {
                 BitumenCalcPro
               </span>
             </Link>
-            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-3">
-              Precision civil engineering calculators, mix design algorithms, and technical paving guides built for contractors, engineers, and students worldwide. Founded by Nabeel Awan in Islamabad, Pakistan.
-            </p>
-            <p className="text-xs text-slate-400 mb-5">
-              Direct Contact:{" "}
-              <a
-                href="mailto:contact@bitumencalcpro.com"
-                className="text-teal-400 hover:text-teal-300 transition-colors underline font-medium"
-              >
-                contact@bitumencalcpro.com
-              </a>
+
+            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+              Precision civil engineering calculators, mix design algorithms, and technical paving guides built for contractors, engineers, and students worldwide.
             </p>
 
-            {/* Social Icons */}
+            {/* Author, Location & Contact Details */}
+            <div className="space-y-2 mb-5 text-xs text-slate-300 bg-slate-800/60 border border-slate-700/60 rounded-xl p-3.5">
+              <div className="flex items-center gap-2">
+                <User size={14} className="text-teal-400 shrink-0" />
+                <span>
+                  <strong className="text-slate-200">Author & Developer:</strong>{" "}
+                  <Link href="/about-us" className="text-teal-300 hover:text-white underline">
+                    Nabeel Awan
+                  </Link>
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin size={14} className="text-teal-400 shrink-0" />
+                <span>
+                  <strong className="text-slate-200">Location:</strong> Islamabad, Pakistan
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail size={14} className="text-teal-400 shrink-0" />
+                <span>
+                  <strong className="text-slate-200">Email:</strong>{" "}
+                  <a
+                    href="mailto:contact@bitumencalcpro.com"
+                    className="text-teal-300 hover:text-white underline"
+                  >
+                    contact@bitumencalcpro.com
+                  </a>
+                </span>
+              </div>
+            </div>
+
+            {/* Social Icons at end of first column */}
             <div className="flex items-center gap-3">
               <a
                 href="https://web.facebook.com/profile.php?id=61592790119864"
@@ -96,8 +120,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation Links Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12 text-sm">
+          {/* Navigation Links Grid: 3 Clean, Accessible Columns */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12 text-sm flex-1">
             <div>
               <p className="text-teal-400 font-bold text-xs uppercase tracking-wider mb-4">Calculators & Tools</p>
               <ul className="space-y-2.5">
@@ -152,6 +176,14 @@ export default function Footer() {
                     Contact & Support
                   </Link>
                 </li>
+                <li>
+                  <a
+                    href="mailto:contact@bitumencalcpro.com"
+                    className="text-teal-400 hover:text-teal-300 transition-colors text-xs sm:text-sm underline font-medium"
+                  >
+                    contact@bitumencalcpro.com
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -195,4 +227,3 @@ export default function Footer() {
     </footer>
   );
 }
-

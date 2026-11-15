@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://bitumencalcpro.com";
-  const lastMod = "2026-11-13T00:00:00.000Z";
+  const lastMod = "2026-11-15T00:00:00.000Z";
 
   const routes = [
     "",
