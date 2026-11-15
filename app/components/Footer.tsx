@@ -23,8 +23,17 @@ export default function Footer() {
                 BitumenCalcPro
               </span>
             </Link>
-            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
+            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-3">
               Precision civil engineering calculators, mix design algorithms, and technical paving guides built for contractors, engineers, and students worldwide. Founded by Nabeel Awan in Islamabad, Pakistan.
+            </p>
+            <p className="text-xs text-slate-400 mb-5">
+              Direct Contact:{" "}
+              <a
+                href="mailto:contact@bitumencalcpro.com"
+                className="text-teal-400 hover:text-teal-300 transition-colors underline font-medium"
+              >
+                contact@bitumencalcpro.com
+              </a>
             </p>
 
             {/* Social Icons */}
@@ -176,7 +185,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-400">
-          <p>© 2026 BitumenCalcPro. All rights reserved.</p>
+          <p>BitumenCalcPro©All rights reserved 2026</p>
           <p className="text-slate-400 text-center max-w-xl">
             BitumenCalcPro provides technical Calculators for estimation & educational purposes. Always verify final pavement orders with a certified civil engineer.
           </p>
